@@ -14,7 +14,17 @@ Open http://localhost:3000. For development use `npm run dev`. It starts with an
 
 ## Vercel
 
-Import the repository as a Next.js project, select Node 22.x or 24.x, and set **Root Directory** to `apps/web`. Enable **Include source files outside of the Root Directory in the Build Step**. The root workspace lockfile and packages must be included. Use install command `cd ../.. && npm ci` and build command `cd ../.. && npm run build`. Leave the output directory at the Next.js default `.next` relative to `apps/web`. The build script emits the independent SDK first and synchronizes the checked-in fixtures before `next build`. No secrets are required. `.env.example` documents optional local test settings only.
+Import the repository as a Next.js project, select Node 22.x or 24.x, and set **Root Directory** to `apps/web`. Enable **Include source files outside of the Root Directory in the Build Step**. The root workspace lockfile and packages must be included. The checked-in `apps/web/vercel.json` sets install command `npm ci --include=dev --workspace=@netscape/web` and build command `npm run build`, both executed from `apps/web`. Leave the output directory at the Next.js default `.next`. Remove conflicting dashboard command overrides, or set them to these same commands. No secrets are required. `.env.example` documents optional local test settings only.
+
+The web workspace declares its own `tsx`, TypeScript and type declarations. Workspace-scoped installs do not include the root development dependencies; previously this caused `tsx: not found` in the fixture synchronization prebuild. The app synchronizes the checked-in fixtures and Next.js compiles SDK source through `transpilePackages`; it does not need precompiled SDK output. The root `npm run build` remains the separate full SDK plus app build for local verification.
+
+To reproduce the hosting install/build path in a clean checkout:
+
+```sh
+cd apps/web
+npm ci --include=dev --workspace=@netscape/web
+npm run build
+```
 
 The Node server function uses a maximum 8-second deadline and a 1 MiB response cap with four redirects. It resolves and validates every hostname answer, pins one public address for each TLS request, and retains TLS hostname verification. Credential forwarding, cookies, compressed bodies, arbitrary ports and unsupported MIME types are rejected. Do not replace this with an unconstrained fetch proxy. The in-memory 30-read/minute and four-concurrent-read caps apply **per process**, not globally across a serverless deployment. Configure a hosting-edge distributed rate limit for public traffic before broad launch.
 

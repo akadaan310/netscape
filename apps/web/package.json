@@ -1,1 +1,31 @@
-{"name":"@netscape/web","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"next dev --hostname 0.0.0.0","prebuild":"tsx ../../scripts/sync-fixtures.ts","build":"next build","start":"next start --hostname 0.0.0.0"},"dependencies":{"@netscape/chromatics":"0.1.0","@netscape/conformance":"0.1.0","@netscape/core":"0.1.0","@netscape/dynamics":"0.1.0","@netscape/performers":"1.0.0","@netscape/render-react":"0.1.0","@netscape/resource-interpreter":"0.1.0","next":"^15.5.28","react":"^19.3.1","react-dom":"^19.3.1"}}
+{
+  "name": "@netscape/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "prebuild": "tsx ../../scripts/sync-fixtures.ts",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0"
+  },
+  "dependencies": {
+    "@netscape/chromatics": "0.1.0",
+    "@netscape/conformance": "0.1.0",
+    "@netscape/core": "0.1.0",
+    "@netscape/dynamics": "0.1.0",
+    "@netscape/performers": "1.0.0",
+    "@netscape/render-react": "0.1.0",
+    "@netscape/resource-interpreter": "0.1.0",
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

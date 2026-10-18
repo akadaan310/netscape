@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "node": "v24.19.0",
+  "installation": "workspace-scoped, include dev, NODE_ENV=production",
+  "rootSDKBuildToolInstalled": false,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "htmlBytes": 36004,
+      "serverRenderedApp": true
+    },
+    {
+      "path": "/api/interpret?fixture=nasa",
+      "status": 200,
+      "nodes": 15,
+      "intents": 1,
+      "fixtureSha256": "8af440b4a4c9cd64109f1a2cb0627add0a890ad2696caeb4b1307d17b3314470"
+    },
+    {
+      "path": "/api/interpret?fixture=restaurant",
+      "status": 200,
+      "nodes": 15,
+      "intents": 1,
+      "fixtureSha256": "f05cb6bdf8484c74bb8bd46f628ac4ba65f0a1045573d6f17b4ac811cbc131a1"
+    },
+    {
+      "path": "/api/interpret?fixture=github",
+      "status": 200,
+      "nodes": 15,
+      "intents": 1,
+      "fixtureSha256": "092d33dfe1af1f30e6a1a9a9bbe80541ad52cbb378c2ee2880f2b1728a86084e"
+    }
+  ],
+  "actualVercelDeployment": "not run from this environment"
+}

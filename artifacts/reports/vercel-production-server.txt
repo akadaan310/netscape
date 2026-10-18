@@ -1,0 +1,10 @@
+
+> @netscape/web@0.1.0 start
+> next start --hostname 0.0.0.0 --port 49359
+
+   ▲ Next.js 15.5.28
+   - Local:        http://localhost:49359
+   - Network:      http://0.0.0.0:49359
+
+ ✓ Starting...
+ ✓ Ready in 607ms

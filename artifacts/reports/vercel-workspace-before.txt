@@ -1,0 +1,19 @@
+Clean checkout of 2962a90; workspace-only install in /tmp/netscape-vercel-g_qpx7_9/apps/web
+$ npm ci --workspace=@netscape/web --no-audit --no-fund
+
+added 39 packages in 8s
+EXIT 0
+$ npm run build
+
+> @netscape/web@0.1.0 prebuild
+> tsx ../../scripts/sync-fixtures.ts
+
+sh: 1: tsx: not found
+npm error Lifecycle script `build` failed with error:
+npm error code 127
+npm error path /tmp/netscape-vercel-g_qpx7_9/apps/web
+npm error workspace @netscape/web@0.1.0
+npm error location /tmp/netscape-vercel-g_qpx7_9/apps/web
+npm error command failed
+npm error command sh -c tsx ../../scripts/sync-fixtures.ts
+EXIT 127

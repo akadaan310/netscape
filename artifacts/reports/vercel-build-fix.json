@@ -1,0 +1,60 @@
+{
+  "baseCommit": "2962a90f8885de418ce8587607305db2c72d8371",
+  "recordedAt": "2026-10-18T12:06:33.148154+00:00",
+  "scope": "Vercel workspace-scoped build packaging correction",
+  "checks": {
+    "originalFailureReproduced": true,
+    "workspaceProductionBuild": "PASS",
+    "productionHTTP": 4,
+    "unitTests": 72,
+    "typecheck": "PASS",
+    "actualVercelDeployment": "UNVERIFIED"
+  },
+  "algorithm": "SHA-256",
+  "files": {
+    "apps/web/package.json": {
+      "bytes": 817,
+      "sha256": "0fcf2b0ae52997e24be773580f6361794b9accf9e674d70259ef023e80128354"
+    },
+    "apps/web/vercel.json": {
+      "bytes": 187,
+      "sha256": "28e86860dd16f2b76180bce812a4f78df25e0dc21f5c6bb387ac4790d2a5186d"
+    },
+    "package-lock.json": {
+      "bytes": 102509,
+      "sha256": "0dae1c89b84cebc7999b721f2efd8b46288137c0720a1a023ca42c824bc85ede"
+    },
+    "DEPLOYMENT.md": {
+      "bytes": 3782,
+      "sha256": "f769e07ba9baec88a3a94458e280a695dbb3200764710b418b82e7eb03bc10ea"
+    },
+    "artifacts/reports/vercel-build-fix.md": {
+      "bytes": 2364,
+      "sha256": "f6b7509457a07075ea6d349d97b9ab2109fad4c60e1b1b850a107ec0edfc6aac"
+    },
+    "artifacts/reports/vercel-workspace-before.txt": {
+      "bytes": 606,
+      "sha256": "539d2f6142c6e1baf046ab44200e676a5d9df69265df56fade8ed35189de8051"
+    },
+    "artifacts/reports/vercel-workspace-after.txt": {
+      "bytes": 2323,
+      "sha256": "7f51b387af81f846bb500e6bad170a7fc1c2e00725cd65f9dbd0d5d994736275"
+    },
+    "artifacts/reports/vercel-production-smoke.json": {
+      "bytes": 977,
+      "sha256": "ba81b760c0dc30031e2b126d6218ee8aafb3022c053a67ab64e93f8de3f26297"
+    },
+    "artifacts/reports/vercel-production-server.txt": {
+      "bytes": 218,
+      "sha256": "63fa69c7c0efb82c43c64ca253f4fbf2c59abfd1f8d552c8162d77f4095dbcec"
+    },
+    "artifacts/reports/vercel-fix-tests.txt": {
+      "bytes": 7137,
+      "sha256": "43a7826a9b4b6bc3c98490f0fd383403d5c303ed7199c2c6b70f2c0241a7404d"
+    },
+    "artifacts/reports/vercel-fix-typecheck.txt": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    }
+  }
+}
