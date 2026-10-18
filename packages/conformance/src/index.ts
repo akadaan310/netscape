@@ -74,7 +74,7 @@ export function createManifest(graph:SemanticGraph,surface:Surface,display:Displ
   const manifest={...body,integrityHash:hash(body)};verifyManifest(manifest,false);return manifest;
 }
 export function replayManifest(manifest:SurfaceManifest):Surface{return verifyManifest(manifest,true);}
-function verifyManifest(manifest:SurfaceManifest,restoreDynamics:boolean):Surface{
+function manifestBounds(manifest:SurfaceManifest):void{
   if(!plain(manifest)||manifest.version!==2||manifest.grammarVersion!==GRAMMAR_VERSION)throw new Error('Unsupported replay version');
   if(!keys(manifest,['version','grammarVersion','fixtureHash','graphHash','integrityHash','graph','seed','family','display','tick','chromaticField','expectedRegions','interactions','hardInvariants','provenance','surfaceHash','dynamics','intents'])||
     !graphShape(manifest.graph)||!Number.isSafeInteger(manifest.seed)||!uint(manifest.tick,1000000)||!FAMILIES.includes(manifest.family)||
@@ -85,6 +85,9 @@ function verifyManifest(manifest:SurfaceManifest,restoreDynamics:boolean):Surfac
     !['fixtureHash','graphHash','integrityHash','surfaceHash'].every(k=>bounded((manifest as any)[k],256))||
     (manifest.intents!==undefined&&!intentsShape(manifest.intents,manifest.graph)))throw new Error('Invalid replay schema');
   if(manifest.dynamics!==undefined&&(dynamicsWork(manifest.dynamics)>20000000||manifest.tick!==manifest.dynamics.tick))throw new Error('Replay dynamics work or tick mismatch');
+}
+function verifyManifest(manifest:SurfaceManifest,restoreDynamics:boolean):Surface{
+  manifestBounds(manifest);
   const {integrityHash,...body}=manifest;
   if(hash(body)!==integrityHash||hash(manifest.graph)!==manifest.graphHash)throw new Error('Replay integrity digest mismatch');
   if(manifest.graph.provenance.contentHash!==manifest.fixtureHash)throw new Error('Fixture identity mismatch');
@@ -101,7 +104,7 @@ export type Workspace={version:1;seed:number;family:Family;resource:string;graph
 export function artifactDigest(artifact:Omit<SavedArtifact,'digest'>):string{return hash(artifact);}
 /** Total for corrupted JSON and bounded in-memory records. Unknown schema fields
  * are rejected before hashing; all digest/replay exceptions become false. */
-export function validateWorkspace(value:unknown):value is Workspace{
+export function preflightWorkspace(value:unknown):value is Workspace{
   try{
     if(!keys(value,['version','seed','family','resource','graph','artifacts','selectedId','attached','tick','theme','dynamics','intents']))return false;
     const w=value as Workspace;
@@ -113,15 +116,26 @@ export function validateWorkspace(value:unknown):value is Workspace{
     if(w.theme!==undefined&&!['light','dark'].includes(w.theme))return false;
     if(w.intents!==undefined&&!intentsShape(w.intents,w.graph))return false;
     let replayWork=0;
-    if(w.dynamics!==undefined){replayWork+=dynamicsWork(w.dynamics);if(w.tick!==w.dynamics.tick||replayWork>20000000)return false;replayWorld(w.dynamics);}
+    if(w.dynamics!==undefined){replayWork+=dynamicsWork(w.dynamics);if(w.tick!==w.dynamics.tick||replayWork>20000000)return false;}
     const ids=new Set<string>();
     for(const a of w.artifacts){
       if(!keys(a,['id','title','passage','sourceUrl','sourceTitle','createdAt','evidence','manifest','digest'])||!bounded(a.id,256)||!a.id||ids.has(a.id)||!bounded(a.title,4096)||!bounded(a.passage,50000)||!bounded(a.sourceUrl,2048)||!safeExternalURL(a.sourceUrl)||!bounded(a.sourceTitle,4096)||!iso(a.createdAt)||!Array.isArray(a.evidence)||a.evidence.length>1000||!a.evidence.every(e=>bounded(e,2048))||!bounded(a.digest,256)||!a.manifest)return false;
       ids.add(a.id);
       if(a.manifest.dynamics){replayWork+=dynamicsWork(a.manifest.dynamics);if(replayWork>20000000)return false;}
-      // Replay schema bounds precede canonical artifact hashing.
-      replayManifest(a.manifest);
-      const {digest,...body}=a;if(artifactDigest(body)!==digest)return false;
+      manifestBounds(a.manifest);
+    }
+    return true;
+  }catch{return false;}
+}
+/** Bounds-only preflight is for locally constructed records. Cold/untrusted JSON
+ * additionally requires digest, geometry, and integrated dynamics validation. */
+export function validateWorkspace(value:unknown):value is Workspace{
+  if(!preflightWorkspace(value))return false;
+  try{
+    if(value.dynamics)replayWorld(value.dynamics);
+    for(const artifact of value.artifacts){
+      replayManifest(artifact.manifest);
+      const {digest,...body}=artifact;if(artifactDigest(body)!==digest)return false;
     }
     return true;
   }catch{return false;}

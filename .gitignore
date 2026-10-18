@@ -4,6 +4,10 @@ dist/
 *.tsbuildinfo
 test-results/
 playwright-report/
+# Full timestamped browser evidence is preserved in the delivered evidence archive.
+# Its manifests and checksums are versioned under artifacts/reports.
+artifacts/browser/
+artifacts/browser-report/
 .superpowers/
 .env*
 !.env.example

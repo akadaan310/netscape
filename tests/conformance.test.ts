@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {auditRegions,auditActionMap,createManifest,replayManifest,CONSTITUTION,validateWorkspace,artifactDigest} from '../packages/conformance/src/index';
+import {auditRegions,auditActionMap,createManifest,replayManifest,CONSTITUTION,validateWorkspace,preflightWorkspace,artifactDigest} from '../packages/conformance/src/index';
 import {generateSurface,hash} from '@netscape/core';
 import {createWorld,enqueueEvent,stepWorld,worldManifest} from '@netscape/dynamics';
 import {interpretHTML} from '@netscape/resource-interpreter';
@@ -93,4 +93,18 @@ test('manifest replay preserves every safe integer seed accepted by core',()=>{
     const manifest=createManifest(graph,surface,display);
     assert.deepEqual(replayManifest(JSON.parse(JSON.stringify(manifest))),surface);
   }
+});
+
+test('local bounds preflight does not replace integrated validation for untrusted records',()=>{
+  const {graph}=interpretHTML('<title>Source</title><p>Source passage</p>','https://example.org/',{kind:'fixture',fetchedAt:'2026-10-18'});
+  const world=createWorld({seed:1,nodes:graph.nodes.map((n,i)=>({id:n.id,x:i*30,y:0})),edges:[]});
+  enqueueEvent(world,{id:'play-1',tick:0,nodeId:graph.nodes[0].id,kind:'playful',strength:1});stepWorld(world,10);
+  const dynamics=worldManifest(world);
+  const workspace={version:1,seed:1,family:'folded',resource:graph.sourceUrl,graph,tick:10,dynamics,artifacts:[]};
+  assert.equal(preflightWorkspace(workspace),true);assert.equal(validateWorkspace(workspace),true);
+  const corrupt={...workspace,dynamics:{...dynamics,traceHash:dynamics.traceHash==='00000000'?'11111111':'00000000'}};
+  assert.equal(preflightWorkspace(corrupt),true,'bounds-only preflight avoids integrating trusted local histories');
+  assert.equal(validateWorkspace(corrupt),false,'cold restore must integrate and compare the actual trace');
+  assert.equal(preflightWorkspace({...workspace,resource:'x'.repeat(2049)}),false);
+  assert.equal(preflightWorkspace({...workspace,dynamics:{...dynamics,events:Array(1001).fill(dynamics.events[0])}}),false);
 });

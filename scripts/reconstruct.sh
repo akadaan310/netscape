@@ -16,6 +16,7 @@ mkdir -p "$TASK_ROOT/artifacts/reports"
   npm test
   npm run typecheck
   npm run build
+  npm run smoke:sdk
   echo "COLD_RECONSTRUCTION_PASS $CHECKPOINT"
 } 2>&1 | tee "$LOG"
 echo "$RECON_ROOT" > "$TASK_ROOT/artifacts/reports/reconstruction-path.txt"
