@@ -11,8 +11,9 @@ export type PublicResponse={status:number;headers:Record<string,string|undefined
 export type FetchDependencies={resolve:(hostname:string)=>Promise<Address[]>;request:(url:URL,address:Address,signal:AbortSignal)=>Promise<PublicResponse>};
 
 export function validatePublicURL(input:string):URL{
- if(typeof input!=='string'||input.length>4096||/[\s\\\x00-\x1f\x7f]/.test(input))throw new Error('Invalid public URL');
+ if(typeof input!=='string'||input.length>2048||/[\s\\\x00-\x1f\x7f]/.test(input))throw new Error('Invalid public URL');
  let url:URL;try{url=new URL(input);}catch{throw new Error('Invalid public URL');}
+ if(url.href.length>2048)throw new Error('Public URL exceeds the 2048-character limit after URL encoding');
  if(url.protocol!=='https:')throw new Error('Public resources require HTTPS');
  // Inspect raw authority as URL normalization removes explicit :443, encoded hostnames and userinfo evidence.
  const authority=input.match(/^https:\/\/([^/?#]+)/i)?.[1];

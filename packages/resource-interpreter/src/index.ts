@@ -20,12 +20,12 @@ function textOf(node:HTMLNode,includeScript=false):string {
  return clean(parts.join(' '));
 }
 function safeURL(value:string,base:string):string|undefined {
- try{const url=new URL(value,base);if(!['http:','https:'].includes(url.protocol)||url.username||url.password)return;return url.href;}catch{return;}
+ try{const url=new URL(value,base);if(!['http:','https:'].includes(url.protocol)||url.username||url.password||url.href.length>2048)return;return url.href;}catch{return;}
 }
 
 export function interpretHTML(html:string,url:string,options:{kind?:'fixture'|'public';fetchedAt?:string}={}):{graph:SemanticGraph;intents:Intent[]}{
  if(typeof html!=='string'||html.length>MAX_HTML)throw new Error('HTML exceeds interpretation size limit (1 MiB characters)');
- const sourceUrl=safeURL(url,url);if(!sourceUrl)throw new Error('Source must be a safe HTTP(S) URL without credentials');
+ const sourceUrl=safeURL(url,url);if(!sourceUrl)throw new Error('Source must be a safe HTTP(S) URL without credentials, at most 2048 characters after URL encoding');
  const fetchedAt=options.fetchedAt??new Date().toISOString();
  if(!Number.isFinite(Date.parse(fetchedAt)))throw new Error('Invalid resource fetch timestamp');
  const document=parse(html);const elements:HTMLNode[]=[];const stack:HTMLNode[]=[document];let visited=0;
@@ -73,7 +73,7 @@ export function interpretHTML(html:string,url:string,options:{kind?:'fixture'|'p
   else if(name==='button')add({kind:'Action',label:clean(text||attr(element,'aria-label')||'Source button',180),supported:false,meta:{...meta,reason:'Detected source button. Third-party execution is unsupported.'}});
  }
  // These are interpreter-owned local capabilities; source forms never grant them.
- for(const [action,label] of [['select-passage','Select a passage'],['attach-companion','Come here · local simulated companion'],['save-artifact','Save cited artifact']] as const){
+ for(const [action,label] of (nodes.some(node=>node.kind==='Text'&&Boolean(node.text?.trim()))?[['select-passage','Select a passage'],['attach-companion','Come here · local simulated companion'],['save-artifact','Save cited artifact']] as const:[])){
   const actionId=`${id}-${action}`;nodes.push({id:actionId,kind:'Action',label,action,supported:true,evidence:[evidenceId],meta:{origin:'local',targetId:id}});edges.push({from:id,to:actionId,kind:'contains'});
  }
  const signals=nodes.filter(n=>n.kind!=='Action'&&n.kind!=='Evidence');

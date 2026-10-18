@@ -6,14 +6,19 @@ export const MAX_SPEED = 120;
 export const MAX_TICKS_PER_STEP = 10_000;
 export const DIFFUSION_ALPHA = 0.15;
 export const FIELD_DECAY = 0.008;
+/** Persistence budgets bound cold-reload replay work; ordinary simulation may run longer. */
+export const MAX_REPLAY_TICKS = 100_000;
+export const MAX_REPLAY_EVENTS = 1_000;
+export const MAX_REPLAY_WORK = 20_000_000;
 export type EventKind = 'playful' | 'focus' | 'select';
 export type DynamicsEvent = { id: string; tick: number; nodeId: string; kind: EventKind; strength: number };
 export type WorldOptions = { seed: number; nodes: { id: string; x: number; y: number; mass?: number }[]; edges: { from: string; to: string; rest?: number; stiffness?: number }[]; reducedMotion?: boolean };
 export type World = { readonly tick: number };
+export type WorldManifest = { version: 1; options: WorldOptions; events: DynamicsEvent[]; tick: number; traceHash: string };
 export type WorldSnapshot = { tick: number; nodes: { id: string; x: number; y: number; vx: number; vy: number; field: number }[]; energy: number; traceHash: string };
 type Particle = { id: string; x: number; y: number; ox: number; oy: number; mass: number; vx: number; vy: number; field: number; neighbors: number[] };
 type Spring = { a: number; b: number; rest: number; k: number };
-type State = { tick: number; seed: number; nodes: Particle[]; edges: Spring[]; reduced: boolean; events: DynamicsEvent[]; ids: Set<string>; index: Map<string, number>; trace: number };
+type State = { tick: number; seed: number; nodes: Particle[]; edges: Spring[]; reduced: boolean; events: DynamicsEvent[]; ids: Set<string>; index: Map<string, number>; trace: number; initialOptions: WorldOptions; acceptedEvents: DynamicsEvent[] };
 const states = new WeakMap<World, State>();
 const cmp = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0;
 const finite = (v: unknown): v is number => typeof v === 'number' && Number.isFinite(v);
@@ -41,7 +46,7 @@ export function createWorld(options: WorldOptions): World {
     const k = Math.min(e.stiffness ?? 24, 36 * nodes[a].mass / nodes[a].neighbors.length, 36 * nodes[b].mass / nodes[b].neighbors.length);
     return { a, b, k, rest: e.rest ?? Math.hypot(nodes[a].x - nodes[b].x, nodes[a].y - nodes[b].y) };
   });
-  const internal: State = { tick: 0, seed: options.seed, nodes, edges, reduced: options.reducedMotion ?? false, events: [], ids: new Set(), index, trace: 2166136261 };
+  const internal: State = { tick: 0, seed: options.seed, nodes, edges, reduced: options.reducedMotion ?? false, events: [], ids: new Set(), index, trace: 2166136261, initialOptions: immutableOptions(options), acceptedEvents: [] };
   const world = Object.freeze({ get tick() { return internal.tick; } });
   states.set(world, internal);
   record(internal);
@@ -52,7 +57,9 @@ export function enqueueEvent(world: World, event: DynamicsEvent): void {
   if (event && s.ids.has(event.id)) throw new RangeError('Duplicate event ID');
   if (!event || !id(event.id) || !s.index.has(event.nodeId) || !Number.isSafeInteger(event.tick) || event.tick < s.tick || !['playful', 'focus', 'select'].includes(event.kind) || !checkBounds(event.strength, 0, 1) || s.ids.size >= 100_000 || s.events.length >= 10_000) throw new RangeError('Invalid event, stale tick, strength or workload');
   s.ids.add(event.id);
-  s.events.push({ ...event });
+  const accepted = { id: event.id, tick: event.tick, nodeId: event.nodeId, kind: event.kind, strength: event.strength };
+  s.events.push(accepted);
+  s.acceptedEvents.push(accepted);
   s.events.sort((a, b) => a.tick - b.tick || cmp(a.id, b.id));
 }
 function eventInput(s: State): void {
@@ -124,4 +131,57 @@ export function snapshot(world: World): WorldSnapshot {
 export function noteForEvent(kind: EventKind): number {
   if (!['playful', 'focus', 'select'].includes(kind)) throw new RangeError('Unknown event kind');
   return { playful: 72, focus: 60, select: 67 }[kind];
+}
+
+
+function cloneOptions(options: WorldOptions): WorldOptions {
+  return {
+    seed: options.seed,
+    nodes: options.nodes.map(n => ({ id: n.id, x: n.x, y: n.y, ...(n.mass !== undefined ? { mass: n.mass } : {}) })),
+    edges: options.edges.map(e => ({ from: e.from, to: e.to, ...(e.rest !== undefined ? { rest: e.rest } : {}), ...(e.stiffness !== undefined ? { stiffness: e.stiffness } : {}) })),
+    ...(options.reducedMotion !== undefined ? { reducedMotion: options.reducedMotion } : {}),
+  };
+}
+function immutableOptions(options: WorldOptions): WorldOptions {
+  const copy = cloneOptions(options);
+  copy.nodes.forEach(Object.freeze); copy.edges.forEach(Object.freeze);
+  Object.freeze(copy.nodes); Object.freeze(copy.edges);
+  return Object.freeze(copy);
+}
+function persistenceBudget(options: WorldOptions, events: DynamicsEvent[], tick: number): void {
+  if (!Number.isSafeInteger(tick) || tick < 0 || tick > MAX_REPLAY_TICKS || events.length > MAX_REPLAY_EVENTS || tick * (options.nodes.length + options.edges.length) > MAX_REPLAY_WORK || events.some(e => !Number.isSafeInteger(e.tick) || e.tick < 0 || e.tick > MAX_REPLAY_TICKS)) throw new RangeError('Persistence tick/event/workload budget exceeded');
+}
+/** Detached serializable inputs plus the expected integrated trace, never an injected snapshot. */
+export function worldManifest(world: World): WorldManifest {
+  const s = state(world);
+  persistenceBudget(s.initialOptions, s.acceptedEvents, s.tick);
+  return {
+    version: 1,
+    options: cloneOptions(s.initialOptions),
+    events: s.acceptedEvents.map(e => ({ ...e })).sort((a, b) => a.tick - b.tick || cmp(a.id, b.id)),
+    tick: s.tick,
+    traceHash: snapshot(world).traceHash,
+  };
+}
+function schemaObject(value: unknown, allowed: string[], required: string[]): asserts value is Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value) || ![Object.prototype, null].includes(Object.getPrototypeOf(value)) || Reflect.ownKeys(value).some(key => typeof key !== 'string' || !allowed.includes(key)) || required.some(key => !Object.hasOwn(value, key))) throw new RangeError('Malformed replay object schema');
+}
+/** Validate a JSON-compatible manifest and reproduce state through the same fixed-step runtime. */
+export function replayWorld(manifest: WorldManifest): World {
+  schemaObject(manifest, ['version', 'options', 'events', 'tick', 'traceHash'], ['version', 'options', 'events', 'tick', 'traceHash']);
+  if (manifest.version !== 1 || typeof manifest.traceHash !== 'string' || !/^[0-9a-f]{8}$/.test(manifest.traceHash) || !Array.isArray(manifest.events) || manifest.events.length > MAX_REPLAY_EVENTS) throw new RangeError('Invalid replay version, trace hash or event count');
+  schemaObject(manifest.options, ['seed', 'nodes', 'edges', 'reducedMotion'], ['seed', 'nodes', 'edges']);
+  const options = manifest.options;
+  if (!Array.isArray(options.nodes) || options.nodes.length > 4096 || !Array.isArray(options.edges) || options.edges.length > 16384) throw new RangeError('Invalid replay node/edge counts');
+  options.nodes.forEach(n => schemaObject(n, ['id', 'x', 'y', 'mass'], ['id', 'x', 'y']));
+  options.edges.forEach(e => schemaObject(e, ['from', 'to', 'rest', 'stiffness'], ['from', 'to']));
+  manifest.events.forEach(e => schemaObject(e, ['id', 'tick', 'nodeId', 'kind', 'strength'], ['id', 'tick', 'nodeId', 'kind', 'strength']));
+  persistenceBudget(options, manifest.events, manifest.tick);
+  const world = createWorld(options);
+  const ordered = [...manifest.events].sort((a, b) => a.tick - b.tick || cmp(a.id, b.id));
+  for (const event of ordered) enqueueEvent(world, event);
+  const chunk = Math.min(MAX_TICKS_PER_STEP, Math.floor(MAX_REPLAY_WORK / Math.max(1, options.nodes.length + options.edges.length)));
+  while (world.tick < manifest.tick) stepWorld(world, Math.min(chunk, manifest.tick - world.tick));
+  if (snapshot(world).traceHash !== manifest.traceHash) throw new RangeError('Replay trace hash mismatch');
+  return world;
 }

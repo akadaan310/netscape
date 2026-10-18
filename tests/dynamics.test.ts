@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createWorld, enqueueEvent, stepWorld, snapshot, noteForEvent, DT, TRACE_TOLERANCE, MAX_DISPLACEMENT } from '../packages/dynamics/src/index.ts';
+import { createWorld, enqueueEvent, stepWorld, snapshot, noteForEvent, DT, TRACE_TOLERANCE, MAX_DISPLACEMENT, worldManifest, replayWorld } from '../packages/dynamics/src/index.ts';
 
 const config = { seed: 42, nodes: [{ id: 'a', x: 0, y: 0 }, { id: 'b', x: 20, y: 0 }], edges: [{ from: 'a', to: 'b', rest: 10 }] };
 const events = [
@@ -95,4 +95,55 @@ test('seeded event directions differ, snapshots are detached, and empty worlds a
   assert.equal(snapshot(empty).energy, 0);
   assert.equal(snapshot(empty).tick, 100);
   assert.deepEqual(snapshot(empty).nodes, []);
+});
+
+
+test('serialized world manifests replay processed and future events with exact fields and trace', () => {
+  const options = structuredClone(config);
+  const world = createWorld(options);
+  enqueueEvent(world, { ...events[0], tick: 3 });
+  stepWorld(world, 20);
+  enqueueEvent(world, { ...events[1], tick: 35 });
+  enqueueEvent(world, { ...events[2], tick: 80 });
+  stepWorld(world, 40);
+  options.nodes[0].x = 999;
+  const manifest = worldManifest(world);
+  assert.equal(manifest.version, 1);
+  assert.equal(manifest.options.nodes[0].x, 0);
+  assert.equal(manifest.events.length, 3);
+  assert.ok(snapshot(world).nodes.some(node => node.field > 0));
+  const restored = replayWorld(JSON.parse(JSON.stringify(manifest)));
+  assert.deepEqual(snapshot(restored), snapshot(world));
+  stepWorld(world, 30); stepWorld(restored, 30);
+  assert.deepEqual(snapshot(restored), snapshot(world), 'pending event also survives cold replay');
+  manifest.options.nodes[0].x = -999;
+  manifest.events[0].strength = 0;
+  assert.equal(worldManifest(world).options.nodes[0].x, 0);
+  assert.equal(worldManifest(world).events[0].strength, 1);
+});
+
+test('replay rejects tampered trace, version, inputs and oversized persistence workloads', () => {
+  const world = createWorld(config);
+  enqueueEvent(world, events[0]); stepWorld(world, 20);
+  const manifest = worldManifest(world);
+  for (const change of [
+    { version: 2 }, { traceHash: '00000000' }, { traceHash: 'invalid' },
+    { tick: NaN }, { tick: Infinity }, { tick: -1 }, { tick: 1.5 }, { tick: 100001 },
+    { events: Array.from({ length: 1001 }, () => events[0]) },
+    { events: [{ ...events[0], strength: NaN }] },
+    { events: [{ ...events[0], tick: 100001 }] },
+    { events: [events[0], events[0]] },
+    { options: { ...config, nodes: [{ id: 'a', x: NaN, y: 0 }] } },
+    { options: { ...config, nodes: Array.from({ length: 4097 }, () => config.nodes[0]) } },
+    { options: { ...config, extra: true } }, { unexpected: true },
+  ]) assert.throws(() => replayWorld({ ...manifest, ...change } as never));
+  assert.throws(() => replayWorld(null as never));
+  const tampered = structuredClone(manifest);
+  tampered.events[0].strength = 0.2;
+  assert.throws(() => replayWorld(tampered), /trace/i);
+  const chunked = createWorld({ seed: 4, nodes: [{ id: 'x', x: 1, y: 2 }], edges: [] });
+  for (let i = 0; i < 2; i++) stepWorld(chunked, 10000);
+  assert.deepEqual(snapshot(replayWorld(worldManifest(chunked))), snapshot(chunked));
+  for (let i = 0; i < 9; i++) stepWorld(chunked, 10000);
+  assert.throws(() => worldManifest(chunked), /budget|workload|tick/i);
 });

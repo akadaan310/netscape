@@ -1,0 +1,142 @@
+{
+  "version": "1.0.0",
+  "registeredAt": "2026-10-18T11:04:16.119577+00:00",
+  "registrationNote": "Written before the first SDK experiment result. Future runs record this file SHA-256.",
+  "seedRange": {
+    "first": 0,
+    "count": 1000
+  },
+  "displays": [
+    {
+      "name": "portrait",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "light"
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 640,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": true,
+      "colorScheme": "light"
+    },
+    {
+      "name": "ultrawide",
+      "width": 2560,
+      "height": 1080,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "short",
+      "width": 1024,
+      "height": 360,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": true,
+      "colorScheme": "light"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "claim": "Seeded grammar reproducibility and bounded structural variation",
+      "oracle": "Independent Node SHA-256 of serialized full surfaces; independent signature of parent/child semantic tree and relative region reading order, without hashes/seed/coordinates; canonical manifest reconstruction. One valid added edge must retain supported required actions; structural and coordinate response reported without requiring change.",
+      "metric": "1000 duplicate-seed replay checks, content uniqueness, SDK and independent structural equivalence counts, 6x6 layout metrics, one-edge response",
+      "falsificationThreshold": "Any replay mismatch, invalid geometry, duplicate semantic region, missing required supported action, unreachable action, unsupported action, or manifest replay mismatch falsifies H1/H2 hard gates. Uniqueness has no pass threshold and does not establish usability."
+    },
+    {
+      "id": "H2",
+      "claim": "Required capabilities preserved across six display rewrites",
+      "oracle": "Read semantic graph directly to enumerate supported action IDs; check each required ID exists exactly once, appears in finite positive visible-width region with minimum 24px action dimensions, viewport containment, vertical scroll allowed, semantic reading order and region non-overlap.",
+      "metric": "36 family/display combinations, independently derived action and region constraints",
+      "falsificationThreshold": "Zero hard constraint failures required; no aesthetic claim from geometry alone."
+    },
+    {
+      "id": "H3",
+      "claim": "Chromatic fields satisfy AA role contrast and bounded sRGB in light/dark",
+      "oracle": "Independent hex decoder and W3C relative luminance formula (sRGB breakpoint 0.04045), text/background and text/surface, muted/surface, accentText/accent; negative controls same color and low contrast must be caught; gamut independently check 0..1.",
+      "metric": "200 seeds x 2 modes x 3 event states; out-of-gamut OKLCH cases; exact replay",
+      "falsificationThreshold": "Any normal-text role ratio below 4.5:1 (tolerance 1e-9), nondeterminism, invalid hex, out-of-gamut mapped component, or undetected negative control fails."
+    },
+    {
+      "id": "H4",
+      "claim": "Fixed-step event physics is deterministic, bounded, stable and effect-free",
+      "oracle": "Independent finiteness/position/velocity/field checks, direct quantized snapshot comparison after reversed event enqueue order, settled-energy comparison after input ends, zero-force stationary baseline, reduced-motion displacement, tick batching replay, duplicate/invalid input rejection.",
+      "metric": "100 seeded worlds x 1200 ticks, 2400-tick stress chain, event-order replay, quiescent/energy/diffusion extrema",
+      "falsificationThreshold": "No NaN/Infinity, abs(position)<1e6, abs(velocity)<1e5, abs(field)<1e3, final mechanical energy <= peak post-event energy +1e-6, identical snapshots for equal events and batching, duplicate event rejection; 10000 ticks rejected or bounded to <=10000 actual ticks. CPU timings descriptive only."
+    },
+    {
+      "id": "H5",
+      "claim": "Typed performer pipelines reject schema/effect mismatches",
+      "oracle": "Adversarial invalid runtime shape, incompatible adjacent schema IDs, unknown operation and unauthorized effects; valid pure pipeline yields reconstructable trace and deterministic output. Independent pack metadata inspection.",
+      "metric": "Positive composition plus independent schema/effect/shape rejection cases",
+      "falsificationThreshold": "Any invalid acceptance, undeclared effects, or missing trace fails; exact supported API recorded from SDK implementation."
+    },
+    {
+      "id": "H6",
+      "claim": "Visual reproduction fidelity without invariant regressions",
+      "oracle": "External Playwright screenshots, accessibility, boxes, keyboard, semantic action map and clipping/contrast/wrong-action negative controls; reference identity reproduction separate from aesthetic judgment.",
+      "metric": "Root Playwright evidence, pixel delta when baseline exists",
+      "falsificationThreshold": "Pending until external evidence exists; no visual similarity improvement claim without before/after reference results."
+    },
+    {
+      "id": "H7",
+      "claim": "NASA and restaurant semantic intent are distinguishable and evidence grounded",
+      "oracle": "Read fixture passages manually for domain anchors (NASA/science vs menu/prices); compare inferred research/commerce intent and ensure intent evidence references actual graph IDs or verbatim source evidence; all actions from supported local/safe-open vocabulary.",
+      "metric": "NASA/menu intent classifications and confidence, evidence coverage, action whitelist",
+      "falsificationThreshold": "NASA research or menu commerce absent, equal dominant intent, missing evidence, unsupported action, or nondeterministic parse fails; generalization beyond these authored fixtures untested."
+    }
+  ],
+  "metricVector": [
+    "compactness:max",
+    "legibility:max",
+    "grouping:max",
+    "whitespace:target-0.3",
+    "motionEnergy:min"
+  ],
+  "paretoNote": "Dominance compares independently checked feasible surfaces only; scores are SDK descriptive proxies, not validated perceptual quality. Equal vectors share rank."
+}

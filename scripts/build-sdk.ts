@@ -6,7 +6,7 @@ for (const name of packages) {
   if (!existsSync(entry)) throw new Error(`SDK module missing: ${name}`);
   const entries = name==='resource-interpreter' ? [entry, `packages/${name}/src/fetch.ts`] : [entry];
   await build({entry:entries,format:['esm'],dts:true,clean:true,outDir:`packages/${name}/dist`,
-    target:'es2022',sourcemap:true,external:['react','react/jsx-runtime','react-dom'],
+    target:'es2022',sourcemap:true,external:['react','react/jsx-runtime','react-dom'],noExternal:[/^@netscape\//],
     tsconfig:'tsconfig.json',silent:true});
   process.stdout.write(`Built @netscape/${name} (ESM + declarations)\n`);
 }

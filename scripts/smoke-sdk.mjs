@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {generateSurface} from '../packages/core/dist/index.js';
+import {createWorld,enqueueEvent,stepWorld,snapshot,worldManifest,replayWorld} from '../packages/dynamics/dist/index.js';
+import {field,contrast} from '../packages/chromatics/dist/index.js';
+import {PERFORMERS,compose,runPipeline} from '../packages/performers/dist/index.js';
+const w=createWorld({seed:7,nodes:[{id:'x',x:0,y:0}],edges:[]});
+enqueueEvent(w,{id:'smoke',nodeId:'x',tick:0,kind:'playful',strength:1});
+stepWorld(w,120);
+assert.deepEqual(snapshot(replayWorld(JSON.parse(JSON.stringify(worldManifest(w))))),snapshot(w));
+const palette=field({seed:7,x:0,y:0,tick:0,state:0,intent:'research',mode:'light'});
+assert.ok(contrast(palette.text,palette.surface)>=4.5);
+const result=await runPipeline(compose(PERFORMERS.normalizeText),'  compiled   portable SDK ');
+assert.equal(result.output,'compiled portable SDK');
+assert.equal(typeof generateSurface,'function');
+console.log(JSON.stringify({standaloneESM:true,typescriptRuntimeRequired:false,trace:snapshot(w).traceHash,contrast:contrast(palette.text,palette.surface),performer:result.output}));

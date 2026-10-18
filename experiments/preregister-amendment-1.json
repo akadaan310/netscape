@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "registeredAt": "2026-10-18T11:10:48.517857+00:00",
+  "supersedesForFutureRuns": "display matrix and adds specified containment-edge response test; all other H1\u2013H7 thresholds retained",
+  "originalRegistrationSHA256": "9ba59b6328882c8deda0ef45d1582be21a3fd10d674339322eae102c09cc159c",
+  "reason": "Initial matrix used 320x640, 2560x1080 and 1024x360 stress dimensions instead of required mission 320x568, 900x390 and 1920x1080. Original registration and timestamped results are preserved unchanged. This amendment precedes the corrected experiment.",
+  "displays": [
+    {
+      "name": "portrait",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "light"
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 568,
+      "dpr": 1,
+      "input": [
+        "touch",
+        "keyboard"
+      ],
+      "reducedMotion": true,
+      "colorScheme": "light"
+    },
+    {
+      "name": "landscape",
+      "width": 900,
+      "height": 390,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": false,
+      "colorScheme": "dark"
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "input": [
+        "pointer",
+        "keyboard"
+      ],
+      "reducedMotion": true,
+      "colorScheme": "light"
+    }
+  ],
+  "containmentPerturbation": {
+    "registration": "Additional test beyond original references-edge perturbation; original no-response observation retained",
+    "operation": "Choose a Section->Text contains edge and change only its from endpoint to another existing Section; node IDs, actions, source order and all other edges unchanged. A Text target has no containment descendants, preventing a containment cycle.",
+    "oracle": "Independently traverse output tree to verify target parent changed exactly to new semantic Section ID; verify full geometry/action constraints and original source order. Compare complete independent tree/spatial signature, geometry-only SHA and supported-action identity.",
+    "threshold": "All six families retain capabilities, finite nonoverlapping contained regions and target new parent; all six structural signatures must change. Workbench geometry must change because its declared semantic lanes depend on containment ownership. Other families may retain geometry."
+  }
+}

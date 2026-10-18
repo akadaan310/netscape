@@ -12,10 +12,11 @@
     "build": "npm run build:sdk && npm run build -w @netscape/web",
     "start": "npm run start -w @netscape/web",
     "test": "tsx --test tests/*.test.ts",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p apps/web/tsconfig.json",
     "experiments": "tsx experiments/run.ts",
     "test:e2e": "playwright test",
-    "verify": "npm test && npm run typecheck && npm run experiments && npm run build && npm run test:e2e"
+    "verify": "npm test && npm run typecheck && npm run experiments && npm run build && npm run test:e2e",
+    "smoke:sdk": "node --no-experimental-strip-types scripts/smoke-sdk.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",

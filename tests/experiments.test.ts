@@ -19,6 +19,8 @@ test('independent contrast oracle matches published boundary examples and reject
 test('independent surface audit catches isolated clipping, overlap, missing actions and order corruptions',async()=>{
  const {graph}=await fixture();const base=generateSurface(graph,{seed:9,family:'observatory',display});assert.deepEqual(auditSurface(graph,base,display),[]);
  const mutations:[string,(s:typeof base)=>void][]=[
+  ['canvas-bounds',s=>{s.height=NaN;}],
+  ['nonfinite-metrics',s=>{s.metrics.legibility=NaN;}],
   ['clip:',s=>{s.regions[0].x=1440;}],
   ['overlap:',s=>{s.regions[1].x=s.regions[0].x;s.regions[1].y=s.regions[0].y;}],
   ['required-actions-mismatch',s=>{s.requiredActions=[];}],
@@ -41,4 +43,9 @@ test('structural equivalence ignores seed/hash/subpixel noise yet detects a chan
 
 test('Pareto ranking preserves incomparable and duplicate metric vectors without a beauty scalar',()=>{
  assert.deepEqual(paretoRanks([[1,0],[0,1],[0,0],[1,0],[-1,-1]]),[0,0,1,0,2]);
+});
+
+
+test('registered amendment retains original SHA identity and exact mission viewport coverage',async()=>{
+ const original=await readFile(new URL('../experiments/preregister.json',import.meta.url),'utf8');const amendment=JSON.parse(await readFile(new URL('../experiments/preregister-amendment-1.json',import.meta.url),'utf8'));assert.equal(amendment.originalRegistrationSHA256,sha256(original));assert.deepEqual(amendment.displays.map((d:{width:number;height:number})=>`${d.width}x${d.height}`).sort(),['320x568','390x844','768x1024','900x390','1440x900','1920x1080'].sort());assert.ok(Date.parse(amendment.registeredAt)>Date.parse(JSON.parse(original).registeredAt));
 });

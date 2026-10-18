@@ -1,1 +1,1 @@
-{"name":"@netscape/conformance","version":"0.1.0","type":"module","exports":"./src/index.ts","dependencies":{"@netscape/core":"0.1.0"}}
+{"name":"@netscape/conformance","version":"0.1.0","type":"module","exports":"./src/index.ts","dependencies":{"@netscape/core":"0.1.0","@netscape/dynamics":"0.1.0"}}

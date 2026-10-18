@@ -101,3 +101,15 @@ test('reading regions reserve hierarchy, eyebrow, footer and multiline label spa
   assert.ok(s.regions[0].height>=160,'resource hierarchy and provenance footer need room');
   assert.ok(s.regions.find(r=>r.semanticId==='save')!.height>=160,'action label and action instruction need room');
 });
+
+test('runtime graph boundary requires safe identity and executable role/action compatibility',()=>{
+  for(const change of [
+    (g:SemanticGraph)=>{g.version='999';},
+    (g:SemanticGraph)=>{g.sourceUrl='javascript:alert(1)';},
+    (g:SemanticGraph)=>{g.provenance.fetchedAt='never';},
+    (g:SemanticGraph)=>{g.nodes.push({id:'missing-url',kind:'Action',label:'Open',action:'navigate'});},
+    ...(['Resource','Section','Group','Form','Evidence','Link','Text','Participant','Artifact'] as const).map(kind=>(g:SemanticGraph)=>{g.nodes.push({id:'blocked',kind,label:'Bad required control',action:kind==='Artifact'?'select-passage':'save-artifact'});}),
+  ]){const g=graph();change(g);assert.ok(validateGraph(g).length);}
+  const g=graph();g.version='1.0.0';g.nodes.push({id:'detected',kind:'Form',label:'Unavailable',supported:false,action:'save-artifact'});assert.deepEqual(validateGraph(g),[]);
+  g.nodes.push({id:'link',kind:'Link',label:'Open',action:'navigate',url:'https://example.org/'});assert.deepEqual(validateGraph(g),[]);
+});

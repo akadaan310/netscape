@@ -47,3 +47,8 @@ test('timeouts bound DNS and response work',async()=>{
  await assert.rejects(()=>createPublicFetcher(deps({resolve:()=>new Promise(()=>{})}),{timeoutMs:20})('https://www.nasa.gov/'),/time/i);
  await assert.rejects(()=>createPublicFetcher(deps({request:async()=>({status:200,headers:{'content-type':'text/html'},body:(async function*(){await new Promise(()=>{});yield Buffer.from('never')})()})}),{timeoutMs:20})('https://www.nasa.gov/'),/time/i);
 });
+
+test('public fetch rejects URLs beyond the semantic graph URL bound',()=>{
+ assert.throws(()=>validatePublicURL('https://www.nasa.gov/'+'é'.repeat(400)),/URL|limit/i);
+ assert.throws(()=>validatePublicURL('https://www.nasa.gov/'+'a'.repeat(2050)),/URL|limit/i);
+});

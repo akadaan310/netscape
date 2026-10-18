@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {interpretHTML} from '../packages/resource-interpreter/src/index.ts';
+import {validateGraph} from '@netscape/core';
 
 const fixture = (name:string) => readFileSync(new URL(`../fixtures/${name}.html`,import.meta.url),'utf8');
 const fixed = {kind:'fixture' as const,fetchedAt:'2026-10-18T00:00:00.000Z'};
@@ -53,4 +54,26 @@ test('each extracted passage exposes a local typed selection action',()=>{
  assert.equal(passage.action,'select-passage');
  assert.equal(passage.supported,true);
  assert.equal(passage.meta?.origin,'local');
+});
+
+test('sources without passages do not advertise unreachable passage-based capabilities',()=>{
+ for(const html of ['','<title>Title only</title>','<title>Links only</title><a href="/about">About</a>','<title>Form only</title><form aria-label="Search"><input name="q"><button>Search</button></form>']){
+  const {graph}=interpretHTML(html,'https://www.nasa.gov/',fixed);
+  assert.ok(!graph.nodes.some(n=>n.kind==='Text'));
+  assert.ok(!graph.nodes.some(n=>n.supported&&['select-passage','attach-companion','save-artifact'].includes(n.action??'')));
+  if(html.includes('<form'))assert.ok(graph.nodes.some(n=>n.kind==='Form'&&n.supported===false));
+  if(html.includes('<a'))assert.ok(graph.nodes.some(n=>n.kind==='Link'&&n.supported===true&&n.action==='navigate'));
+ }
+});
+
+test('overlong source URLs reject clearly and overlong links never enter the graph',()=>{
+ const longURL='https://www.nasa.gov/'+ 'a'.repeat(2050);
+ assert.throws(()=>interpretHTML('<p>Readable source</p>','https://www.nasa.gov/'+'é'.repeat(400),fixed),/URL|2048|limit/i);
+ assert.throws(()=>interpretHTML('<p>Readable source</p>',longURL,fixed),/URL|2048|limit/i);
+ const html=`<h1>Research</h1><p>A readable passage should survive a hostile oversized citation target.</p><a href="${longURL}">Oversized citation</a><a href="/safe">Valid citation</a>`;
+ const {graph}=interpretHTML(html,'https://www.nasa.gov/',fixed);
+ assert.ok(!graph.nodes.some(n=>n.url&&n.url.length>2048));
+ assert.ok(!graph.nodes.some(n=>n.kind==='Link'&&n.label==='Oversized citation'));
+ assert.ok(graph.nodes.some(n=>n.url==='https://www.nasa.gov/safe'));
+ assert.deepEqual(validateGraph(graph),[]);
 });
