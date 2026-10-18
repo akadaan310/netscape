@@ -19,6 +19,7 @@ Actual source commits:
 b884acc feat(sdk): implement deterministic morphogenesis, chromatics, dynamics and typed capabilities
 9923330 feat(web): ship interpretation studio with cited artifacts and verified event replay
 7248a7d fix(persistence): preserve saved work across draft and replay-budget limits
+c5ee495 docs(evidence): record verified delivery, failure history and main publishing status
 ```
 
 ## Product delivered
