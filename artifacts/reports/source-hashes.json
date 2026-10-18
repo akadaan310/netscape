@@ -1,6 +1,6 @@
 {
   "productCodeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
-  "sourceSnapshotCommit": "c5ee4952eb0b9bcf3321557e86bff966c9ae9954",
+  "sourceSnapshotCommit": "252e992538d8107de098c3cdd9bfe10585aa40bc",
   "algorithm": "SHA-256",
   "files": {
     ".env.example": "2e994eaa1059938f816d4666e4a3eecee20e4da95b2d4f92a981170889fc1a55",
@@ -44,7 +44,7 @@
     "apps/web/public/fonts/SHA256SUMS": "a3ef6d8a28c45e5fbfcf2ca7530d7730e79ffa8ca5981d69cbfda6df1561e6d3",
     "apps/web/tsconfig.json": "affdb434807ccfce70ccdb011e63f0437b58ab15b6aa013f1c2a643b2bfecc3b",
     "docs/CONTRACTS.md": "32cfeab5c72551ed73108294d60d581b299cbb4e4d92f360aa27be4dd1770817",
-    "docs/PROGRESS.md": "f2b67b03a0f2012e897a6fa5dd45e971759b3fe4038ed9f27acc1b8af181f4fa",
+    "docs/PROGRESS.md": "eb9eb7de5c87fea9d70f8f1953170c50dfc0476e7a27724826c9002f190a038f",
     "docs/RESEARCH.md": "082c67f8c63acf2173afb59059004b8f9357598aaeec8fbf841988a98d6d7d34",
     "docs/superpowers/plans/2026-10-18-netscape.md": "2ccff1ea6c1ec1b6e527db959be17afb9fe8b007cbfef913d2ffefdf72d11635",
     "docs/superpowers/specs/2026-10-18-netscape-design.md": "fa31570f99207f1fc0eb3c6341d73b0e7e0883d25a5e81b39e1795d6df7acff7",

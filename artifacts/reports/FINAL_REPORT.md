@@ -2,7 +2,7 @@
 
 The independent SDK and functioning Next.js application are implemented and production-built. **72/72 Node tests, 48/48 Playwright tests, both TypeScript projects, compiled ESM smoke, and clean-source reconstruction pass.** No public deployment has been performed.
 
-The user subsequently authorized creating a GitHub repository and committing/pushing to **main**. The local branch is main. Both GitHub repository-creation APIs rejected the connected credential with **HTTP403 / Resource not accessible by integration**. No remote repository was created and no push occurred. An empty repository accessible to the connected integration is needed; see [publish.json](publish.json). User authorization is present; credential capability is the blocker.
+The application and evidence were successfully pushed to [akadaan310/netscape](https://github.com/akadaan310/netscape/tree/main) on **main**, which GitHub confirms is the default branch. The user supplied this accessible repository after the earlier repository-creation permission failure. The verified delivery checkpoint is recorded in [publish.json](publish.json); subsequent publication metadata and visual-reference updates remain on main. Connect the repository to Vercel using [DEPLOYMENT.md](../../DEPLOYMENT.md).
 
 ## Reproducible checkpoint
 
@@ -20,6 +20,8 @@ b884acc feat(sdk): implement deterministic morphogenesis, chromatics, dynamics a
 9923330 feat(web): ship interpretation studio with cited artifacts and verified event replay
 7248a7d fix(persistence): preserve saved work across draft and replay-budget limits
 c5ee495 docs(evidence): record verified delivery, failure history and main publishing status
+d3eda16 docs(release): finalize acceptance assessment and evidence checksums on main
+252e992 docs(release): publish measured visual references and record successful main push
 ```
 
 ## Product delivered
@@ -28,7 +30,7 @@ Seven reusable SDK packages provide typed graph/grammar/IR/layout, OKLCH chromat
 
 The app has a URL box; three explicitly authored offline fixtures; six actual composition algorithms; seed/family controls; display facts; source/intent evidence; selectable passages; a visibly local simulated extractive companion; cited saved artifacts; close/reopen/reload; real event-history replay; light/dark reading canvases; controlled dynamics/color; gesture-enabled optional WebAudio; honest fallback and downloadable integrity-bound manifests. It has no paid provider, login, fake checkout, iframe or retired Golden Surface dependency.
 
-See [SDK.md](../../SDK.md), [DEPLOYMENT.md](../../DEPLOYMENT.md), [gallery](gallery.html), [desktop](../screenshots/studio-final-desktop.png), [companion](../screenshots/local-companion.png), [artifact](../screenshots/cited-artifact.png).
+See [SDK.md](../../SDK.md), [DEPLOYMENT.md](../../DEPLOYMENT.md), [gallery](gallery.html), [36 reference sets](../references/README.md), [reference hashes](github-reference-index.json), [desktop](../screenshots/studio-final-desktop.png), [companion](../screenshots/local-companion.png), [artifact](../screenshots/cited-artifact.png).
 
 ## Measured results
 
@@ -68,7 +70,7 @@ Red logs and raw failed screenshots/traces are retained. Negative controls first
 
 Independent SDK review found incomplete semantic replay integrity, unreachable declared actions, permissive/throwing storage validation and inherited capability lookup. These were fixed and re-reviewed. Final product review reproduced two legitimate data-loss paths (oversized draft, aggregate replay budget) plus a stale fixture badge. All three were fixed, re-reviewed, and verified by three formerly failing browser regressions. Saves and autosave preflight constraints before overwriting; a refused save is visible and retains existing work. No remaining Critical or Important review finding is open. See sdk-review.md, sdk-hardening.md, final-review.md and persistence-fix.md.
 
-Raw browser runs remain under artifacts/browser, including early failures, the45-test checkpoint, final48-test run and persistence red regression traces. They are preserved in the separate evidence archive rather than bloating source Git history. Every retained file is indexed by SHA-256.
+Raw browser runs remain under artifacts/browser, including early failures, the45-test checkpoint, final48-test run and persistence red regression traces. The final36 baseline/replay/diff sets, manifests and accessibility snapshots are also checked into [artifacts/references](../references/README.md) for GitHub review. Earlier raw runs are preserved in the separate evidence archive. Every retained file is indexed by SHA-256.
 
 ## Acceptance assessment
 
@@ -115,4 +117,4 @@ npm run test:e2e
 bash scripts/reconstruct.sh
 ```
 
-Reference screenshot: `artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-baseline.png`, SHA-256 `bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af`. Full per-file inventory is evidence-index.json.
+Reference screenshot: `artifacts/references/observatory-1440x900/baseline.png`, SHA-256 `bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af`. Full per-file inventory is evidence-index.json.
