@@ -1,0 +1,1276 @@
+{
+  "schemaVersion": 1,
+  "visualSummary": {
+    "path": "artifacts/reports/visual-summary.json",
+    "sha256": "e6970fce218248ce871789182814a49e6af4dd6116faf51b0633adeabba0514e"
+  },
+  "sourceCodeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "caseCount": 36,
+  "totals": {
+    "differentPixels": 0,
+    "passedCases": 36,
+    "observedCases": 36
+  },
+  "cases": [
+    {
+      "id": "chromatic-320x568",
+      "family": "chromatic",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-320x568/baseline.png",
+          "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f",
+          "sizeBytes": 408535
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-320x568/replay.png",
+          "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f",
+          "sizeBytes": 408535
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-320x568/manifest.json",
+          "sha256": "d18f297b6eb571c769b173c1b786235b3f0cb12a12ff2dbdc824dde6ec736812",
+          "sizeBytes": 93687
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-320x568/accessibility.yml",
+          "sha256": "581fda24c56ca1b79a1bf8d6338c5dbf9ccdea66f3bfcc78a45bb57c24a6bd60",
+          "sizeBytes": 6960
+        }
+      }
+    },
+    {
+      "id": "elastic-320x568",
+      "family": "elastic",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-320x568/baseline.png",
+          "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a",
+          "sizeBytes": 408055
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-320x568/replay.png",
+          "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a",
+          "sizeBytes": 408055
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-320x568/manifest.json",
+          "sha256": "529c1bd0f0384691718b88ea96038379be1959ad31efc4cae9704c399de042d9",
+          "sizeBytes": 93671
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-320x568/accessibility.yml",
+          "sha256": "c36bd233bae454907e1706093a3a75795652d5393930bcafcf5c28a1d84b1ac3",
+          "sizeBytes": 6958
+        }
+      }
+    },
+    {
+      "id": "folded-320x568",
+      "family": "folded",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-320x568/baseline.png",
+          "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c",
+          "sizeBytes": 407753
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-320x568/replay.png",
+          "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c",
+          "sizeBytes": 407753
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-320x568/manifest.json",
+          "sha256": "31e0c7971cd5c70eb07cbe7cbf24ea8abfc4676ab67733300f14b1b05b429011",
+          "sizeBytes": 93663
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-320x568/accessibility.yml",
+          "sha256": "5090a7f26d72e4ffbfc03c84beedfacdc1a2ed04f8bae66e877ee5dbb1aaeab4",
+          "sizeBytes": 6957
+        }
+      }
+    },
+    {
+      "id": "observatory-320x568",
+      "family": "observatory",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-320x568/baseline.png",
+          "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b",
+          "sizeBytes": 408819
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-320x568/replay.png",
+          "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b",
+          "sizeBytes": 408819
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-320x568/manifest.json",
+          "sha256": "47343ba238fd85a9b1e0d054efe83cc62fa13b1b7a15433c52e5f6514660e0ae",
+          "sizeBytes": 93703
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-320x568/accessibility.yml",
+          "sha256": "26a183d17365af83aac7499fddd5cb2500065f769afe0767d02ea5cb30c7ea2c",
+          "sizeBytes": 6962
+        }
+      }
+    },
+    {
+      "id": "orbital-320x568",
+      "family": "orbital",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-320x568/baseline.png",
+          "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af",
+          "sizeBytes": 408474
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-320x568/replay.png",
+          "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af",
+          "sizeBytes": 408474
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-320x568/manifest.json",
+          "sha256": "1e02b3dc8cfc22662451e8746e29eed51466a8f6ceddd5fc96d4d41b79ac9fbe",
+          "sizeBytes": 93671
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-320x568/accessibility.yml",
+          "sha256": "1a26d2469ec13e47f19c6a66deced5f5a67cdd6da5381ce193bc57c262ad5a51",
+          "sizeBytes": 6958
+        }
+      }
+    },
+    {
+      "id": "workbench-320x568",
+      "family": "workbench",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-320x568/baseline.png",
+          "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f",
+          "sizeBytes": 408604
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-320x568/replay.png",
+          "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f",
+          "sizeBytes": 408604
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-320x568/diff.png",
+          "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7",
+          "sizeBytes": 23863
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-320x568/manifest.json",
+          "sha256": "42bc982b72c1f62784c0522513737a3bd4379e00a921f66b0d588c6616e8cee4",
+          "sizeBytes": 93687
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-320x568/accessibility.yml",
+          "sha256": "79d23c7f3aaa3d8d6eb01805001aef7ddf0863a528c97f4c42472a790f997e46",
+          "sizeBytes": 6960
+        }
+      }
+    },
+    {
+      "id": "chromatic-390x844",
+      "family": "chromatic",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-390x844/baseline.png",
+          "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb",
+          "sizeBytes": 422613
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-390x844/replay.png",
+          "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb",
+          "sizeBytes": 422613
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-390x844/manifest.json",
+          "sha256": "4719aef62ba12d5a20a092da54d2eb41143da86a241e2cc8f29d7759791dffd8",
+          "sizeBytes": 93683
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-390x844/accessibility.yml",
+          "sha256": "e7cb83b28879302762a577d2701c7ebde9600a44c3ee710dc060de19ed0d67ed",
+          "sizeBytes": 6960
+        }
+      }
+    },
+    {
+      "id": "elastic-390x844",
+      "family": "elastic",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-390x844/baseline.png",
+          "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36",
+          "sizeBytes": 421850
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-390x844/replay.png",
+          "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36",
+          "sizeBytes": 421850
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-390x844/manifest.json",
+          "sha256": "cc7ad3281c28adb3aa1c0937c25a218011c77d9b66dea267cb39f82b0e3fbb0c",
+          "sizeBytes": 93667
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-390x844/accessibility.yml",
+          "sha256": "caf57fa73588e9598689504b1826dc4257d95afb54f4e2a8c1f6b7c712ea7785",
+          "sizeBytes": 6958
+        }
+      }
+    },
+    {
+      "id": "folded-390x844",
+      "family": "folded",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-390x844/baseline.png",
+          "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b",
+          "sizeBytes": 421613
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-390x844/replay.png",
+          "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b",
+          "sizeBytes": 421613
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-390x844/manifest.json",
+          "sha256": "c9b9446f8dc41e832f6a4ae714e308c1a2ffaa018786e43913bc4938a31d17b6",
+          "sizeBytes": 93659
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-390x844/accessibility.yml",
+          "sha256": "61450c2458279f3fa3d794d956786f142d609477d5e6d17463bc43e6dcd7a9fb",
+          "sizeBytes": 6957
+        }
+      }
+    },
+    {
+      "id": "observatory-390x844",
+      "family": "observatory",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-390x844/baseline.png",
+          "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981",
+          "sizeBytes": 422931
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-390x844/replay.png",
+          "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981",
+          "sizeBytes": 422931
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-390x844/manifest.json",
+          "sha256": "8becbc3d5ac67edfb5ebe2beeb7c60e75885da8e2c62d3d4af3566cd9937fd67",
+          "sizeBytes": 93699
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-390x844/accessibility.yml",
+          "sha256": "45ebcacb863a925fa33cd5822359da15c320ce9527daa45f06a4222c5d614c99",
+          "sizeBytes": 6962
+        }
+      }
+    },
+    {
+      "id": "orbital-390x844",
+      "family": "orbital",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-390x844/baseline.png",
+          "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87",
+          "sizeBytes": 422366
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-390x844/replay.png",
+          "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87",
+          "sizeBytes": 422366
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-390x844/manifest.json",
+          "sha256": "9175b4e70ee2eb8b48d98d570ade7e5b86a4d6b32197584237f9933f1ca5011e",
+          "sizeBytes": 93667
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-390x844/accessibility.yml",
+          "sha256": "2f32fe10b9589c91717869cd765a699b6c72fabd3f08327de9b76de15f33273d",
+          "sizeBytes": 6958
+        }
+      }
+    },
+    {
+      "id": "workbench-390x844",
+      "family": "workbench",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-390x844/baseline.png",
+          "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399",
+          "sizeBytes": 423146
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-390x844/replay.png",
+          "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399",
+          "sizeBytes": 423146
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-390x844/diff.png",
+          "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6",
+          "sizeBytes": 21224
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-390x844/manifest.json",
+          "sha256": "874daa43f47d6a63f5a7dca5c81ef2171f6b5baa431f5ab1f19d507a1919f70b",
+          "sizeBytes": 93683
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-390x844/accessibility.yml",
+          "sha256": "8dd969ea87c1d997ed4698148ef8156ba6bc7faebd9bbb98f3d3dad3345d2f7c",
+          "sizeBytes": 6960
+        }
+      }
+    },
+    {
+      "id": "chromatic-768x1024",
+      "family": "chromatic",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-768x1024/baseline.png",
+          "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c",
+          "sizeBytes": 437429
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-768x1024/replay.png",
+          "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c",
+          "sizeBytes": 437429
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-768x1024/manifest.json",
+          "sha256": "8f494736e5d66f42df2bd2ac8d0d4b80350ebf9f8828de41a0cabe5a14f1ca98",
+          "sizeBytes": 95345
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-768x1024/accessibility.yml",
+          "sha256": "5b7d862c96e5bcf82e65bc72febdd94e29a3739c665386990ae7a173de762a59",
+          "sizeBytes": 7019
+        }
+      }
+    },
+    {
+      "id": "elastic-768x1024",
+      "family": "elastic",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-768x1024/baseline.png",
+          "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807",
+          "sizeBytes": 437338
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-768x1024/replay.png",
+          "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807",
+          "sizeBytes": 437338
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-768x1024/manifest.json",
+          "sha256": "2caaa57816ce75c990bed78a8dee672ee1a0af28302601bd714b12905d84c113",
+          "sizeBytes": 95329
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-768x1024/accessibility.yml",
+          "sha256": "581952079c5a75b680f89ec9397c1b17ae66b7a0acd6fdf9b40bc09ede3d1e87",
+          "sizeBytes": 7017
+        }
+      }
+    },
+    {
+      "id": "folded-768x1024",
+      "family": "folded",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-768x1024/baseline.png",
+          "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74",
+          "sizeBytes": 437278
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-768x1024/replay.png",
+          "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74",
+          "sizeBytes": 437278
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-768x1024/manifest.json",
+          "sha256": "806a6ed62f634e9d3424abe655a7cc40cb6bac0b4da2a2fe5a460e6b2d7ca1b1",
+          "sizeBytes": 95321
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-768x1024/accessibility.yml",
+          "sha256": "8a1ae59c705e130060151477ab31ad9ff05f64a6a3cd35812be8211afee6fb7f",
+          "sizeBytes": 7016
+        }
+      }
+    },
+    {
+      "id": "observatory-768x1024",
+      "family": "observatory",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-768x1024/baseline.png",
+          "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2",
+          "sizeBytes": 437852
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-768x1024/replay.png",
+          "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2",
+          "sizeBytes": 437852
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-768x1024/manifest.json",
+          "sha256": "ea4be24bf3eba6b6ed750fe673aa14b4c4f5e8e43fd037fb1cf48177ac29ab0f",
+          "sizeBytes": 95361
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-768x1024/accessibility.yml",
+          "sha256": "10f3bdc44e5c1e758757110fe40260e0c0d88d08d240167fcd913640ec7feffa",
+          "sizeBytes": 7021
+        }
+      }
+    },
+    {
+      "id": "orbital-768x1024",
+      "family": "orbital",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-768x1024/baseline.png",
+          "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953",
+          "sizeBytes": 437276
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-768x1024/replay.png",
+          "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953",
+          "sizeBytes": 437276
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-768x1024/manifest.json",
+          "sha256": "17784d03b49eb17b0d9562af4d5df8d17c09de9aded44a1d1283efa6eb10283e",
+          "sizeBytes": 95329
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-768x1024/accessibility.yml",
+          "sha256": "7f3bce7ea7d5f05ec7eb6379ad94dafb6951cefaf7a5f83c4e314e5c6d164b54",
+          "sizeBytes": 7017
+        }
+      }
+    },
+    {
+      "id": "workbench-768x1024",
+      "family": "workbench",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-768x1024/baseline.png",
+          "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471",
+          "sizeBytes": 438132
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-768x1024/replay.png",
+          "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471",
+          "sizeBytes": 438132
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-768x1024/diff.png",
+          "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191",
+          "sizeBytes": 26500
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-768x1024/manifest.json",
+          "sha256": "afea4955f6efffc2f7fe6f5c06c0ee193143b1b250a64509fb9268ca37af2ad6",
+          "sizeBytes": 95345
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-768x1024/accessibility.yml",
+          "sha256": "ed2842da298bd5d0569da86eb144fc84ef009343de71758931035a413853706f",
+          "sizeBytes": 7019
+        }
+      }
+    },
+    {
+      "id": "chromatic-900x390",
+      "family": "chromatic",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-900x390/baseline.png",
+          "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6",
+          "sizeBytes": 458977
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-900x390/replay.png",
+          "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6",
+          "sizeBytes": 458977
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-900x390/diff.png",
+          "sha256": "c9ba4cce36168abbe828087c6d0f01d48e1ba6883835563a07253eae6ec594b9",
+          "sizeBytes": 27032
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-900x390/manifest.json",
+          "sha256": "1068fd9b87c3c563301bb1268e8e81ae731f8714e6559170213eec873d55c980",
+          "sizeBytes": 95360
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-900x390/accessibility.yml",
+          "sha256": "820867bb9778f14c9953af33ef69744a0e21b8f951e7a5176d2412b7688efb42",
+          "sizeBytes": 7033
+        }
+      }
+    },
+    {
+      "id": "elastic-900x390",
+      "family": "elastic",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-900x390/baseline.png",
+          "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f",
+          "sizeBytes": 450820
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-900x390/replay.png",
+          "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f",
+          "sizeBytes": 450820
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-900x390/diff.png",
+          "sha256": "013559329df6c71950ba2ffca4c2346058a1611cdf8196053452c11914aac0c2",
+          "sizeBytes": 22989
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-900x390/manifest.json",
+          "sha256": "cc8bb3b5d05e1f17f17e0102f9abcfe5c068407c0186e31dbc5c4a30dcfb4a3d",
+          "sizeBytes": 95664
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-900x390/accessibility.yml",
+          "sha256": "9dfe3ae0e15fa4660f471d8d4bc2ba0d8ab3ce76cedf033c7480849b2e09f435",
+          "sizeBytes": 7030
+        }
+      }
+    },
+    {
+      "id": "folded-900x390",
+      "family": "folded",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-900x390/baseline.png",
+          "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b",
+          "sizeBytes": 441008
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-900x390/replay.png",
+          "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b",
+          "sizeBytes": 441008
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-900x390/diff.png",
+          "sha256": "05719eaaf1c534f5f7ceeef84862b20a3f2b1e559bdb70c232b3066e9d490fdd",
+          "sizeBytes": 29102
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-900x390/manifest.json",
+          "sha256": "0da4e2a7917383cac8272e47d709510cad0f3059f721a631767f751ce3c9e817",
+          "sizeBytes": 95317
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-900x390/accessibility.yml",
+          "sha256": "b475d2015dcd816ad37318a0b80d6d69bb303aa2eba3b7029215d191d2eb2147",
+          "sizeBytes": 7024
+        }
+      }
+    },
+    {
+      "id": "observatory-900x390",
+      "family": "observatory",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-900x390/baseline.png",
+          "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89",
+          "sizeBytes": 461308
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-900x390/replay.png",
+          "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89",
+          "sizeBytes": 461308
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-900x390/diff.png",
+          "sha256": "742ea2ee41020b42fb4f68b528854ff610cb04f76a8bee19a566a47e366771ed",
+          "sizeBytes": 26899
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-900x390/manifest.json",
+          "sha256": "6b634e0665db1144bc21e32b01d97f485861f1ab39d96bef595153919f9ac098",
+          "sizeBytes": 95491
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-900x390/accessibility.yml",
+          "sha256": "6fdf6f715f8288102f35c068c215ca798946c7beec0c9d498e5719e5cf784d15",
+          "sizeBytes": 7035
+        }
+      }
+    },
+    {
+      "id": "orbital-900x390",
+      "family": "orbital",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-900x390/baseline.png",
+          "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618",
+          "sizeBytes": 489498
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-900x390/replay.png",
+          "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618",
+          "sizeBytes": 489498
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-900x390/diff.png",
+          "sha256": "f2acb68314f93c3351c2aa9ec9cdd0a52a38be9d97d918e416b24c2d1a682dd5",
+          "sizeBytes": 35226
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-900x390/manifest.json",
+          "sha256": "68d62a6c66a1441b1137540bac04ba2241ea72e7cd3f83a157587af7a9b056c0",
+          "sizeBytes": 95806
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-900x390/accessibility.yml",
+          "sha256": "b96b969395362dbe86683a68959f5f81e94af0b5bb36d8f3b60b850a52d309eb",
+          "sizeBytes": 7028
+        }
+      }
+    },
+    {
+      "id": "workbench-900x390",
+      "family": "workbench",
+      "viewport": {
+        "width": 900,
+        "height": 390
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-900x390/baseline.png",
+          "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82",
+          "sizeBytes": 464045
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-900x390/replay.png",
+          "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82",
+          "sizeBytes": 464045
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-900x390/diff.png",
+          "sha256": "bf825d68eaa88c9ae4e52a0c98f7379fea85d1313121e47fdc7c5eb051582c28",
+          "sizeBytes": 26499
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-900x390/manifest.json",
+          "sha256": "ea8ead1eaea2eb29c0efffe9333aebfd5d5b30cc70a8eb969c78caaa5e9e8166",
+          "sizeBytes": 95459
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-900x390/accessibility.yml",
+          "sha256": "9ed908509e3eafb4656626c3435d30696e8f88ad1a7cdab71d37f969ab78b4e7",
+          "sizeBytes": 7032
+        }
+      }
+    },
+    {
+      "id": "chromatic-1440x900",
+      "family": "chromatic",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-1440x900/baseline.png",
+          "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4",
+          "sizeBytes": 447748
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-1440x900/replay.png",
+          "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4",
+          "sizeBytes": 447748
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-1440x900/diff.png",
+          "sha256": "4839cd46be51e3b9af404810d3bcd9c43eea07505b97678d86f8e9e229dcebb6",
+          "sizeBytes": 27647
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-1440x900/manifest.json",
+          "sha256": "efbc7e11987e43973da6c26924939428d81cf538d83319e2b17903b57da8a88a",
+          "sizeBytes": 96062
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-1440x900/accessibility.yml",
+          "sha256": "c3770e509ba332ba38afddae4878f287d34a205950b0d9c8bf2ca362fed509db",
+          "sizeBytes": 7084
+        }
+      }
+    },
+    {
+      "id": "elastic-1440x900",
+      "family": "elastic",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-1440x900/baseline.png",
+          "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7",
+          "sizeBytes": 442208
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-1440x900/replay.png",
+          "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7",
+          "sizeBytes": 442208
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-1440x900/diff.png",
+          "sha256": "ebd31990afca5085c09e9c4282e89a8f9e5efc9803bb605561b8e73fd84f2c0a",
+          "sizeBytes": 22832
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-1440x900/manifest.json",
+          "sha256": "ebf01f8c99600a930c5deea3e81ade228fc8628e502a46b16b623d09b9d82129",
+          "sizeBytes": 96321
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-1440x900/accessibility.yml",
+          "sha256": "e615dfa7007d1c84ac07613e8e1ce29b5690e014df42f704d2ff9ade7dfe8e39",
+          "sizeBytes": 7081
+        }
+      }
+    },
+    {
+      "id": "folded-1440x900",
+      "family": "folded",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-1440x900/baseline.png",
+          "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8",
+          "sizeBytes": 434265
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-1440x900/replay.png",
+          "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8",
+          "sizeBytes": 434265
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-1440x900/diff.png",
+          "sha256": "ed4daa0185a5d44639720495379493605b253777aab339ec44afe38968a1cfe0",
+          "sizeBytes": 31592
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-1440x900/manifest.json",
+          "sha256": "d271c087d8b4062a57e8f2f8eafbc82b68fc3ebb4726f4f31292f0e0ac4ad950",
+          "sizeBytes": 96014
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-1440x900/accessibility.yml",
+          "sha256": "e105277182a5254edc71a511b2506a8cf69d4b4219dfb8cc28ac51c277795a4f",
+          "sizeBytes": 7075
+        }
+      }
+    },
+    {
+      "id": "observatory-1440x900",
+      "family": "observatory",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-1440x900/baseline.png",
+          "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af",
+          "sizeBytes": 445454
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-1440x900/replay.png",
+          "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af",
+          "sizeBytes": 445454
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-1440x900/diff.png",
+          "sha256": "23c8c1aadb770840d48621e73ed20ef026b9d061a3fe6c141561f5462c9b8cb3",
+          "sizeBytes": 26081
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-1440x900/manifest.json",
+          "sha256": "7b4b0eb714526a1461886e4ff0a95c349855afda9a92500d92c5edfd5312fb21",
+          "sizeBytes": 96197
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-1440x900/accessibility.yml",
+          "sha256": "f75adb189e71e88cf6c7982dc5fd1ca61a5c156480b196e04f93d5da5f0151f2",
+          "sizeBytes": 7086
+        }
+      }
+    },
+    {
+      "id": "orbital-1440x900",
+      "family": "orbital",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-1440x900/baseline.png",
+          "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a",
+          "sizeBytes": 475919
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-1440x900/replay.png",
+          "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a",
+          "sizeBytes": 475919
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-1440x900/diff.png",
+          "sha256": "ab7660872b2d17e44434386c59deacb79ffb88833411f7b123ca579820ab7638",
+          "sizeBytes": 35160
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-1440x900/manifest.json",
+          "sha256": "607e4ef108303e5869eee15b4f8909a010dc30e9076df917da93319827fe587d",
+          "sizeBytes": 96282
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-1440x900/accessibility.yml",
+          "sha256": "1b8d22e3dfc80895ef97d2e57d6e8bf297b18489439d0d39218bd05828e2fbfa",
+          "sizeBytes": 7079
+        }
+      }
+    },
+    {
+      "id": "workbench-1440x900",
+      "family": "workbench",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-1440x900/baseline.png",
+          "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873",
+          "sizeBytes": 449882
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-1440x900/replay.png",
+          "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873",
+          "sizeBytes": 449882
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-1440x900/diff.png",
+          "sha256": "5ea57a958e765b7cdc9a44ee5254dfd31468bf6d5f5b56c270daad59f6be24a9",
+          "sizeBytes": 26879
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-1440x900/manifest.json",
+          "sha256": "3588e8c1d87039edb3b98fc6f1ad565c5a00a19989d713986df097893a16ff50",
+          "sizeBytes": 96162
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-1440x900/accessibility.yml",
+          "sha256": "bb6af6b0fc2f92959e81cb7f72ca47cc67ee518a236c98ae6f93539eed7fdc69",
+          "sizeBytes": 7083
+        }
+      }
+    },
+    {
+      "id": "chromatic-1920x1080",
+      "family": "chromatic",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/chromatic-1920x1080/baseline.png",
+          "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085",
+          "sizeBytes": 447799
+        },
+        "replay.png": {
+          "path": "artifacts/references/chromatic-1920x1080/replay.png",
+          "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085",
+          "sizeBytes": 447799
+        },
+        "diff.png": {
+          "path": "artifacts/references/chromatic-1920x1080/diff.png",
+          "sha256": "77eaf4b1fc723cfbeb485506ab5f38ba43cf40c3ff919c1f665d70841f0add28",
+          "sizeBytes": 30368
+        },
+        "manifest.json": {
+          "path": "artifacts/references/chromatic-1920x1080/manifest.json",
+          "sha256": "6fba5155f9068b0cb84691ce2ab84aaa7ccea0bf25037d0946800de7e85f2ef5",
+          "sizeBytes": 96024
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/chromatic-1920x1080/accessibility.yml",
+          "sha256": "0a14a7836f55799ae777e72511b7a86f421bd8b1199007fb72df105699a9abb3",
+          "sizeBytes": 7086
+        }
+      }
+    },
+    {
+      "id": "elastic-1920x1080",
+      "family": "elastic",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/elastic-1920x1080/baseline.png",
+          "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66",
+          "sizeBytes": 448870
+        },
+        "replay.png": {
+          "path": "artifacts/references/elastic-1920x1080/replay.png",
+          "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66",
+          "sizeBytes": 448870
+        },
+        "diff.png": {
+          "path": "artifacts/references/elastic-1920x1080/diff.png",
+          "sha256": "94c4fc8a54c8e444a6d7555294558472cecc5e4fa7ece7666d4fa4db665e1584",
+          "sizeBytes": 27050
+        },
+        "manifest.json": {
+          "path": "artifacts/references/elastic-1920x1080/manifest.json",
+          "sha256": "4532972ee54b3fef27be67e48c199c851afd2cc2f1574a7c15ea0d3531b4dcb2",
+          "sizeBytes": 96295
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/elastic-1920x1080/accessibility.yml",
+          "sha256": "84ab0fc4284551a951c7e2e7542f2d50e1acf8a7a6b58089d04493332861c668",
+          "sizeBytes": 7083
+        }
+      }
+    },
+    {
+      "id": "folded-1920x1080",
+      "family": "folded",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/folded-1920x1080/baseline.png",
+          "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f",
+          "sizeBytes": 440567
+        },
+        "replay.png": {
+          "path": "artifacts/references/folded-1920x1080/replay.png",
+          "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f",
+          "sizeBytes": 440567
+        },
+        "diff.png": {
+          "path": "artifacts/references/folded-1920x1080/diff.png",
+          "sha256": "dca97badb0969703eb175f9908e0912983e85ed967e13268479839dc418d3aee",
+          "sizeBytes": 37263
+        },
+        "manifest.json": {
+          "path": "artifacts/references/folded-1920x1080/manifest.json",
+          "sha256": "638cdd53b28ffc4297ee73d060aea48493ac84e6a5ee89a978a2a49003979fe0",
+          "sizeBytes": 96064
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/folded-1920x1080/accessibility.yml",
+          "sha256": "ebb59511cdff4977d921fc6a5fec9fcd43e6ce2b5c058990ac9021e7163b2466",
+          "sizeBytes": 7077
+        }
+      }
+    },
+    {
+      "id": "observatory-1920x1080",
+      "family": "observatory",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/observatory-1920x1080/baseline.png",
+          "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330",
+          "sizeBytes": 449184
+        },
+        "replay.png": {
+          "path": "artifacts/references/observatory-1920x1080/replay.png",
+          "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330",
+          "sizeBytes": 449184
+        },
+        "diff.png": {
+          "path": "artifacts/references/observatory-1920x1080/diff.png",
+          "sha256": "9413426ae065396dec57c082075b708c14c21b33c23560d468cd6bb0e9ec2643",
+          "sizeBytes": 28890
+        },
+        "manifest.json": {
+          "path": "artifacts/references/observatory-1920x1080/manifest.json",
+          "sha256": "93b1a75141396734632a06138b511ef1ccc879a579be533551d2330d930a0324",
+          "sizeBytes": 96168
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/observatory-1920x1080/accessibility.yml",
+          "sha256": "f18c98cf2c27c203fe7c605ec8fe6916df65faac2dd57da52bcfe8d3cea2e9f2",
+          "sizeBytes": 7088
+        }
+      }
+    },
+    {
+      "id": "orbital-1920x1080",
+      "family": "orbital",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/orbital-1920x1080/baseline.png",
+          "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414",
+          "sizeBytes": 475515
+        },
+        "replay.png": {
+          "path": "artifacts/references/orbital-1920x1080/replay.png",
+          "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414",
+          "sizeBytes": 475515
+        },
+        "diff.png": {
+          "path": "artifacts/references/orbital-1920x1080/diff.png",
+          "sha256": "f3ce23eb9b94b870ae670ce416a477adf5e3828922622ad1cf9a8093001eaa0b",
+          "sizeBytes": 33513
+        },
+        "manifest.json": {
+          "path": "artifacts/references/orbital-1920x1080/manifest.json",
+          "sha256": "53ec7c0e6ef9aab91289dc96d42ee3fe9f9e35036ee04f7295a570669e92b17d",
+          "sizeBytes": 96130
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/orbital-1920x1080/accessibility.yml",
+          "sha256": "26e3c304fb1e1e84d674069c2a9be96adb415b93d03c1e6871655d1ee978ce98",
+          "sizeBytes": 7081
+        }
+      }
+    },
+    {
+      "id": "workbench-1920x1080",
+      "family": "workbench",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "files": {
+        "baseline.png": {
+          "path": "artifacts/references/workbench-1920x1080/baseline.png",
+          "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2",
+          "sizeBytes": 459954
+        },
+        "replay.png": {
+          "path": "artifacts/references/workbench-1920x1080/replay.png",
+          "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2",
+          "sizeBytes": 459954
+        },
+        "diff.png": {
+          "path": "artifacts/references/workbench-1920x1080/diff.png",
+          "sha256": "5ac26468e1a09aa23e6f923673a77b716a9a00d6bd8d357a716f8b0d47cefe5a",
+          "sizeBytes": 33851
+        },
+        "manifest.json": {
+          "path": "artifacts/references/workbench-1920x1080/manifest.json",
+          "sha256": "ae113ff01957d064d7bb3505f856d67a7d880eb11468a8f8cd3f2367da0cd003",
+          "sizeBytes": 96009
+        },
+        "accessibility.yml": {
+          "path": "artifacts/references/workbench-1920x1080/accessibility.yml",
+          "sha256": "7979230b5d67d13c657638a82def3b79ebbda4b2c96615aa82213b61238e6a75",
+          "sizeBytes": 7085
+        }
+      }
+    }
+  ]
+}

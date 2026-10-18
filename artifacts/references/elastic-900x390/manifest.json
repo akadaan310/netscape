@@ -1,0 +1,3654 @@
+{
+  "id": "elastic-900x390",
+  "fixture": {
+    "path": "fixtures/nasa.html",
+    "sha256": "8af440b4a4c9cd64109f1a2cb0627add0a890ad2696caeb4b1307d17b3314470"
+  },
+  "seed": 7,
+  "family": "elastic",
+  "viewport": {
+    "width": 900,
+    "height": 390
+  },
+  "display": {
+    "width": 653,
+    "height": 390,
+    "dpr": 1,
+    "input": [
+      "keyboard",
+      "pointer"
+    ],
+    "reducedMotion": true,
+    "colorScheme": "light"
+  },
+  "fontAssetSHA256": {
+    "apps/web/public/fonts/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "apps/web/public/fonts/LiberationMono-Regular.ttf": "5883330d94debd992952cd8f0571b225f478c2d797d3f36c7521b0a5c9bde0f2",
+    "apps/web/public/fonts/LiberationSans-Bold.ttf": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+    "apps/web/public/fonts/LiberationSans-Regular.ttf": "bade59d822652f76e6941aa87b40a87c13d1cc70db98ededb5011127efafd1d3",
+    "apps/web/public/fonts/LiberationSerif-Italic.ttf": "de18fe26337e03241952dca46398d5b66f3c5738d080bfd284f66e67b926f597",
+    "apps/web/public/fonts/LiberationSerif-Regular.ttf": "9caef765d2e891c10dd73658894f01e660fe0c1c83e0bda7d6edf561d8f623d4"
+  },
+  "pinnedFontAssets": {
+    "assets": [
+      {
+        "path": "apps/web/public/fonts/DejaVuSans.ttf",
+        "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+        "expectedSHA256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+        "matches": true
+      },
+      {
+        "path": "apps/web/public/fonts/LiberationMono-Regular.ttf",
+        "sha256": "5883330d94debd992952cd8f0571b225f478c2d797d3f36c7521b0a5c9bde0f2",
+        "expectedSHA256": "5883330d94debd992952cd8f0571b225f478c2d797d3f36c7521b0a5c9bde0f2",
+        "matches": true
+      },
+      {
+        "path": "apps/web/public/fonts/LiberationSans-Bold.ttf",
+        "sha256": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+        "expectedSHA256": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+        "matches": true
+      },
+      {
+        "path": "apps/web/public/fonts/LiberationSans-Regular.ttf",
+        "sha256": "bade59d822652f76e6941aa87b40a87c13d1cc70db98ededb5011127efafd1d3",
+        "expectedSHA256": "bade59d822652f76e6941aa87b40a87c13d1cc70db98ededb5011127efafd1d3",
+        "matches": true
+      },
+      {
+        "path": "apps/web/public/fonts/LiberationSerif-Italic.ttf",
+        "sha256": "de18fe26337e03241952dca46398d5b66f3c5738d080bfd284f66e67b926f597",
+        "expectedSHA256": "de18fe26337e03241952dca46398d5b66f3c5738d080bfd284f66e67b926f597",
+        "matches": true
+      },
+      {
+        "path": "apps/web/public/fonts/LiberationSerif-Regular.ttf",
+        "sha256": "9caef765d2e891c10dd73658894f01e660fe0c1c83e0bda7d6edf561d8f623d4",
+        "expectedSHA256": "9caef765d2e891c10dd73658894f01e660fe0c1c83e0bda7d6edf561d8f623d4",
+        "matches": true
+      }
+    ],
+    "sha256": {
+      "apps/web/public/fonts/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+      "apps/web/public/fonts/LiberationMono-Regular.ttf": "5883330d94debd992952cd8f0571b225f478c2d797d3f36c7521b0a5c9bde0f2",
+      "apps/web/public/fonts/LiberationSans-Bold.ttf": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+      "apps/web/public/fonts/LiberationSans-Regular.ttf": "bade59d822652f76e6941aa87b40a87c13d1cc70db98ededb5011127efafd1d3",
+      "apps/web/public/fonts/LiberationSerif-Italic.ttf": "de18fe26337e03241952dca46398d5b66f3c5738d080bfd284f66e67b926f597",
+      "apps/web/public/fonts/LiberationSerif-Regular.ttf": "9caef765d2e891c10dd73658894f01e660fe0c1c83e0bda7d6edf561d8f623d4"
+    },
+    "pinFile": "apps/web/public/fonts/SHA256SUMS",
+    "pinFileSHA256": "a3ef6d8a28c45e5fbfcf2ca7530d7730e79ffa8ca5981d69cbfda6df1561e6d3"
+  },
+  "grammarVersion": "1.0.0",
+  "simulationTick": 0,
+  "fieldRoles": {
+    "background": "#faf9ff",
+    "surface": "#efecf9",
+    "text": "#16151b",
+    "muted": "#514d5c",
+    "accent": "#5a349c",
+    "accentText": "#ffffff",
+    "border": "#76708a"
+  },
+  "fonts": {
+    "body": "\"Infinite Sans\", \"Infinite Symbols\", sans-serif",
+    "loadedFaces": [
+      {
+        "family": "Infinite Sans",
+        "status": "loaded"
+      },
+      {
+        "family": "Infinite Sans",
+        "status": "loaded"
+      },
+      {
+        "family": "Infinite Serif",
+        "status": "loaded"
+      },
+      {
+        "family": "Infinite Serif",
+        "status": "loaded"
+      },
+      {
+        "family": "Infinite Mono",
+        "status": "loaded"
+      },
+      {
+        "family": "Infinite Symbols",
+        "status": "loaded"
+      }
+    ]
+  },
+  "provenance": {
+    "kind": "fixture",
+    "fetchedAt": "2026-10-18T00:00:00.000Z",
+    "contentHash": "b5053b7ecfcd269a",
+    "notice": "Local authored demonstration. This is not a live source snapshot."
+  },
+  "expectedRegions": [
+    {
+      "id": "region-resource-d017d8a601afa782",
+      "semanticId": "resource-d017d8a601afa782",
+      "x": 24,
+      "y": 24,
+      "width": 605,
+      "height": 202,
+      "order": 0
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-source",
+      "semanticId": "resource-d017d8a601afa782-source",
+      "x": 24,
+      "y": 244,
+      "width": 224.23,
+      "height": 296,
+      "order": 1
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n2",
+      "semanticId": "resource-d017d8a601afa782-n2",
+      "x": 266.23,
+      "y": 244,
+      "width": 362.77,
+      "height": 394,
+      "order": 2
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n3",
+      "semanticId": "resource-d017d8a601afa782-n3",
+      "x": 24,
+      "y": 558,
+      "width": 224.23,
+      "height": 208,
+      "order": 3
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n4",
+      "semanticId": "resource-d017d8a601afa782-n4",
+      "x": 266.23,
+      "y": 656,
+      "width": 362.77,
+      "height": 446,
+      "order": 4
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n5",
+      "semanticId": "resource-d017d8a601afa782-n5",
+      "x": 24,
+      "y": 784,
+      "width": 224.23,
+      "height": 208,
+      "order": 5
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n6",
+      "semanticId": "resource-d017d8a601afa782-n6",
+      "x": 24,
+      "y": 1010,
+      "width": 224.23,
+      "height": 736,
+      "order": 6
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n7",
+      "semanticId": "resource-d017d8a601afa782-n7",
+      "x": 266.23,
+      "y": 1120,
+      "width": 362.77,
+      "height": 420,
+      "order": 7
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n8",
+      "semanticId": "resource-d017d8a601afa782-n8",
+      "x": 266.23,
+      "y": 1558,
+      "width": 362.77,
+      "height": 154,
+      "order": 8
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n9",
+      "semanticId": "resource-d017d8a601afa782-n9",
+      "x": 266.23,
+      "y": 1730,
+      "width": 362.77,
+      "height": 446,
+      "order": 9
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n10",
+      "semanticId": "resource-d017d8a601afa782-n10",
+      "x": 24,
+      "y": 1764,
+      "width": 224.23,
+      "height": 190,
+      "order": 10
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-n11",
+      "semanticId": "resource-d017d8a601afa782-n11",
+      "x": 24,
+      "y": 1972,
+      "width": 224.23,
+      "height": 190,
+      "order": 11
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-select-passage",
+      "semanticId": "resource-d017d8a601afa782-select-passage",
+      "x": 24,
+      "y": 2180,
+      "width": 224.23,
+      "height": 162,
+      "order": 12
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-attach-companion",
+      "semanticId": "resource-d017d8a601afa782-attach-companion",
+      "x": 266.23,
+      "y": 2194,
+      "width": 362.77,
+      "height": 190,
+      "order": 13
+    },
+    {
+      "id": "region-resource-d017d8a601afa782-save-artifact",
+      "semanticId": "resource-d017d8a601afa782-save-artifact",
+      "x": 24,
+      "y": 2360,
+      "width": 224.23,
+      "height": 190,
+      "order": 14
+    }
+  ],
+  "sourceManifest": {
+    "chromaticField": {
+      "accent": "#5a349c",
+      "accentText": "#ffffff",
+      "background": "#faf9ff",
+      "border": "#76708a",
+      "muted": "#514d5c",
+      "surface": "#efecf9",
+      "text": "#16151b"
+    },
+    "display": {
+      "colorScheme": "light",
+      "dpr": 1,
+      "height": 390,
+      "input": [
+        "keyboard",
+        "pointer"
+      ],
+      "reducedMotion": true,
+      "width": 653
+    },
+    "dynamics": {
+      "events": [],
+      "options": {
+        "edges": [
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-source"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-n2"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-n3"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n3",
+            "to": "resource-d017d8a601afa782-n4"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-n5"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n5",
+            "to": "resource-d017d8a601afa782-n6"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n5",
+            "to": "resource-d017d8a601afa782-n7"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-n8"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n8",
+            "to": "resource-d017d8a601afa782-n9"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n8",
+            "to": "resource-d017d8a601afa782-n10"
+          },
+          {
+            "from": "resource-d017d8a601afa782-n8",
+            "to": "resource-d017d8a601afa782-n11"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-select-passage"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-attach-companion"
+          },
+          {
+            "from": "resource-d017d8a601afa782",
+            "to": "resource-d017d8a601afa782-save-artifact"
+          }
+        ],
+        "nodes": [
+          {
+            "id": "resource-d017d8a601afa782",
+            "x": 130,
+            "y": 105
+          },
+          {
+            "id": "resource-d017d8a601afa782-source",
+            "x": 206.73781844197848,
+            "y": 135.0985115876092
+          },
+          {
+            "id": "resource-d017d8a601afa782-n2",
+            "x": 186.2069709341441,
+            "y": 159.99271708532717
+          },
+          {
+            "id": "resource-d017d8a601afa782-n3",
+            "x": 155.95742752749558,
+            "y": 175.37818220584137
+          },
+          {
+            "id": "resource-d017d8a601afa782-n4",
+            "x": 121.21960908551712,
+            "y": 178.59462025725225
+          },
+          {
+            "id": "resource-d017d8a601afa782-n5",
+            "x": 88.00000000000003,
+            "y": 169.08587988004848
+          },
+          {
+            "id": "resource-d017d8a601afa782-n6",
+            "x": 62.04257247250442,
+            "y": 148.49610866964304
+          },
+          {
+            "id": "resource-d017d8a601afa782-n7",
+            "x": 47.83560153836032,
+            "y": 120.38546512051418
+          },
+          {
+            "id": "resource-d017d8a601afa782-n8",
+            "x": 47.83560153836032,
+            "y": 89.61453487948583
+          },
+          {
+            "id": "resource-d017d8a601afa782-n9",
+            "x": 62.0425724725044,
+            "y": 61.50389133035699
+          },
+          {
+            "id": "resource-d017d8a601afa782-n10",
+            "x": 87.99999999999997,
+            "y": 40.91412011995156
+          },
+          {
+            "id": "resource-d017d8a601afa782-n11",
+            "x": 121.21960908551705,
+            "y": 31.405379742747783
+          },
+          {
+            "id": "resource-d017d8a601afa782-select-passage",
+            "x": 155.95742752749555,
+            "y": 34.62181779415863
+          },
+          {
+            "id": "resource-d017d8a601afa782-attach-companion",
+            "x": 186.20697093414412,
+            "y": 50.00728291467284
+          },
+          {
+            "id": "resource-d017d8a601afa782-save-artifact",
+            "x": 206.73781844197848,
+            "y": 74.90148841239079
+          }
+        ],
+        "reducedMotion": true,
+        "seed": 7
+      },
+      "tick": 0,
+      "traceHash": "02be28e0",
+      "version": 1
+    },
+    "expectedRegions": [
+      {
+        "height": 202,
+        "id": "region-resource-d017d8a601afa782",
+        "order": 0,
+        "semanticId": "resource-d017d8a601afa782",
+        "width": 605,
+        "x": 24,
+        "y": 24
+      },
+      {
+        "height": 296,
+        "id": "region-resource-d017d8a601afa782-source",
+        "order": 1,
+        "semanticId": "resource-d017d8a601afa782-source",
+        "width": 224.23,
+        "x": 24,
+        "y": 244
+      },
+      {
+        "height": 394,
+        "id": "region-resource-d017d8a601afa782-n2",
+        "order": 2,
+        "semanticId": "resource-d017d8a601afa782-n2",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 244
+      },
+      {
+        "height": 208,
+        "id": "region-resource-d017d8a601afa782-n3",
+        "order": 3,
+        "semanticId": "resource-d017d8a601afa782-n3",
+        "width": 224.23,
+        "x": 24,
+        "y": 558
+      },
+      {
+        "height": 446,
+        "id": "region-resource-d017d8a601afa782-n4",
+        "order": 4,
+        "semanticId": "resource-d017d8a601afa782-n4",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 656
+      },
+      {
+        "height": 208,
+        "id": "region-resource-d017d8a601afa782-n5",
+        "order": 5,
+        "semanticId": "resource-d017d8a601afa782-n5",
+        "width": 224.23,
+        "x": 24,
+        "y": 784
+      },
+      {
+        "height": 736,
+        "id": "region-resource-d017d8a601afa782-n6",
+        "order": 6,
+        "semanticId": "resource-d017d8a601afa782-n6",
+        "width": 224.23,
+        "x": 24,
+        "y": 1010
+      },
+      {
+        "height": 420,
+        "id": "region-resource-d017d8a601afa782-n7",
+        "order": 7,
+        "semanticId": "resource-d017d8a601afa782-n7",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 1120
+      },
+      {
+        "height": 154,
+        "id": "region-resource-d017d8a601afa782-n8",
+        "order": 8,
+        "semanticId": "resource-d017d8a601afa782-n8",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 1558
+      },
+      {
+        "height": 446,
+        "id": "region-resource-d017d8a601afa782-n9",
+        "order": 9,
+        "semanticId": "resource-d017d8a601afa782-n9",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 1730
+      },
+      {
+        "height": 190,
+        "id": "region-resource-d017d8a601afa782-n10",
+        "order": 10,
+        "semanticId": "resource-d017d8a601afa782-n10",
+        "width": 224.23,
+        "x": 24,
+        "y": 1764
+      },
+      {
+        "height": 190,
+        "id": "region-resource-d017d8a601afa782-n11",
+        "order": 11,
+        "semanticId": "resource-d017d8a601afa782-n11",
+        "width": 224.23,
+        "x": 24,
+        "y": 1972
+      },
+      {
+        "height": 162,
+        "id": "region-resource-d017d8a601afa782-select-passage",
+        "order": 12,
+        "semanticId": "resource-d017d8a601afa782-select-passage",
+        "width": 224.23,
+        "x": 24,
+        "y": 2180
+      },
+      {
+        "height": 190,
+        "id": "region-resource-d017d8a601afa782-attach-companion",
+        "order": 13,
+        "semanticId": "resource-d017d8a601afa782-attach-companion",
+        "width": 362.77,
+        "x": 266.23,
+        "y": 2194
+      },
+      {
+        "height": 190,
+        "id": "region-resource-d017d8a601afa782-save-artifact",
+        "order": 14,
+        "semanticId": "resource-d017d8a601afa782-save-artifact",
+        "width": 224.23,
+        "x": 24,
+        "y": 2360
+      }
+    ],
+    "family": "elastic",
+    "fixtureHash": "b5053b7ecfcd269a",
+    "grammarVersion": "1.0.0",
+    "graph": {
+      "edges": [
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-source"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n2"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n3"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n3",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n4"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n5"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n5",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n6"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n5",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n7"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n8"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n8",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n9"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n8",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n10"
+        },
+        {
+          "from": "resource-d017d8a601afa782-n8",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-n11"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-select-passage"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-attach-companion"
+        },
+        {
+          "from": "resource-d017d8a601afa782",
+          "kind": "contains",
+          "to": "resource-d017d8a601afa782-save-artifact"
+        }
+      ],
+      "id": "resource-d017d8a601afa782",
+      "nodes": [
+        {
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782",
+          "kind": "Resource",
+          "label": "Worlds beyond our Sun · research notebook",
+          "meta": {
+            "description": "A locally authored demonstration inspired by NASA's public exoplanet and Webb research topics.",
+            "jsonLdName": "Worlds beyond our Sun",
+            "jsonLdType": "ScholarlyArticle"
+          },
+          "url": "https://science.nasa.gov/exoplanets/"
+        },
+        {
+          "id": "resource-d017d8a601afa782-source",
+          "kind": "Evidence",
+          "label": "Local authored source",
+          "meta": {
+            "contentHash": "b5053b7ecfcd269a",
+            "fetchedAt": "2026-10-18T00:00:00.000Z",
+            "kind": "fixture"
+          },
+          "text": "Local authored demonstration. This is not a live source snapshot.",
+          "url": "https://science.nasa.gov/exoplanets/"
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n2",
+          "kind": "Text",
+          "label": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA",
+          "meta": {
+            "origin": "local",
+            "sourceOrder": "8",
+            "sourceTag": "p"
+          },
+          "supported": true,
+          "text": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research."
+        },
+        {
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n3",
+          "kind": "Section",
+          "label": "Worlds beyond our Sun",
+          "meta": {
+            "level": "1",
+            "sourceOrder": "9",
+            "sourceTag": "h1"
+          },
+          "text": "Worlds beyond our Sun"
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n4",
+          "kind": "Text",
+          "label": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many",
+          "meta": {
+            "origin": "local",
+            "sourceOrder": "10",
+            "sourceTag": "p"
+          },
+          "supported": true,
+          "text": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star's changing brightness, its slight wobble, and the light that passes through a planet's atmosphere."
+        },
+        {
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n5",
+          "kind": "Section",
+          "label": "Reading an atmosphere with Webb",
+          "meta": {
+            "level": "2",
+            "sourceOrder": "11",
+            "sourceTag": "h2"
+          },
+          "text": "Reading an atmosphere with Webb"
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n6",
+          "kind": "Text",
+          "label": "When a planet crosses its star, a small fraction of starlight can filter through the plane",
+          "meta": {
+            "origin": "local",
+            "sourceOrder": "12",
+            "sourceTag": "p"
+          },
+          "supported": true,
+          "text": "When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations."
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n7",
+          "kind": "Text",
+          "label": "Use this notebook to select a passage, invite a clearly labeled local simulated companion,",
+          "meta": {
+            "origin": "local",
+            "sourceOrder": "13",
+            "sourceTag": "p"
+          },
+          "supported": true,
+          "text": "Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected."
+        },
+        {
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n8",
+          "kind": "Section",
+          "label": "Keep the evidence close",
+          "meta": {
+            "level": "2",
+            "sourceOrder": "14",
+            "sourceTag": "h2"
+          },
+          "text": "Keep the evidence close"
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n9",
+          "kind": "Text",
+          "label": "Ask what was measured, which model connects the measurement to a claim, and what another o",
+          "meta": {
+            "origin": "local",
+            "sourceOrder": "15",
+            "sourceTag": "p"
+          },
+          "supported": true,
+          "text": "Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results."
+        },
+        {
+          "action": "navigate",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n10",
+          "kind": "Link",
+          "label": "Explore NASA's exoplanet science",
+          "meta": {
+            "sourceOrder": "17",
+            "sourceTag": "a"
+          },
+          "supported": true,
+          "url": "https://science.nasa.gov/exoplanets/"
+        },
+        {
+          "action": "navigate",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-n11",
+          "kind": "Link",
+          "label": "Read about the Webb mission",
+          "meta": {
+            "sourceOrder": "18",
+            "sourceTag": "a"
+          },
+          "supported": true,
+          "url": "https://science.nasa.gov/mission/webb/"
+        },
+        {
+          "action": "select-passage",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-select-passage",
+          "kind": "Action",
+          "label": "Select a passage",
+          "meta": {
+            "origin": "local",
+            "targetId": "resource-d017d8a601afa782"
+          },
+          "supported": true
+        },
+        {
+          "action": "attach-companion",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-attach-companion",
+          "kind": "Action",
+          "label": "Come here · local simulated companion",
+          "meta": {
+            "origin": "local",
+            "targetId": "resource-d017d8a601afa782"
+          },
+          "supported": true
+        },
+        {
+          "action": "save-artifact",
+          "evidence": [
+            "resource-d017d8a601afa782-source"
+          ],
+          "id": "resource-d017d8a601afa782-save-artifact",
+          "kind": "Action",
+          "label": "Save cited artifact",
+          "meta": {
+            "origin": "local",
+            "targetId": "resource-d017d8a601afa782"
+          },
+          "supported": true
+        }
+      ],
+      "provenance": {
+        "contentHash": "b5053b7ecfcd269a",
+        "fetchedAt": "2026-10-18T00:00:00.000Z",
+        "kind": "fixture",
+        "notice": "Local authored demonstration. This is not a live source snapshot."
+      },
+      "sourceUrl": "https://science.nasa.gov/exoplanets/",
+      "title": "Worlds beyond our Sun · research notebook",
+      "version": "1.0.0"
+    },
+    "graphHash": "7e99c73939fdbc25",
+    "hardInvariants": [
+      "C-001",
+      "C-002",
+      "C-003",
+      "C-004",
+      "C-005",
+      "C-006",
+      "C-007",
+      "C-008",
+      "C-009",
+      "C-010",
+      "C-011",
+      "C-012"
+    ],
+    "intents": [
+      {
+        "confidence": 0.95,
+        "evidence": [
+          "resource-d017d8a601afa782",
+          "resource-d017d8a601afa782-n2",
+          "resource-d017d8a601afa782-n4",
+          "resource-d017d8a601afa782-n5",
+          "resource-d017d8a601afa782-n6",
+          "resource-d017d8a601afa782-n10",
+          "resource-d017d8a601afa782-n11"
+        ],
+        "kind": "research",
+        "status": "inferred"
+      }
+    ],
+    "interactions": [
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-n2"
+      },
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-n4"
+      },
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-n6"
+      },
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-n7"
+      },
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-n9"
+      },
+      {
+        "action": "navigate",
+        "id": "resource-d017d8a601afa782-n10"
+      },
+      {
+        "action": "navigate",
+        "id": "resource-d017d8a601afa782-n11"
+      },
+      {
+        "action": "select-passage",
+        "id": "resource-d017d8a601afa782-select-passage"
+      },
+      {
+        "action": "attach-companion",
+        "id": "resource-d017d8a601afa782-attach-companion"
+      },
+      {
+        "action": "save-artifact",
+        "id": "resource-d017d8a601afa782-save-artifact"
+      }
+    ],
+    "provenance": {
+      "contentHash": "b5053b7ecfcd269a",
+      "fetchedAt": "2026-10-18T00:00:00.000Z",
+      "kind": "fixture",
+      "notice": "Local authored demonstration. This is not a live source snapshot."
+    },
+    "seed": 7,
+    "surfaceHash": "8547a08d2171dcc1",
+    "tick": 0,
+    "version": 2,
+    "integrityHash": "2a00f5ef757472c3"
+  },
+  "physicsTrace": {
+    "tick": 0,
+    "nodes": [
+      {
+        "id": "resource-d017d8a601afa782",
+        "x": 130,
+        "y": 105,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-attach-companion",
+        "x": 186.20697099999998,
+        "y": 50.007283,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n10",
+        "x": 88,
+        "y": 40.91412,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n11",
+        "x": 121.21960899999999,
+        "y": 31.405379999999997,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n2",
+        "x": 186.20697099999998,
+        "y": 159.992717,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n3",
+        "x": 155.957428,
+        "y": 175.37818199999998,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n4",
+        "x": 121.21960899999999,
+        "y": 178.59462,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n5",
+        "x": 88,
+        "y": 169.08588,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n6",
+        "x": 62.042572,
+        "y": 148.496109,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n7",
+        "x": 47.835601999999994,
+        "y": 120.385465,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n8",
+        "x": 47.835601999999994,
+        "y": 89.61453499999999,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-n9",
+        "x": 62.042572,
+        "y": 61.503890999999996,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-save-artifact",
+        "x": 206.737818,
+        "y": 74.901488,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-select-passage",
+        "x": 155.957428,
+        "y": 34.621818,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      },
+      {
+        "id": "resource-d017d8a601afa782-source",
+        "x": 206.737818,
+        "y": 135.098512,
+        "vx": 0,
+        "vy": 0,
+        "field": 0
+      }
+    ],
+    "energy": 0,
+    "traceHash": "02be28e0"
+  },
+  "metrics": {
+    "compactness": 0.8059805856896208,
+    "legibility": 0.70071875,
+    "whitespace": 0.19401941431037917,
+    "grouping": 1,
+    "motionEnergy": 0
+  },
+  "accessibility": "- banner:\n  - link \"netscape INFINITE\":\n    - /url: /\n  - text: A different surface. The same underlying knowledge. LOCAL STUDIO v.01\n- main:\n  - text: A COMPUTATIONAL INTERPRETATION STUDIO\n  - heading \"The web, recomposed.\" [level=1]:\n    - text: The web,\n    - emphasis: recomposed.\n  - paragraph: Content becomes a living surface. Bring a source, choose a composition, and follow what matters.\n  - text: SOURCE\n  - textbox \"SOURCE\":\n    - /placeholder: https://www.nasa.gov/…\n    - text: https://science.nasa.gov/exoplanets/\n  - button \"Interpret source\"\n  - text: TRY AN AUTHORED DEMO\n  - button \"NASA / Deep space\" [pressed]\n  - button \"Restaurant / Menu\"\n  - button \"GitHub / Repository\"\n  - text: WORKSPACE / AUTHORED DEMO FIXTURE\n  - button \"Dark canvas\": ◐ Dark canvas\n  - button \"Export manifest\"\n  - complementary \"Composition controls\":\n    - text: 01 / COMPOSITION Layout algorithm\n    - combobox \"Layout algorithm\":\n      - option \"Spatial Observatory\"\n      - option \"Orbital Surface\"\n      - option \"Elastic Surface\" [selected]\n      - option \"Folded Document\"\n      - option \"Computational Workbench\"\n      - option \"Chromatic Field\"\n    - text: Generative seed\n    - spinbutton \"Generative seed\": \"7\"\n    - button \"Regenerate surface\"\n    - paragraph: One semantic graph. Many possible expressions.\n    - text: THE SIX FAMILIES\n    - list:\n      - listitem:\n        - text: \"01\"\n        - strong: Spatial Observatory\n        - paragraph: An orthogonal observation grid; seeded columns and a mirrored rail.\n      - listitem:\n        - text: \"02\"\n        - strong: Orbital Surface\n        - paragraph: Elliptical anchors with collision projection place knowledge in rings.\n      - listitem:\n        - text: \"03\"\n        - strong: Elastic Surface\n        - paragraph: Graph degree and golden-ratio columns shape a weighted masonry.\n      - listitem:\n        - text: \"04\"\n        - strong: Folded Document\n        - paragraph: Alternating, nested folds create a deliberate vertical reading path.\n      - listitem:\n        - text: \"05\"\n        - strong: Computational Workbench\n        - paragraph: Containment relationships organize content into semantic swimlanes.\n      - listitem:\n        - text: \"06\"\n        - strong: Chromatic Field\n        - paragraph: Alternating one-third and two-third area bands create a binary composition.\n    - text: DISPLAY / ENVIRONMENT\n    - term: Canvas\n    - definition: 653 × 390\n    - term: Pixel ratio\n    - definition: 1×\n    - term: Input\n    - definition: keyboard + pointer\n    - term: Motion\n    - definition: Reduced\n    - term: Text scale\n    - definition: 100%\n    - term: Solver\n    - definition: weighted-masonry\n  - region \"Generated source surface\":\n    - text: Elastic / SEED 7 15 NODES · 14 EDGES ◈ AUTHORED FIXTURE\n    - paragraph: Local authored demonstration. This is not a live source snapshot.\n    - group: Research intent · 95% · inferred\n    - article: RESOURCE 01 Worlds beyond our Sun · research notebook PUBLIC KNOWLEDGE INTERPRETED LOCALLY\n    - article: EVIDENCE 02 Local authored source Local authored demonstration. This is not a live source snapshot. Source evidence · no live verification\n    - article:\n      - button \"SOURCE PASSAGE 03 LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research. Select as context ↗\"\n    - article: SECTION 04 Worlds beyond our Sun\n    - article:\n      - 'button \"SOURCE PASSAGE 05 An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star''s changing brightness, its slight wobble, and the light that passes through a planet''s atmosphere. Select as context ↗\"'\n    - article: SECTION 06 Reading an atmosphere with Webb\n    - article:\n      - button \"SOURCE PASSAGE 07 When a planet crosses its star, a small fraction of starlight can filter through the plane When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations. Select as context ↗\"\n    - article:\n      - button \"SOURCE PASSAGE 08 Use this notebook to select a passage, invite a clearly labeled local simulated companion, Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected. Select as context ↗\"\n    - article: SECTION 09 Keep the evidence close\n    - article:\n      - button \"SOURCE PASSAGE 10 Ask what was measured, which model connects the measurement to a claim, and what another o Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results. Select as context ↗\"\n    - article:\n      - link \"LINK 11 Explore NASA's exoplanet science Open original\":\n        - /url: https://science.nasa.gov/exoplanets/\n    - article:\n      - link \"LINK 12 Read about the Webb mission Open original\":\n        - /url: https://science.nasa.gov/mission/webb/\n    - article:\n      - button \"ACTION 13 Select a passage Select as context ↗\"\n    - article:\n      - button \"ACTION 14 Come here · local simulated companion Local simulated companion ↗\"\n    - article:\n      - button \"ACTION 15 Save cited artifact Create a cited local artifact ↗\"\n    - text: SOURCE IDENTITY PRESERVED\n    - code: 8547a08d2171dcc1\n  - complementary \"Context and local artifacts\":\n    - text: 02 / CONTEXT\n    - heading \"A little closer to the source.\" [level=2]\n    - paragraph: Select a passage on the surface. Bring a local companion into the same context.\n    - text: NO PASSAGE SELECTED\n    - paragraph: Your shared context starts with a source passage.\n    - button \"Come here\"\n    - text: LOCAL · SIMULATED · NO MODEL API SEMANTIC CONSTELLATION 15\n    - 'img \"Actual semantic graph: 15 nodes and 14 relationships\"'\n    - text: TICK 0 ENERGY 0.000\n    - button \"Send a little ripple\"\n    - text: Optional event sound\n    - button \"Sound off\"\n    - paragraph: A fixed-step physical event. Color and graph motion respond; source actions are never triggered.\n    - text: 03 / SAVED ARTIFACTS 00\n    - paragraph: Keep a passage worth returning to. Saved locally, with its source.\n  - status: Ready to explore. Every generated action stays attached to its original source.\n- contentinfo:\n  - text: netscape\n  - emphasis: infinite\n  - paragraph: An experimental surface for public knowledge. Deterministic by design. Yours to explore.\n  - text: INTERPRET / COMPOSE / CONNECT ● BUILT FROM THE SOURCE UP",
+  "audit": {
+    "viewport": {
+      "width": 900,
+      "height": 390,
+      "dpr": 1
+    },
+    "regions": [
+      {
+        "id": "resource-d017d8a601afa782",
+        "x": 237.5,
+        "y": 727.609375,
+        "width": 605,
+        "height": 202,
+        "scrollWidth": 603,
+        "clientWidth": 603,
+        "scrollHeight": 200,
+        "clientHeight": 200
+      },
+      {
+        "id": "resource-d017d8a601afa782-source",
+        "x": 237.5,
+        "y": 947.609375,
+        "width": 224.21875,
+        "height": 296,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 294,
+        "clientHeight": 294
+      },
+      {
+        "id": "resource-d017d8a601afa782-n2",
+        "x": 479.71875,
+        "y": 947.609375,
+        "width": 362.765625,
+        "height": 394,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 392,
+        "clientHeight": 392
+      },
+      {
+        "id": "resource-d017d8a601afa782-n3",
+        "x": 237.5,
+        "y": 1261.609375,
+        "width": 224.21875,
+        "height": 208,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 206,
+        "clientHeight": 206
+      },
+      {
+        "id": "resource-d017d8a601afa782-n4",
+        "x": 479.71875,
+        "y": 1359.609375,
+        "width": 362.765625,
+        "height": 446,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 444,
+        "clientHeight": 444
+      },
+      {
+        "id": "resource-d017d8a601afa782-n5",
+        "x": 237.5,
+        "y": 1487.609375,
+        "width": 224.21875,
+        "height": 208,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 206,
+        "clientHeight": 206
+      },
+      {
+        "id": "resource-d017d8a601afa782-n6",
+        "x": 237.5,
+        "y": 1713.609375,
+        "width": 224.21875,
+        "height": 736,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 734,
+        "clientHeight": 734
+      },
+      {
+        "id": "resource-d017d8a601afa782-n7",
+        "x": 479.71875,
+        "y": 1823.609375,
+        "width": 362.765625,
+        "height": 420,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 418,
+        "clientHeight": 418
+      },
+      {
+        "id": "resource-d017d8a601afa782-n8",
+        "x": 479.71875,
+        "y": 2261.609375,
+        "width": 362.765625,
+        "height": 154,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 152,
+        "clientHeight": 152
+      },
+      {
+        "id": "resource-d017d8a601afa782-n9",
+        "x": 479.71875,
+        "y": 2433.609375,
+        "width": 362.765625,
+        "height": 446,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 444,
+        "clientHeight": 444
+      },
+      {
+        "id": "resource-d017d8a601afa782-n10",
+        "x": 237.5,
+        "y": 2467.609375,
+        "width": 224.21875,
+        "height": 190,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 188,
+        "clientHeight": 188
+      },
+      {
+        "id": "resource-d017d8a601afa782-n11",
+        "x": 237.5,
+        "y": 2675.609375,
+        "width": 224.21875,
+        "height": 190,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 188,
+        "clientHeight": 188
+      },
+      {
+        "id": "resource-d017d8a601afa782-select-passage",
+        "x": 237.5,
+        "y": 2883.609375,
+        "width": 224.21875,
+        "height": 162,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 160,
+        "clientHeight": 160
+      },
+      {
+        "id": "resource-d017d8a601afa782-attach-companion",
+        "x": 479.71875,
+        "y": 2897.609375,
+        "width": 362.765625,
+        "height": 190,
+        "scrollWidth": 361,
+        "clientWidth": 361,
+        "scrollHeight": 188,
+        "clientHeight": 188
+      },
+      {
+        "id": "resource-d017d8a601afa782-save-artifact",
+        "x": 237.5,
+        "y": 3063.609375,
+        "width": 224.21875,
+        "height": 190,
+        "scrollWidth": 222,
+        "clientWidth": 222,
+        "scrollHeight": 188,
+        "clientHeight": 188
+      }
+    ],
+    "actions": [
+      {
+        "id": "resource-d017d8a601afa782-n2",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 504.71875,
+        "y": 972.609375,
+        "width": 312.765625,
+        "height": 277
+      },
+      {
+        "id": "resource-d017d8a601afa782-n4",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 504.71875,
+        "y": 1384.609375,
+        "width": 312.765625,
+        "height": 303
+      },
+      {
+        "id": "resource-d017d8a601afa782-n6",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 262.5,
+        "y": 1738.609375,
+        "width": 174.21875,
+        "height": 567
+      },
+      {
+        "id": "resource-d017d8a601afa782-n7",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 504.71875,
+        "y": 1848.609375,
+        "width": 312.765625,
+        "height": 277
+      },
+      {
+        "id": "resource-d017d8a601afa782-n9",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 504.71875,
+        "y": 2458.609375,
+        "width": 312.765625,
+        "height": 329
+      },
+      {
+        "id": "resource-d017d8a601afa782-n10",
+        "action": "navigate",
+        "tag": "A",
+        "x": 262.5,
+        "y": 2492.609375,
+        "width": 174.21875,
+        "height": 127
+      },
+      {
+        "id": "resource-d017d8a601afa782-n11",
+        "action": "navigate",
+        "tag": "A",
+        "x": 262.5,
+        "y": 2700.609375,
+        "width": 174.21875,
+        "height": 127
+      },
+      {
+        "id": "resource-d017d8a601afa782-select-passage",
+        "action": "select-passage",
+        "tag": "BUTTON",
+        "x": 262.5,
+        "y": 2908.609375,
+        "width": 174.21875,
+        "height": 99
+      },
+      {
+        "id": "resource-d017d8a601afa782-attach-companion",
+        "action": "attach-companion",
+        "tag": "BUTTON",
+        "x": 504.71875,
+        "y": 2922.609375,
+        "width": 312.765625,
+        "height": 127
+      },
+      {
+        "id": "resource-d017d8a601afa782-save-artifact",
+        "action": "save-artifact",
+        "tag": "BUTTON",
+        "x": 262.5,
+        "y": 3088.609375,
+        "width": 174.21875,
+        "height": 99
+      }
+    ],
+    "clipping": [],
+    "contrast": [
+      {
+        "tag": "SPAN",
+        "text": "N",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 12.813123328826556,
+        "min": 3
+      },
+      {
+        "tag": "SPAN",
+        "text": "netscapeINFINITE",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 16.178238477184596,
+        "min": 3
+      },
+      {
+        "tag": "SPAN",
+        "text": "INFINITE",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "A different surface.The same underlying knowledge.",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 16.178238477184596,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "The same underlying knowledge.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "LOCAL STUDIO v.01",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 16.178238477184596,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "v.01",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "A COMPUTATIONAL INTERPRETATION STUDIO",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 12.813123328826556,
+        "min": 4.5
+      },
+      {
+        "tag": "H1",
+        "text": "The web, recomposed.",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 16.178238477184596,
+        "min": 3
+      },
+      {
+        "tag": "EM",
+        "text": "recomposed.",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 12.813123328826556,
+        "min": 3
+      },
+      {
+        "tag": "P",
+        "text": "Content becomes a living surface. Bring a source, choose a composition, and follow what matters.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "LABEL",
+        "text": "SOURCE ↗",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          20,
+          34,
+          53
+        ],
+        "ratio": 8.002374350885356,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          20,
+          34,
+          53
+        ],
+        "ratio": 11.220777294674152,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Interpret source ↗",
+        "foreground": "rgb(16, 36, 27)",
+        "background": [
+          138,
+          235,
+          189
+        ],
+        "ratio": 11.392584494027666,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(16, 36, 27)",
+        "background": [
+          138,
+          235,
+          189
+        ],
+        "ratio": 11.392584494027666,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "TRY AN AUTHORED DEMO",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "✳NASA / Deep space↗",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          20,
+          43,
+          43
+        ],
+        "ratio": 10.423366750944862,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "✳",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          20,
+          43,
+          43
+        ],
+        "ratio": 10.423366750944862,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          20,
+          43,
+          43
+        ],
+        "ratio": 7.433681334823661,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "◒Restaurant / Menu↗",
+        "foreground": "rgb(195, 207, 218)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.557099782244357,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◒",
+        "foreground": "rgb(195, 207, 218)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.557099782244357,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "⌘GitHub / Repository↗",
+        "foreground": "rgb(195, 207, 218)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.557099782244357,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "⌘",
+        "foreground": "rgb(195, 207, 218)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.557099782244357,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "WORKSPACE / AUTHORED DEMO FIXTURE",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 16.178238477184596,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "/ AUTHORED DEMO FIXTURE",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "◐ Dark canvas",
+        "foreground": "rgb(193, 206, 219)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.43590362174596,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Export manifest ↓",
+        "foreground": "rgb(193, 206, 219)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.43590362174596,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↓",
+        "foreground": "rgb(193, 206, 219)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 11.43590362174596,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "01 / COMPOSITION",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "⊞",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "LABEL",
+        "text": "Layout algorithm",
+        "foreground": "rgb(214, 223, 231)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.100523604033263,
+        "min": 4.5
+      },
+      {
+        "tag": "LABEL",
+        "text": "Generative seed",
+        "foreground": "rgb(214, 223, 231)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.100523604033263,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "#",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          23,
+          38,
+          56
+        ],
+        "ratio": 7.647330152743518,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Regenerate surface ↻",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          23,
+          48,
+          46
+        ],
+        "ratio": 9.80794339142865,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↻",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          23,
+          48,
+          46
+        ],
+        "ratio": 9.80794339142865,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "One semantic graph.Many possible expressions.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "THE SIX FAMILIES",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "01",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Spatial Observatory",
+        "foreground": "rgb(211, 220, 229)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.738919225000217,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "An orthogonal observation grid; seeded columns and a mirrored rail.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "02",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Orbital Surface",
+        "foreground": "rgb(211, 220, 229)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.738919225000217,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Elliptical anchors with collision projection place knowledge in rings.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "03",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.368937326050565,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Elastic Surface",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.368937326050565,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Graph degree and golden-ratio columns shape a weighted masonry.",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.368937326050565,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "04",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Folded Document",
+        "foreground": "rgb(211, 220, 229)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.738919225000217,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Alternating, nested folds create a deliberate vertical reading path.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "05",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Computational Workbench",
+        "foreground": "rgb(211, 220, 229)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.738919225000217,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Containment relationships organize content into semantic swimlanes.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "06",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "STRONG",
+        "text": "Chromatic Field",
+        "foreground": "rgb(211, 220, 229)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 12.738919225000217,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Alternating one-third and two-third area bands create a binary composition.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "DISPLAY / ENVIRONMENT",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Canvas",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "653 × 390",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Pixel ratio",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "1×",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Input",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "keyboard + pointer",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Motion",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "Reduced",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Text scale",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "100%",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DT",
+        "text": "Solver",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DD",
+        "text": "weighted-masonry",
+        "foreground": "rgb(218, 227, 235)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.60554338778327,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "Elastic / SEED 7",
+        "foreground": "rgb(49, 71, 60)",
+        "background": [
+          231,
+          234,
+          222
+        ],
+        "ratio": 8.212001195318724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "/ SEED 7",
+        "foreground": "rgb(80, 99, 81)",
+        "background": [
+          231,
+          234,
+          222
+        ],
+        "ratio": 5.307726131495529,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "15 NODES · 14 EDGES",
+        "foreground": "rgb(68, 89, 69)",
+        "background": [
+          231,
+          234,
+          222
+        ],
+        "ratio": 6.238221372176015,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◈ AUTHORED FIXTURE",
+        "foreground": "rgb(55, 82, 62)",
+        "background": [
+          241,
+          242,
+          233
+        ],
+        "ratio": 7.633553619717452,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Local authored demonstration. This is not a live source snapshot.",
+        "foreground": "rgb(74, 94, 75)",
+        "background": [
+          241,
+          242,
+          233
+        ],
+        "ratio": 6.2186286564415285,
+        "min": 4.5
+      },
+      {
+        "tag": "SUMMARY",
+        "text": "Research intent · 95% · inferred",
+        "foreground": "rgb(48, 75, 54)",
+        "background": [
+          241,
+          242,
+          233
+        ],
+        "ratio": 8.519199937559728,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Inferred from source nodes: resource-d017d8a601afa782, resource-d017d8a601afa782-n2, resource-d017d8",
+        "foreground": "rgb(74, 94, 75)",
+        "background": [
+          241,
+          242,
+          233
+        ],
+        "ratio": 6.2186286564415285,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◈ RESOURCE 01",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◈",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "01",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Worlds beyond our Sun · research notebook",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 3
+      },
+      {
+        "tag": "SPAN",
+        "text": "PUBLIC KNOWLEDGE / INTERPRETED LOCALLY",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "/",
+        "foreground": "rgb(255, 255, 255)",
+        "background": [
+          90,
+          52,
+          156
+        ],
+        "ratio": 8.728221399548724,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◎ EVIDENCE 02",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◎",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "02",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Local authored source",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Local authored demonstration. This is not a live source snapshot.",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Source evidence · no live verification",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳ SOURCE PASSAGE 03",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "03",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcem",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§ SECTION 04",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "04",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Worlds beyond our Sun",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳ SOURCE PASSAGE 05",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "05",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of ",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§ SECTION 06",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "06",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Reading an atmosphere with Webb",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳ SOURCE PASSAGE 07",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "07",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "When a planet crosses its star, a small fraction of starlight can filter through the plane",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosp",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳ SOURCE PASSAGE 08",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "08",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Use this notebook to select a passage, invite a clearly labeled local simulated companion,",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save ",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§ SECTION 09",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "§",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "09",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Keep the evidence close",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳ SOURCE PASSAGE 10",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↳",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "10",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Ask what was measured, which model connects the measurement to a claim, and what another o",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Ask what was measured, which model connects the measurement to a claim, and what another observation",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗ LINK 11",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "11",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Explore NASA's exoplanet science",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Open original ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗ LINK 12",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "12",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Read about the Webb mission",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Open original ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→ ACTION 13",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "13",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select a passage",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Select as context ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→ ACTION 14",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "14",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Come here · local simulated companion",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Local simulated companion ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→ ACTION 15",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "→",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "15",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Save cited artifact",
+        "foreground": "rgb(22, 21, 27)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 15.586004827709665,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Create a cited local artifact ↗",
+        "foreground": "rgb(81, 77, 92)",
+        "background": [
+          239,
+          236,
+          249
+        ],
+        "ratio": 7.029044891147492,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "SOURCE IDENTITY PRESERVED",
+        "foreground": "rgb(60, 82, 66)",
+        "background": [
+          231,
+          234,
+          222
+        ],
+        "ratio": 6.950626939644509,
+        "min": 4.5
+      },
+      {
+        "tag": "CODE",
+        "text": "8547a08d2171dcc1",
+        "foreground": "rgb(60, 82, 66)",
+        "background": [
+          231,
+          234,
+          222
+        ],
+        "ratio": 6.950626939644509,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "02 / CONTEXT",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "⌁",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "H2",
+        "text": "A little closerto the source.",
+        "foreground": "rgb(238, 242, 237)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 15.617395746125402,
+        "min": 3
+      },
+      {
+        "tag": "P",
+        "text": "Select a passage on the surface. Bring a local companion into the same context.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "NO PASSAGE SELECTED",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Your shared context starts with a source passage.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Come here ↘",
+        "foreground": "rgb(19, 39, 30)",
+        "background": [
+          138,
+          235,
+          189
+        ],
+        "ratio": 10.99679943917828,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "↘",
+        "foreground": "rgb(19, 39, 30)",
+        "background": [
+          138,
+          235,
+          189
+        ],
+        "ratio": 10.99679943917828,
+        "min": 4.5
+      },
+      {
+        "tag": "SMALL",
+        "text": "LOCAL · SIMULATED · NO MODEL API",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "SEMANTIC CONSTELLATION",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "15",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "TICK 0",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "ENERGY 0.000",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Send a little ripple ≈",
+        "foreground": "rgb(169, 236, 205)",
+        "background": [
+          19,
+          42,
+          44
+        ],
+        "ratio": 11.156993986547041,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "≈",
+        "foreground": "rgb(169, 236, 205)",
+        "background": [
+          19,
+          42,
+          44
+        ],
+        "ratio": 11.156993986547041,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "Optional event sound",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Sound off ◗",
+        "foreground": "rgb(215, 228, 221)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.489851858554658,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "◗",
+        "foreground": "rgb(215, 228, 221)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 13.489851858554658,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "A fixed-step physical event. Color and graph motion respond; source actions are never triggered.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "03 / SAVED ARTIFACTS",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "00",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "Keep a passage worth returning to.Saved locally, with its source.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          14,
+          25,
+          40
+        ],
+        "ratio": 8.821213023510944,
+        "min": 4.5
+      },
+      {
+        "tag": "DIV",
+        "text": "Ready to explore. Every generated action stays attached to its original source.",
+        "foreground": "rgb(183, 203, 191)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 10.729154225440595,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "netscape infinite",
+        "foreground": "rgb(226, 233, 227)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 14.817810645008414,
+        "min": 4.5
+      },
+      {
+        "tag": "EM",
+        "text": "infinite",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 12.813123328826556,
+        "min": 4.5
+      },
+      {
+        "tag": "P",
+        "text": "An experimental surface for public knowledge.Deterministic by design. Yours to explore.",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "INTERPRET / COMPOSE / CONNECT● BUILT FROM THE SOURCE UP",
+        "foreground": "rgb(170, 185, 200)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 9.137995237638306,
+        "min": 4.5
+      },
+      {
+        "tag": "SPAN",
+        "text": "●",
+        "foreground": "rgb(138, 235, 189)",
+        "background": [
+          12,
+          21,
+          35
+        ],
+        "ratio": 12.813123328826556,
+        "min": 4.5
+      }
+    ],
+    "contrastFailures": []
+  },
+  "actionErrors": [],
+  "regionErrors": [],
+  "physicsErrors": [],
+  "axeViolations": [],
+  "hardInvariants": {
+    "pinnedFontAssets": true,
+    "validRegions": true,
+    "boundedPhysics": true,
+    "noClipping": true,
+    "correctActions": true,
+    "actualCSSContrast": true,
+    "axeClean": true
+  },
+  "reproduction": {
+    "dimensionsEqual": true,
+    "differentPixels": 0,
+    "totalPixels": 4012200,
+    "ratio": 0,
+    "surfaceEqual": true,
+    "physicsEqual": true
+  },
+  "artifacts": {
+    "baselinePath": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-baseline.png",
+    "replayPath": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-replay.png",
+    "diffPath": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-diff.png"
+  },
+  "limitations": [
+    "Self-baseline only establishes same-input reproduction fidelity.",
+    "DOM contrast audit uses solid computed ancestor backgrounds; axe separately audits supported CSS backgrounds.",
+    "No aesthetic quality assertion."
+  ]
+}

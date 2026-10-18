@@ -1,0 +1,129 @@
+- banner:
+  - link "netscape INFINITE":
+    - /url: /
+  - text: A different surface. The same underlying knowledge. LOCAL STUDIO v.01
+- main:
+  - text: A COMPUTATIONAL INTERPRETATION STUDIO
+  - heading "The web, recomposed." [level=1]:
+    - text: The web,
+    - emphasis: recomposed.
+  - paragraph: Content becomes a living surface. Bring a source, choose a composition, and follow what matters.
+  - text: 01 — ∞ SEMANTICS FIRST SURFACES WITHOUT LIMITS SOURCE
+  - textbox "SOURCE":
+    - /placeholder: https://www.nasa.gov/…
+    - text: https://science.nasa.gov/exoplanets/
+  - button "Interpret source"
+  - text: TRY AN AUTHORED DEMO
+  - button "NASA / Deep space" [pressed]
+  - button "Restaurant / Menu"
+  - button "GitHub / Repository"
+  - text: WORKSPACE / AUTHORED DEMO FIXTURE
+  - button "Dark canvas": ◐ Dark canvas
+  - button "Export manifest"
+  - complementary "Composition controls":
+    - text: 01 / COMPOSITION Layout algorithm
+    - combobox "Layout algorithm":
+      - option "Spatial Observatory"
+      - option "Orbital Surface"
+      - option "Elastic Surface"
+      - option "Folded Document" [selected]
+      - option "Computational Workbench"
+      - option "Chromatic Field"
+    - text: Generative seed
+    - spinbutton "Generative seed": "7"
+    - button "Regenerate surface"
+    - paragraph: One semantic graph. Many possible expressions.
+    - text: THE SIX FAMILIES
+    - list:
+      - listitem:
+        - text: "01"
+        - strong: Spatial Observatory
+        - paragraph: An orthogonal observation grid; seeded columns and a mirrored rail.
+      - listitem:
+        - text: "02"
+        - strong: Orbital Surface
+        - paragraph: Elliptical anchors with collision projection place knowledge in rings.
+      - listitem:
+        - text: "03"
+        - strong: Elastic Surface
+        - paragraph: Graph degree and golden-ratio columns shape a weighted masonry.
+      - listitem:
+        - text: "04"
+        - strong: Folded Document
+        - paragraph: Alternating, nested folds create a deliberate vertical reading path.
+      - listitem:
+        - text: "05"
+        - strong: Computational Workbench
+        - paragraph: Containment relationships organize content into semantic swimlanes.
+      - listitem:
+        - text: "06"
+        - strong: Chromatic Field
+        - paragraph: Alternating one-third and two-third area bands create a binary composition.
+    - text: DISPLAY / ENVIRONMENT
+    - term: Canvas
+    - definition: 873 × 900
+    - term: Pixel ratio
+    - definition: 1×
+    - term: Input
+    - definition: keyboard + pointer
+    - term: Motion
+    - definition: Reduced
+    - term: Text scale
+    - definition: 100%
+    - term: Solver
+    - definition: accordion-2
+  - region "Generated source surface":
+    - text: Folded / SEED 7 15 NODES · 14 EDGES ◈ AUTHORED FIXTURE
+    - paragraph: Local authored demonstration. This is not a live source snapshot.
+    - group: Research intent · 95% · inferred
+    - article: RESOURCE 01 Worlds beyond our Sun · research notebook PUBLIC KNOWLEDGE INTERPRETED LOCALLY
+    - article: EVIDENCE 02 Local authored source Local authored demonstration. This is not a live source snapshot. Source evidence · no live verification
+    - article:
+      - button "SOURCE PASSAGE 03 LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research. Select as context ↗"
+    - article: SECTION 04 Worlds beyond our Sun
+    - article:
+      - 'button "SOURCE PASSAGE 05 An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star''s changing brightness, its slight wobble, and the light that passes through a planet''s atmosphere. Select as context ↗"'
+    - article: SECTION 06 Reading an atmosphere with Webb
+    - article:
+      - button "SOURCE PASSAGE 07 When a planet crosses its star, a small fraction of starlight can filter through the plane When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations. Select as context ↗"
+    - article:
+      - button "SOURCE PASSAGE 08 Use this notebook to select a passage, invite a clearly labeled local simulated companion, Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected. Select as context ↗"
+    - article: SECTION 09 Keep the evidence close
+    - article:
+      - button "SOURCE PASSAGE 10 Ask what was measured, which model connects the measurement to a claim, and what another o Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results. Select as context ↗"
+    - article:
+      - link "LINK 11 Explore NASA's exoplanet science Open original":
+        - /url: https://science.nasa.gov/exoplanets/
+    - article:
+      - link "LINK 12 Read about the Webb mission Open original":
+        - /url: https://science.nasa.gov/mission/webb/
+    - article:
+      - button "ACTION 13 Select a passage Select as context ↗"
+    - article:
+      - button "ACTION 14 Come here · local simulated companion Local simulated companion ↗"
+    - article:
+      - button "ACTION 15 Save cited artifact Create a cited local artifact ↗"
+    - text: SOURCE IDENTITY PRESERVED
+    - code: 0a30e44d68f260f9
+  - complementary "Context and local artifacts":
+    - text: 02 / CONTEXT
+    - heading "A little closer to the source." [level=2]
+    - paragraph: Select a passage on the surface. Bring a local companion into the same context.
+    - text: NO PASSAGE SELECTED
+    - paragraph: Your shared context starts with a source passage.
+    - button "Come here"
+    - text: LOCAL · SIMULATED · NO MODEL API SEMANTIC CONSTELLATION 15
+    - 'img "Actual semantic graph: 15 nodes and 14 relationships"'
+    - text: TICK 0 ENERGY 0.000
+    - button "Send a little ripple"
+    - text: Optional event sound
+    - button "Sound off"
+    - paragraph: A fixed-step physical event. Color and graph motion respond; source actions are never triggered.
+    - text: 03 / SAVED ARTIFACTS 00
+    - paragraph: Keep a passage worth returning to. Saved locally, with its source.
+  - status: Ready to explore. Every generated action stays attached to its original source.
+- contentinfo:
+  - text: netscape
+  - emphasis: infinite
+  - paragraph: An experimental surface for public knowledge. Deterministic by design. Yours to explore.
+  - text: INTERPRET / COMPOSE / CONNECT ● BUILT FROM THE SOURCE UP

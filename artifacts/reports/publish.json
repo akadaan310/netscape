@@ -1,28 +1,38 @@
 {
-  "recordedAt": "2026-10-18T11:47:24.079Z",
+  "recordedAt": "2026-10-18T11:59:09.400674+00:00",
   "branch": "main",
+  "defaultBranch": "main",
   "productCodeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
   "provider": "GitHub",
   "account": "akadaan310",
-  "requestedRepository": "akadaan310/netscape-infinite",
-  "requestedVisibility": "private",
+  "repository": "akadaan310/netscape",
+  "repositoryURL": "https://github.com/akadaan310/netscape",
+  "visibility": "public",
   "authorizedByUser": true,
-  "status": "BLOCKED_REPOSITORY_CREATION_PERMISSION",
-  "attempts": [
-    {
-      "operation": "GraphQL createRepository through gh repo create",
-      "exitCode": 1,
-      "message": "Resource not accessible by integration"
-    },
-    {
-      "operation": "REST POST /user/repos",
-      "exitCode": 1,
-      "httpStatus": 403,
-      "message": "Resource not accessible by integration"
-    }
-  ],
-  "repositoryCreated": false,
-  "pushed": false,
+  "status": "PUSHED",
+  "repositoryCreatedByAgent": false,
+  "repositoryProvidedByUser": true,
+  "pushed": true,
+  "verifiedDeliveryCommit": "d3eda167ef3483f39dee6b98478993fbcd3e7ca8",
+  "verifiedRemoteMainCommit": "d3eda167ef3483f39dee6b98478993fbcd3e7ca8",
   "deployed": false,
-  "nextStep": "Create empty repository and grant connected integration access, then provide its URL. Product and evidence are ready on local main."
+  "resolvedPriorBlocker": {
+    "requestedRepository": "akadaan310/netscape-infinite",
+    "status": "BLOCKED_REPOSITORY_CREATION_PERMISSION",
+    "attempts": [
+      {
+        "operation": "GraphQL createRepository through gh repo create",
+        "exitCode": 1,
+        "message": "Resource not accessible by integration"
+      },
+      {
+        "operation": "REST POST /user/repos",
+        "exitCode": 1,
+        "httpStatus": 403,
+        "message": "Resource not accessible by integration"
+      }
+    ],
+    "resolution": "User supplied an accessible repository URL; origin was added and main was pushed successfully."
+  },
+  "nextStep": "Connect this GitHub repository to Vercel using DEPLOYMENT.md. No public deployment has been performed."
 }
