@@ -1,0 +1,59 @@
+✔ capability pack exposes twenty real metadata-rich operations (1.107472ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (7.877488ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (2.322458ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (1.379216ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.437461ms)
+✔ postconditions and output schemas reject dishonest performers (0.4908ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.553288ms)
+✔ external reading has no default network implementation and validates injected result (0.630386ms)
+✖ failed capability output retains prior executed steps and records that capability was invoked (0.81803ms)
+✖ reconstruction rejects unknown performers and altered metadata (1.370306ms)
+✖ artifact storage cannot return a different artifact identity (0.91077ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 8
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 255.310589
+
+✖ failing tests:
+
+test at tests/performers.test.ts:91:1
+✖ failed capability output retains prior executed steps and records that capability was invoked (0.81803ms)
+  TypeError: Cannot read properties of undefined (reading 'steps')
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:97:28)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/performers.test.ts:103:1
+✖ reconstruction rejects unknown performers and altered metadata (1.370306ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:106:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/performers.test.ts:111:1
+✖ artifact storage cannot return a different artifact identity (0.91077ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:113:2)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /identity/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }

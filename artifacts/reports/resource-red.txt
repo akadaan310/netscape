@@ -1,0 +1,127 @@
+✖ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (1.086194ms)
+✖ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (0.19654ms)
+✖ interpretation is deterministic, bounded and rejects invalid source schemes (0.127843ms)
+✖ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.374804ms)
+✖ public IP validation rejects private, metadata, reserved and mapped IPv6 space (0.252217ms)
+✖ DNS private answers are rejected before transport, including mixed public/private answers (0.305614ms)
+✖ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (0.297054ms)
+✖ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (0.645795ms)
+✖ timeouts bound DNS and response work (0.261475ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 0
+ℹ fail 9
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.298235
+
+✖ failing tests:
+
+test at tests/resource.test.ts:9:1
+✖ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (1.086194ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:11:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/resource.test.ts:25:1
+✖ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (0.19654ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:27:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/resource.test.ts:39:1
+✖ interpretation is deterministic, bounded and rejects invalid source schemes (0.127843ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:41:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:9:1
+✖ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.374804ms)
+  Error: URL validation not implemented
+      at validatePublicURL (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:2:65)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:11:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/security.test.ts:14:1
+✖ public IP validation rejects private, metadata, reserved and mapped IPv6 space (0.252217ms)
+  Error: IP validation not implemented
+      at isPublicAddress (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:3:63)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:15:291)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/security.test.ts:18:1
+✖ DNS private answers are rejected before transport, including mixed public/private answers (0.305614ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:21:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:26:1
+✖ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (0.297054ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:28:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:38:1
+✖ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (0.645795ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at <anonymous> (/workspace/netscape-infinite/tests/security.test.ts:40:27)
+      at waitForActual (node:assert:632:21)
+      at strict.rejects (node:assert:769:31)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:40:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests/security.test.ts:46:1
+✖ timeouts bound DNS and response work (0.261475ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at <anonymous> (/workspace/netscape-infinite/tests/security.test.ts:47:27)
+      at waitForActual (node:assert:632:21)
+      at strict.rejects (node:assert:769:31)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:47:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)

@@ -1,0 +1,1 @@
+{"name":"@netscape/render-react","version":"0.1.0","type":"module","exports":"./src/index.tsx","dependencies":{"@netscape/core":"0.1.0","@netscape/chromatics":"0.1.0"},"peerDependencies":{"react":"^19.0.0"}}

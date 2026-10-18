@@ -1,0 +1,64 @@
+node:internal/modules/cjs/loader:1517
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '../packages/chromatics/src/index.ts'
+Require stack:
+- /workspace/netscape-infinite/tests/chromatics.test.ts
+    at node:internal/modules/cjs/loader:1517:15
+    at nextResolveSimple (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///workspace/netscape-infinite/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at defaultResolve (node:internal/modules/cjs/loader:1152:20) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspace/netscape-infinite/tests/chromatics.test.ts' ]
+}
+
+Node.js v24.19.0
+✖ tests/chromatics.test.ts (235.835697ms)
+node:internal/modules/cjs/loader:1517
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '../packages/dynamics/src/index.ts'
+Require stack:
+- /workspace/netscape-infinite/tests/dynamics.test.ts
+    at node:internal/modules/cjs/loader:1517:15
+    at nextResolveSimple (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///workspace/netscape-infinite/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at defaultResolve (node:internal/modules/cjs/loader:1152:20) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspace/netscape-infinite/tests/dynamics.test.ts' ]
+}
+
+Node.js v24.19.0
+✖ tests/dynamics.test.ts (232.097716ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 248.310867
+
+✖ failing tests:
+
+test at tests/chromatics.test.ts:1:1
+✖ tests/chromatics.test.ts (235.835697ms)
+  'test failed'
+
+test at tests/dynamics.test.ts:1:1
+✖ tests/dynamics.test.ts (232.097716ms)
+  'test failed'

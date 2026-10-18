@@ -1,0 +1,37 @@
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (14.407931ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (4.609108ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (127.323571ms)
+✖ each extracted passage exposes a local typed selection action (1.417715ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 377.682267
+
+✖ failing tests:
+
+test at tests/resource.test.ts:49:1
+✖ each extracted passage exposes a local typed selection action (1.417715ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'select-passage'
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:53:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'select-passage',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

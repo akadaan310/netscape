@@ -1,0 +1,14 @@
+export const SCHEMA_VERSION = '1.0.0';
+export const GRAMMAR_VERSION = '1.0.0';
+export const FAMILIES = ['observatory','orbital','elastic','folded','workbench','chromatic'] as const;
+export type Family = typeof FAMILIES[number];
+export type NodeKind = 'Resource'|'Section'|'Text'|'Link'|'Form'|'Action'|'Artifact'|'Participant'|'Evidence'|'Group';
+export type ActionType = 'open-external'|'select-passage'|'attach-companion'|'save-artifact'|'navigate';
+export type SemanticNode = {id:string;kind:NodeKind;label:string;text?:string;url?:string;action?:ActionType;supported?:boolean;evidence?:string[];meta?:Record<string,string>};
+export type SemanticEdge = {from:string;to:string;kind:'contains'|'references'|'navigates'|'derives'|'observes'|'acts_on'};
+export type SemanticGraph = {version:string;id:string;title:string;sourceUrl:string;nodes:SemanticNode[];edges:SemanticEdge[];provenance:{kind:'fixture'|'public';fetchedAt:string;contentHash:string;notice:string}};
+export type Intent = {kind:'research'|'commerce'|'repository'|'general';confidence:number;evidence:string[];status:'inferred'};
+export type Display = {width:number;height:number;dpr:number;input:('keyboard'|'pointer'|'touch')[];reducedMotion:boolean;colorScheme:'dark'|'light'};
+export type SurfaceNode = {id:string;semanticId:string;role:'resource'|'section'|'text'|'link'|'form'|'action'|'artifact'|'participant'|'evidence'|'group';children:SurfaceNode[]};
+export type Region = {id:string;semanticId:string;x:number;y:number;width:number;height:number;order:number};
+export type Surface = {version:string;graphId:string;seed:number;family:Family;tree:SurfaceNode;regions:Region[];width:number;height:number;topology:string;requiredActions:string[];metrics:{compactness:number;legibility:number;whitespace:number;grouping:number;motionEnergy:number};hash:string};

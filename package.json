@@ -1,6 +1,11 @@
 {
-  "name": "netscape-infinite", "version": "0.1.0", "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "name": "netscape-infinite",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "npm run dev -w @netscape/web",
     "build:sdk": "tsx scripts/build-sdk.ts",
@@ -12,6 +17,26 @@
     "test:e2e": "playwright test",
     "verify": "npm test && npm run typecheck && npm run experiments && npm run build && npm run test:e2e"
   },
-  "devDependencies": {"@playwright/test":"^1.56.1","@types/node":"^22.18.0","@types/react":"^19.1.0","@types/react-dom":"^19.1.0","tsx":"^4.20.0","typescript":"^5.9.0","tsup":"^8.5.0","@axe-core/playwright":"^4.10.2","pngjs":"^7.0.0","@types/pngjs":"^6.0.5"},
-  "engines": {"node": ">=22"}
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.18.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "pngjs": "^7.0.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "next": "^15.5.28",
+    "parse5": "^7.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "type": "module"
 }
