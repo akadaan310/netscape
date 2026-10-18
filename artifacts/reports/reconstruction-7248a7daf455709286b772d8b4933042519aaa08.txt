@@ -1,0 +1,150 @@
+Checkpoint: 7248a7daf455709286b772d8b4933042519aaa08
+Clean export: /tmp/netscape-reconstruction.KB3K2d
+v24.19.0
+11.9.0
+
+added 100 packages in 11s
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ bounded artifact shelf keeps unique IDs and valid cold replay after52 saves of the same passage (148.531862ms)
+✔ append rejects the first artifact over the combined replay budget without evicting saved work (6178.76276ms)
+✔ persistence preflight never replaces a recoverable record with an over-budget world or invalid schema (468.214978ms)
+✔ OKLCH reference colors and chroma-bisection gamut mapping (14.674576ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.483411ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (29.245669ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.347524ms)
+✔ independent geometric oracle catches clipping, overlap and narrow targets (1.926391ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.368129ms)
+✔ all constitutional clauses have separate enforcement revision (0.164185ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.31217ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (27.795501ms)
+✔ replay binds complete graph and every manifest field and detaches mutable source values (5.109355ms)
+✔ workspace type guard rejects corrupt optional and nested JSON shapes without throwing (3.263604ms)
+✔ metadata must equal regeneration even after ordinary integrity digest is recomputed (5.09406ms)
+✔ real dynamics replay and inferred source evidence survive serialization and reject corruption (12.692927ms)
+✔ manifest replay preserves every safe integer seed accepted by core (5.41334ms)
+✔ local bounds preflight does not replace integrated validation for untrusted records (1.573143ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (6.712966ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (6.297625ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (2.95218ms)
+✔ six wide compositions have distinct actual geometry and structural topology (19.310255ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (38.36618ms)
+✔ long text expands region height and malformed display/seed are rejected (18.385883ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (63.180466ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (5.387694ms)
+✔ runtime graph boundary requires safe identity and executable role/action compatibility (0.977824ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (7.946485ms)
+✔ spring energy damps and the graph field diffuses without new extrema (7.975031ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (433.909647ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.663036ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (1.890866ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.708014ms)
+✔ serialized world manifests replay processed and future events with exact fields and trace (2.906231ms)
+✔ replay rejects tampered trace, version, inputs and oversized persistence workloads (172.290782ms)
+✔ independent contrast oracle matches published boundary examples and rejects invalid colors (1.876248ms)
+✔ independent surface audit catches isolated clipping, overlap, missing actions and order corruptions (20.620388ms)
+✔ cold manifest replay uses independent cryptographic fixture, graph and output identities (8.633327ms)
+✔ structural equivalence ignores seed/hash/subpixel noise yet detects a changed composition (13.225478ms)
+✔ Pareto ranking preserves incomparable and duplicate metric vectors without a beauty scalar (0.587274ms)
+✔ registered amendment retains original SHA identity and exact mission viewport coverage (3.175257ms)
+✔ capability pack exposes twenty real metadata-rich operations (1.10499ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (11.621663ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (4.104683ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (5.333515ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (1.000097ms)
+✔ postconditions and output schemas reject dishonest performers (0.51796ms)
+✔ local save uses an explicitly injected capability and replay records actual output (2.706485ms)
+✔ external reading has no default network implementation and validates injected result (0.981888ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (3.983541ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.34091ms)
+✔ artifact storage cannot return a different artifact identity (0.793482ms)
+✔ capabilities require explicit own functions and isolate declared names with no prototype (0.721659ms)
+✔ adapter renders untrusted content as text and never activates unsafe URL (14.483067ms)
+✔ adapter exposes typed passage action and stable semantic identity (1.145054ms)
+✔ fixture API returns evidence and explicit authored source notice offline (12.349223ms)
+✔ request service rejects ambiguity and unsafe URL before invoking transport (1.298111ms)
+✔ public read succeeds through real interpreter and refused resource offers safe fallback (2.000914ms)
+✔ rate limiter bounds a process budget and resets at window boundary (0.236623ms)
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (19.240565ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.596662ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (184.125654ms)
+✔ each extracted passage exposes a local typed selection action (0.449652ms)
+✔ sources without passages do not advertise unreachable passage-based capabilities (0.888228ms)
+✔ overlong source URLs reject clearly and overlong links never enter the graph (1.917632ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (2.688178ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (6.759302ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (1.84633ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (1.698124ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (3.120889ms)
+✔ timeouts bound DNS and response work (41.137182ms)
+✔ public fetch rejects URLs beyond the semantic graph URL bound (0.572904ms)
+ℹ tests 72
+ℹ suites 0
+ℹ pass 72
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7268.06464
+
+> netscape-infinite@0.1.0 typecheck
+> tsc --noEmit && tsc --noEmit -p apps/web/tsconfig.json
+
+
+> netscape-infinite@0.1.0 build
+> npm run build:sdk && npm run build -w @netscape/web
+
+
+> netscape-infinite@0.1.0 build:sdk
+> tsx scripts/build-sdk.ts
+
+Built @netscape/core (ESM + declarations)
+Built @netscape/chromatics (ESM + declarations)
+Built @netscape/dynamics (ESM + declarations)
+Built @netscape/resource-interpreter (ESM + declarations)
+Built @netscape/performers (ESM + declarations)
+Built @netscape/conformance (ESM + declarations)
+Built @netscape/render-react (ESM + declarations)
+
+> @netscape/web@0.1.0 prebuild
+> tsx ../../scripts/sync-fixtures.ts
+
+Synchronized three authored fixtures with independent SHA-256 identities
+
+> @netscape/web@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.28
+   - Experiments (use with caution):
+     · cpus: 2
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 6.1s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                    22.9 kB         126 kB
+├ ○ /_not-found                            986 B         104 kB
+└ ƒ /api/interpret                         121 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/18-8a0e9dadb94224f5.js        46.6 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js  54.2 kB
+  └ other shared chunks (total)           1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> netscape-infinite@0.1.0 smoke:sdk
+> node --no-experimental-strip-types scripts/smoke-sdk.mjs
+
+{"standaloneESM":true,"typescriptRuntimeRequired":false,"trace":"1974aeb7","contrast":15.586004827709665,"performer":"compiled portable SDK"}
+COLD_RECONSTRUCTION_PASS 7248a7daf455709286b772d8b4933042519aaa08

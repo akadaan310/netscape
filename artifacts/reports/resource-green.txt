@@ -1,0 +1,21 @@
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (13.138519ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.650646ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (239.766164ms)
+✔ each extracted passage exposes a local typed selection action (0.422746ms)
+✔ sources without passages do not advertise unreachable passage-based capabilities (1.074638ms)
+✔ overlong source URLs reject clearly and overlong links never enter the graph (1.570057ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (2.696981ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (17.531581ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (1.958643ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (2.267115ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (2.86027ms)
+✔ timeouts bound DNS and response work (45.118064ms)
+✔ public fetch rejects URLs beyond the semantic graph URL bound (0.581539ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 514.275657

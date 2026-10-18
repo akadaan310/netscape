@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-10-18T11:47:24.079Z",
+  "branch": "main",
+  "productCodeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "provider": "GitHub",
+  "account": "akadaan310",
+  "requestedRepository": "akadaan310/netscape-infinite",
+  "requestedVisibility": "private",
+  "authorizedByUser": true,
+  "status": "BLOCKED_REPOSITORY_CREATION_PERMISSION",
+  "attempts": [
+    {
+      "operation": "GraphQL createRepository through gh repo create",
+      "exitCode": 1,
+      "message": "Resource not accessible by integration"
+    },
+    {
+      "operation": "REST POST /user/repos",
+      "exitCode": 1,
+      "httpStatus": 403,
+      "message": "Resource not accessible by integration"
+    }
+  ],
+  "repositoryCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "nextStep": "Create empty repository and grant connected integration access, then provide its URL. Product and evidence are ready on local main."
+}

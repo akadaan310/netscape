@@ -1,0 +1,15 @@
+containment depth 47 {"errors":[],"hash":"6b2733e1b755805d"}
+containment depth 48 {"errors":[],"hash":"dbcd5529291755e5"}
+containment depth 49 {"errors":[],"hash":"664bd90e1d99699a"}
+containment depth 50 {"errors":[],"hash":"c880d820c559f75c"}
+containment depth 60 {"errors":[],"hash":"f49e5dc05e5d46ac"}
+containment depth 1000 THREW Error: Invalid semantic graph: Graph must have 1..1000 nodes
+replay semantic URL mutation THREW Error: Replay integrity digest mismatch
+replay unsupported fields THREW Error: Invalid replay schema
+missing external action target THREW Error: Invalid semantic graph: Node missingURL external action requires a safe URL
+workspace invalid optional shapes false
+workspace rejects canonical invalid artifact? false
+forged pure trace {"valid":true,"errors":[],"output":"invented"}
+missing capability rejected Error: Missing injected capability: constructor
+render blocked role actions THREW Error: Invalid semantic graph: Node resource-165de4a4979a1f58 action is incompatible with kind
+invalid graph version/source/provenance accepted ["Unsupported graph version","Graph sourceUrl must be safe HTTP(S)","Graph fetchedAt must be a valid ISO timestamp"]

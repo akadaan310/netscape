@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "grammarVersion": "1.0.0",
+  "fixtureHTML": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Worlds beyond our Sun · research notebook</title><meta name=\"description\" content=\"A locally authored demonstration inspired by NASA's public exoplanet and Webb research topics.\"><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"ScholarlyArticle\",\"name\":\"Worlds beyond our Sun\"}</script></head><body><main>\n<p>LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.</p>\n<h1>Worlds beyond our Sun</h1>\n<p>An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star's changing brightness, its slight wobble, and the light that passes through a planet's atmosphere.</p>\n<h2>Reading an atmosphere with Webb</h2>\n<p>When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations.</p>\n<p>Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected.</p>\n<h2>Keep the evidence close</h2>\n<p>Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results.</p>\n<nav><a href=\"https://science.nasa.gov/exoplanets/\">Explore NASA's exoplanet science</a><a href=\"https://science.nasa.gov/mission/webb/\">Read about the Webb mission</a></nav>\n</main></body></html>\n",
+  "fixtureSHA256": "8af440b4a4c9cd64109f1a2cb0627add0a890ad2696caeb4b1307d17b3314470",
+  "graph": {
+    "version": "1.0.0",
+    "id": "resource-a4e65930136b0cd4",
+    "title": "Worlds beyond our Sun · research notebook",
+    "sourceUrl": "https://www.nasa.gov/science/",
+    "nodes": [
+      {
+        "id": "resource-a4e65930136b0cd4",
+        "kind": "Resource",
+        "label": "Worlds beyond our Sun · research notebook",
+        "url": "https://www.nasa.gov/science/",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ],
+        "meta": {
+          "description": "A locally authored demonstration inspired by NASA's public exoplanet and Webb research topics.",
+          "jsonLdType": "ScholarlyArticle",
+          "jsonLdName": "Worlds beyond our Sun"
+        }
+      },
+      {
+        "id": "resource-a4e65930136b0cd4-source",
+        "kind": "Evidence",
+        "label": "Local authored source",
+        "text": "Local authored demonstration. This is not a live source snapshot.",
+        "url": "https://www.nasa.gov/science/",
+        "meta": {
+          "contentHash": "b5053b7ecfcd269a",
+          "fetchedAt": "2026-10-18T00:00:00.000Z",
+          "kind": "fixture"
+        }
+      },
+      {
+        "kind": "Text",
+        "label": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA",
+        "text": "LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.",
+        "action": "select-passage",
+        "supported": true,
+        "meta": {
+          "sourceTag": "p",
+          "sourceOrder": "8",
+          "origin": "local"
+        },
+        "id": "resource-a4e65930136b0cd4-n2",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Section",
+        "label": "Worlds beyond our Sun",
+        "text": "Worlds beyond our Sun",
+        "meta": {
+          "sourceTag": "h1",
+          "sourceOrder": "9",
+          "level": "1"
+        },
+        "id": "resource-a4e65930136b0cd4-n3",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Text",
+        "label": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many",
+        "text": "An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star's changing brightness, its slight wobble, and the light that passes through a planet's atmosphere.",
+        "action": "select-passage",
+        "supported": true,
+        "meta": {
+          "sourceTag": "p",
+          "sourceOrder": "10",
+          "origin": "local"
+        },
+        "id": "resource-a4e65930136b0cd4-n4",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Section",
+        "label": "Reading an atmosphere with Webb",
+        "text": "Reading an atmosphere with Webb",
+        "meta": {
+          "sourceTag": "h2",
+          "sourceOrder": "11",
+          "level": "2"
+        },
+        "id": "resource-a4e65930136b0cd4-n5",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Text",
+        "label": "When a planet crosses its star, a small fraction of starlight can filter through the plane",
+        "text": "When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations.",
+        "action": "select-passage",
+        "supported": true,
+        "meta": {
+          "sourceTag": "p",
+          "sourceOrder": "12",
+          "origin": "local"
+        },
+        "id": "resource-a4e65930136b0cd4-n6",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Text",
+        "label": "Use this notebook to select a passage, invite a clearly labeled local simulated companion,",
+        "text": "Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected.",
+        "action": "select-passage",
+        "supported": true,
+        "meta": {
+          "sourceTag": "p",
+          "sourceOrder": "13",
+          "origin": "local"
+        },
+        "id": "resource-a4e65930136b0cd4-n7",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Section",
+        "label": "Keep the evidence close",
+        "text": "Keep the evidence close",
+        "meta": {
+          "sourceTag": "h2",
+          "sourceOrder": "14",
+          "level": "2"
+        },
+        "id": "resource-a4e65930136b0cd4-n8",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Text",
+        "label": "Ask what was measured, which model connects the measurement to a claim, and what another o",
+        "text": "Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results.",
+        "action": "select-passage",
+        "supported": true,
+        "meta": {
+          "sourceTag": "p",
+          "sourceOrder": "15",
+          "origin": "local"
+        },
+        "id": "resource-a4e65930136b0cd4-n9",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Link",
+        "label": "Explore NASA's exoplanet science",
+        "url": "https://science.nasa.gov/exoplanets/",
+        "action": "navigate",
+        "supported": true,
+        "meta": {
+          "sourceTag": "a",
+          "sourceOrder": "17"
+        },
+        "id": "resource-a4e65930136b0cd4-n10",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "kind": "Link",
+        "label": "Read about the Webb mission",
+        "url": "https://science.nasa.gov/mission/webb/",
+        "action": "navigate",
+        "supported": true,
+        "meta": {
+          "sourceTag": "a",
+          "sourceOrder": "18"
+        },
+        "id": "resource-a4e65930136b0cd4-n11",
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ]
+      },
+      {
+        "id": "resource-a4e65930136b0cd4-select-passage",
+        "kind": "Action",
+        "label": "Select a passage",
+        "action": "select-passage",
+        "supported": true,
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ],
+        "meta": {
+          "origin": "local",
+          "targetId": "resource-a4e65930136b0cd4"
+        }
+      },
+      {
+        "id": "resource-a4e65930136b0cd4-attach-companion",
+        "kind": "Action",
+        "label": "Come here · local simulated companion",
+        "action": "attach-companion",
+        "supported": true,
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ],
+        "meta": {
+          "origin": "local",
+          "targetId": "resource-a4e65930136b0cd4"
+        }
+      },
+      {
+        "id": "resource-a4e65930136b0cd4-save-artifact",
+        "kind": "Action",
+        "label": "Save cited artifact",
+        "action": "save-artifact",
+        "supported": true,
+        "evidence": [
+          "resource-a4e65930136b0cd4-source"
+        ],
+        "meta": {
+          "origin": "local",
+          "targetId": "resource-a4e65930136b0cd4"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-source",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-n2",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-n3",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n3",
+        "to": "resource-a4e65930136b0cd4-n4",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-n5",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n5",
+        "to": "resource-a4e65930136b0cd4-n6",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n5",
+        "to": "resource-a4e65930136b0cd4-n7",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-n8",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n8",
+        "to": "resource-a4e65930136b0cd4-n9",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n8",
+        "to": "resource-a4e65930136b0cd4-n10",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4-n8",
+        "to": "resource-a4e65930136b0cd4-n11",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-select-passage",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-attach-companion",
+        "kind": "contains"
+      },
+      {
+        "from": "resource-a4e65930136b0cd4",
+        "to": "resource-a4e65930136b0cd4-save-artifact",
+        "kind": "contains"
+      }
+    ],
+    "provenance": {
+      "kind": "fixture",
+      "fetchedAt": "2026-10-18T00:00:00.000Z",
+      "contentHash": "b5053b7ecfcd269a",
+      "notice": "Local authored demonstration. This is not a live source snapshot."
+    }
+  },
+  "graphSHA256": "89616c9306a83a84f261eec4396c6febe9170e0f03e72ed893175f4575c23ae4",
+  "seed": 42,
+  "family": "observatory",
+  "display": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "dpr": 1,
+    "input": [
+      "pointer",
+      "keyboard"
+    ],
+    "reducedMotion": false,
+    "colorScheme": "dark"
+  },
+  "expectedSurfaceSHA256": "9d6094fc37416820eeb579946d082db515ec48c9a76c9bbc6d90987d45666407"
+}

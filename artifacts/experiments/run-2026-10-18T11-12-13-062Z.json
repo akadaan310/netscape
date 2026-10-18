@@ -1,0 +1,1041 @@
+{
+  "version": 1,
+  "grammarVersion": "1.0.0",
+  "registrationSHA256": "9ba59b6328882c8deda0ef45d1582be21a3fd10d674339322eae102c09cc159c",
+  "amendmentSHA256": "48f8829083ad1a51a36c6296369834280aa796447bc9473e752250bf9c1be5cb",
+  "fixtureSHA256": {
+    "nasa": "8af440b4a4c9cd64109f1a2cb0627add0a890ad2696caeb4b1307d17b3314470",
+    "restaurant": "f05cb6bdf8484c74bb8bd46f628ac4ba65f0a1045573d6f17b4ac811cbc131a1",
+    "github": "092d33dfe1af1f30e6a1a9a9bbe80541ad52cbb378c2ee2880f2b1728a86084e"
+  },
+  "seeds": {
+    "first": 0,
+    "count": 1000
+  },
+  "results": [
+    {
+      "id": "H1",
+      "status": "pass",
+      "metrics": {
+        "seeds": 1000,
+        "seedFamilyAssignment": "FAMILIES[seed % 6]",
+        "seedOutputSHA256": "68bc189445fa92f05f3b30baa254bc61d4092ed999350c6148becf2686bf404f",
+        "uniqueContentSHA256": 1000,
+        "uniqueSDKStructuralSignatures": 14,
+        "uniqueIndependentStructuralSignatures": 16,
+        "oneEdge": {
+          "edge": {
+            "from": "resource-a4e65930136b0cd4-n3",
+            "to": "resource-a4e65930136b0cd4",
+            "kind": "references"
+          },
+          "changes": [
+            {
+              "family": "observatory",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            },
+            {
+              "family": "orbital",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            },
+            {
+              "family": "elastic",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            },
+            {
+              "family": "folded",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            },
+            {
+              "family": "workbench",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            },
+            {
+              "family": "chromatic",
+              "contentChanged": false,
+              "independentStructureChanged": false,
+              "sdkStructureChanged": false
+            }
+          ]
+        },
+        "amendedContainmentEdge": {
+          "original": {
+            "from": "resource-a4e65930136b0cd4-n3",
+            "to": "resource-a4e65930136b0cd4-n4",
+            "kind": "contains"
+          },
+          "replacement": {
+            "from": "resource-a4e65930136b0cd4-n5",
+            "to": "resource-a4e65930136b0cd4-n4",
+            "kind": "contains"
+          },
+          "changes": [
+            {
+              "family": "observatory",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": false,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            },
+            {
+              "family": "orbital",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": false,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            },
+            {
+              "family": "elastic",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": false,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            },
+            {
+              "family": "folded",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": false,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            },
+            {
+              "family": "workbench",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": true,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            },
+            {
+              "family": "chromatic",
+              "target": "resource-a4e65930136b0cd4-n4",
+              "oldParent": "resource-a4e65930136b0cd4-n3",
+              "newParent": "resource-a4e65930136b0cd4-n5",
+              "structureChanged": true,
+              "geometryChanged": false,
+              "actionsPreserved": true,
+              "hardConstraintErrors": []
+            }
+          ]
+        },
+        "manifestReplay": true
+      },
+      "failures": []
+    },
+    {
+      "id": "H2",
+      "status": "pass",
+      "metrics": {
+        "displayMatrix": "Exact mission dimensions per preregister-amendment-1.json",
+        "initialMismatch": "Initial run stress dimensions retained in original registration/timestamped results; amendment corrected 320x640/2560x1080/1024x360 to 320x568/900x390/1920x1080 before this run.",
+        "combinations": 36,
+        "feasible": 36,
+        "paretoFront": [
+          "observatory/portrait",
+          "observatory/narrow",
+          "observatory/wide",
+          "orbital/portrait",
+          "orbital/narrow",
+          "elastic/portrait",
+          "elastic/desktop",
+          "elastic/tablet",
+          "elastic/narrow",
+          "elastic/landscape",
+          "elastic/wide",
+          "folded/portrait",
+          "folded/desktop",
+          "folded/tablet",
+          "folded/narrow",
+          "folded/landscape",
+          "folded/wide",
+          "workbench/portrait",
+          "workbench/narrow",
+          "chromatic/portrait",
+          "chromatic/desktop",
+          "chromatic/narrow",
+          "chromatic/wide"
+        ],
+        "negativeControls": {
+          "clipping": [
+            "clip:resource-a4e65930136b0cd4"
+          ],
+          "wrongAction": [
+            "required-actions-mismatch"
+          ]
+        },
+        "usability": "Geometric/action constraints only; DOM/a11y/usability requires H6 and human review."
+      },
+      "failures": []
+    },
+    {
+      "id": "H3",
+      "status": "pass",
+      "metrics": {
+        "fieldCases": 1200,
+        "gamutCases": 185,
+        "minimumContrast": 6.937890444021296,
+        "minimumByMode": {
+          "dark": 7.044865240699234,
+          "light": 6.937890444021296
+        },
+        "maxSDKIndependentContrastDelta": 0,
+        "negativeRatios": [
+          1,
+          1.2632533688247014
+        ]
+      },
+      "failures": []
+    },
+    {
+      "id": "H4",
+      "status": "pass",
+      "metrics": {
+        "seededWorlds": 100,
+        "ticksPerWorld": 1200,
+        "stressNodes": 64,
+        "stressTicks": 2400,
+        "maxEnergy": 3538.009403,
+        "maxAbsoluteField": 0.842,
+        "maxAbsolutePosition": 125.999924,
+        "maxAbsoluteVelocity": 38.885694,
+        "maxFinalEnergyRatio": 0.08811079326327166,
+        "orderAndBatchingReplay": true,
+        "zeroForceEquilibrium": true,
+        "reducedMotion": true,
+        "boundedWork": true,
+        "semanticSideEffects": "API contains no callbacks; tests do not authorize external effects."
+      },
+      "failures": []
+    },
+    {
+      "id": "H5",
+      "status": "pass",
+      "metrics": {
+        "operations": 20,
+        "pack": {
+          "id": "netscape-capabilities",
+          "version": "1.0.0",
+          "constitutionVersion": "1.0.0",
+          "enforcementRevision": "1",
+          "performers": [
+            {
+              "id": "validate-url",
+              "version": "1.0.0",
+              "input": "nmop/text@1",
+              "output": "nmop/safe-url@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "external-target",
+              "version": "1.0.0",
+              "input": "nmop/safe-url@1",
+              "output": "nmop/external-target@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "fetch-resource",
+              "version": "1.0.0",
+              "input": "nmop/safe-url@1",
+              "output": "nmop/resource-document@1",
+              "effects": [
+                "external-read"
+              ],
+              "requires": [
+                "resource.read"
+              ]
+            },
+            {
+              "id": "validate-graph",
+              "version": "1.0.0",
+              "input": "nmop/semantic-graph@1",
+              "output": "nmop/semantic-graph@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "graph-summary",
+              "version": "1.0.0",
+              "input": "nmop/semantic-graph@1",
+              "output": "nmop/graph-summary@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "graph-passages",
+              "version": "1.0.0",
+              "input": "nmop/semantic-graph@1",
+              "output": "nmop/passages@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "graph-links",
+              "version": "1.0.0",
+              "input": "nmop/semantic-graph@1",
+              "output": "nmop/links@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "graph-intent-candidates",
+              "version": "1.0.0",
+              "input": "nmop/semantic-graph@1",
+              "output": "nmop/intent-candidates@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "select-passage",
+              "version": "1.0.0",
+              "input": "nmop/selection-request@1",
+              "output": "nmop/selection@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "selection-context",
+              "version": "1.0.0",
+              "input": "nmop/selection@1",
+              "output": "nmop/passage-context@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "context-artifact",
+              "version": "1.0.0",
+              "input": "nmop/passage-context@1",
+              "output": "nmop/artifact@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "validate-artifact",
+              "version": "1.0.0",
+              "input": "nmop/artifact@1",
+              "output": "nmop/artifact@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "artifact-markdown",
+              "version": "1.0.0",
+              "input": "nmop/artifact@1",
+              "output": "nmop/text@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "artifact-json",
+              "version": "1.0.0",
+              "input": "nmop/artifact@1",
+              "output": "nmop/text@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "save-artifact",
+              "version": "1.0.0",
+              "input": "nmop/artifact@1",
+              "output": "nmop/artifact@1",
+              "effects": [
+                "local-state"
+              ],
+              "requires": [
+                "artifact.write"
+              ]
+            },
+            {
+              "id": "load-artifact",
+              "version": "1.0.0",
+              "input": "nmop/text@1",
+              "output": "nmop/artifact@1",
+              "effects": [
+                "local-state"
+              ],
+              "requires": [
+                "artifact.read"
+              ]
+            },
+            {
+              "id": "normalize-text",
+              "version": "1.0.0",
+              "input": "nmop/text@1",
+              "output": "nmop/text@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "text-stats",
+              "version": "1.0.0",
+              "input": "nmop/text@1",
+              "output": "nmop/text-stats@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "unique-links",
+              "version": "1.0.0",
+              "input": "nmop/links@1",
+              "output": "nmop/links@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            },
+            {
+              "id": "links-markdown",
+              "version": "1.0.0",
+              "input": "nmop/links@1",
+              "output": "nmop/text@1",
+              "effects": [
+                "pure"
+              ],
+              "requires": []
+            }
+          ],
+          "provenance": "Local, authored SDK implementations; external transports and storage are injected, never fabricated."
+        },
+        "negativeControls": {
+          "schemaMismatch": true,
+          "runtimeShape": true,
+          "missingPassage": true,
+          "unauthorizedNetwork": true,
+          "unauthorizedLocalSave": true,
+          "effectEscalation": true,
+          "preflightBeforeEffects": true,
+          "unknownOperation": true,
+          "outputSchema": true
+        },
+        "pureTraceSteps": 5,
+        "metadata": [
+          {
+            "id": "validate-url",
+            "input": "nmop/text@1",
+            "output": "nmop/safe-url@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/safe-url@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "external-target",
+            "input": "nmop/safe-url@1",
+            "output": "nmop/external-target@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/external-target@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "fetch-resource",
+            "input": "nmop/safe-url@1",
+            "output": "nmop/resource-document@1",
+            "effects": [
+              "external-read"
+            ],
+            "requires": [
+              "resource.read"
+            ],
+            "provides": [
+              "nmop/resource-document@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "validate-graph",
+            "input": "nmop/semantic-graph@1",
+            "output": "nmop/semantic-graph@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/semantic-graph@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "graph-summary",
+            "input": "nmop/semantic-graph@1",
+            "output": "nmop/graph-summary@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/graph-summary@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "graph-passages",
+            "input": "nmop/semantic-graph@1",
+            "output": "nmop/passages@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/passages@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "graph-links",
+            "input": "nmop/semantic-graph@1",
+            "output": "nmop/links@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/links@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "graph-intent-candidates",
+            "input": "nmop/semantic-graph@1",
+            "output": "nmop/intent-candidates@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/intent-candidates@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "select-passage",
+            "input": "nmop/selection-request@1",
+            "output": "nmop/selection@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/selection@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "selection-context",
+            "input": "nmop/selection@1",
+            "output": "nmop/passage-context@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/passage-context@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "context-artifact",
+            "input": "nmop/passage-context@1",
+            "output": "nmop/artifact@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/artifact@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "validate-artifact",
+            "input": "nmop/artifact@1",
+            "output": "nmop/artifact@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/artifact@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "artifact-markdown",
+            "input": "nmop/artifact@1",
+            "output": "nmop/text@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/text@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "artifact-json",
+            "input": "nmop/artifact@1",
+            "output": "nmop/text@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/text@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "save-artifact",
+            "input": "nmop/artifact@1",
+            "output": "nmop/artifact@1",
+            "effects": [
+              "local-state"
+            ],
+            "requires": [
+              "artifact.write"
+            ],
+            "provides": [
+              "nmop/artifact@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "load-artifact",
+            "input": "nmop/text@1",
+            "output": "nmop/artifact@1",
+            "effects": [
+              "local-state"
+            ],
+            "requires": [
+              "artifact.read"
+            ],
+            "provides": [
+              "nmop/artifact@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "normalize-text",
+            "input": "nmop/text@1",
+            "output": "nmop/text@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/text@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "text-stats",
+            "input": "nmop/text@1",
+            "output": "nmop/text-stats@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/text-stats@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "unique-links",
+            "input": "nmop/links@1",
+            "output": "nmop/links@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/links@1"
+            ],
+            "metadataRich": true
+          },
+          {
+            "id": "links-markdown",
+            "input": "nmop/links@1",
+            "output": "nmop/text@1",
+            "effects": [
+              "pure"
+            ],
+            "requires": [],
+            "provides": [
+              "nmop/text@1"
+            ],
+            "metadataRich": true
+          }
+        ]
+      },
+      "failures": []
+    },
+    {
+      "id": "H6",
+      "status": "pending",
+      "metrics": {
+        "reason": "Awaiting root Playwright artifacts; no baseline comparison or visual similarity improvement observed by this computational harness.",
+        "readError": "ENOENT: no such file or directory, open '/workspace/netscape-infinite/artifacts/reports/visual-summary.json'"
+      },
+      "failures": []
+    },
+    {
+      "id": "H7",
+      "status": "pass",
+      "metrics": {
+        "fixtures": [
+          {
+            "fixture": "nasa",
+            "dominant": {
+              "kind": "research",
+              "status": "inferred",
+              "confidence": 0.95,
+              "evidence": [
+                "resource-a4e65930136b0cd4",
+                "resource-a4e65930136b0cd4-n2",
+                "resource-a4e65930136b0cd4-n4",
+                "resource-a4e65930136b0cd4-n5",
+                "resource-a4e65930136b0cd4-n6",
+                "resource-a4e65930136b0cd4-n10",
+                "resource-a4e65930136b0cd4-n11"
+              ]
+            },
+            "intents": [
+              {
+                "kind": "research",
+                "status": "inferred",
+                "confidence": 0.95,
+                "evidence": [
+                  "resource-a4e65930136b0cd4",
+                  "resource-a4e65930136b0cd4-n2",
+                  "resource-a4e65930136b0cd4-n4",
+                  "resource-a4e65930136b0cd4-n5",
+                  "resource-a4e65930136b0cd4-n6",
+                  "resource-a4e65930136b0cd4-n10",
+                  "resource-a4e65930136b0cd4-n11"
+                ]
+              }
+            ],
+            "nodes": 15,
+            "actions": [
+              {
+                "id": "resource-a4e65930136b0cd4-n2",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n4",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n6",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n7",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n9",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n10",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-n11",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-select-passage",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-attach-companion",
+                "action": "attach-companion"
+              },
+              {
+                "id": "resource-a4e65930136b0cd4-save-artifact",
+                "action": "save-artifact"
+              }
+            ]
+          },
+          {
+            "fixture": "restaurant",
+            "dominant": {
+              "kind": "commerce",
+              "status": "inferred",
+              "confidence": 0.95,
+              "evidence": [
+                "resource-7407f17147aa36b5",
+                "resource-7407f17147aa36b5-n2",
+                "resource-7407f17147aa36b5-n4",
+                "resource-7407f17147aa36b5-n5",
+                "resource-7407f17147aa36b5-n6",
+                "resource-7407f17147aa36b5-n8",
+                "resource-7407f17147aa36b5-n9",
+                "resource-7407f17147aa36b5-n11"
+              ]
+            },
+            "intents": [
+              {
+                "kind": "commerce",
+                "status": "inferred",
+                "confidence": 0.95,
+                "evidence": [
+                  "resource-7407f17147aa36b5",
+                  "resource-7407f17147aa36b5-n2",
+                  "resource-7407f17147aa36b5-n4",
+                  "resource-7407f17147aa36b5-n5",
+                  "resource-7407f17147aa36b5-n6",
+                  "resource-7407f17147aa36b5-n8",
+                  "resource-7407f17147aa36b5-n9",
+                  "resource-7407f17147aa36b5-n11"
+                ]
+              }
+            ],
+            "nodes": 15,
+            "actions": [
+              {
+                "id": "resource-7407f17147aa36b5-n2",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-n4",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-n6",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-n8",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-n11",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-select-passage",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-attach-companion",
+                "action": "attach-companion"
+              },
+              {
+                "id": "resource-7407f17147aa36b5-save-artifact",
+                "action": "save-artifact"
+              }
+            ]
+          },
+          {
+            "fixture": "github",
+            "dominant": {
+              "kind": "repository",
+              "status": "inferred",
+              "confidence": 0.95,
+              "evidence": [
+                "resource-0b51dc47fd8f7abb",
+                "resource-0b51dc47fd8f7abb-n2",
+                "resource-0b51dc47fd8f7abb-n4",
+                "resource-0b51dc47fd8f7abb-n6",
+                "resource-0b51dc47fd8f7abb-n7",
+                "resource-0b51dc47fd8f7abb-n8",
+                "resource-0b51dc47fd8f7abb-n9",
+                "resource-0b51dc47fd8f7abb-n10"
+              ]
+            },
+            "intents": [
+              {
+                "kind": "repository",
+                "status": "inferred",
+                "confidence": 0.95,
+                "evidence": [
+                  "resource-0b51dc47fd8f7abb",
+                  "resource-0b51dc47fd8f7abb-n2",
+                  "resource-0b51dc47fd8f7abb-n4",
+                  "resource-0b51dc47fd8f7abb-n6",
+                  "resource-0b51dc47fd8f7abb-n7",
+                  "resource-0b51dc47fd8f7abb-n8",
+                  "resource-0b51dc47fd8f7abb-n9",
+                  "resource-0b51dc47fd8f7abb-n10"
+                ]
+              }
+            ],
+            "nodes": 15,
+            "actions": [
+              {
+                "id": "resource-0b51dc47fd8f7abb-n2",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n4",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n6",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n7",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n8",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n9",
+                "action": "navigate"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-n11",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-select-passage",
+                "action": "select-passage"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-attach-companion",
+                "action": "attach-companion"
+              },
+              {
+                "id": "resource-0b51dc47fd8f7abb-save-artifact",
+                "action": "save-artifact"
+              }
+            ]
+          }
+        ],
+        "externalGeneralization": "Not tested: local authored fixtures only."
+      },
+      "failures": []
+    }
+  ],
+  "deterministicResultSHA256": "c02dcde21adbd071bb30cc31509e7acaa0b708cb2c15a6cd88242d93fa267b15",
+  "recordedAt": "2026-10-18T11:12:13.062Z",
+  "environment": {
+    "elapsedMs": 2124,
+    "sdkBundleBytes": {
+      "packages/chromatics/dist/index.d.ts": 1152,
+      "packages/chromatics/dist/index.js": 4288,
+      "packages/chromatics/dist/index.js.map": 9060,
+      "packages/conformance/dist/index.d.ts": 2299,
+      "packages/conformance/dist/index.js": 19009,
+      "packages/conformance/dist/index.js.map": 38846,
+      "packages/core/dist/index.d.ts": 4255,
+      "packages/core/dist/index.js": 15566,
+      "packages/core/dist/index.js.map": 30831,
+      "packages/dynamics/dist/index.d.ts": 1819,
+      "packages/dynamics/dist/index.js": 7690,
+      "packages/dynamics/dist/index.js.map": 16506,
+      "packages/performers/dist/index.d.ts": 9297,
+      "packages/performers/dist/index.js": 25686,
+      "packages/performers/dist/index.js.map": 48820,
+      "packages/render-react/dist/index.d.ts": 814,
+      "packages/render-react/dist/index.js": 4971,
+      "packages/render-react/dist/index.js.map": 7021,
+      "packages/resource-interpreter/dist/fetch.d.ts": 1328,
+      "packages/resource-interpreter/dist/fetch.js": 7514,
+      "packages/resource-interpreter/dist/fetch.js.map": 13249,
+      "packages/resource-interpreter/dist/index.d.ts": 269,
+      "packages/resource-interpreter/dist/index.js": 9140,
+      "packages/resource-interpreter/dist/index.js.map": 18337
+    },
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "release": "6.18.55",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "timezone": "UTC",
+    "commit": "b884acc76732e941889b6baca38cf468592cfd4d",
+    "dirtyWorkingTree": true,
+    "sourceSHA256": {
+      "docs/CONTRACTS.md": "cc9787d7f5cb5640b3095e8a94879db80d25f12d845633995f3122d565df3a65",
+      "experiments/oracles.ts": "e6274aa77d7048cd5d4d43b0f6ca8eeecd26b5337f814db87440778f70e17f97",
+      "experiments/preregister-amendment-1.json": "48f8829083ad1a51a36c6296369834280aa796447bc9473e752250bf9c1be5cb",
+      "experiments/preregister.json": "9ba59b6328882c8deda0ef45d1582be21a3fd10d674339322eae102c09cc159c",
+      "experiments/replay.ts": "46f211a1856525eac041295632712f39146a761c682c81225514c1334dc8daa2",
+      "experiments/run.ts": "4b8c982c36721ea5e9d643a719ab52cfe43129e713d306509862d0322e068761",
+      "packages/chromatics/src/index.ts": "6bba92294d62cc3671393d16f895fb772f571cfea93a5e78b14be3c20ce3c477",
+      "packages/conformance/src/index.ts": "717a4eb4d88bc8324a5c37f2b8be81eadfa8d405ac161de4ee38f619918e9216",
+      "packages/core/src/deterministic.ts": "dda0d6b2fb3a96a05ed0bbc4eb96ea58fe02e1e0608da01cf0fde86dc587e4ec",
+      "packages/core/src/graph.ts": "3f79d8e75911463943ad8509ad24ddd688fef047792c75ce720ccb7a15c4c84c",
+      "packages/core/src/index.ts": "6fc6aabb946e74fdddc246b2c24a1e3c175100392a658bd27fdc1128cb6f1bca",
+      "packages/core/src/layout.ts": "041b05597f07dbe73a5df8f3005ad9a7b48b832ad58bc699ff5da99706e3d71f",
+      "packages/core/src/types.ts": "be353d294de0e38867c5788d30b91c730acdad90adfd6b88cc3fda7a7ff1d00e",
+      "packages/dynamics/src/index.ts": "fcb3c053ed8d6911777e78d3c2911798d97aa89c97905fee949de282fd751ce8",
+      "packages/performers/src/index.ts": "89e4c7870560dc8cc46eecdc3fcb73f8f969e559e20fffebd68dd0222ac06207",
+      "packages/render-react/src/index.tsx": "9f8b27deefef4c39e572750f0d901bacbd354a75e40f0a81cbde6e895e52b63c",
+      "packages/resource-interpreter/src/fetch.ts": "b72fec5ffea915d283b56050bb4d3d2d9dd61421aed7d2468d3baa514ac48de6",
+      "packages/resource-interpreter/src/index.ts": "237523845909c68e05750d00dfab2d7d08a6be84d0a27f29cf826083d914abec",
+      "tests/experiments.test.ts": "d4dfde2f9e7816db9bfd830267109435cede750232ae356becdcdd0c68adc8e9"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (16.709191ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (3.364229ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (156.392625ms)
+✔ each extracted passage exposes a local typed selection action (0.363149ms)
+✔ sources without passages do not advertise unreachable passage-based capabilities (0.88778ms)
+✖ overlong source URLs reject clearly and overlong links never enter the graph (1.264812ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.810142ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (5.809352ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (1.859002ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (1.723599ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (2.538601ms)
+✔ timeouts bound DNS and response work (40.659913ms)
+✖ public fetch rejects URLs beyond the semantic graph URL bound (1.344182ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 447.05401
+
+✖ failing tests:
+
+test at tests/resource.test.ts:68:1
+✖ overlong source URLs reject clearly and overlong links never enter the graph (1.264812ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:70:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /URL|2048|limit/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/security.test.ts:51:1
+✖ public fetch rejects URLs beyond the semantic graph URL bound (1.344182ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:52:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /URL|limit/i,
+    operator: 'throws',
+    diff: 'simple'
+  }

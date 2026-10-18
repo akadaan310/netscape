@@ -1,0 +1,16 @@
+✔ canonical hashing and PRNG are reproducible without depending on object key order (2.442392ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (1.621752ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (2.621042ms)
+✔ six wide compositions have distinct actual geometry and structural topology (7.681544ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (13.728996ms)
+✔ long text expands region height and malformed display/seed are rejected (15.371154ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (26.113564ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.562255ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 320.473097

@@ -1,0 +1,5 @@
+
+> netscape-infinite@0.1.0 smoke:sdk
+> node --no-experimental-strip-types scripts/smoke-sdk.mjs
+
+{"standaloneESM":true,"typescriptRuntimeRequired":false,"trace":"1974aeb7","contrast":15.586004827709665,"performer":"compiled portable SDK"}

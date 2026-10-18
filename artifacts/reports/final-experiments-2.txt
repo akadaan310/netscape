@@ -1,0 +1,5 @@
+
+> netscape-infinite@0.1.0 experiments
+> tsx experiments/run.ts
+
+{"resultSHA256":"4b2f40b88d401672ab347100559c7a0144c90697c9da9e973745d50b49b1d070","hypotheses":[{"id":"H1","status":"pass","failures":0},{"id":"H2","status":"pass","failures":0},{"id":"H3","status":"pass","failures":0},{"id":"H4","status":"pass","failures":0},{"id":"H5","status":"pass","failures":0},{"id":"H6","status":"pending","failures":0},{"id":"H7","status":"pass","failures":0}]}

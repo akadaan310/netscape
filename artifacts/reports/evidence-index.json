@@ -1,0 +1,3266 @@
+{
+  "algorithm": "SHA-256",
+  "codeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "excluded": [
+    "this index itself",
+    "artifacts/browser-report (redundant HTML reporter copies)"
+  ],
+  "files": {
+    "artifacts/browser/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-08-14-700Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-08-14-700Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-09-06-180Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-09-06-180Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-14-50-522Z/.last-run.json": {
+      "bytes": 96,
+      "sha256": "a32ea9b1e05be1c59cebd93df80dd144c2eb6a6af9d8274f5decfa5967f14dcd"
+    },
+    "artifacts/browser/2026-10-18T11-14-50-522Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/error-context.md": {
+      "bytes": 27675,
+      "sha256": "8c7921dd106f64c0c87464e2fc8c0c1297d1aff6ceb6d0216988bbc966a9b595"
+    },
+    "artifacts/browser/2026-10-18T11-14-50-522Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/test-failed-1.png": {
+      "bytes": 16311,
+      "sha256": "99079843b4fc5639f9d7a41df488c1600e349aa623aaae6938dac34939dedf85"
+    },
+    "artifacts/browser/2026-10-18T11-14-50-522Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/trace.zip": {
+      "bytes": 252099,
+      "sha256": "c75e139d4d9103db9a285045a10c6b695d1ff3a694d97e7df8183cca61977c9a"
+    },
+    "artifacts/browser/2026-10-18T11-14-50-522Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-09-527Z/.last-run.json": {
+      "bytes": 96,
+      "sha256": "a32ea9b1e05be1c59cebd93df80dd144c2eb6a6af9d8274f5decfa5967f14dcd"
+    },
+    "artifacts/browser/2026-10-18T11-15-09-527Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/error-context.md": {
+      "bytes": 27597,
+      "sha256": "0e2821b248fd9478abef3e658d7c905f094582a4f00d54ff37559653954ddca5"
+    },
+    "artifacts/browser/2026-10-18T11-15-09-527Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/test-failed-1.png": {
+      "bytes": 16311,
+      "sha256": "99079843b4fc5639f9d7a41df488c1600e349aa623aaae6938dac34939dedf85"
+    },
+    "artifacts/browser/2026-10-18T11-15-09-527Z/functional-keyboard-only-p-4adc7-percent-text-stay-reachable-chromium/trace.zip": {
+      "bytes": 256507,
+      "sha256": "5cbb6c8aac5e54bf75178ed66c07808446bb357c9eb2166fd65f6bf9f6cf452d"
+    },
+    "artifacts/browser/2026-10-18T11-15-09-527Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/.last-run.json": {
+      "bytes": 1811,
+      "sha256": "b7a09318a6510bc1fc72f4ecfaa03499da8628f334cde7d0465394419c078c58"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7144,
+      "sha256": "6b3537adc75afe590ea4912a5c917086df7cb5dc3fd82435876aec0f85abb6c7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-baseline.png": {
+      "bytes": 456077,
+      "sha256": "8ca8318e4038548f2920e053a260ff87d6d303774f40f3947bbefddbc359a54e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-diff.png": {
+      "bytes": 27647,
+      "sha256": "4839cd46be51e3b9af404810d3bcd9c43eea07505b97678d86f8e9e229dcebb6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-replay.png": {
+      "bytes": 456077,
+      "sha256": "8ca8318e4038548f2920e053a260ff87d6d303774f40f3947bbefddbc359a54e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13759,
+      "sha256": "09a386ac55a00aa6c8c18a3b7399272f937630231cc07f8b636267bb22a1ebc6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90298,
+      "sha256": "03cb56fdfb54fb831bddbc210a7581854db97c5ab0a628ae670169e3004b4041"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 109293,
+      "sha256": "b8ae96844739ba733fd7bd4bbae0adf48e80c353e3567973e6832fab403bed18"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1268968,
+      "sha256": "c86142f3981938d7d8c7ce99953f602cf068ddcd5ae09a0cbe738d30523b3daa"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7141,
+      "sha256": "8ab9961c42214beb95656c8f9d80858c8d737df55251fc40b1957f63577305f0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-baseline.png": {
+      "bytes": 450534,
+      "sha256": "c36aeee4ba24a77f7e17624b936dd5f6476004cd0b362c80668e14d7bc652cfb"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-diff.png": {
+      "bytes": 22832,
+      "sha256": "ebd31990afca5085c09e9c4282e89a8f9e5efc9803bb605561b8e73fd84f2c0a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-replay.png": {
+      "bytes": 450534,
+      "sha256": "c36aeee4ba24a77f7e17624b936dd5f6476004cd0b362c80668e14d7bc652cfb"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13757,
+      "sha256": "d6e2c885cd2142da72e0d14fe57424430d68b94d3544846d29c04fc3708885fe"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90557,
+      "sha256": "ad6f08c50b8b3c43491755529f53d0cd0f692e5724f4b80dd7b2f22f7999fcc2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 109208,
+      "sha256": "8a5c07a23954f45ea35ca498d1c00dd6e6fe6dec4326f2bc84cdcba787bb9008"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1274992,
+      "sha256": "69871ec5f556e2b26c248e6213933777939308fb7fa114911e19fa2b4b588b9d"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7135,
+      "sha256": "041bc4d39972cd4d7f9872b1708ad2d7f80110b192c4f68d873426e0084d2d87"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13756,
+      "sha256": "f48f7a9be16d777fdcdd3a6a74901997a7797fe504c1eaaca7e979d459de9c28"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-baseline.png": {
+      "bytes": 442436,
+      "sha256": "9f18bf1150bcc6afb6505b7fc017e46cc3d2ef0ab7752c8eff4475cbd4e2c0a7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-diff.png": {
+      "bytes": 31592,
+      "sha256": "ed4daa0185a5d44639720495379493605b253777aab339ec44afe38968a1cfe0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-replay.png": {
+      "bytes": 442436,
+      "sha256": "9f18bf1150bcc6afb6505b7fc017e46cc3d2ef0ab7752c8eff4475cbd4e2c0a7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90250,
+      "sha256": "82f08c2ea22ccb476c1016a70403fa53ea374802687513a215a4d698fcca776a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 109118,
+      "sha256": "1f4812641e1c691a018e617ebda349d9095c310276f249739fe196f2e4e64074"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1256474,
+      "sha256": "14d5ff44be39dd8a7126a21daa68f294ff0d801330c09e90f85f2fa90cfc3872"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7146,
+      "sha256": "83f120e952c16745795e49f47abd54371ac3d69c5fe36499a9355d340cc82ae8"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13761,
+      "sha256": "1fb1c8e9741a4f9b3bdb795cf37c58b69c706a2a9a698f3e1bd58b2dfb3090f0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90433,
+      "sha256": "398162c3eb4a745048d372d4413fb5a5c49e1674c64043085521febdf0790e4a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-baseline.png": {
+      "bytes": 453282,
+      "sha256": "66e42f68ae79298eedaf75b04d4170b2ef15d2fb0ac0f339896559a42789e84b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-diff.png": {
+      "bytes": 26081,
+      "sha256": "23c8c1aadb770840d48621e73ed20ef026b9d061a3fe6c141561f5462c9b8cb3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-replay.png": {
+      "bytes": 453282,
+      "sha256": "66e42f68ae79298eedaf75b04d4170b2ef15d2fb0ac0f339896559a42789e84b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 110028,
+      "sha256": "90e56279f5073347067b7b7700ea929c636d01642c95b16b86874fe1568f114f"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1209492,
+      "sha256": "e53f464bfa9b84b8277d5b91b52257e40030b258fb6fffec09e886b71f884ff5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7139,
+      "sha256": "bb4b7eca521def4d96a65334b14de89d03a78cd9f7ec471b385d04fab69b915d"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13757,
+      "sha256": "4985b2286c42e593b071b1c8d6e4a9d955553ac5eb3ffaec5afc080f04ee08e8"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90518,
+      "sha256": "55f6d597cdab4a1e901c8f1ac4cafa6010355e9e3ed3837da8cb2d98ea153012"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-baseline.png": {
+      "bytes": 483771,
+      "sha256": "32e4aca6b58b499d26475c10a24da9eeb618cbffe4309399871dca891774bfa2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-diff.png": {
+      "bytes": 35160,
+      "sha256": "ab7660872b2d17e44434386c59deacb79ffb88833411f7b123ca579820ab7638"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-replay.png": {
+      "bytes": 483771,
+      "sha256": "32e4aca6b58b499d26475c10a24da9eeb618cbffe4309399871dca891774bfa2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 109346,
+      "sha256": "5fb3b19e095f15d7e4a48621db4c796a4ce89e83fb0975819c61060ae37bb92c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1194644,
+      "sha256": "18028c78d2606d27aefb35ba31d428f1547eeb2170d84af09819dd819ad00cc5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7143,
+      "sha256": "1482ee39135454d32e5bc135b04b7cccb24ae61fb748a5baf10a09e177dceda2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13759,
+      "sha256": "a9dba09e09a375521fee6395edba1236d8901df44c565e27f7b0a2d7ad0ede17"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90398,
+      "sha256": "c9ebe2534a2e7d42d1f61cf940eb0be16fcd393c347ad2e3ad31611654a2e3a3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 110185,
+      "sha256": "918a1d8aea79f83b864c641af669142935c90b28990fafe69921d1810d6ada0e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1271302,
+      "sha256": "4127ffad840bd103a877d7efb89e778d0f53668cc8a2b169fae7c25d9c004f33"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-baseline.png": {
+      "bytes": 458377,
+      "sha256": "53b55263f991340321c9806ecde69e43536cf80c63396397ab32facdf80d7ac3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-diff.png": {
+      "bytes": 26879,
+      "sha256": "5ea57a958e765b7cdc9a44ee5254dfd31468bf6d5f5b56c270daad59f6be24a9"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-replay.png": {
+      "bytes": 458377,
+      "sha256": "53b55263f991340321c9806ecde69e43536cf80c63396397ab32facdf80d7ac3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 7041,
+      "sha256": "e198fd5290aac4782b9a66d2ebe1a6bd42063ff37ce339c5aebee07c2068c173"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 118686,
+      "sha256": "7b3af8c45f8d97f948f26028d02212c22b24edbceaaac8e9b140b49b0e651042"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 215263,
+      "sha256": "7f690472f7b0f913d87bf15439b36dfe6adc085584023018b36e8dbc595ef940"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7143,
+      "sha256": "44f17539b555bd671ddeb5d85811056d53c8039d737f907a6fc9f311e837e0c6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-baseline.png": {
+      "bytes": 457036,
+      "sha256": "4a71fed59a038ca48fa3a694091c699b2f2818fb7e414d2aae0121364a99b6f7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-diff.png": {
+      "bytes": 27050,
+      "sha256": "94c4fc8a54c8e444a6d7555294558472cecc5e4fa7ece7666d4fa4db665e1584"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-replay.png": {
+      "bytes": 457036,
+      "sha256": "4a71fed59a038ca48fa3a694091c699b2f2818fb7e414d2aae0121364a99b6f7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13758,
+      "sha256": "c1fb566ffc431405ab1043170627c196be4f5259f54e7ee35177d3041d3c7945"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90531,
+      "sha256": "2b73e55cb58f27e273e5e47d87608cc1b9c596995af05a05ff9ff33b40c6ebfa"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 145531,
+      "sha256": "0409b972b7365bc890a9d46e7359d25322e1b6e305cb573704523e4a722ed957"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1259959,
+      "sha256": "80c9b5c57fbeffb642d74257a797b358c51011329336d46244756405d9decd22"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7137,
+      "sha256": "8ccab71220024c7e6a4b99ab167d9aa40fa32836f8562b9ccee89d91390898ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13757,
+      "sha256": "4bd46d352b30f2a8bf52dbdbba60d502bf26ab56de656e7b2a608de02f74f67e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-baseline.png": {
+      "bytes": 449954,
+      "sha256": "bff3b24277d3e458925427537a5f279fd0f8e3ea15273bf9172d34fb2dc3884f"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-diff.png": {
+      "bytes": 37263,
+      "sha256": "dca97badb0969703eb175f9908e0912983e85ed967e13268479839dc418d3aee"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-replay.png": {
+      "bytes": 449954,
+      "sha256": "bff3b24277d3e458925427537a5f279fd0f8e3ea15273bf9172d34fb2dc3884f"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90300,
+      "sha256": "010afbc1670a1683a0cfabc832d006098cbf75aeaea0d59aa2d97b30b53b5eae"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 133386,
+      "sha256": "eb63637e3c439fb548c17902c5ba78fea267ab689d8cb9fa77b3296f35f1ee80"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1297302,
+      "sha256": "141ac2369034f72a63fc71dc8ce65f781966942756f6f915978119d4c96fb14c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7148,
+      "sha256": "d578ee389d577611572ffccddac1defc991a3b66586da0c6ef4df14d36c03a71"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13762,
+      "sha256": "fbd833c8010a146b9fc380e77c369b849abf638ed1c372bc4da155dbffc865dd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90404,
+      "sha256": "9d19e3afcd181d813e7fae69f40ca3a55347e9ec354a8e851868f905aea4b6f1"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-baseline.png": {
+      "bytes": 457666,
+      "sha256": "8ceefdb8aef8a93f71af8301d9538e800b0fd5955ac2bc03d81ad196047107ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-diff.png": {
+      "bytes": 28890,
+      "sha256": "9413426ae065396dec57c082075b708c14c21b33c23560d468cd6bb0e9ec2643"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-replay.png": {
+      "bytes": 457666,
+      "sha256": "8ceefdb8aef8a93f71af8301d9538e800b0fd5955ac2bc03d81ad196047107ef"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 147502,
+      "sha256": "c218446fa74b400ad4f4d5b6748b66d7d9b9cc02810a9634d8501481b726975e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1258808,
+      "sha256": "9d761277ef27d6aa8d2a522e4051d9b27f8f074013f3353492081c6d8c3f32b0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7141,
+      "sha256": "63b49ba86218e3ca45164354d66277367a565012f02d79ff6dc940ecf7f9e475"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13758,
+      "sha256": "6e73f7babd2b286875a97d59842dff7a2626e59f3a124035050c9c6d186c7da3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90366,
+      "sha256": "63bf3cf936fd9c521a8e94b9c7f18a66e02eaf7c6a7e23f53834ff59fa0c6b12"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-baseline.png": {
+      "bytes": 484581,
+      "sha256": "60f386301af9082aaaf624f629e3e86d442d02d598a22b2ac4df6e49e21bf065"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-diff.png": {
+      "bytes": 33513,
+      "sha256": "f3ce23eb9b94b870ae670ce416a477adf5e3828922622ad1cf9a8093001eaa0b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-replay.png": {
+      "bytes": 484581,
+      "sha256": "60f386301af9082aaaf624f629e3e86d442d02d598a22b2ac4df6e49e21bf065"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 133109,
+      "sha256": "8633d096a3cc83d9d1763cc3964c4e86af2e0629de53e4799381b5ed34deca3f"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1173606,
+      "sha256": "b59dff8112e54ffda42ee9a7f7e2e7567a7ce6a9316b7940c9968588c58db882"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 7041,
+      "sha256": "ebfbc487996cd7029175eefcf71f753021b38549e45b2d5d6c484bb60edad5ea"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 119309,
+      "sha256": "c3161d30d4190c8088e3b72d4dfec02079bd357997907f8720cc94f4ac46358b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 216051,
+      "sha256": "382ab2f1d99a5da53278a29157d1e6bd4b7bfb5921b36c579fc202d0c4c57446"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7020,
+      "sha256": "45585288ff07accf6b74c676ff71d906fbb631245251af5917bbc44876a727f1"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-baseline.png": {
+      "bytes": 416208,
+      "sha256": "c145f48e367266c51768222d8cfdba91658e0dd5ea0d88967decd633bc505ba0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-replay.png": {
+      "bytes": 416208,
+      "sha256": "c145f48e367266c51768222d8cfdba91658e0dd5ea0d88967decd633bc505ba0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13341,
+      "sha256": "bdddcf6642204c0ae62f44e0c5b0f91a338ce7ede55532f289dce67ceac2b56b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 88014,
+      "sha256": "d40e8a96df7a153942877bb5033432032014eb8364d9e397e94c71586224b057"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1075837,
+      "sha256": "6f41e4ad93228d8ef2dd80cd05e216e2b4172e9d31d2c9b8757d30d7397011dc"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7018,
+      "sha256": "1f0c27e1d7b732172944a5cc8ab5a0ed097a825ae0839deb14a911e0c3366d42"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-baseline.png": {
+      "bytes": 415825,
+      "sha256": "24accbee54279f9725ef8bb617d560555ee468e5c25d8c058d90a2e1d454ed67"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-replay.png": {
+      "bytes": 415825,
+      "sha256": "24accbee54279f9725ef8bb617d560555ee468e5c25d8c058d90a2e1d454ed67"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13339,
+      "sha256": "74a2e4f05471e2690e0faa33071c83096061a21369111019ce49c071e478dd2a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87998,
+      "sha256": "b2616113d748970b60059b0188faea1b5f215fe602d23c2a7eb0666a51e020d0"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1053569,
+      "sha256": "9bb1a81f9adcb0cac0a3df979ceff211381142cad1939007d5880283d4852c8a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "373a82ac265dff43254480a844cc1d02c3e015e89350a1046e269222971b94fd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13338,
+      "sha256": "f7151cb572a35578ec7a149a5cbe19a6fdd34d6c60af6bd7d6640a22df6d1e47"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-baseline.png": {
+      "bytes": 415635,
+      "sha256": "0b95518de0637f3faed0aae37005f546dfe30e60cbf4b5286676267deb6a14b1"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-replay.png": {
+      "bytes": 415635,
+      "sha256": "0b95518de0637f3faed0aae37005f546dfe30e60cbf4b5286676267deb6a14b1"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87990,
+      "sha256": "55df899164b9e0c01bba561cafde7522ae5d8069db90cf4edbda6eb3a9e90d53"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1053580,
+      "sha256": "92aa577bf9a36a86e8048da6f6be869474bfe419b1ba87d644cf93c31fda85bc"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7022,
+      "sha256": "28517c10739e95c1997126b215d6f29c39c8613948fed27f8ce38f44fd0ebc7a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13343,
+      "sha256": "d64285858dfe97cb2e8356bb2314c5b9a5dd2cd01293896df325812abcb2ce69"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 88030,
+      "sha256": "1cf397762bcab71eb9c51f48dabac1ce67024a08abe8fc39405e38fefeb44c03"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-baseline.png": {
+      "bytes": 416433,
+      "sha256": "0a0d072a46e658f9884433656993cf3a9eb0b119a6dc96e7d78a8311828b1fe4"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-replay.png": {
+      "bytes": 416433,
+      "sha256": "0a0d072a46e658f9884433656993cf3a9eb0b119a6dc96e7d78a8311828b1fe4"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1081105,
+      "sha256": "66f104395a72389b9486461e44af9c98f78708513b963e8170f0034382a6213e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7018,
+      "sha256": "1844e5169032d7652b6ff52210ab752800fd03f399da6d52029ced4f606450df"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13339,
+      "sha256": "40d679215820ffb26c3cd5bf1a3bea47acb312f571be921c8621c54198905b4a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87998,
+      "sha256": "8a5f832d0cc871cc506e26b42004ff37e71ebbedb43f69a26f8a91a637310b56"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-baseline.png": {
+      "bytes": 415946,
+      "sha256": "1f0b8afc35ee233b73ad2829e36c820599150e4f6dc6b5f4d7adc02bc3c0e57e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-replay.png": {
+      "bytes": 415946,
+      "sha256": "1f0b8afc35ee233b73ad2829e36c820599150e4f6dc6b5f4d7adc02bc3c0e57e"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1086415,
+      "sha256": "1a19eaea4395f5fdaacb065fcecac1847fdca37bc32fba95815e3b11e0b9c43a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7020,
+      "sha256": "c760a9d9c430d79e4c76a1d6d2c448aded0a48c0887c3b671b55ea1ef8a86fd9"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13341,
+      "sha256": "fb72473afd037cb7c3af6ae9c2261586886cbf7d6d2addd501dc3b8e1d604ca5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 88014,
+      "sha256": "f730e3980c911764fd81806b3ff51423a9b3056c5f88416eca5b1a82cc27bf73"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 32795,
+      "sha256": "6c775a901a6257ee7b9137feeb45f2491d31d78b8840172027efbc017ea52056"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1075805,
+      "sha256": "8ffb8ea7583966f761f9f657404fa950b7c0f8501b92d4cbe6c87218b4d25344"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-baseline.png": {
+      "bytes": 416267,
+      "sha256": "53cbe9cd428a5fda16c19f93e11b2dfe4c43c97e7065636ff9680eec9b4e3032"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-replay.png": {
+      "bytes": 416267,
+      "sha256": "53cbe9cd428a5fda16c19f93e11b2dfe4c43c97e7065636ff9680eec9b4e3032"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7020,
+      "sha256": "ebad35508779dec079a12d2972d60ca4e02b9e67ba6ae624a2ce1c5caa2cc757"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-baseline.png": {
+      "bytes": 428151,
+      "sha256": "5e2a0217fd7ebfbeb7165e6e081af636828f2e453cdae11dbb34c058ab667458"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-replay.png": {
+      "bytes": 428151,
+      "sha256": "5e2a0217fd7ebfbeb7165e6e081af636828f2e453cdae11dbb34c058ab667458"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13083,
+      "sha256": "8757402925b383cb19b67081361452aea47722330c2995a718ad5c2c162610e4"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87919,
+      "sha256": "3ec5345fe5f869759c913e70bd942ca4b460cd2e7c355f7a882890a61ff8f1a2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 44404,
+      "sha256": "f2281bad6356bb5d22a42c545c0342a74b55f9d0bc0663e54ae44204d159b9b3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1120729,
+      "sha256": "c8ec5a2d6d6d9c2a39487d6b85d09a12fa783b8dd44e93f5469504a47511a766"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7018,
+      "sha256": "3e750c6838419ea59f2cda1b4cbf5b932678e3b1242092c14d3e5f80ff1397a3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-baseline.png": {
+      "bytes": 427797,
+      "sha256": "23f03db55e1371d32c4bdc77e67d71511c0942622257d94a0de5d356bd6a64fd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-replay.png": {
+      "bytes": 427797,
+      "sha256": "23f03db55e1371d32c4bdc77e67d71511c0942622257d94a0de5d356bd6a64fd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13081,
+      "sha256": "20126c1b420aec6271c7756d0e31408351b49281979c793243571cf429c07d8a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87903,
+      "sha256": "cca8e6c35d629b320daa6bc90c3fac3a794d625a72bd952209ecd3e8a41db217"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 44492,
+      "sha256": "f218e29982550ba1d6160a467a810cb9d147df4770228481ca23af094de4ae29"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1109260,
+      "sha256": "a479fc25a15c95aae68231225c02de78a5b379e2ca126883cea8f9803b5e59ca"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "8584c465f6f062a6800c89c57dd64dfccf76c90b12c2e16c7956ffaf72bd86d5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13080,
+      "sha256": "b98400a01a25548ba98d229f3c5794e780ec45cb83ec721be8ba8d5b98bc0e85"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-baseline.png": {
+      "bytes": 427707,
+      "sha256": "d1699e109e1326a6cab28c01ad67cdd0cbbc5268962aa028e9732ffb13341e9a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-replay.png": {
+      "bytes": 427707,
+      "sha256": "d1699e109e1326a6cab28c01ad67cdd0cbbc5268962aa028e9732ffb13341e9a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87895,
+      "sha256": "56f0bc7c13db3419033293cfc0132ac9a2efeab6483550a59ac00069ae94da0a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 44446,
+      "sha256": "06ebc333637ba9b7e223990f19be64895bca970588dcbc4bcb6ec2925b4a13b5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1068361,
+      "sha256": "75945b98084c419204f9dd07d1813e91bcf664e24862dbff81ae8061d217ed42"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7022,
+      "sha256": "7fc4b05cdbc13a34f0468e13ec0f4708b1b8b095c2dd557d78ef8a67ea74c29a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13085,
+      "sha256": "0cfcf85467a5c345a30b2f5b6bc9c3f1f4ccc5ac51548d080ff89d5710586ffa"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87935,
+      "sha256": "f8901618bd146a136f1abdafb65a654c2790975e9917c824c0ab339de54f1703"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-baseline.png": {
+      "bytes": 428788,
+      "sha256": "b9fd19c86a0f0e88383e7359eccad054ab44008394610a69e35004f2860d9438"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-replay.png": {
+      "bytes": 428788,
+      "sha256": "b9fd19c86a0f0e88383e7359eccad054ab44008394610a69e35004f2860d9438"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 44958,
+      "sha256": "1724f9a40a2154cdb157e249929df290077a0e4b8bac2e4fd1a13d6651ae66bd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1115315,
+      "sha256": "1c88e08ba8025355b7865888e9d62d1035c3cea980aa00bd2ba1991cd5f4c9c4"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7018,
+      "sha256": "e24ee81f7774624233f6a8d0cc29f9c1daa9cd3d9be366c59104316db65d48bf"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13081,
+      "sha256": "0c790b42388381c13cc8b77af7a63c9a2efdd7c8d0b1cde5cce7530a88474a28"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87903,
+      "sha256": "05b8062e9b284d1cb6875136460909a95a6c99f2d55589726e702dce89c5a978"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-baseline.png": {
+      "bytes": 428055,
+      "sha256": "050493ea5e77153fbedc7e152453846d2100ea10713e6de2d2deb07f98152d87"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-replay.png": {
+      "bytes": 428055,
+      "sha256": "050493ea5e77153fbedc7e152453846d2100ea10713e6de2d2deb07f98152d87"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 44527,
+      "sha256": "4877ae61838631029381f1f0d9c8bb4e0303c6bf84d9780e39723516efef3a34"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1077839,
+      "sha256": "241be4a42ade10d8159a9781ce849bfca2c178d0c121d7368694a1172a10ef18"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7020,
+      "sha256": "e4f12d90fa0ff981429d0a011e8adc79400a57ba7fa540eecd492a5598275972"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13083,
+      "sha256": "3dd6afc283d431d666e202668bdde15ace1c39ea131dfa86ff56c292453820ec"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 87919,
+      "sha256": "5a938af887025d17dc0439b1e4a59b5977dd208534bc302ad4a8e04c087cfa36"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 45105,
+      "sha256": "b12ec4703f94887870058a932952b417f873b777423990fb850f45252b7c464d"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1158899,
+      "sha256": "4d2e6ec7b6407372cc1609ecf1b34e49fe00ca230e65180f7c82eb1d00c25a0a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-baseline.png": {
+      "bytes": 429017,
+      "sha256": "62f95b7eadf213d03ce9f0f9c6c27c13d1a08ee692b2b0c061597a7d23848f00"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-replay.png": {
+      "bytes": 429017,
+      "sha256": "62f95b7eadf213d03ce9f0f9c6c27c13d1a08ee692b2b0c061597a7d23848f00"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7079,
+      "sha256": "5913dee47f163bfa5dfd413ccbaf4b88a3444787790d41c6a75c9f90388bced4"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-baseline.png": {
+      "bytes": 443185,
+      "sha256": "93b77847e1033aa2782956a3e8dc567252348d16cbcb1732047a23f5486b824a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-replay.png": {
+      "bytes": 443185,
+      "sha256": "93b77847e1033aa2782956a3e8dc567252348d16cbcb1732047a23f5486b824a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13759,
+      "sha256": "a3e578758f7cbdee85980a1391d9d277d6362f37041fa15c0a8f20a64b5376fa"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89581,
+      "sha256": "71f10d9ca933f52363608dfd3b71271b6ccab7d3af761087f12a8adb31efeaa2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 88084,
+      "sha256": "d38bb4cc2a65f87ebee59738c564f63569bdb44c765d47643724f50ef55a179b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1332931,
+      "sha256": "a3d20507e677a1479e5484f0e4a4d6c13756f1e136722f7f0568146a805f7ea3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7077,
+      "sha256": "bc622fbe95917b021cbd1d40d27591c662208d4fb86cabc03a2fb4d05a991905"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-baseline.png": {
+      "bytes": 443045,
+      "sha256": "6c5d4a5e88e8076057dcb35d1bba5ce7ca8c7230bea26c36b3bae952b9a08e9b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-replay.png": {
+      "bytes": 443045,
+      "sha256": "6c5d4a5e88e8076057dcb35d1bba5ce7ca8c7230bea26c36b3bae952b9a08e9b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13757,
+      "sha256": "e46566f4f989d6fbbf43b0048533ea57148cba46d8dd133569100a93ce9c1f5c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89565,
+      "sha256": "95e37319038ea6811316a560875d91ed2e0fbf55cef2d099d8a067afd88d8b81"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 87955,
+      "sha256": "9d5679400b35255d60b3a2656e99d89ca2f3b8c2cae7190475d198aa85d78e89"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1408688,
+      "sha256": "6e45cf988a6d212652438c1e61ce6c6a4721fab6bc1bb6e338a8e4c942288ace"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7076,
+      "sha256": "6b35f988643176da2e4c481fda0c568b1bec4dc90a7551df3f3b3092ad76cd14"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13756,
+      "sha256": "9e577c0795db55697576002a89ea44a7cc3badaf3e7916fd22180a1bb4c0917b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-baseline.png": {
+      "bytes": 443005,
+      "sha256": "d5c1a5a81af1645f810245bad11606650b72de5f1c79a64a8146e1742c3990f6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-replay.png": {
+      "bytes": 443005,
+      "sha256": "d5c1a5a81af1645f810245bad11606650b72de5f1c79a64a8146e1742c3990f6"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89557,
+      "sha256": "86b7c8f21090c166d9748a7890a9429224f797522aa0a857d62855a1b2a4b859"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 87846,
+      "sha256": "d227ca4ca2a95dff2d13648ba856606b36428c14eaf28805338b524b3a51cc76"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1327334,
+      "sha256": "31c6f7d6a0ad6605ed77baff992e724a6f54b614f51215f085366e8a7907fecd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7081,
+      "sha256": "9c87a008403602d371acdaefe418068ba3d40420309460f2ed13abcfff4517a3"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13086,
+      "sha256": "51d40fa1fb584a1d203fe1490965417865f994aef85b53723bc5f52623170e04"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89597,
+      "sha256": "db166fdf60213a0c70e53603a169b4994f33bfd06bee097dcbde3418be973783"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-baseline.png": {
+      "bytes": 443564,
+      "sha256": "64a28e58a7f4ee97a8a3c7c55be59252ceeb4abf6c68c238dd700f666eb78951"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-replay.png": {
+      "bytes": 443564,
+      "sha256": "64a28e58a7f4ee97a8a3c7c55be59252ceeb4abf6c68c238dd700f666eb78951"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 88835,
+      "sha256": "e03561d2c0bfcb0db74c9c8a1329ca9fa1551f3d4bc22e72b99454080c9cfd97"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1391897,
+      "sha256": "4172051de28bcda2bb32fe5b4632d5bf8aa34bfbfd5b0f1f4cba996cb84035d1"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7077,
+      "sha256": "9249baabbe2701aadd72f884b2f4f8773363392eca236aec6a6df87adc764f51"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13082,
+      "sha256": "910f53c27f07a4c86513c4a85ac7a71e23393e7c2115a290c5f598f0610feec2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89565,
+      "sha256": "74842c37fdcfd99a6c2c573f16a00c7c477b441c996ad106eac504170294fd94"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-baseline.png": {
+      "bytes": 443016,
+      "sha256": "649d8a69824fb911ce3c967a3387812f5e4ba102c0d61d352ff357dbd3990977"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-replay.png": {
+      "bytes": 443016,
+      "sha256": "649d8a69824fb911ce3c967a3387812f5e4ba102c0d61d352ff357dbd3990977"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 88038,
+      "sha256": "0a674b60a3097cd9da26eda17938faf3719576c9cec6d748054a2d9faf4a4890"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1381131,
+      "sha256": "18bb46c3da78c16e9c1cd98ccd2b1449914ed1b76c3a2436b510dee4b1d59b9c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7079,
+      "sha256": "b6cceaed24dd814a899fd38c5e57cfc046bd5c2d61cedc0ab5aad58bd8a94528"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13759,
+      "sha256": "309c91755e0366f4915f8215c521f1b5e3343652c76925c5e41a8eef0b126639"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89581,
+      "sha256": "782ed9fa4a3bcd6cc55e7aed3bb866e6e392b0fd1b1c5e3e189782c75bd637ff"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 88710,
+      "sha256": "d11ecb3fa37d6e19e6f17fea939660accbeaec9186d3cfca2fbe25b67ef3eebe"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1333517,
+      "sha256": "dc8eba27f1216f5cd8b68fd8d03f80787d6e5c6a49b2d085aaffe1c3074b0c6c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-baseline.png": {
+      "bytes": 443747,
+      "sha256": "44178b1bb794651c5b9b29b8fe833f6e01e04ee30f599f71496ff1a5fcda5d2c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-replay.png": {
+      "bytes": 443747,
+      "sha256": "44178b1bb794651c5b9b29b8fe833f6e01e04ee30f599f71496ff1a5fcda5d2c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7093,
+      "sha256": "6cade6ccd12befac1387fe38eeb72feddbccabd08cebdb442477c29b8fd3970f"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-baseline.png": {
+      "bytes": 468060,
+      "sha256": "fcc020580ff50482b261237821d9c53c62ba055ad49cdf93e61627df1250e78a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-diff.png": {
+      "bytes": 27032,
+      "sha256": "c9ba4cce36168abbe828087c6d0f01d48e1ba6883835563a07253eae6ec594b9"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-replay.png": {
+      "bytes": 468060,
+      "sha256": "fcc020580ff50482b261237821d9c53c62ba055ad49cdf93e61627df1250e78a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13758,
+      "sha256": "5688f98acbe8178930f06891f5fc1fc0a13154cccfcfe37ebc4f660ab6ae2d6a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89596,
+      "sha256": "8a2e0c656f23d466b93387df592d036591a6eca5a6d37666f992f075c8a3c729"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1019855,
+      "sha256": "5a530bd7e4ad8f26c3dfaf5a93ab66078f539d3a1a1a3eb3743448cf6ba98f13"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7090,
+      "sha256": "58f0b4786ffab42231ed0d66411f81c0ea8ed8f4db39360808d63c73f562d198"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-baseline.png": {
+      "bytes": 458726,
+      "sha256": "14d11c174cf5d558430ede5098b4ea1e5a2344b65dfedfb773f2bd8ff2e00800"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-diff.png": {
+      "bytes": 22989,
+      "sha256": "013559329df6c71950ba2ffca4c2346058a1611cdf8196053452c11914aac0c2"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-replay.png": {
+      "bytes": 458726,
+      "sha256": "14d11c174cf5d558430ede5098b4ea1e5a2344b65dfedfb773f2bd8ff2e00800"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13756,
+      "sha256": "ceb5b3bcb16ebfbc1f6b5837a1c291323e97fd52eb8478a0fba3e5cff4018a36"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89900,
+      "sha256": "49389cde99d459fc4f065c5892d2e91aae86afb5fbfa44a7b7ec1eb10505e97c"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1045790,
+      "sha256": "67429af905d2a88142e6575bba7a4aeca6eaa34ef361e3915ae2fcc186d742fa"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7084,
+      "sha256": "dc7264b879226bc0118fec14b743ae1da6810bbd7b5be86f7b378883afb2c0cd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13755,
+      "sha256": "2c6ea825caf5faa61974ec95e03bb1ef7c13ac2ff858375cacbfe305e0bb455a"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-baseline.png": {
+      "bytes": 450391,
+      "sha256": "8f64ca2e7ba399ef53dada624367e1004c46b0c37d8e67e8a0427b59de8ceeee"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-diff.png": {
+      "bytes": 29102,
+      "sha256": "05719eaaf1c534f5f7ceeef84862b20a3f2b1e559bdb70c232b3066e9d490fdd"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-replay.png": {
+      "bytes": 450391,
+      "sha256": "8f64ca2e7ba399ef53dada624367e1004c46b0c37d8e67e8a0427b59de8ceeee"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89553,
+      "sha256": "e7d26376569ae63b73143257650e484a82b4621738ff43f5a51d264dad6ee156"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1019749,
+      "sha256": "b59afc1872136f7f01b52829e45e479fb93055b0df90b0c07bdf06c700247178"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7095,
+      "sha256": "d1943b18479c623a408672f889aff0b52c7ffece67eb513fdb9496eff977f187"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13760,
+      "sha256": "842439556e1b2fe7a2541fc5e26fcca7e0144d333a10561ab8399258b52dce02"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89727,
+      "sha256": "7b053dcab2409f3a01b45ac0e83bda4b2418ae46af606cf967f21b916b8f67e5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-baseline.png": {
+      "bytes": 470819,
+      "sha256": "986603f8bb9610ff61b7bc9a47d56bbe693e35d7788cf4ba205a44e0678ea329"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-diff.png": {
+      "bytes": 26899,
+      "sha256": "742ea2ee41020b42fb4f68b528854ff610cb04f76a8bee19a566a47e366771ed"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-replay.png": {
+      "bytes": 470819,
+      "sha256": "986603f8bb9610ff61b7bc9a47d56bbe693e35d7788cf4ba205a44e0678ea329"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 1038063,
+      "sha256": "e212757d4b0fd53e77e38773c59337bfce7fe3f88103d95f20110d3096207ad7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7088,
+      "sha256": "2bfb3f01447417ec2708dbee3985ed29acb944697f594c241aebf551a1c35031"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13756,
+      "sha256": "609ea6f86bd85629556e48487f6f020862f131b18ae6362bb7e421ae56fd116b"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 90042,
+      "sha256": "983d77615b572eb055306186b43028cfc7bcb0a4469ae1bee75cd64557cfefd7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-baseline.png": {
+      "bytes": 498154,
+      "sha256": "5ec7a96f49879f9d98a031c55a9ed1201bf90408453f5048483e13ea8ee4b066"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-diff.png": {
+      "bytes": 35226,
+      "sha256": "f2acb68314f93c3351c2aa9ec9cdd0a52a38be9d97d918e416b24c2d1a682dd5"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-replay.png": {
+      "bytes": 498154,
+      "sha256": "5ec7a96f49879f9d98a031c55a9ed1201bf90408453f5048483e13ea8ee4b066"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 995931,
+      "sha256": "872930c53e9bc3a362db706e7f8b52a1e46e8933d096e6d38e09949e17b61165"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7092,
+      "sha256": "ca4f00ecefbed4ace24e9504978db84059b7cab847fa094beed6da8c8e2fbeaf"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/error-context.md": {
+      "bytes": 13758,
+      "sha256": "2b8322b307ee932f6d04991e63a596fd96f076464bf2a5e511775a0bac577982"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 89695,
+      "sha256": "a9ca4680b4c3b8e94003c459ecb80ece94151ade848f838a92c0e9a984bf46df"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/test-failed-1.png": {
+      "bytes": 34302,
+      "sha256": "ea15c0342e8632fab621356365f0770e70b65c13cb69a4a382a1e8293c9461d7"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/trace.zip": {
+      "bytes": 978309,
+      "sha256": "dcf0e85f3a974a4a946fb682b49a33a53f3ee11abb613079a12d5ff31dbbb338"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-baseline.png": {
+      "bytes": 473024,
+      "sha256": "764d60792f9051b87bc0ad94219b70f9d62bac72fd4e87a6bac0e8132b0bcc19"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-diff.png": {
+      "bytes": 26499,
+      "sha256": "bf825d68eaa88c9ae4e52a0c98f7379fea85d1313121e47fdc7c5eb051582c28"
+    },
+    "artifacts/browser/2026-10-18T11-15-30-229Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-replay.png": {
+      "bytes": 473024,
+      "sha256": "764d60792f9051b87bc0ad94219b70f9d62bac72fd4e87a6bac0e8132b0bcc19"
+    },
+    "artifacts/browser/2026-10-18T11-25-11-958Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-25-11-958Z/functional-dark-reading-ca-13c9f--contrast-and-accessibility-chromium/dark-canvas.png": {
+      "bytes": 445212,
+      "sha256": "d2ab3225463ffe0beb992334a88381637dffa70c562e6f1b1c6e74a88cb6c120"
+    },
+    "artifacts/browser/2026-10-18T11-25-11-958Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/functional-dark-reading-ca-13c9f--contrast-and-accessibility-chromium/dark-canvas.png": {
+      "bytes": 445212,
+      "sha256": "d2ab3225463ffe0beb992334a88381637dffa70c562e6f1b1c6e74a88cb6c120"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7084,
+      "sha256": "c3770e509ba332ba38afddae4878f287d34a205950b0d9c8bf2ca362fed509db"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-baseline.png": {
+      "bytes": 447748,
+      "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-diff.png": {
+      "bytes": 27647,
+      "sha256": "4839cd46be51e3b9af404810d3bcd9c43eea07505b97678d86f8e9e229dcebb6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-replay.png": {
+      "bytes": 447748,
+      "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96062,
+      "sha256": "9081d0529cd035861992ef8ad2cdde8fafbe247501eec85201c2d03f30c241d7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7081,
+      "sha256": "e615dfa7007d1c84ac07613e8e1ce29b5690e014df42f704d2ff9ade7dfe8e39"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-baseline.png": {
+      "bytes": 442208,
+      "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-diff.png": {
+      "bytes": 22832,
+      "sha256": "ebd31990afca5085c09e9c4282e89a8f9e5efc9803bb605561b8e73fd84f2c0a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-replay.png": {
+      "bytes": 442208,
+      "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96321,
+      "sha256": "f674b16f75b487b1b65092868e2106bd37787dc4cbad393f1694192ecd4c4732"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7075,
+      "sha256": "e105277182a5254edc71a511b2506a8cf69d4b4219dfb8cc28ac51c277795a4f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-baseline.png": {
+      "bytes": 434265,
+      "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-diff.png": {
+      "bytes": 31592,
+      "sha256": "ed4daa0185a5d44639720495379493605b253777aab339ec44afe38968a1cfe0"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-replay.png": {
+      "bytes": 434265,
+      "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96014,
+      "sha256": "c32256cc6b009a0b7f617763e0b5ea73a5395db9949db6b866dcaf40e20e1dc3"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7086,
+      "sha256": "f75adb189e71e88cf6c7982dc5fd1ca61a5c156480b196e04f93d5da5f0151f2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96197,
+      "sha256": "46dee3cb52f7ee0b08dd8b416117a686553967cf5f562b021334c5f34cf10100"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-baseline.png": {
+      "bytes": 445454,
+      "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-diff.png": {
+      "bytes": 26081,
+      "sha256": "23c8c1aadb770840d48621e73ed20ef026b9d061a3fe6c141561f5462c9b8cb3"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-replay.png": {
+      "bytes": 445454,
+      "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7079,
+      "sha256": "1b8d22e3dfc80895ef97d2e57d6e8bf297b18489439d0d39218bd05828e2fbfa"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96282,
+      "sha256": "9f9140f7a17dea833f5c80cb1e45a29e589c0b9bc917ccbdd80e6e634da376e9"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-baseline.png": {
+      "bytes": 475919,
+      "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-diff.png": {
+      "bytes": 35160,
+      "sha256": "ab7660872b2d17e44434386c59deacb79ffb88833411f7b123ca579820ab7638"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-replay.png": {
+      "bytes": 475919,
+      "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7083,
+      "sha256": "bb6af6b0fc2f92959e81cb7f72ca47cc67ee518a236c98ae6f93539eed7fdc69"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96162,
+      "sha256": "63a0e5207853eeff6a6ac95050d5782641da3bdd1ba864c9b44aadcb5449446c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-baseline.png": {
+      "bytes": 449882,
+      "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-diff.png": {
+      "bytes": 26879,
+      "sha256": "5ea57a958e765b7cdc9a44ee5254dfd31468bf6d5f5b56c270daad59f6be24a9"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-replay.png": {
+      "bytes": 449882,
+      "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7086,
+      "sha256": "0a14a7836f55799ae777e72511b7a86f421bd8b1199007fb72df105699a9abb3"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-baseline.png": {
+      "bytes": 447799,
+      "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-diff.png": {
+      "bytes": 30368,
+      "sha256": "77eaf4b1fc723cfbeb485506ab5f38ba43cf40c3ff919c1f665d70841f0add28"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-replay.png": {
+      "bytes": 447799,
+      "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96024,
+      "sha256": "d5d46db5437009fa3f2a0c7a3ae3a1603e8123cbc1fd1b4bf8f51bb0975899b6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7083,
+      "sha256": "84ab0fc4284551a951c7e2e7542f2d50e1acf8a7a6b58089d04493332861c668"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-baseline.png": {
+      "bytes": 448870,
+      "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-diff.png": {
+      "bytes": 27050,
+      "sha256": "94c4fc8a54c8e444a6d7555294558472cecc5e4fa7ece7666d4fa4db665e1584"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-replay.png": {
+      "bytes": 448870,
+      "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96295,
+      "sha256": "ec37ff99aae4847bcd78b6636026e4ee78b369849803f6eaf955482bf5e1b4cd"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7077,
+      "sha256": "ebb59511cdff4977d921fc6a5fec9fcd43e6ce2b5c058990ac9021e7163b2466"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-baseline.png": {
+      "bytes": 440567,
+      "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-diff.png": {
+      "bytes": 37263,
+      "sha256": "dca97badb0969703eb175f9908e0912983e85ed967e13268479839dc418d3aee"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-replay.png": {
+      "bytes": 440567,
+      "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96064,
+      "sha256": "101be4f7b60e867838ad00f7da445aed2473be69dcdedcef9b28823571565b3b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7088,
+      "sha256": "f18c98cf2c27c203fe7c605ec8fe6916df65faac2dd57da52bcfe8d3cea2e9f2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96168,
+      "sha256": "3062594930bf550e3993ab3a57156597f84c6f3b591ba67ce6145b48757022f9"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-baseline.png": {
+      "bytes": 449184,
+      "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-diff.png": {
+      "bytes": 28890,
+      "sha256": "9413426ae065396dec57c082075b708c14c21b33c23560d468cd6bb0e9ec2643"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-replay.png": {
+      "bytes": 449184,
+      "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7081,
+      "sha256": "26e3c304fb1e1e84d674069c2a9be96adb415b93d03c1e6871655d1ee978ce98"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96130,
+      "sha256": "781df9438ceb2f907a8e00ae0fe322f96652a3a378e52089b31e4d3d23aa2041"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-baseline.png": {
+      "bytes": 475515,
+      "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-diff.png": {
+      "bytes": 33513,
+      "sha256": "f3ce23eb9b94b870ae670ce416a477adf5e3828922622ad1cf9a8093001eaa0b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-replay.png": {
+      "bytes": 475515,
+      "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7085,
+      "sha256": "7979230b5d67d13c657638a82def3b79ebbda4b2c96615aa82213b61238e6a75"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96009,
+      "sha256": "cc64bccdc30a0e2ce2489d187b920b978c482db534ec21e3296f3063687d59cb"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-baseline.png": {
+      "bytes": 459954,
+      "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-diff.png": {
+      "bytes": 33851,
+      "sha256": "5ac26468e1a09aa23e6f923673a77b716a9a00d6bd8d357a716f8b0d47cefe5a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-replay.png": {
+      "bytes": 459954,
+      "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "581fda24c56ca1b79a1bf8d6338c5dbf9ccdea66f3bfcc78a45bb57c24a6bd60"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-baseline.png": {
+      "bytes": 408535,
+      "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-replay.png": {
+      "bytes": 408535,
+      "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93687,
+      "sha256": "06ec7d0ab05da4c0c99e7e00d3c4e864449608a4cbb6523a3b826f64ac8b7de5"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "c36bd233bae454907e1706093a3a75795652d5393930bcafcf5c28a1d84b1ac3"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-baseline.png": {
+      "bytes": 408055,
+      "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-replay.png": {
+      "bytes": 408055,
+      "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93671,
+      "sha256": "6fd4b95e48665b053299f3cf0b5cd862dec96d42c6d6c61770063d321d8bc448"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6957,
+      "sha256": "5090a7f26d72e4ffbfc03c84beedfacdc1a2ed04f8bae66e877ee5dbb1aaeab4"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-baseline.png": {
+      "bytes": 407753,
+      "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-replay.png": {
+      "bytes": 407753,
+      "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93663,
+      "sha256": "743d4ab454a50a16bb4d6d985790b70bfd15c879580570fece43d50467b3f686"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6962,
+      "sha256": "26a183d17365af83aac7499fddd5cb2500065f769afe0767d02ea5cb30c7ea2c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93703,
+      "sha256": "85902de04cc31e8a093d50937d42af46f65b47bee17013daedce6cd76fa0afd5"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-baseline.png": {
+      "bytes": 408819,
+      "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-replay.png": {
+      "bytes": 408819,
+      "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "1a26d2469ec13e47f19c6a66deced5f5a67cdd6da5381ce193bc57c262ad5a51"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93671,
+      "sha256": "15d1db487e2f02d4f1074c8907b951da13229a9ed9d44bc423d679baa923cfe0"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-baseline.png": {
+      "bytes": 408474,
+      "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-replay.png": {
+      "bytes": 408474,
+      "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "79d23c7f3aaa3d8d6eb01805001aef7ddf0863a528c97f4c42472a790f997e46"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93687,
+      "sha256": "76d022d64716b2c414274b7b55e8632ef641f93e7951dbad621f91e0f9568aba"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-baseline.png": {
+      "bytes": 408604,
+      "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-replay.png": {
+      "bytes": 408604,
+      "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "e7cb83b28879302762a577d2701c7ebde9600a44c3ee710dc060de19ed0d67ed"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-baseline.png": {
+      "bytes": 422613,
+      "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-replay.png": {
+      "bytes": 422613,
+      "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93683,
+      "sha256": "007832437fb1e8d08a61f516484481fb317a9e86e8a8aa1f7d1e1b3606523eef"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "caf57fa73588e9598689504b1826dc4257d95afb54f4e2a8c1f6b7c712ea7785"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-baseline.png": {
+      "bytes": 421850,
+      "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-replay.png": {
+      "bytes": 421850,
+      "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93667,
+      "sha256": "b6d9bf75a4485ceb0f232c070d1e0adcc379b6b4573651c6c93c29504f9232bf"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6957,
+      "sha256": "61450c2458279f3fa3d794d956786f142d609477d5e6d17463bc43e6dcd7a9fb"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-baseline.png": {
+      "bytes": 421613,
+      "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-replay.png": {
+      "bytes": 421613,
+      "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93659,
+      "sha256": "1248959a5b2cbbd166991d49d0a619bba239e30e4154277a3babfc1c4b9f4ca5"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6962,
+      "sha256": "45ebcacb863a925fa33cd5822359da15c320ce9527daa45f06a4222c5d614c99"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93699,
+      "sha256": "b03c31d72bf775bf60dd325936e3f7ba85e882acacc97ed78755cbcf3a5b680c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-baseline.png": {
+      "bytes": 422931,
+      "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-replay.png": {
+      "bytes": 422931,
+      "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "2f32fe10b9589c91717869cd765a699b6c72fabd3f08327de9b76de15f33273d"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93667,
+      "sha256": "9d28c343f04d4d4e27b8faeee7c0e105059ac5a9d8b7d7e73e7f2d29d2eac2fe"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-baseline.png": {
+      "bytes": 422366,
+      "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-replay.png": {
+      "bytes": 422366,
+      "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "8dd969ea87c1d997ed4698148ef8156ba6bc7faebd9bbb98f3d3dad3345d2f7c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93683,
+      "sha256": "c14529386424e8dbee45a6ba96f84b511950a5814fa35486ada86b7562e0d681"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-baseline.png": {
+      "bytes": 423146,
+      "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-replay.png": {
+      "bytes": 423146,
+      "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7019,
+      "sha256": "5b7d862c96e5bcf82e65bc72febdd94e29a3739c665386990ae7a173de762a59"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-baseline.png": {
+      "bytes": 437429,
+      "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-replay.png": {
+      "bytes": 437429,
+      "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95345,
+      "sha256": "950640008b182c3d827879e5b66a7f3583174000907647ad4ece67570b34126a"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "581952079c5a75b680f89ec9397c1b17ae66b7a0acd6fdf9b40bc09ede3d1e87"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-baseline.png": {
+      "bytes": 437338,
+      "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-replay.png": {
+      "bytes": 437338,
+      "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95329,
+      "sha256": "51c1917a45f06dd17ca2bc3f42902dc0b77fbb9484eeb49deef87c69615da3d9"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7016,
+      "sha256": "8a1ae59c705e130060151477ab31ad9ff05f64a6a3cd35812be8211afee6fb7f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-baseline.png": {
+      "bytes": 437278,
+      "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-replay.png": {
+      "bytes": 437278,
+      "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95321,
+      "sha256": "2df33963e134eb0941637728390858f1bc03fa7767387eecd144f0162ccf5e55"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7021,
+      "sha256": "10f3bdc44e5c1e758757110fe40260e0c0d88d08d240167fcd913640ec7feffa"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95361,
+      "sha256": "4eb4d090cd11fab2aabc931556e7aeac529ea1ee182fba5b3f9391d2cbaa62b1"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-baseline.png": {
+      "bytes": 437852,
+      "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-replay.png": {
+      "bytes": 437852,
+      "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "7f3bce7ea7d5f05ec7eb6379ad94dafb6951cefaf7a5f83c4e314e5c6d164b54"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95329,
+      "sha256": "cedd1d941f4cbed183a10311563ae73d839a52d27300b5055638f7226d3875c1"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-baseline.png": {
+      "bytes": 437276,
+      "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-replay.png": {
+      "bytes": 437276,
+      "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7019,
+      "sha256": "ed2842da298bd5d0569da86eb144fc84ef009343de71758931035a413853706f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95345,
+      "sha256": "39d061611df9d44c4d2f47e2757c6670e2370d35cc1348f0aed015ef691a9359"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-baseline.png": {
+      "bytes": 438132,
+      "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-replay.png": {
+      "bytes": 438132,
+      "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7033,
+      "sha256": "820867bb9778f14c9953af33ef69744a0e21b8f951e7a5176d2412b7688efb42"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-baseline.png": {
+      "bytes": 458977,
+      "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-diff.png": {
+      "bytes": 27032,
+      "sha256": "c9ba4cce36168abbe828087c6d0f01d48e1ba6883835563a07253eae6ec594b9"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-replay.png": {
+      "bytes": 458977,
+      "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95360,
+      "sha256": "d3e5520aea77533ffd28550ab9d22ae09e4bdb0dc465dbf68655732385f8a44b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7030,
+      "sha256": "9dfe3ae0e15fa4660f471d8d4bc2ba0d8ab3ce76cedf033c7480849b2e09f435"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-baseline.png": {
+      "bytes": 450820,
+      "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-diff.png": {
+      "bytes": 22989,
+      "sha256": "013559329df6c71950ba2ffca4c2346058a1611cdf8196053452c11914aac0c2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-replay.png": {
+      "bytes": 450820,
+      "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95664,
+      "sha256": "f10d25db25a668e02d18d86137ffb17194f6051e16ee74e3a6c34e54cea9923e"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7024,
+      "sha256": "b475d2015dcd816ad37318a0b80d6d69bb303aa2eba3b7029215d191d2eb2147"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-baseline.png": {
+      "bytes": 441008,
+      "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-diff.png": {
+      "bytes": 29102,
+      "sha256": "05719eaaf1c534f5f7ceeef84862b20a3f2b1e559bdb70c232b3066e9d490fdd"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-replay.png": {
+      "bytes": 441008,
+      "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95317,
+      "sha256": "8086810bf881a9568de59d49a9683c22dbf47f6e9fc135040503600bfd75fee0"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7035,
+      "sha256": "6fdf6f715f8288102f35c068c215ca798946c7beec0c9d498e5719e5cf784d15"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95491,
+      "sha256": "03eb3fce7c694132a4d4c1456999d960c3ba025eac0371205a3114e14bdbfba2"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-baseline.png": {
+      "bytes": 461308,
+      "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-diff.png": {
+      "bytes": 26899,
+      "sha256": "742ea2ee41020b42fb4f68b528854ff610cb04f76a8bee19a566a47e366771ed"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-replay.png": {
+      "bytes": 461308,
+      "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7028,
+      "sha256": "b96b969395362dbe86683a68959f5f81e94af0b5bb36d8f3b60b850a52d309eb"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95806,
+      "sha256": "e661f28d33bb377fa4670bd4372675e843c9ef65005c955011366756e3b0f4a5"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-baseline.png": {
+      "bytes": 489498,
+      "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-diff.png": {
+      "bytes": 35226,
+      "sha256": "f2acb68314f93c3351c2aa9ec9cdd0a52a38be9d97d918e416b24c2d1a682dd5"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-replay.png": {
+      "bytes": 489498,
+      "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7032,
+      "sha256": "9ed908509e3eafb4656626c3435d30696e8f88ad1a7cdab71d37f969ab78b4e7"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95459,
+      "sha256": "7643bdef72988b0f91fa962f3b8aec007b6cdae64541896e466643594b99de2e"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-baseline.png": {
+      "bytes": 464045,
+      "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-diff.png": {
+      "bytes": 26499,
+      "sha256": "bf825d68eaa88c9ae4e52a0c98f7379fea85d1313121e47fdc7c5eb051582c28"
+    },
+    "artifacts/browser/2026-10-18T11-25-44-576Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-replay.png": {
+      "bytes": 464045,
+      "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82"
+    },
+    "artifacts/browser/2026-10-18T11-35-33-872Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-35-33-872Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/.last-run.json": {
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/functional-dark-reading-ca-13c9f--contrast-and-accessibility-chromium/dark-canvas.png": {
+      "bytes": 445212,
+      "sha256": "d2ab3225463ffe0beb992334a88381637dffa70c562e6f1b1c6e74a88cb6c120"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7084,
+      "sha256": "c3770e509ba332ba38afddae4878f287d34a205950b0d9c8bf2ca362fed509db"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-baseline.png": {
+      "bytes": 447748,
+      "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-diff.png": {
+      "bytes": 27647,
+      "sha256": "4839cd46be51e3b9af404810d3bcd9c43eea07505b97678d86f8e9e229dcebb6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/chromatic-1440x900-replay.png": {
+      "bytes": 447748,
+      "sha256": "888d2a53985e0309f9e0e417097dea29e89d6d822bae5222e3882f35603dbcc4"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-chromatic--d88f5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96062,
+      "sha256": "efbc7e11987e43973da6c26924939428d81cf538d83319e2b17903b57da8a88a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7081,
+      "sha256": "e615dfa7007d1c84ac07613e8e1ce29b5690e014df42f704d2ff9ade7dfe8e39"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-baseline.png": {
+      "bytes": 442208,
+      "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-diff.png": {
+      "bytes": 22832,
+      "sha256": "ebd31990afca5085c09e9c4282e89a8f9e5efc9803bb605561b8e73fd84f2c0a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/elastic-1440x900-replay.png": {
+      "bytes": 442208,
+      "sha256": "e01c0bc8b2bd99a42ddb49f6a1ac123f0fc32acef69e45f17575bdbc8f43aab7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-elastic-re-6d558-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96321,
+      "sha256": "ebf01f8c99600a930c5deea3e81ade228fc8628e502a46b16b623d09b9d82129"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7075,
+      "sha256": "e105277182a5254edc71a511b2506a8cf69d4b4219dfb8cc28ac51c277795a4f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-baseline.png": {
+      "bytes": 434265,
+      "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-diff.png": {
+      "bytes": 31592,
+      "sha256": "ed4daa0185a5d44639720495379493605b253777aab339ec44afe38968a1cfe0"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/folded-1440x900-replay.png": {
+      "bytes": 434265,
+      "sha256": "6787e309f778ba1ecd6bf581fd65ac1c336e822e000fdf445ccdfab012f1c9d8"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-folded-ret-e5495-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96014,
+      "sha256": "d271c087d8b4062a57e8f2f8eafbc82b68fc3ebb4726f4f31292f0e0ac4ad950"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7086,
+      "sha256": "f75adb189e71e88cf6c7982dc5fd1ca61a5c156480b196e04f93d5da5f0151f2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96197,
+      "sha256": "7b4b0eb714526a1461886e4ff0a95c349855afda9a92500d92c5edfd5312fb21"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-baseline.png": {
+      "bytes": 445454,
+      "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-diff.png": {
+      "bytes": 26081,
+      "sha256": "23c8c1aadb770840d48621e73ed20ef026b9d061a3fe6c141561f5462c9b8cb3"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-observator-def81-essibility-and-exact-replay-chromium/observatory-1440x900-replay.png": {
+      "bytes": 445454,
+      "sha256": "bae96de1e11917fe91a2510d8d70a3b2d7554ee5dd02a07ae7ef6dfdee31a1af"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7079,
+      "sha256": "1b8d22e3dfc80895ef97d2e57d6e8bf297b18489439d0d39218bd05828e2fbfa"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96282,
+      "sha256": "607e4ef108303e5869eee15b4f8909a010dc30e9076df917da93319827fe587d"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-baseline.png": {
+      "bytes": 475919,
+      "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-diff.png": {
+      "bytes": 35160,
+      "sha256": "ab7660872b2d17e44434386c59deacb79ffb88833411f7b123ca579820ab7638"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-orbital-re-c852c-essibility-and-exact-replay-chromium/orbital-1440x900-replay.png": {
+      "bytes": 475919,
+      "sha256": "f07d896d0bac52525ae06f93393e06a49234595ac06ffd290e38564223bf009a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7083,
+      "sha256": "bb6af6b0fc2f92959e81cb7f72ca47cc67ee518a236c98ae6f93539eed7fdc69"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96162,
+      "sha256": "3588e8c1d87039edb3b98fc6f1ad565c5a00a19989d713986df097893a16ff50"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-baseline.png": {
+      "bytes": 449882,
+      "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-diff.png": {
+      "bytes": 26879,
+      "sha256": "5ea57a958e765b7cdc9a44ee5254dfd31468bf6d5f5b56c270daad59f6be24a9"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1440x900-workbench--1d34b-essibility-and-exact-replay-chromium/workbench-1440x900-replay.png": {
+      "bytes": 449882,
+      "sha256": "6e150f4fe810705df33d89038e6c7342ac0f43bd0e2b089cf75514958cac4873"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7086,
+      "sha256": "0a14a7836f55799ae777e72511b7a86f421bd8b1199007fb72df105699a9abb3"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-baseline.png": {
+      "bytes": 447799,
+      "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-diff.png": {
+      "bytes": 30368,
+      "sha256": "77eaf4b1fc723cfbeb485506ab5f38ba43cf40c3ff919c1f665d70841f0add28"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/chromatic-1920x1080-replay.png": {
+      "bytes": 447799,
+      "sha256": "5042d856453d22725e2bcc00e6078ca43e3ad56b64bc89b460ac73a67df6f085"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-chromatic-644fc-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96024,
+      "sha256": "6fba5155f9068b0cb84691ce2ab84aaa7ccea0bf25037d0946800de7e85f2ef5"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7083,
+      "sha256": "84ab0fc4284551a951c7e2e7542f2d50e1acf8a7a6b58089d04493332861c668"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-baseline.png": {
+      "bytes": 448870,
+      "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-diff.png": {
+      "bytes": 27050,
+      "sha256": "94c4fc8a54c8e444a6d7555294558472cecc5e4fa7ece7666d4fa4db665e1584"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/elastic-1920x1080-replay.png": {
+      "bytes": 448870,
+      "sha256": "75ae23a265f14c47efbf387ec0b71f5865fafa7bea9dbb26049add8838155f66"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-elastic-r-65c90-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96295,
+      "sha256": "4532972ee54b3fef27be67e48c199c851afd2cc2f1574a7c15ea0d3531b4dcb2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7077,
+      "sha256": "ebb59511cdff4977d921fc6a5fec9fcd43e6ce2b5c058990ac9021e7163b2466"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-baseline.png": {
+      "bytes": 440567,
+      "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-diff.png": {
+      "bytes": 37263,
+      "sha256": "dca97badb0969703eb175f9908e0912983e85ed967e13268479839dc418d3aee"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/folded-1920x1080-replay.png": {
+      "bytes": 440567,
+      "sha256": "e3ff29a87fd308d680607599f394f8212cea4d8f78f4fe5660ee23b0e2f53f1f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-folded-re-7b069-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96064,
+      "sha256": "638cdd53b28ffc4297ee73d060aea48493ac84e6a5ee89a978a2a49003979fe0"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7088,
+      "sha256": "f18c98cf2c27c203fe7c605ec8fe6916df65faac2dd57da52bcfe8d3cea2e9f2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96168,
+      "sha256": "93b1a75141396734632a06138b511ef1ccc879a579be533551d2330d930a0324"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-baseline.png": {
+      "bytes": 449184,
+      "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-diff.png": {
+      "bytes": 28890,
+      "sha256": "9413426ae065396dec57c082075b708c14c21b33c23560d468cd6bb0e9ec2643"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-observato-18365-essibility-and-exact-replay-chromium/observatory-1920x1080-replay.png": {
+      "bytes": 449184,
+      "sha256": "e6a7b974a24656ce3863b95064d3dc7c360f9d50ce21327012bd940de1333330"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7081,
+      "sha256": "26e3c304fb1e1e84d674069c2a9be96adb415b93d03c1e6871655d1ee978ce98"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96130,
+      "sha256": "53ec7c0e6ef9aab91289dc96d42ee3fe9f9e35036ee04f7295a570669e92b17d"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-baseline.png": {
+      "bytes": 475515,
+      "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-diff.png": {
+      "bytes": 33513,
+      "sha256": "f3ce23eb9b94b870ae670ce416a477adf5e3828922622ad1cf9a8093001eaa0b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-orbital-r-a9415-essibility-and-exact-replay-chromium/orbital-1920x1080-replay.png": {
+      "bytes": 475515,
+      "sha256": "bd8ca147a298c87974bf0f0adfd98c755253939d0a2f65fb8db699930ce63414"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7085,
+      "sha256": "7979230b5d67d13c657638a82def3b79ebbda4b2c96615aa82213b61238e6a75"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 96009,
+      "sha256": "ae113ff01957d064d7bb3505f856d67a7d880eb11468a8f8cd3f2367da0cd003"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-baseline.png": {
+      "bytes": 459954,
+      "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-diff.png": {
+      "bytes": 33851,
+      "sha256": "5ac26468e1a09aa23e6f923673a77b716a9a00d6bd8d357a716f8b0d47cefe5a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-1920x1080-workbench-e792a-essibility-and-exact-replay-chromium/workbench-1920x1080-replay.png": {
+      "bytes": 459954,
+      "sha256": "14a7e5b3e3243b97933ba8486e40aa3abc0115019b6202c5210f46d891c670f2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "581fda24c56ca1b79a1bf8d6338c5dbf9ccdea66f3bfcc78a45bb57c24a6bd60"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-baseline.png": {
+      "bytes": 408535,
+      "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/chromatic-320x568-replay.png": {
+      "bytes": 408535,
+      "sha256": "09df6d5543da9b5445fce3f624248f2a7b0646c9450e3681f1f398a95ec1126f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-chromatic-r-47d38-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93687,
+      "sha256": "d18f297b6eb571c769b173c1b786235b3f0cb12a12ff2dbdc824dde6ec736812"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "c36bd233bae454907e1706093a3a75795652d5393930bcafcf5c28a1d84b1ac3"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-baseline.png": {
+      "bytes": 408055,
+      "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/elastic-320x568-replay.png": {
+      "bytes": 408055,
+      "sha256": "df69e45f0f33284feab810504679b968efaa6422390318fac794dd259f8d3a0a"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-elastic-ret-31e02-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93671,
+      "sha256": "529c1bd0f0384691718b88ea96038379be1959ad31efc4cae9704c399de042d9"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6957,
+      "sha256": "5090a7f26d72e4ffbfc03c84beedfacdc1a2ed04f8bae66e877ee5dbb1aaeab4"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-baseline.png": {
+      "bytes": 407753,
+      "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/folded-320x568-replay.png": {
+      "bytes": 407753,
+      "sha256": "dd587ff85d75813642edca4c0a7e538f7e9b34385bfb333e8b9da4cb39ca823c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-folded-reta-c7bd9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93663,
+      "sha256": "31e0c7971cd5c70eb07cbe7cbf24ea8abfc4676ab67733300f14b1b05b429011"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6962,
+      "sha256": "26a183d17365af83aac7499fddd5cb2500065f769afe0767d02ea5cb30c7ea2c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93703,
+      "sha256": "47343ba238fd85a9b1e0d054efe83cc62fa13b1b7a15433c52e5f6514660e0ae"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-baseline.png": {
+      "bytes": 408819,
+      "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-observatory-80d79-essibility-and-exact-replay-chromium/observatory-320x568-replay.png": {
+      "bytes": 408819,
+      "sha256": "827b66a7ae9d4c74be7c6505c6ec877e3e96beaabdbc6e426d61a67771f0001b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "1a26d2469ec13e47f19c6a66deced5f5a67cdd6da5381ce193bc57c262ad5a51"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93671,
+      "sha256": "1e02b3dc8cfc22662451e8746e29eed51466a8f6ceddd5fc96d4d41b79ac9fbe"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-baseline.png": {
+      "bytes": 408474,
+      "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-orbital-ret-61208-essibility-and-exact-replay-chromium/orbital-320x568-replay.png": {
+      "bytes": 408474,
+      "sha256": "e1b24cda64d7c25f6b8a1d3e8942169a321bf43d57247a1dba4399fd1d2a14af"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "79d23c7f3aaa3d8d6eb01805001aef7ddf0863a528c97f4c42472a790f997e46"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93687,
+      "sha256": "42bc982b72c1f62784c0522513737a3bd4379e00a921f66b0d588c6616e8cee4"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-baseline.png": {
+      "bytes": 408604,
+      "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-diff.png": {
+      "bytes": 23863,
+      "sha256": "052e92a0ce613ec4ad0858a54a6d617f4ccf4532363613ee8aa8527bf69d8be7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-320x568-workbench-r-08e7b-essibility-and-exact-replay-chromium/workbench-320x568-replay.png": {
+      "bytes": 408604,
+      "sha256": "7a83a587859cc8a1305d8a4b0754663e9760622d360b08494ff7ce97fb7dbf7f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "e7cb83b28879302762a577d2701c7ebde9600a44c3ee710dc060de19ed0d67ed"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-baseline.png": {
+      "bytes": 422613,
+      "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/chromatic-390x844-replay.png": {
+      "bytes": 422613,
+      "sha256": "d04782894c6cea460e265d41e49103790146ab63068b619176edc71ff3732ebb"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-chromatic-r-b87c3-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93683,
+      "sha256": "4719aef62ba12d5a20a092da54d2eb41143da86a241e2cc8f29d7759791dffd8"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "caf57fa73588e9598689504b1826dc4257d95afb54f4e2a8c1f6b7c712ea7785"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-baseline.png": {
+      "bytes": 421850,
+      "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/elastic-390x844-replay.png": {
+      "bytes": 421850,
+      "sha256": "03cdb230d6fd064399676bea475444b62ac06886bc368b64ba6a8c80c7c0fd36"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-elastic-ret-423d4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93667,
+      "sha256": "cc7ad3281c28adb3aa1c0937c25a218011c77d9b66dea267cb39f82b0e3fbb0c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6957,
+      "sha256": "61450c2458279f3fa3d794d956786f142d609477d5e6d17463bc43e6dcd7a9fb"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-baseline.png": {
+      "bytes": 421613,
+      "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/folded-390x844-replay.png": {
+      "bytes": 421613,
+      "sha256": "d1360167d81da3a36e410a635d4ab0c0267ebb87d2762491ae3d8d92083a099b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-folded-reta-1860b-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93659,
+      "sha256": "c9b9446f8dc41e832f6a4ae714e308c1a2ffaa018786e43913bc4938a31d17b6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6962,
+      "sha256": "45ebcacb863a925fa33cd5822359da15c320ce9527daa45f06a4222c5d614c99"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93699,
+      "sha256": "8becbc3d5ac67edfb5ebe2beeb7c60e75885da8e2c62d3d4af3566cd9937fd67"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-baseline.png": {
+      "bytes": 422931,
+      "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-observatory-17679-essibility-and-exact-replay-chromium/observatory-390x844-replay.png": {
+      "bytes": 422931,
+      "sha256": "9089547e8431264ff628e524c6095fdded1361cbe2d9dfcd8eacf5f904b68981"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6958,
+      "sha256": "2f32fe10b9589c91717869cd765a699b6c72fabd3f08327de9b76de15f33273d"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93667,
+      "sha256": "9175b4e70ee2eb8b48d98d570ade7e5b86a4d6b32197584237f9933f1ca5011e"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-baseline.png": {
+      "bytes": 422366,
+      "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-orbital-ret-1eec9-essibility-and-exact-replay-chromium/orbital-390x844-replay.png": {
+      "bytes": 422366,
+      "sha256": "0841397f89369fd07b832f18130b66961d24f8add0401d8c9447e4f7b0d39c87"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 6960,
+      "sha256": "8dd969ea87c1d997ed4698148ef8156ba6bc7faebd9bbb98f3d3dad3345d2f7c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 93683,
+      "sha256": "874daa43f47d6a63f5a7dca5c81ef2171f6b5baa431f5ab1f19d507a1919f70b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-baseline.png": {
+      "bytes": 423146,
+      "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-diff.png": {
+      "bytes": 21224,
+      "sha256": "730408d6e8d43f8cc421b9c1ffecdc1b61f431ec05f488416b0909cb83bb39e6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-390x844-workbench-r-98f6d-essibility-and-exact-replay-chromium/workbench-390x844-replay.png": {
+      "bytes": 423146,
+      "sha256": "63d9aa77883d0967bfe0835547184bf0d4c93d08210f28e33700b0e044d29399"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7019,
+      "sha256": "5b7d862c96e5bcf82e65bc72febdd94e29a3739c665386990ae7a173de762a59"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-baseline.png": {
+      "bytes": 437429,
+      "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/chromatic-768x1024-replay.png": {
+      "bytes": 437429,
+      "sha256": "6b9cdf4140f499e78403ec7246f4b07d2af5e3624e233d0c4812dec87122384c"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-chromatic--0aea5-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95345,
+      "sha256": "8f494736e5d66f42df2bd2ac8d0d4b80350ebf9f8828de41a0cabe5a14f1ca98"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "581952079c5a75b680f89ec9397c1b17ae66b7a0acd6fdf9b40bc09ede3d1e87"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-baseline.png": {
+      "bytes": 437338,
+      "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/elastic-768x1024-replay.png": {
+      "bytes": 437338,
+      "sha256": "4143c8cad76adcd2b818e0713a23f400fe63901ee4fcad91b11ebee5b17c8807"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-elastic-re-a5e2e-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95329,
+      "sha256": "2caaa57816ce75c990bed78a8dee672ee1a0af28302601bd714b12905d84c113"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7016,
+      "sha256": "8a1ae59c705e130060151477ab31ad9ff05f64a6a3cd35812be8211afee6fb7f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-baseline.png": {
+      "bytes": 437278,
+      "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/folded-768x1024-replay.png": {
+      "bytes": 437278,
+      "sha256": "2ef9ba0bb5ae7308cac962cd9dd169abbdd6319c50d0704deee6b09e23870c74"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-folded-ret-035b4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95321,
+      "sha256": "806a6ed62f634e9d3424abe655a7cc40cb6bac0b4da2a2fe5a460e6b2d7ca1b1"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7021,
+      "sha256": "10f3bdc44e5c1e758757110fe40260e0c0d88d08d240167fcd913640ec7feffa"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95361,
+      "sha256": "ea4be24bf3eba6b6ed750fe673aa14b4c4f5e8e43fd037fb1cf48177ac29ab0f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-baseline.png": {
+      "bytes": 437852,
+      "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-observator-6fc05-essibility-and-exact-replay-chromium/observatory-768x1024-replay.png": {
+      "bytes": 437852,
+      "sha256": "c0bc1ea5cfe7ddba2329934bf7e29e5906f7bb6e9cdf0d2d2d01ca2c8dc2a0b2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7017,
+      "sha256": "7f3bce7ea7d5f05ec7eb6379ad94dafb6951cefaf7a5f83c4e314e5c6d164b54"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95329,
+      "sha256": "17784d03b49eb17b0d9562af4d5df8d17c09de9aded44a1d1283efa6eb10283e"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-baseline.png": {
+      "bytes": 437276,
+      "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-orbital-re-04c3c-essibility-and-exact-replay-chromium/orbital-768x1024-replay.png": {
+      "bytes": 437276,
+      "sha256": "c7ea32126e5008c45bee6d75a146279659ab93a7fb6ca42f1399b4df363cc953"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7019,
+      "sha256": "ed2842da298bd5d0569da86eb144fc84ef009343de71758931035a413853706f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95345,
+      "sha256": "afea4955f6efffc2f7fe6f5c06c0ee193143b1b250a64509fb9268ca37af2ad6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-baseline.png": {
+      "bytes": 438132,
+      "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-diff.png": {
+      "bytes": 26500,
+      "sha256": "53c2c75ada3ee3963906b826fb9607fd2ee1b39fcb7bb757f0515f895f468191"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-768x1024-workbench--91139-essibility-and-exact-replay-chromium/workbench-768x1024-replay.png": {
+      "bytes": 438132,
+      "sha256": "9b58ebb12ad70237af5246af8dd885188476b2486b9456293024118cddcdd471"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7033,
+      "sha256": "820867bb9778f14c9953af33ef69744a0e21b8f951e7a5176d2412b7688efb42"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-baseline.png": {
+      "bytes": 458977,
+      "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-diff.png": {
+      "bytes": 27032,
+      "sha256": "c9ba4cce36168abbe828087c6d0f01d48e1ba6883835563a07253eae6ec594b9"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/chromatic-900x390-replay.png": {
+      "bytes": 458977,
+      "sha256": "64c8410feb576d83c707342c17265b5320efedb92383e38d20e6217840fdffa6"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-chromatic-r-a9d0a-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95360,
+      "sha256": "1068fd9b87c3c563301bb1268e8e81ae731f8714e6559170213eec873d55c980"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7030,
+      "sha256": "9dfe3ae0e15fa4660f471d8d4bc2ba0d8ab3ce76cedf033c7480849b2e09f435"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-baseline.png": {
+      "bytes": 450820,
+      "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-diff.png": {
+      "bytes": 22989,
+      "sha256": "013559329df6c71950ba2ffca4c2346058a1611cdf8196053452c11914aac0c2"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/elastic-900x390-replay.png": {
+      "bytes": 450820,
+      "sha256": "19fa097099ecb7e365d2823ae8c0a543fc0b9a52c852de53574463348dd0492f"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-elastic-ret-82dd4-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95664,
+      "sha256": "cc8bb3b5d05e1f17f17e0102f9abcfe5c068407c0186e31dbc5c4a30dcfb4a3d"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7024,
+      "sha256": "b475d2015dcd816ad37318a0b80d6d69bb303aa2eba3b7029215d191d2eb2147"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-baseline.png": {
+      "bytes": 441008,
+      "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-diff.png": {
+      "bytes": 29102,
+      "sha256": "05719eaaf1c534f5f7ceeef84862b20a3f2b1e559bdb70c232b3066e9d490fdd"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/folded-900x390-replay.png": {
+      "bytes": 441008,
+      "sha256": "e8fe1a1573b61a3c761295066c3eb1595f11a9a6d437b980deefbbe0d4e70a2b"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-folded-reta-11293-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95317,
+      "sha256": "0da4e2a7917383cac8272e47d709510cad0f3059f721a631767f751ce3c9e817"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7035,
+      "sha256": "6fdf6f715f8288102f35c068c215ca798946c7beec0c9d498e5719e5cf784d15"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95491,
+      "sha256": "6b634e0665db1144bc21e32b01d97f485861f1ab39d96bef595153919f9ac098"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-baseline.png": {
+      "bytes": 461308,
+      "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-diff.png": {
+      "bytes": 26899,
+      "sha256": "742ea2ee41020b42fb4f68b528854ff610cb04f76a8bee19a566a47e366771ed"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-observatory-801f9-essibility-and-exact-replay-chromium/observatory-900x390-replay.png": {
+      "bytes": 461308,
+      "sha256": "81ee4e213ca0fcfe3a4ed49794db303c199878c31860a9f8c9e39c70dbe18f89"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7028,
+      "sha256": "b96b969395362dbe86683a68959f5f81e94af0b5bb36d8f3b60b850a52d309eb"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95806,
+      "sha256": "68d62a6c66a1441b1137540bac04ba2241ea72e7cd3f83a157587af7a9b056c0"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-baseline.png": {
+      "bytes": 489498,
+      "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-diff.png": {
+      "bytes": 35226,
+      "sha256": "f2acb68314f93c3351c2aa9ec9cdd0a52a38be9d97d918e416b24c2d1a682dd5"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-orbital-ret-be09c-essibility-and-exact-replay-chromium/orbital-900x390-replay.png": {
+      "bytes": 489498,
+      "sha256": "44ad964a01df93f5a86ff2d0bd1f545d61c302ec9997426af15d47d00d97b618"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/accessibility.yml": {
+      "bytes": 7032,
+      "sha256": "9ed908509e3eafb4656626c3435d30696e8f88ad1a7cdab71d37f969ab78b4e7"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/manifest.json": {
+      "bytes": 95459,
+      "sha256": "ea8ead1eaea2eb29c0efffe9333aebfd5d5b30cc70a8eb969c78caaa5e9e8166"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-baseline.png": {
+      "bytes": 464045,
+      "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-diff.png": {
+      "bytes": 26499,
+      "sha256": "bf825d68eaa88c9ae4e52a0c98f7379fea85d1313121e47fdc7c5eb051582c28"
+    },
+    "artifacts/browser/2026-10-18T11-36-08-439Z/visual-900x390-workbench-r-3d98d-essibility-and-exact-replay-chromium/workbench-900x390-replay.png": {
+      "bytes": 464045,
+      "sha256": "20696a33593a655b81168d985c4f186e5a1096874161e4f721ff449d88a28b82"
+    },
+    "artifacts/browser/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/.last-run.json": {
+      "bytes": 194,
+      "sha256": "aab0c2e66c9b9779e1a329b54a5f929f2ff3cba8811c56acf108a91ed2d95f48"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/negative-controls-negative-3796c--contrast-and-wrong-actions-negative-controls/negative-controls.png": {
+      "bytes": 7831,
+      "sha256": "fb6c4ff9a6539cef956d924a853c5bf37fd6058f06277803660d78ce3cc1f3ef"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/error-context.md": {
+      "bytes": 22237,
+      "sha256": "ac2e59a74ed28df1383035a9c132d05ceac7aa8e3008fc5e7868b958349c89d3"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/test-failed-1.png": {
+      "bytes": 76944,
+      "sha256": "0d7460cb1f157f1edfe5e2a5fb697099cb3b9e40cdfa8e3516cae68ab64c2c1f"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/trace.zip": {
+      "bytes": 5439306,
+      "sha256": "bc24018cd1c6a23c93b374a628e2e18a0f97f641ed19a9e4b301bbcd144fd89e"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/error-context.md": {
+      "bytes": 22230,
+      "sha256": "e487328c088c88d9c375b81ff880a2108f6c870c53bfe5b7626203255b4694a7"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/test-failed-1.png": {
+      "bytes": 76944,
+      "sha256": "0d7460cb1f157f1edfe5e2a5fb697099cb3b9e40cdfa8e3516cae68ab64c2c1f"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/trace.zip": {
+      "bytes": 1969331,
+      "sha256": "ca587abc04690f5d049875eb83140ad5ab1289bfe0812416c4faee7828810fa6"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/error-context.md": {
+      "bytes": 4106,
+      "sha256": "39889feb406bb24890295b89b60464d728bc0d3d393db11b6bbc92c7d92e0c68"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/test-failed-1.png": {
+      "bytes": 107317,
+      "sha256": "c115f54fb1c96e439d80e1a7c93b0ec21d0eb4a3743f23293ee87b3018869a9f"
+    },
+    "artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/trace.zip": {
+      "bytes": 1972130,
+      "sha256": "a0302c743aebd57de7750a4be13745a6cc37f5a804bf701e424305e6b416d5fb"
+    },
+    "artifacts/experiments/latest.json": {
+      "bytes": 34911,
+      "sha256": "3af4db3b816604c0d7c9b0f43ba625bd607350c1e2589c36b7fc6b9fb31eb390"
+    },
+    "artifacts/experiments/layout-matrix.json": {
+      "bytes": 18874,
+      "sha256": "10e7cbfa19a6480f6ca999e0b5ab1dc229028a13e5d476303a748397280e93a3"
+    },
+    "artifacts/experiments/performer-trace.json": {
+      "bytes": 14897,
+      "sha256": "cf9bd52247e5952f0bc287a32114d9b761c392174a22c2e6425ab47151c57ad1"
+    },
+    "artifacts/experiments/physics-traces.json": {
+      "bytes": 2431,
+      "sha256": "67b3b269c70a41884afd434f136cb1f31a52ac796bb01a3a8facb5f4cdd3fc01"
+    },
+    "artifacts/experiments/replay-manifest.json": {
+      "bytes": 12327,
+      "sha256": "37f5bc8ae8024fab64ec4383e6262f75c73991ded9abf32711a24564fbedb165"
+    },
+    "artifacts/experiments/run-2026-10-18T11-07-24-600Z.json": {
+      "bytes": 28371,
+      "sha256": "55aa040387e41f335dc58472a63c0955721a2ed18f16a0da638fbf0856de3c50"
+    },
+    "artifacts/experiments/run-2026-10-18T11-07-57-248Z.json": {
+      "bytes": 29736,
+      "sha256": "12fb22824b7b6153c4ba4e4fb28ce36d2dfa21f4cf056b328e7b573b6f251e59"
+    },
+    "artifacts/experiments/run-2026-10-18T11-09-20-618Z.json": {
+      "bytes": 29972,
+      "sha256": "8f947b09617a947b43507c5b5d5b1377ecd54b77c49719f7f7c58f400912dfe4"
+    },
+    "artifacts/experiments/run-2026-10-18T11-09-52-376Z.json": {
+      "bytes": 30266,
+      "sha256": "89b45e8013bddc0beee293f36e1f5457955693bafa3ce62fcce9e8c9b28b6cac"
+    },
+    "artifacts/experiments/run-2026-10-18T11-09-54-850Z.json": {
+      "bytes": 30266,
+      "sha256": "397d40a89ea1fa12528e4b4f6b2e0d9632b600f65ce5e74382387f21758fdc6e"
+    },
+    "artifacts/experiments/run-2026-10-18T11-10-21-737Z.json": {
+      "bytes": 30266,
+      "sha256": "07198383d770348fb46d7fbc460c414c379c2129e7794dce041abe09e93ade9d"
+    },
+    "artifacts/experiments/run-2026-10-18T11-11-19-669Z.json": {
+      "bytes": 33579,
+      "sha256": "1b53ee88fd6f5c242c55835151dc02dbf8f5a72e50327f101e8f1e49a9b78fdf"
+    },
+    "artifacts/experiments/run-2026-10-18T11-12-13-062Z.json": {
+      "bytes": 33579,
+      "sha256": "5cedc346bf345957993bf7381727d3c3194001fb3d8958fb85cca364f16963d4"
+    },
+    "artifacts/experiments/run-2026-10-18T11-12-15-840Z.json": {
+      "bytes": 33579,
+      "sha256": "c19dde711758ce0b455c364fb8bb844ebad75f0031697512ce5f2c9120b10d88"
+    },
+    "artifacts/experiments/run-2026-10-18T11-39-53-278Z.json": {
+      "bytes": 34911,
+      "sha256": "eed6b2bc3bf86eef2e0816e6e2546b426a4094fc2ca2b4b2f0aaba0dd31c85d5"
+    },
+    "artifacts/experiments/run-2026-10-18T11-39-55-779Z.json": {
+      "bytes": 34911,
+      "sha256": "3af4db3b816604c0d7c9b0f43ba625bd607350c1e2589c36b7fc6b9fb31eb390"
+    },
+    "artifacts/experiments/seed-records.json": {
+      "bytes": 1623058,
+      "sha256": "d6dace6e7a12279d4c464ccc03d0df66e333f729b1c97857fe8818b05df902d6"
+    },
+    "artifacts/experiments/sources/bibliography.json": {
+      "bytes": 3155,
+      "sha256": "f9f5e298a43f22cc02f8ba0394d1e5597878b67185b88253b040f4a77d904c6e"
+    },
+    "artifacts/experiments/sources/css-color-4.html": {
+      "bytes": 1048849,
+      "sha256": "2174f6360440f9820b30934368308a68bd514160f86621476b83eb2004c2c63f"
+    },
+    "artifacts/experiments/sources/diffusion-stability.html": {
+      "bytes": 661523,
+      "sha256": "5814d6d44d280f838847ee896304d0a406c8aeed60852e9a7ed0c5b0fbd5f383"
+    },
+    "artifacts/experiments/sources/json-schema.html": {
+      "bytes": 157096,
+      "sha256": "33bfdf0786d9ca2b627fd9d18589725caf9c3ba60d8811c43c3f2cf7cf80e963"
+    },
+    "artifacts/experiments/sources/numerical-integration.html": {
+      "bytes": 31960,
+      "sha256": "c55268570f41911de3f47d99485299f90c6dda25c7f8a10b9c71268cb43d8f9f"
+    },
+    "artifacts/experiments/sources/typescript-compatibility.html": {
+      "bytes": 244408,
+      "sha256": "5e58769e6235b09207de013ded15dddb1260f5ed23f34e43a64c9df68e8e7fee"
+    },
+    "artifacts/experiments/sources/wcag-contrast.html": {
+      "bytes": 80477,
+      "sha256": "a06d8a7dad2b3c9cadf1d93b1a5372d58adbab65be51e4c4680124d4e47c9999"
+    },
+    "artifacts/experiments/sources/wcag-luminance.html": {
+      "bytes": 80477,
+      "sha256": "a06d8a7dad2b3c9cadf1d93b1a5372d58adbab65be51e4c4680124d4e47c9999"
+    },
+    "artifacts/experiments/structural-equivalence.json": {
+      "bytes": 1378,
+      "sha256": "13100056d36ca0f8527357368e9b09e48b862502fe0b96e707e5f9c655d7420d"
+    },
+    "artifacts/reports/FINAL_REPORT.md": {
+      "bytes": 13575,
+      "sha256": "d512366b917c3df1f719b37d24684667dedbc2e8103e5d2a21627dbe23b39309"
+    },
+    "artifacts/reports/artifact-store-green.txt": {
+      "bytes": 228,
+      "sha256": "20cf5721c32f73dcffa31be68fbdabbac511ceb888f5f7366a6bf980daa90d7e"
+    },
+    "artifacts/reports/artifact-store-red.txt": {
+      "bytes": 992,
+      "sha256": "7ffb2e3e3fee6074dfb2560312c11d2658618da7050866a73cf3a445c7de5e47"
+    },
+    "artifacts/reports/browser-harness.md": {
+      "bytes": 7205,
+      "sha256": "2db55587425c3614462440898865882bcc1cf5dca9cd288924ea97e7861f0b6a"
+    },
+    "artifacts/reports/browser-runtime.json": {
+      "bytes": 831,
+      "sha256": "69a1c6bc5f886ab383071a41b0dd8e3006bb70e89daa5bbd35bf4aa0815e5888"
+    },
+    "artifacts/reports/build-app-second.txt": {
+      "bytes": 1116,
+      "sha256": "a182517139700b7c65af6b8e167cffb9d98f2e7d7bccb9880764a4426c341672"
+    },
+    "artifacts/reports/build-final-after-review.txt": {
+      "bytes": 1610,
+      "sha256": "c89494d6f8d9c32f390b9d94b5a6b590d4e41a90cd16569247bb8b96443d472b"
+    },
+    "artifacts/reports/build-final.txt": {
+      "bytes": 1610,
+      "sha256": "d928cf00ecdbda158da4cbf9f22c1fa11e0ec2fee6b8b865d50db3e22b1433d3"
+    },
+    "artifacts/reports/build-hardened.txt": {
+      "bytes": 1610,
+      "sha256": "6471c1f957fa1cd6a5f42802d815d21391e676b7b687d88ad19bc099372ac2db"
+    },
+    "artifacts/reports/build-initial.txt": {
+      "bytes": 3978,
+      "sha256": "14bc00a322a8ef808074bcd18862b3c95a987c1f07f64626e8307ab0f72896ca"
+    },
+    "artifacts/reports/build-report.mjs": {
+      "bytes": 21908,
+      "sha256": "58318338799e716111142d09a66ec320549fe134dc447c4c95dd363c3901d8e3"
+    },
+    "artifacts/reports/conformance-red.txt": {
+      "bytes": 3880,
+      "sha256": "36414f482f798345491e858bbf6c4293a118e498ae3c4a6782ea8130d5fb1a74"
+    },
+    "artifacts/reports/constitution.json": {
+      "bytes": 3992,
+      "sha256": "77214c793873715b9cf46895882c38e08ca81e81a6dbe277ea4081fc6a003236"
+    },
+    "artifacts/reports/core-green.txt": {
+      "bytes": 920,
+      "sha256": "cad3c695f12a2f39b4ea6e49e7836903cd795e1b2ffb41fed02c83a242668b5e"
+    },
+    "artifacts/reports/core-reading-red.txt": {
+      "bytes": 1779,
+      "sha256": "e08be5c9518623d6b21a80e788837affb0597c9b60949285277b442f32f6fd69"
+    },
+    "artifacts/reports/core-red.txt": {
+      "bytes": 1448,
+      "sha256": "79f0102c024b660ee79b8ebfab40af7a30c8aca27942ff2e7403b0977c8fac34"
+    },
+    "artifacts/reports/core-stress.txt": {
+      "bytes": 707,
+      "sha256": "1f8d13cc579b929e5118ca03528bd3c373a86add5a9f3bf608191474bf3c69f8"
+    },
+    "artifacts/reports/core.md": {
+      "bytes": 4824,
+      "sha256": "c9d8c450ce1aa4d2c7ef587959d22e45a2931b8bced2ad0d64414378c55e0e39"
+    },
+    "artifacts/reports/evidence.json": {
+      "bytes": 7198,
+      "sha256": "b9495f07ede6c2b05e79a6187ceb7fc459fe57a7806f1bd9fdb8a64fe8423f7b"
+    },
+    "artifacts/reports/final-app-review.diff": {
+      "bytes": 24824,
+      "sha256": "153fffc1433b0d89fa3b8322dfe6a69adde517098063b179fb601900e192ba39"
+    },
+    "artifacts/reports/final-code-review.diff": {
+      "bytes": 338744,
+      "sha256": "839a12d88003616023252a9a1c4edc049c0503335313f3341ed76b9b31a697f2"
+    },
+    "artifacts/reports/final-experiments-1.txt": {
+      "bytes": 454,
+      "sha256": "b17a0dccd4b5a55f049ba1c598547cfbcc4b86a70ef5a24887ca77ab531bef32"
+    },
+    "artifacts/reports/final-experiments-2.txt": {
+      "bytes": 454,
+      "sha256": "b17a0dccd4b5a55f049ba1c598547cfbcc4b86a70ef5a24887ca77ab531bef32"
+    },
+    "artifacts/reports/final-manifest-replay.txt": {
+      "bytes": 72,
+      "sha256": "f4a38652e122bdb456e714dd537b8780cfd80508edce9f8057f5d2607a566571"
+    },
+    "artifacts/reports/final-review.md": {
+      "bytes": 11504,
+      "sha256": "886e5d4ca580e1adb2034e45bbe4410139debe4347ccda1aba08715e3fb425ab"
+    },
+    "artifacts/reports/final-tests.txt": {
+      "bytes": 7126,
+      "sha256": "7dbe6e68d58ca4e3ac76a0e88fa4b0457749d02c552675f0f0a903ba590ccb94"
+    },
+    "artifacts/reports/final-typecheck.txt": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    },
+    "artifacts/reports/gallery.html": {
+      "bytes": 32015,
+      "sha256": "42499508311cc5229e56d2d796bea97a21167794e6be586694499ed2878d76c0"
+    },
+    "artifacts/reports/integration-tests-pre-browser.txt": {
+      "bytes": 6318,
+      "sha256": "43db7fa2e34010d309b02e7d45c8cc80137ea1e494e3728ab504165b2e638e7c"
+    },
+    "artifacts/reports/integration-typecheck.txt": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    },
+    "artifacts/reports/math-green.txt": {
+      "bytes": 1022,
+      "sha256": "4fb1c8350978267f2dee3e65ca2ea65e555081f34fbc802b09af20be4ccbfd31"
+    },
+    "artifacts/reports/math-measurements.json": {
+      "bytes": 22115,
+      "sha256": "f3720804d7d6e5bcdf1d056a524c9ecbe1a81956f7b62808b677b5b390ef3807"
+    },
+    "artifacts/reports/math-red.txt": {
+      "bytes": 2821,
+      "sha256": "1a8bb035bfddf95e04ff2e847b036fcfc9d9ce6bebb6815ca1ad0a3a48222bd6"
+    },
+    "artifacts/reports/math-replay-green.txt": {
+      "bytes": 1226,
+      "sha256": "2e0a0ac955bc330b95d5227611b7381a8b9c0a38319da56135af4960e483e622"
+    },
+    "artifacts/reports/math-replay-red.txt": {
+      "bytes": 1048,
+      "sha256": "c242bb5ae6a75c07f2b660310b6ccfb430cc0fb42e0ab9eacd0604cf5ca2d317"
+    },
+    "artifacts/reports/math-replay-workspace.txt": {
+      "bytes": 5683,
+      "sha256": "d15880fdf910dee9facd4b80c95a5792d9510498577cdb5c6abb4385061c739c"
+    },
+    "artifacts/reports/math-runtime.md": {
+      "bytes": 11031,
+      "sha256": "9941d0f3f42d9f51c23219f419566e8cc2101f16472472f9582b4a8ffbe62c12"
+    },
+    "artifacts/reports/math-workspace-tests.txt": {
+      "bytes": 14550,
+      "sha256": "41a80dc9d797f5b3e836e716feefcbe2393ec645bc9a7db0395e90e089b833a9"
+    },
+    "artifacts/reports/performers-green.txt": {
+      "bytes": 1148,
+      "sha256": "f283ec3a6d4d22291023ae10aa4056b9660df0d80623166af3a9e0367c162a0a"
+    },
+    "artifacts/reports/performers-hardening-red.txt": {
+      "bytes": 2807,
+      "sha256": "1e88421fc53f9349418add78317c4460a88df7dc410e817803c5c8b607ee5d27"
+    },
+    "artifacts/reports/performers-red.txt": {
+      "bytes": 1484,
+      "sha256": "bc23235e716d717015990760cd822947324591c15fc5829e54a458d4489fdfcc"
+    },
+    "artifacts/reports/performers-static-red.txt": {
+      "bytes": 475,
+      "sha256": "c14e2209414dd08dbcaeb4c8500f7c5e9f010acb8e91aaf1df534a7ac26c1dae"
+    },
+    "artifacts/reports/performers-suite.txt": {
+      "bytes": 7513,
+      "sha256": "6448768482b0af281abcacd7b3e6b98725c2815d2263a14258b59e3b1d312f12"
+    },
+    "artifacts/reports/performers.md": {
+      "bytes": 4251,
+      "sha256": "2c4c3928e4776b7185997d5a0b46fdba973682611ce96bbaac6423b7976e781f"
+    },
+    "artifacts/reports/persistence-fix.md": {
+      "bytes": 4983,
+      "sha256": "c9b36e56122233f27fa66b3803c7c9647db4ec09a0386543ceb5914ea51f2d6a"
+    },
+    "artifacts/reports/persistence-limits-red.log": {
+      "bytes": 9822,
+      "sha256": "e6b3293bf3743a1b212fe04b9f5c8dbaa06ba58d2c15bd257fd4f93df35c851f"
+    },
+    "artifacts/reports/persistence-typecheck-green.log": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    },
+    "artifacts/reports/persistence-unit-green.log": {
+      "bytes": 7122,
+      "sha256": "d736b9b4a2ad185d2c2a08fd3e7ebab61c8cd9757fed4ca92b996e3db700625d"
+    },
+    "artifacts/reports/persistence-unit-red.log": {
+      "bytes": 2077,
+      "sha256": "78553a502465621bb27647a4f0ffcfa62206ec7b0b31f5bc0a2581b6e7d79f61"
+    },
+    "artifacts/reports/pre-final-tests.txt": {
+      "bytes": 6787,
+      "sha256": "f7d7a4ca265e336120e88c8b094405d56c872c9016e7b1a99d7cc8809104035e"
+    },
+    "artifacts/reports/pre-final-typecheck.txt": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    },
+    "artifacts/reports/publish.json": {
+      "bytes": 921,
+      "sha256": "8be117e2738e20f78799448a4dee155605b1ef8094670c72e125b18a52a9eeaf"
+    },
+    "artifacts/reports/reconstruction-7248a7daf455709286b772d8b4933042519aaa08.txt": {
+      "bytes": 9276,
+      "sha256": "ee50483f4b7b10b152dc60143c4e7061bd6a0c96860c5493356f73dba9f63382"
+    },
+    "artifacts/reports/reconstruction-992333068e2f5145ab1d26485409826a1d3b59a7.txt": {
+      "bytes": 8695,
+      "sha256": "d0f745df98bb84cfa672c349aef25570aab9909f67c30baf3d3c3da1299f835a"
+    },
+    "artifacts/reports/reconstruction-final-launch.txt": {
+      "bytes": 9276,
+      "sha256": "ee50483f4b7b10b152dc60143c4e7061bd6a0c96860c5493356f73dba9f63382"
+    },
+    "artifacts/reports/reconstruction-path.txt": {
+      "bytes": 36,
+      "sha256": "87bf8a00dc886a6066bd0216a24cb432dbe664af7387f3007bd3228ed374d538"
+    },
+    "artifacts/reports/renderer-red.txt": {
+      "bytes": 1938,
+      "sha256": "236ead284320b51fc86a633ef9be9cd2dca38ed24caf46b10242ac408f9e16fc"
+    },
+    "artifacts/reports/research.md": {
+      "bytes": 28716,
+      "sha256": "be4e3a2ce5752efebacfb9a4f2ea93fd4f3a20f35ed330547fbe56e05e03d2be"
+    },
+    "artifacts/reports/resource-empty-red.txt": {
+      "bytes": 1594,
+      "sha256": "afc2b634afda87e03fb3efd10b7e36809e468b2d5458edac4363a4d3226c7b4b"
+    },
+    "artifacts/reports/resource-green.txt": {
+      "bytes": 1334,
+      "sha256": "d94504879e2039c6dca525ee6a5315c6b116716f619f8c9fa120025dd72931cb"
+    },
+    "artifacts/reports/resource-red.txt": {
+      "bytes": 7836,
+      "sha256": "bd425d26a97fe78a4599004797fd6f623c48bb27b0bfb4a6b104902d25e5193f"
+    },
+    "artifacts/reports/resource-selection-red.txt": {
+      "bytes": 1426,
+      "sha256": "9b4153cd14d5c40eec3f3b1d3b723c4fc907ed555861c77b641f580c8a1ef05c"
+    },
+    "artifacts/reports/resource-suite-check.txt": {
+      "bytes": 6778,
+      "sha256": "3342103efde708f7cb94cf31bd6b64b01c79739e698145d223b5bba418423a0f"
+    },
+    "artifacts/reports/resource-typecheck.txt": {
+      "bytes": 95,
+      "sha256": "28e69a3cd5d95608e91dfc3e03c677cd7dc27562d569c4e32ab1fce95ba2723e"
+    },
+    "artifacts/reports/resource-url-limit-red.txt": {
+      "bytes": 3016,
+      "sha256": "4466da0936a756840b723416c4225aaa6b876f74139e0e886a04c3eefd735f46"
+    },
+    "artifacts/reports/resource.md": {
+      "bytes": 7404,
+      "sha256": "4f76af523e5c989ca26c41a919d9b221cf3683f3c9e17a07d63e528dd2a40537"
+    },
+    "artifacts/reports/sdk-build-final.txt": {
+      "bytes": 406,
+      "sha256": "d132bc7c3d943b2d25130a68c971bd32d38d3dfd1b286bfe9711b60569389c15"
+    },
+    "artifacts/reports/sdk-hardening-green.txt": {
+      "bytes": 3084,
+      "sha256": "e1e0b6650a065942fabe13836da22c69dea29cad83f7990013dfbab7132332e5"
+    },
+    "artifacts/reports/sdk-hardening-red.txt": {
+      "bytes": 7585,
+      "sha256": "0f0d25557f3d91c1db3ba949aaf05782db6fc1a5bea93ca826df3087407c67b2"
+    },
+    "artifacts/reports/sdk-hardening-stat.txt": {
+      "bytes": 133,
+      "sha256": "c27d5a7e8ad742d4812be96bc7afa2736fb2f1dfbc3c925d8f5229c2485b3e06"
+    },
+    "artifacts/reports/sdk-hardening-typecheck.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "artifacts/reports/sdk-hardening-workspace-tests.txt": {
+      "bytes": 6401,
+      "sha256": "ba610cd974f4cce126ae0c64165676094a6f071034070e93b8811f3d8c607910"
+    },
+    "artifacts/reports/sdk-hardening.md": {
+      "bytes": 3208,
+      "sha256": "f0991111fa65388dae3b7fdbc64eeebe52c29232c847744f91c89a51089ddb84"
+    },
+    "artifacts/reports/sdk-integrated-tests.txt": {
+      "bytes": 5375,
+      "sha256": "14822446ea31cc5e595f48a994df58d3a0d6ffd4889f15be29011cac975b3f81"
+    },
+    "artifacts/reports/sdk-re-review-probes.txt": {
+      "bytes": 1179,
+      "sha256": "a64a75ff0560cf333dd3a45875efc244e1f26fd77e5c1b1a28789d08946e5bde"
+    },
+    "artifacts/reports/sdk-re-review.ts": {
+      "bytes": 3486,
+      "sha256": "16a3a0d4450e3fa940477e57fe508acf7a70b913c4c6d1ba87eea093e87d8a3e"
+    },
+    "artifacts/reports/sdk-re-review.txt": {
+      "bytes": 718,
+      "sha256": "66e4e352d99822ec7be78efe49633bfd5ab2feabcbeddba048c15f3d8e86f9ce"
+    },
+    "artifacts/reports/sdk-review-probes.ts": {
+      "bytes": 4775,
+      "sha256": "cd412c6e433c6956d2c40c55ba46772b0eacf2a551d9f7cd1493a8c5bfb9268c"
+    },
+    "artifacts/reports/sdk-review-probes.txt": {
+      "bytes": 1233,
+      "sha256": "b8301e99a3905600e08f30f7ae36a6f4d17b30e4ed694683b4839a5c8291e65b"
+    },
+    "artifacts/reports/sdk-review-stat.txt": {
+      "bytes": 1108,
+      "sha256": "9f41f97b5613f58906cc0bfe50fda37a2bea6955291c4eb4f4fbdbda6cce58a8"
+    },
+    "artifacts/reports/sdk-review.diff": {
+      "bytes": 88963,
+      "sha256": "ba238197bf5fb65e4523fa1496d09540aaf75c1c760b09de3f64b6570e7fcea0"
+    },
+    "artifacts/reports/sdk-review.md": {
+      "bytes": 16075,
+      "sha256": "2791bd902c3a3bb9cb70161b1a4d497077578799aaf48fc605509ebda2ab72e2"
+    },
+    "artifacts/reports/sdk-smoke-final.txt": {
+      "bytes": 239,
+      "sha256": "219b9d59c468af6b925df27be562f6f40ac13da09b7d2b0efaa4d59c52a57388"
+    },
+    "artifacts/reports/sdk-tests.txt": {
+      "bytes": 4456,
+      "sha256": "f5880cdc9dfbf6f371c81ed76f86b2a7bd1d964e10614033f491d75b231eed05"
+    },
+    "artifacts/reports/service-red.txt": {
+      "bytes": 2625,
+      "sha256": "6df48922c168c1f29218a0157a191263b92c1338a397527295f79d61794f75a5"
+    },
+    "artifacts/reports/source-hashes.json": {
+      "bytes": 10562,
+      "sha256": "ce95b86f0d92d68cea9573c534b43787f586c5128b680d6a5de78ef92aad9ceb"
+    },
+    "artifacts/reports/studio.md": {
+      "bytes": 5362,
+      "sha256": "b72df9bc57dd02865346d8c5b16ec5f39ee4bd38c082ec1fb792faf1d968e2e4"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-07-30-278Z.json": {
+      "bytes": 34320,
+      "sha256": "cccf13e075d9dedeade0f0bd3e174faa69cccd44f6c60c72d01cdeebf5f7e1cd"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-08-14-700Z.json": {
+      "bytes": 6928,
+      "sha256": "a85625700c292266bf9d7f00ffd24cbdfa8760bef34f33ec44685ab8249b7092"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-08-43-243Z.json": {
+      "bytes": 34462,
+      "sha256": "6c6c356877947d0cc9364c7faa7db569bb370843c25be95fe528d082ef076aca"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-09-06-180Z.json": {
+      "bytes": 7268,
+      "sha256": "614678ad30e7778a18a7edb886f10f8f05622f32ce7708c5e4bd0e5f3e94abe5"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-14-50-522Z.json": {
+      "bytes": 20907,
+      "sha256": "7cd6aab968b659e1a617a47cf5207edf040f89611999bee7228e814722d5338d"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-15-09-527Z.json": {
+      "bytes": 16599,
+      "sha256": "43263d6c3b49f1bc8f0b462af8a4d62b17302d3c70cdb2f55417daf54d28fd46"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-15-30-229Z.json": {
+      "bytes": 4735154,
+      "sha256": "b9eaca136bc5fcc18a089b3af21c30ea30a5af682ad4af34ae3ca1e7aac6d40a"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-19-41-569Z.json": {
+      "bytes": 10794,
+      "sha256": "eecd8075e8f1ac21a82541fe6f569532c9d11702fa404ac1b5228db35a9ae347"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-21-18-151Z.json": {
+      "bytes": 36364,
+      "sha256": "5bd8ce3acc93237ef1b7897b76db9e2d0a259903bdb677c352ffb620735270f2"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-25-11-958Z.json": {
+      "bytes": 128096,
+      "sha256": "7c471b1a79f3635c240452e16b6fd5a4012fca229a7feb9ac81e4aa1350e98fd"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-25-44-576Z.json": {
+      "bytes": 4744084,
+      "sha256": "f0f2e2a1cbfd4630859be8dff0904fb05ee9834558023867cb2dafa172ee9148"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-35-33-872Z.json": {
+      "bytes": 1898965,
+      "sha256": "5a304bc50228159c45c71e3b130a87249b2f329d0b80291f4a81cf0ed12f3da2"
+    },
+    "artifacts/reports/visual-playwright-2026-10-18T11-36-08-439Z.json": {
+      "bytes": 6634480,
+      "sha256": "e5718ed6784f9e578f3759e634fb76f543f43b49537f88ebf163d9478fe7d2d8"
+    },
+    "artifacts/reports/visual-playwright-persistence-limits-red-20261018.json": {
+      "bytes": 1955433,
+      "sha256": "b36b66dd4af33d3c18f1ab943ac6ebdf6de93eef37280d3994e8524c7eb77cae"
+    },
+    "artifacts/reports/visual-playwright-results.json": {
+      "bytes": 6812,
+      "sha256": "e7fc54632a6e5f485984ada091daa58a58b99cd8762b7cd4cc43c8655f3cf7c5"
+    },
+    "artifacts/reports/visual-summary-2026-10-18T11-15-30-229Z.json": {
+      "bytes": 3515970,
+      "sha256": "019445147534c2fcd841935c1b322846e36c20249fdfd8291935e90cfa5ca34c"
+    },
+    "artifacts/reports/visual-summary-2026-10-18T11-25-44-576Z.json": {
+      "bytes": 3955620,
+      "sha256": "00a88eef69a491339b7f7e516c9fb4dfa25dc6d1945a9f0956ae7a4a8ed79294"
+    },
+    "artifacts/reports/visual-summary-2026-10-18T11-36-08-439Z.json": {
+      "bytes": 3955620,
+      "sha256": "e6970fce218248ce871789182814a49e6af4dd6116faf51b0633adeabba0514e"
+    },
+    "artifacts/reports/visual-summary.json": {
+      "bytes": 3955620,
+      "sha256": "e6970fce218248ce871789182814a49e6af4dd6116faf51b0633adeabba0514e"
+    },
+    "artifacts/screenshots/cited-artifact.png": {
+      "bytes": 22082,
+      "sha256": "6adbe6efa4d2b58580468efd1a19cfada2d51c4bef7e91e0c351fbd47300fcbb"
+    },
+    "artifacts/screenshots/local-companion.png": {
+      "bytes": 25729,
+      "sha256": "50dbbda27e9d1921186d81d0a79c7456f087671e4bdfb14329ef118b47cc65eb"
+    },
+    "artifacts/screenshots/studio-final-desktop.png": {
+      "bytes": 107162,
+      "sha256": "82564336ca3994069d86d6f5d8dbf7f56aac77a2966b61485060987b8f8b6377"
+    },
+    "artifacts/screenshots/studio-initial-desktop.png": {
+      "bytes": 110028,
+      "sha256": "90e56279f5073347067b7b7700ea929c636d01642c95b16b86874fe1568f114f"
+    }
+  }
+}

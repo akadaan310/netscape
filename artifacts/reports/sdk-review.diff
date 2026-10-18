@@ -1,0 +1,1211 @@
+diff --git a/packages/chromatics/package.json b/packages/chromatics/package.json
+new file mode 100644
+index 0000000..3da1547
+--- /dev/null
++++ b/packages/chromatics/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/chromatics","version":"0.1.0","type":"module","exports":{".":"./src/index.ts"},"main":"./src/index.ts","types":"./src/index.ts"}
+diff --git a/packages/chromatics/src/index.ts b/packages/chromatics/src/index.ts
+new file mode 100644
+index 0000000..c3d2594
+--- /dev/null
++++ b/packages/chromatics/src/index.ts
+@@ -0,0 +1,80 @@
++/** Established OKLCH / linear sRGB transforms. All public functions are pure. */
++export type RGB = { r: number; g: number; b: number };
++export type OKLCH = { l: number; c: number; h: number };
++export type Palette = { background: string; surface: string; text: string; muted: string; accent: string; accentText: string; border: string };
++export type FieldInput = { seed: number; x: number; y: number; tick: number; state: number; intent: string; mode: 'dark' | 'light' };
++const clamp = (n: number) => Math.max(0, Math.min(1, n));
++function valid(color: OKLCH): void {
++  if (!color || ![color.l, color.c, color.h].every(Number.isFinite) || color.l < 0 || color.l > 1 || color.c < 0 || color.c > 4) throw new RangeError('OKLCH requires finite l in [0,1], c in [0,4], and hue');
++}
++function encode(c: number): number { return c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055; }
++/** May return out-of-gamut channels; use gamutMap for display-safe RGB. */
++export function oklchToRgb(color: OKLCH): RGB {
++  valid(color);
++  const h = ((color.h % 360) * Math.PI) / 180;
++  const a = color.c * Math.cos(h), b = color.c * Math.sin(h);
++  const l = (color.l + 0.3963377774 * a + 0.2158037573 * b) ** 3;
++  const m = (color.l - 0.1055613458 * a - 0.0638541728 * b) ** 3;
++  const s = (color.l - 0.0894841775 * a - 1.291485548 * b) ** 3;
++  return { r: encode(4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s), g: encode(-1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s), b: encode(-0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s) };
++}
++const inGamut = (rgb: RGB) => Object.values(rgb).every(v => v >= -1e-7 && v <= 1 + 1e-7);
++/** Fixed 28-iteration chroma bisection preserves lightness and hue (c error < 1.5e-8). */
++export function gamutMap(color: OKLCH): RGB {
++  valid(color);
++  let rgb = oklchToRgb(color);
++  if (!inGamut(rgb)) {
++    let low = 0, high = color.c;
++    for (let i = 0; i < 28; i++) {
++      const c = (low + high) / 2;
++      const candidate = oklchToRgb({ ...color, c });
++      if (inGamut(candidate)) low = c; else high = c;
++    }
++    rgb = oklchToRgb({ ...color, c: low });
++  }
++  return { r: clamp(rgb.r), g: clamp(rgb.g), b: clamp(rgb.b) };
++}
++export function toHex(rgb: RGB): string {
++  if (!rgb || ![rgb.r, rgb.g, rgb.b].every(Number.isFinite)) throw new RangeError('RGB channels must be finite');
++  return '#' + [rgb.r, rgb.g, rgb.b].map(v => Math.round(clamp(v) * 255).toString(16).padStart(2, '0')).join('');
++}
++function luminance(hex: string): number {
++  if (typeof hex !== 'string' || !/^#[a-f\d]{6}$/i.test(hex)) throw new TypeError('Expected a six-digit sRGB hex color');
++  const channels = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255).map(v => v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
++  return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
++}
++export function contrast(a: string, b: string): number {
++  const x = luminance(a), y = luminance(b);
++  return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05);
++}
++function hashText(text: string): number {
++  let result = 2166136261;
++  for (let i = 0; i < text.length; i++) result = Math.imul(result ^ text.charCodeAt(i), 16777619);
++  return result >>> 0;
++}
++function color(l: number, c: number, h: number): string { return toHex(gamutMap({ l, c, h })); }
++/** Foreground correction is checked after 8-bit quantization against every relevant role. */
++function accessible(l: number, c: number, h: number, backgrounds: string[], ratio: number, dark: boolean): string {
++  for (let i = 0; i <= 100; i++) {
++    const hex = color(l + ((dark ? 1 : 0) - l) * i / 100, c * (1 - i / 100), h);
++    if (backgrounds.every(bg => contrast(hex, bg) >= ratio)) return hex;
++  }
++  throw new Error('Infeasible role contrast');
++}
++/** Slow periodic evolution, not frame-level flashing; caller supplies logical graph coordinates. */
++export function field(input: FieldInput): Palette {
++  if (!input || ![input.seed, input.x, input.y, input.tick, input.state].every(Number.isFinite) || !Number.isSafeInteger(input.seed) || !Number.isSafeInteger(input.tick) || input.tick < 0 || input.state < 0 || input.state > 1 || typeof input.intent !== 'string' || !['dark', 'light'].includes(input.mode)) throw new RangeError('Invalid deterministic color field input');
++  const dark = input.mode === 'dark';
++  const intentHue = hashText(input.intent) % 360;
++  const phase = (input.seed % 997) * 0.013 + Math.sin(input.x * 0.17 + input.y * 0.11) * 0.3 + Math.sin((input.tick % 1_000_000) / 360) * 0.12;
++  const h = (intentHue + phase * 40 + input.state * 65) % 360;
++  const background = color(dark ? 0.16 : 0.985, 0.012, h);
++  const surface = color(dark ? 0.21 : 0.95, 0.017, h);
++  const backgrounds = [background, surface];
++  const text = accessible(dark ? 0.95 : 0.2, 0.012, h, backgrounds, 4.5, dark);
++  const muted = accessible(dark ? 0.72 : 0.43, 0.025, h, backgrounds, 4.5, dark);
++  const accent = accessible(dark ? 0.79 : 0.43, 0.16 + input.state * 0.04, h, backgrounds, 4.5, dark);
++  const accentText = contrast('#000000', accent) >= contrast('#ffffff', accent) ? '#000000' : '#ffffff';
++  const border = accessible(dark ? 0.57 : 0.56, 0.04, h, backgrounds, 3, dark);
++  return { background, surface, text, muted, accent, accentText, border };
++}
+diff --git a/packages/conformance/package.json b/packages/conformance/package.json
+new file mode 100644
+index 0000000..c7d5647
+--- /dev/null
++++ b/packages/conformance/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/conformance","version":"0.1.0","type":"module","exports":"./src/index.ts","dependencies":{"@netscape/core":"0.1.0"}}
+diff --git a/packages/conformance/src/index.ts b/packages/conformance/src/index.ts
+new file mode 100644
+index 0000000..35e6c19
+--- /dev/null
++++ b/packages/conformance/src/index.ts
+@@ -0,0 +1,70 @@
++import {FAMILIES,GRAMMAR_VERSION,generateSurface,hash,validateGraph,type ActionType,type Display,type Family,type SemanticGraph,type Surface} from '@netscape/core';
++
++export const CONSTITUTION = {
++  version:'1.0.0', enforcementRevision:'2026-10-18.1',
++  clauses:['C-001','C-002','C-003','C-004','C-005','C-006','C-007','C-008','C-009','C-010','C-011','C-012']
++} as const;
++type Box={id:string;x:number;y:number;width:number;height:number};
++export function auditRegions(regions:Box[],width:number):string[]{
++  const errors:string[]=[];
++  for(const r of regions){
++    if(![r.x,r.y,r.width,r.height].every(Number.isFinite)) errors.push(`non-finite:${r.id}`);
++    if(r.x<-.5||r.x+r.width>width+.5||r.y<-.5) errors.push(`clip:${r.id}`);
++    if(r.width<44||r.height<44) errors.push(`target:${r.id}`);
++  }
++  for(let i=0;i<regions.length;i++)for(let j=i+1;j<regions.length;j++){
++    const a=regions[i],b=regions[j];
++    if(Math.min(a.x+a.width,b.x+b.width)-Math.max(a.x,b.x)>.5 && Math.min(a.y+a.height,b.y+b.height)-Math.max(a.y,b.y)>.5)
++      errors.push(`overlap:${a.id}:${b.id}`);
++  }
++  return errors;
++}
++export function auditActionMap(expected:{id:string;action?:string;supported?:boolean}[],observed:{id:string;action:string}[]):string[]{
++  const errors:string[]=[];
++  for(const a of expected.filter(x=>x.action&&x.supported!==false)){
++    const actual=observed.filter(x=>x.id===a.id);
++    if(actual.length!==1)errors.push(`action-count:${a.id}:${actual.length}`);
++    else if(actual[0].action!==a.action)errors.push(`wrong-action:${a.id}`);
++  }
++  for(const a of observed)if(!expected.some(x=>x.id===a.id&&x.action===a.action&&x.supported!==false))errors.push(`unsupported:${a.id}`);
++  return errors;
++}
++export type SurfaceManifest={
++  version:1;grammarVersion:string;fixtureHash:string;graph:SemanticGraph;seed:number;family:Family;display:Display;
++  tick:number;chromaticField:Record<string,string>;expectedRegions:Surface['regions'];
++  interactions:{id:string;action:ActionType}[];hardInvariants:readonly string[];provenance:SemanticGraph['provenance'];surfaceHash:string;
++};
++export function createManifest(graph:SemanticGraph,surface:Surface,display:Display,tick=0,chromaticField:Record<string,string>={}):SurfaceManifest{
++  return {version:1,grammarVersion:GRAMMAR_VERSION,fixtureHash:graph.provenance.contentHash,graph,
++    seed:surface.seed,family:surface.family,display,tick,chromaticField,expectedRegions:surface.regions,
++    interactions:graph.nodes.filter(n=>n.action&&n.supported!==false).map(n=>({id:n.id,action:n.action!})),
++    hardInvariants:CONSTITUTION.clauses,provenance:graph.provenance,surfaceHash:surface.hash};
++}
++export function replayManifest(manifest:SurfaceManifest):Surface{
++  if(manifest.version!==1||manifest.grammarVersion!==GRAMMAR_VERSION)throw new Error('Unsupported replay version');
++  if(manifest.graph.provenance.contentHash!==manifest.fixtureHash)throw new Error('Fixture identity mismatch');
++  const errors=validateGraph(manifest.graph);if(errors.length)throw new Error(errors.join('; '));
++  const surface=generateSurface(manifest.graph,{seed:manifest.seed,family:manifest.family,display:manifest.display});
++  if(surface.hash!==manifest.surfaceHash)throw new Error('Replay digest mismatch');
++  return surface;
++}
++export type SavedArtifact={id:string;title:string;passage:string;sourceUrl:string;sourceTitle:string;evidence:string[];createdAt:string;manifest:SurfaceManifest;digest:string};
++export type Workspace={version:1;seed:number;family:Family;resource:string;graph?:SemanticGraph;artifacts:SavedArtifact[];selectedId?:string;attached?:boolean;tick?:number;theme?:'light'|'dark'};
++export function artifactDigest(artifact:Omit<SavedArtifact,'digest'>):string{return hash(artifact);}
++export function validateWorkspace(value:unknown):value is Workspace{
++  if(!value||typeof value!=='object')return false;
++  const w=value as Workspace;
++  if(w.version!==1||!Number.isInteger(w.seed)||w.seed<0||w.seed>0xffffffff||!FAMILIES.includes(w.family)||typeof w.resource!=='string'||w.resource.length>2048||!Array.isArray(w.artifacts)||w.artifacts.length>50)return false;
++  if(w.graph && (!Array.isArray(w.graph.nodes)||validateGraph(w.graph).length))return false;
++  if(w.tick!==undefined&&(!Number.isInteger(w.tick)||w.tick<0||w.tick>1000000))return false;
++  if(w.theme!==undefined&&!['light','dark'].includes(w.theme))return false;
++  for(const a of w.artifacts){
++    if(!a||typeof a!=='object'||typeof a.id!=='string'||typeof a.title!=='string'||typeof a.passage!=='string'||a.passage.length>50000||typeof a.sourceUrl!=='string'||typeof a.sourceTitle!=='string'||typeof a.createdAt!=='string'||!Array.isArray(a.evidence)||!a.evidence.every(e=>typeof e==='string')||typeof a.digest!=='string'||!a.manifest||a.manifest.version!==1)return false;
++    const {digest,...body}=a;if(artifactDigest(body)!==digest)return false;
++    try{replayManifest(a.manifest);}catch{return false;}
++  }
++  return true;
++}
++export function safeExternalURL(value:string):string|undefined{
++  try {const u=new URL(value);return (u.protocol==='https:'||u.protocol==='http:')&&!u.username&&!u.password?u.href:undefined;}catch{return undefined;}
++}
+diff --git a/packages/core/package.json b/packages/core/package.json
+new file mode 100644
+index 0000000..f3d7f74
+--- /dev/null
++++ b/packages/core/package.json
+@@ -0,0 +1,7 @@
++{
++  "name": "@netscape/core",
++  "version": "0.1.0",
++  "private": true,
++  "type": "module",
++  "exports": "./src/index.ts"
++}
+diff --git a/packages/core/src/deterministic.ts b/packages/core/src/deterministic.ts
+new file mode 100644
+index 0000000..079dcd1
+--- /dev/null
++++ b/packages/core/src/deterministic.ts
+@@ -0,0 +1,30 @@
++/** Canonical JSON. Undefined object members are omitted, as in JSON.stringify.
++ * Nonfinite numbers, cycles, non-plain objects and excessive depth are rejected. */
++export function canonical(value:unknown):string {
++  const active = new Set<object>();
++  function encode(v:unknown,depth:number):string {
++    if(depth>100) throw new Error('Canonical value exceeds depth 100');
++    if(v===null||v===undefined)return 'null';
++    if(typeof v==='string'||typeof v==='boolean')return JSON.stringify(v);
++    if(typeof v==='number'){if(!Number.isFinite(v))throw new Error('Nonfinite canonical number');return JSON.stringify(v);}
++    if(typeof v!=='object')throw new Error('Unsupported canonical value');
++    if(active.has(v))throw new Error('Cyclic canonical value');
++    if(!Array.isArray(v)&&Object.getPrototypeOf(v)!==Object.prototype&&Object.getPrototypeOf(v)!==null)throw new Error('Canonical values must be plain JSON');
++    active.add(v);
++    const result=Array.isArray(v)?`[${Array.from(v,item=>encode(item,depth+1)).join(',')}]`:`{${Object.keys(v).sort().filter(k=>(v as Record<string,unknown>)[k]!==undefined).map(k=>`${JSON.stringify(k)}:${encode((v as Record<string,unknown>)[k],depth+1)}`).join(',')}}`;
++    active.delete(v);return result;
++  }
++  return encode(value,0);
++}
++/** Two FNV-style 32-bit lanes. Deterministic content identity, NOT cryptography. */
++export function hash(value:unknown):string {
++  const input=canonical(value);let a=0x811c9dc5,b=0x9e3779b9;
++  for(let i=0;i<input.length;i++){const c=input.charCodeAt(i);a=Math.imul(a^c,0x01000193);b=Math.imul(b^c,0x85ebca6b);}
++  return (a>>>0).toString(16).padStart(8,'0')+(b>>>0).toString(16).padStart(8,'0');
++}
++/** Mulberry32: fixed-width integer state, browser and Node identical. */
++export function createRandom(seed:number):()=>number {
++  if(!Number.isSafeInteger(seed))throw new Error('Seed must be a safe integer');
++  let state=seed>>>0;
++  return ()=>{state=(state+0x6D2B79F5)>>>0;let t=state;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;};
++}
+diff --git a/packages/core/src/graph.ts b/packages/core/src/graph.ts
+new file mode 100644
+index 0000000..6f88e02
+--- /dev/null
++++ b/packages/core/src/graph.ts
+@@ -0,0 +1,63 @@
++import type { SemanticGraph, SurfaceNode } from './types.ts';
++const kinds=new Set(['Resource','Section','Text','Link','Form','Action','Artifact','Participant','Evidence','Group']);
++const actions=new Set(['open-external','select-passage','attach-companion','save-artifact','navigate']);
++const edges=new Set(['contains','references','navigates','derives','observes','acts_on']);
++export const MAX_NODES=1000;
++/** Validates untrusted runtime data without recursively walking a hostile graph. */
++export function validateGraph(graph:SemanticGraph):string[]{
++  const errors:string[]=[];
++  if(!graph||typeof graph!=='object')return ['Graph must be an object'];
++  for(const key of ['version','id','title','sourceUrl'] as const)if(typeof graph[key]!=='string'||!graph[key].trim())errors.push(`Graph ${key} must be a nonempty string`);
++  const p=graph.provenance;
++  if(!p||!['fixture','public'].includes(p.kind)||['fetchedAt','contentHash','notice'].some(k=>typeof (p as any)[k]!=='string'||!(p as any)[k].trim()))errors.push('Graph provenance is required');
++  if(!Array.isArray(graph.nodes)||graph.nodes.length<1||graph.nodes.length>MAX_NODES)return [...errors,`Graph must have 1..${MAX_NODES} nodes`];
++  if(!Array.isArray(graph.edges)||graph.edges.length>10000)return [...errors,'Graph must have at most 10000 edges'];
++  const ids=new Set<string>();let resources=0,totalText=0;
++  for(const n of graph.nodes){
++    if(!n||typeof n!=='object'){errors.push('Node must be an object');continue;}
++    if(typeof n.id!=='string'||!n.id.trim()||n.id.length>256||ids.has(n.id))errors.push('Node identity is missing, too long, or duplicated');
++    ids.add(n.id);
++    if(!kinds.has(n.kind))errors.push(`Unknown node kind: ${n.kind}`);
++    if(n.kind==='Resource')resources++;
++    if(typeof n.label!=='string'||!n.label.trim())errors.push(`Node ${n.id} requires a label`);
++    if(n.text!==undefined&&typeof n.text!=='string')errors.push(`Node ${n.id} text must be a string`);
++    totalText+=(typeof n.text==='string'?n.text.length:0)+(typeof n.label==='string'?n.label.length:0);
++    if(n.action!==undefined&&!actions.has(n.action))errors.push(`Unsupported action: ${n.action}`);
++    if(n.supported!==undefined&&typeof n.supported!=='boolean')errors.push(`Node ${n.id} supported must be boolean`);
++    if(n.url!==undefined){try{const u=new URL(n.url);if(!['https:','http:'].includes(u.protocol)||u.username||u.password)throw Error();}catch{errors.push(`Node ${n.id} URL must be safe HTTP(S)`);}}
++    if(n.evidence!==undefined&&(!Array.isArray(n.evidence)||n.evidence.some(e=>typeof e!=='string')))errors.push(`Node ${n.id} evidence must be strings`);
++    if(n.meta!==undefined&&(!n.meta||typeof n.meta!=='object'||Array.isArray(n.meta)||Object.values(n.meta).some(v=>typeof v!=='string')))errors.push(`Node ${n.id} metadata must be string values`);
++  }
++  if(resources!==1)errors.push('Graph requires exactly one Resource node');
++  if(totalText>1000000)errors.push('Graph text exceeds 1000000 characters');
++  const adjacency=new Map<string,string[]>();const indegree=new Map<string,number>();
++  for(const id of ids){adjacency.set(id,[]);indegree.set(id,0);}
++  const root=graph.nodes.find(n=>n?.kind==='Resource')?.id;
++  for(const e of graph.edges){
++    if(!e||typeof e!=='object'||!ids.has(e.from)||!ids.has(e.to)||!edges.has(e.kind)){errors.push('Edge has unknown endpoint or kind');continue;}
++    if(e.kind==='contains'){
++      if(e.to===root)errors.push('Resource cannot have a containment parent');
++      adjacency.get(e.from)!.push(e.to);indegree.set(e.to,indegree.get(e.to)!+1);
++    }
++  }
++  const queue=[...ids].filter(id=>indegree.get(id)===0);let visited=0;
++  for(let i=0;i<queue.length;i++){visited++;for(const child of adjacency.get(queue[i])!){const d=indegree.get(child)!-1;indegree.set(child,d);if(d===0)queue.push(child);}}
++  if(visited!==ids.size)errors.push('Containment edges must be acyclic');
++  return errors;
++}
++/** First containment parent wins; all nodes still appear once. Deep source trees
++ * rewrite at depth 48 rather than risking unbounded renderer recursion. */
++export function grammarTree(graph:SemanticGraph):SurfaceNode{
++  const nodes=new Map(graph.nodes.map(n=>[n.id,{id:`surface-${n.id}`,semanticId:n.id,role:n.kind.toLowerCase() as SurfaceNode['role'],children:[]} as SurfaceNode]));
++  const root=nodes.get(graph.nodes.find(n=>n.kind==='Resource')!.id)!;
++  const parents=new Map<string,string>();
++  for(const edge of graph.edges)if(edge.kind==='contains'&&!parents.has(edge.to))parents.set(edge.to,edge.from);
++  for(const node of graph.nodes){
++    if(node.id===root.semanticId)continue;
++    let parent=parents.get(node.id),cursor=parent,depth=0;
++    while(cursor&&depth<=48){depth++;cursor=parents.get(cursor);}
++    if(depth>48)parent=undefined;
++    (nodes.get(parent??'')??root).children.push(nodes.get(node.id)!);
++  }
++  return root;
++}
+diff --git a/packages/core/src/index.ts b/packages/core/src/index.ts
+new file mode 100644
+index 0000000..d0c256e
+--- /dev/null
++++ b/packages/core/src/index.ts
+@@ -0,0 +1,4 @@
++export * from './types.ts';
++export * from './deterministic.ts';
++export { validateGraph, MAX_NODES } from './graph.ts';
++export { generateSurface, structuralSignature, estimateHeight } from './layout.ts';
+diff --git a/packages/core/src/layout.ts b/packages/core/src/layout.ts
+new file mode 100644
+index 0000000..b2981fa
+--- /dev/null
++++ b/packages/core/src/layout.ts
+@@ -0,0 +1,125 @@
++import { canonical, createRandom, hash } from './deterministic.ts';
++import { grammarTree, validateGraph } from './graph.ts';
++import { FAMILIES, GRAMMAR_VERSION, type Display, type Family, type Region, type SemanticGraph, type SemanticNode, type Surface, type SurfaceNode } from './types.ts';
++const GAP=18;
++const PAD=24;
++/** Conservative 16px text / 26px leading estimate, including long unbroken words
++ * and explicit line breaks. Renderers should keep normal text <=16px and use
++ * overflow-wrap:anywhere; labels have a separate 20px/28px allowance. */
++export function estimateHeight(node:SemanticNode,width:number):number{
++  const available=Math.max(1,width-48);
++  const lines=(text:string,charWidth:number)=>text.split('\n').reduce((sum,line)=>sum+Math.max(1,Math.ceil(Array.from(line).length*charWidth/available)),0);
++  const resource=node.kind==='Resource';
++  const footer=node.action?52:node.supported===false||node.kind==='Form'?56:resource?40:node.kind==='Evidence'?36:0;
++  return Math.max(120,48+34+lines(node.label,resource?18:11)*(resource?40:28)+(node.text?18+lines(node.text,9.3)*26:0)+footer);
++}
++function validDisplay(d:Display):boolean{
++  return !!d&&Number.isFinite(d.width)&&d.width>=160&&d.width<=8192&&Number.isFinite(d.height)&&d.height>=160&&d.height<=8192&&Number.isFinite(d.dpr)&&d.dpr>0&&d.dpr<=8&&Array.isArray(d.input)&&d.input.every(i=>['keyboard','pointer','touch'].includes(i))&&typeof d.reducedMotion==='boolean'&&['dark','light'].includes(d.colorScheme);
++}
++/** Deterministic typed grammar + six discrete layout solvers. All packing work is
++ * bounded by the validated 1000-node graph; no clock, DOM, or global RNG. */
++export function generateSurface(graph:SemanticGraph,options:{seed:number;family:Family;display:Display}):Surface{
++  const errors=validateGraph(graph);if(errors.length)throw new Error(`Invalid semantic graph: ${errors.join('; ')}`);
++  if(!options||!FAMILIES.includes(options.family)||!validDisplay(options.display))throw new Error('Invalid family or display (CSS dimensions must be 160..8192)');
++  const random=createRandom(options.seed),d=options.display;
++  const tree=grammarTree(graph),width=d.width,inner=width-PAD*2;
++  const regions:Region[]=[];
++  const add=(i:number,x:number,y:number,w:number)=>{const node=graph.nodes[i];const r={id:`region-${node.id}`,semanticId:node.id,x:Math.round(x*100)/100,y:Math.round(y*100)/100,width:Math.round(w*100)/100,height:estimateHeight(node,w),order:i};regions.push(r);return r;};
++  const header=add(0,PAD,PAD,inner); // source order always defines keyboard order
++  const start=header.y+header.height+GAP;
++  let topology:string;
++  if(width<600){
++    topology='flow';let y=start;
++    for(let i=1;i<graph.nodes.length;i++){const r=add(i,PAD,y,inner);y+=r.height+GAP;}
++  }else if(options.family==='observatory'){
++    // Orthogonal observation grid: seed chooses column count and a mirrored rail.
++    const maxCols=Math.max(2,Math.min(3,Math.floor((inner+GAP)/(220+GAP))));
++    const columns=2+Math.floor(random()*(maxCols-1));
++    const mirrored=random()<0.5;const cell=(inner-GAP*(columns-1))/columns;
++    topology=`orthogonal-${columns}-${mirrored?'west':'east'}`;
++    let y=start;
++    for(let i=1;i<graph.nodes.length;){let rowHeight=0;for(let col=0;col<columns&&i<graph.nodes.length;col++,i++){const x=PAD+(mirrored?columns-col-1:col)*(cell+GAP);rowHeight=Math.max(rowHeight,add(i,x,y,cell).height);}y+=rowHeight+GAP;}
++  }else if(options.family==='orbital'){
++    // Elliptic angular anchors, followed by exact rectangle collision projection.
++    // Long text changes ring separation instead of colliding with the next ring.
++    topology='elliptic-rings';const card=Math.max(220,Math.min(340,inner*0.37));
++    const rx=(inner-card)/2;const phase=random()<0.5?0:Math.PI/3;let base=start;
++    for(let first=1;first<graph.nodes.length;first+=6){
++      const count=Math.min(6,graph.nodes.length-first);
++      const maxH=Math.max(...graph.nodes.slice(first,first+count).map(n=>estimateHeight(n,card)));
++      const ry=Math.max(140,maxH*0.65);let end=base;
++      for(let k=0;k<count;k++){
++        const angle=-Math.PI/2+phase+k*Math.PI/3;
++        const x=PAD+rx+Math.cos(angle)*rx;let y=base+ry+Math.sin(angle)*ry;
++        const height=estimateHeight(graph.nodes[first+k],card);
++        // Each projection moves past at least one prior rectangle; n iterations suffice.
++        for(const other of [...regions].sort((a,b)=>a.y-b.y))if(x<other.x+other.width+GAP&&x+card+GAP>other.x&&y<other.y+other.height+GAP&&y+height+GAP>other.y)y=other.y+other.height+GAP;
++        const r=add(first+k,x,y,card);end=Math.max(end,r.y+r.height+GAP);
++      }
++      base=end+GAP;
++    }
++  }else if(options.family==='elastic'){
++    // Degree-weighted masonry: golden-ratio columns and shortest-column packing.
++    topology='weighted-masonry';const ratio=random()<0.5?0.382:0.618;
++    const left=Math.max(220,Math.min(inner-220-GAP,(inner-GAP)*ratio));
++    const widths=[left,inner-GAP-left],ys=[start,start];
++    const degree=new Map(graph.nodes.map(n=>[n.id,graph.edges.filter(e=>e.from===n.id||e.to===n.id).length]));
++    for(let i=1;i<graph.nodes.length;i++){
++      const importance=degree.get(graph.nodes[i].id)!;
++      const col=importance>3?(widths[0]>=widths[1]?0:1):(ys[0]<=ys[1]?0:1);
++      const r=add(i,PAD+(col===1?widths[0]+GAP:0),ys[col],widths[col]);ys[col]+=r.height+GAP;
++    }
++  }else if(options.family==='folded'){
++    // Accordion folds: full-width vertical reading with alternating inset depths.
++    const folds=2+Math.floor(random()*3);topology=`accordion-${folds}`;let y=start;
++    const inset=Math.min(54,(inner-220)/(folds+1));
++    for(let i=1;i<graph.nodes.length;i++){
++      const depth=1+(i-1)%folds,w=inner-inset*depth;
++      const x=PAD+(Math.floor((i-1)/folds)%2===0?inset*depth:0);
++      const r=add(i,x,y,w);y+=r.height+GAP;
++    }
++  }else if(options.family==='workbench'){
++    // Semantic swimlanes: containment owner controls lane, lanes pack independently.
++    const columns=inner>=1000?3:2;topology=`semantic-lanes-${columns}`;
++    const w=(inner-GAP*(columns-1))/columns,ys=Array(columns).fill(start) as number[];
++    const owner=new Map<string,string>();for(const edge of graph.edges)if(edge.kind==='contains'&&!owner.has(edge.to))owner.set(edge.to,edge.from);
++    const assignments=new Map<string,number>();let next=Math.floor(random()*columns);
++    for(let i=1;i<graph.nodes.length;i++){
++      const key=owner.get(graph.nodes[i].id)??graph.nodes[i].id;
++      if(!assignments.has(key)){assignments.set(key,next%columns);next++;}
++      const col=assignments.get(key)!;const r=add(i,PAD+col*(w+GAP),ys[col],w);ys[col]+=r.height+GAP;
++    }
++  }else{
++    // Binary area bands: alternating 1/3 and 2/3 splits, unlike equal grid or
++    // independently packed lanes. A complete row advances by its larger child.
++    topology='binary-area-bands';let y=start;const flip=random()<0.5;
++    for(let i=1;i<graph.nodes.length;){
++      if(i===graph.nodes.length-1){const r=add(i++,PAD,y,inner);y+=r.height+GAP;continue;}
++      const reverse=(Math.floor(i/2)%2===0)!==flip;
++      const small=Math.max(220,(inner-GAP)/3),large=inner-GAP-small;
++      const w1=reverse?large:small,w2=reverse?small:large;
++      const a=add(i++,PAD,y,w1),b=add(i++,PAD+w1+GAP,y,w2);y+=Math.max(a.height,b.height)+GAP;
++    }
++  }
++  const height=Math.max(d.height,...regions.map(r=>r.y+r.height+PAD));
++  const area=regions.reduce((sum,r)=>sum+r.width*r.height,0),canvas=width*height;
++  const groups=graph.edges.filter(e=>e.kind==='contains').length;
++  const result:Surface={version:GRAMMAR_VERSION,graphId:graph.id,seed:options.seed,family:options.family,tree,regions,width,height,topology,requiredActions:graph.nodes.filter(n=>n.action&&n.supported!==false).map(n=>n.id),metrics:{compactness:area/canvas,legibility:Math.min(1,Math.min(...regions.map(r=>r.width))/320),whitespace:1-area/canvas,grouping:Math.min(1,groups/Math.max(1,graph.nodes.length-1)),motionEnergy:0},hash:''};
++  result.hash=hash({...result,hash:undefined});return result;
++}
++/** Structural equivalence ignores identity, seed, family labels, hashes, exact
++ * coordinates and tiny noise. It records typed containment, coarse width classes,
++ * and pairwise horizontal/vertical ordering. It does NOT claim perceptual novelty.
++ * Distinct seeds may intentionally share the same signature. */
++export function structuralSignature(surface:Surface):string{
++  const tree=(n:SurfaceNode):unknown=>({role:n.role,children:n.children.map(tree)});
++  const regions=[...surface.regions].sort((a,b)=>a.order-b.order);
++  const relations:string[]=[];const tolerance=2;
++  for(let i=0;i<regions.length;i++)for(let j=i+1;j<regions.length;j++){
++    const a=regions[i],b=regions[j];
++    const horizontal=a.x+a.width<=b.x+tolerance?'L':b.x+b.width<=a.x+tolerance?'R':'X';
++    const vertical=a.y+a.height<=b.y+tolerance?'A':b.y+b.height<=a.y+tolerance?'B':'Y';
++    relations.push(horizontal+vertical);
++  }
++  return canonical({tree:tree(surface.tree),widths:regions.map(r=>Math.round(r.width/surface.width*8)),relations});
++}
+diff --git a/packages/core/src/types.ts b/packages/core/src/types.ts
+new file mode 100644
+index 0000000..b4cf7ab
+--- /dev/null
++++ b/packages/core/src/types.ts
+@@ -0,0 +1,14 @@
++export const SCHEMA_VERSION = '1.0.0';
++export const GRAMMAR_VERSION = '1.0.0';
++export const FAMILIES = ['observatory','orbital','elastic','folded','workbench','chromatic'] as const;
++export type Family = typeof FAMILIES[number];
++export type NodeKind = 'Resource'|'Section'|'Text'|'Link'|'Form'|'Action'|'Artifact'|'Participant'|'Evidence'|'Group';
++export type ActionType = 'open-external'|'select-passage'|'attach-companion'|'save-artifact'|'navigate';
++export type SemanticNode = {id:string;kind:NodeKind;label:string;text?:string;url?:string;action?:ActionType;supported?:boolean;evidence?:string[];meta?:Record<string,string>};
++export type SemanticEdge = {from:string;to:string;kind:'contains'|'references'|'navigates'|'derives'|'observes'|'acts_on'};
++export type SemanticGraph = {version:string;id:string;title:string;sourceUrl:string;nodes:SemanticNode[];edges:SemanticEdge[];provenance:{kind:'fixture'|'public';fetchedAt:string;contentHash:string;notice:string}};
++export type Intent = {kind:'research'|'commerce'|'repository'|'general';confidence:number;evidence:string[];status:'inferred'};
++export type Display = {width:number;height:number;dpr:number;input:('keyboard'|'pointer'|'touch')[];reducedMotion:boolean;colorScheme:'dark'|'light'};
++export type SurfaceNode = {id:string;semanticId:string;role:'resource'|'section'|'text'|'link'|'form'|'action'|'artifact'|'participant'|'evidence'|'group';children:SurfaceNode[]};
++export type Region = {id:string;semanticId:string;x:number;y:number;width:number;height:number;order:number};
++export type Surface = {version:string;graphId:string;seed:number;family:Family;tree:SurfaceNode;regions:Region[];width:number;height:number;topology:string;requiredActions:string[];metrics:{compactness:number;legibility:number;whitespace:number;grouping:number;motionEnergy:number};hash:string};
+diff --git a/packages/dynamics/package.json b/packages/dynamics/package.json
+new file mode 100644
+index 0000000..ac84d0f
+--- /dev/null
++++ b/packages/dynamics/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/dynamics","version":"0.1.0","type":"module","exports":{".":"./src/index.ts"},"main":"./src/index.ts","types":"./src/index.ts"}
+diff --git a/packages/dynamics/src/index.ts b/packages/dynamics/src/index.ts
+new file mode 100644
+index 0000000..d154b97
+--- /dev/null
++++ b/packages/dynamics/src/index.ts
+@@ -0,0 +1,127 @@
++/** Fixed-step bounded spring/damper runtime. No semantic actions or host callbacks. */
++export const DT = 1 / 120;
++export const TRACE_TOLERANCE = 1e-6;
++export const MAX_DISPLACEMENT = 64;
++export const MAX_SPEED = 120;
++export const MAX_TICKS_PER_STEP = 10_000;
++export const DIFFUSION_ALPHA = 0.15;
++export const FIELD_DECAY = 0.008;
++export type EventKind = 'playful' | 'focus' | 'select';
++export type DynamicsEvent = { id: string; tick: number; nodeId: string; kind: EventKind; strength: number };
++export type WorldOptions = { seed: number; nodes: { id: string; x: number; y: number; mass?: number }[]; edges: { from: string; to: string; rest?: number; stiffness?: number }[]; reducedMotion?: boolean };
++export type World = { readonly tick: number };
++export type WorldSnapshot = { tick: number; nodes: { id: string; x: number; y: number; vx: number; vy: number; field: number }[]; energy: number; traceHash: string };
++type Particle = { id: string; x: number; y: number; ox: number; oy: number; mass: number; vx: number; vy: number; field: number; neighbors: number[] };
++type Spring = { a: number; b: number; rest: number; k: number };
++type State = { tick: number; seed: number; nodes: Particle[]; edges: Spring[]; reduced: boolean; events: DynamicsEvent[]; ids: Set<string>; index: Map<string, number>; trace: number };
++const states = new WeakMap<World, State>();
++const cmp = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0;
++const finite = (v: unknown): v is number => typeof v === 'number' && Number.isFinite(v);
++function id(value: unknown): value is string { return typeof value === 'string' && value.length > 0 && value.length <= 256; }
++function state(world: World): State { const result = states.get(world); if (!result) throw new TypeError('Unknown world'); return result; }
++function mix(text: string, hash = 2166136261): number { for (let i = 0; i < text.length; i++) hash = Math.imul(hash ^ text.charCodeAt(i), 16777619); return hash >>> 0; }
++function q(n: number): number { return Math.round(n / TRACE_TOLERANCE) * TRACE_TOLERANCE; }
++function checkBounds(n: unknown, min: number, max: number): n is number { return finite(n) && n >= min && n <= max; }
++export function createWorld(options: WorldOptions): World {
++  if (!options || !Number.isSafeInteger(options.seed) || !Array.isArray(options.nodes) || options.nodes.length > 4096 || !Array.isArray(options.edges) || options.edges.length > 16384 || (options.reducedMotion !== undefined && typeof options.reducedMotion !== 'boolean')) throw new RangeError('Invalid world options or workload');
++  const index = new Map<string, number>();
++  const nodes: Particle[] = [...options.nodes].sort((a, b) => cmp(a.id, b.id)).map((n, i) => {
++    if (!n || !id(n.id) || index.has(n.id) || !checkBounds(n.x, -1e6, 1e6) || !checkBounds(n.y, -1e6, 1e6) || !checkBounds(n.mass ?? 1, 1e-6, 1e6)) throw new RangeError('Invalid/duplicate node or nonpositive mass');
++    index.set(n.id, i);
++    return { id: n.id, x: n.x, y: n.y, ox: n.x, oy: n.y, mass: n.mass ?? 1, vx: 0, vy: 0, field: 0, neighbors: [] };
++  });
++  const sorted = options.edges.map(e => {
++    if (!e || !index.has(e.from) || !index.has(e.to) || e.from === e.to || (e.rest !== undefined && !checkBounds(e.rest, 0, 4e6)) || (e.stiffness !== undefined && !checkBounds(e.stiffness, 0, 1e12))) throw new RangeError('Invalid edge, rest length or stiffness');
++    return cmp(e.from, e.to) <= 0 ? { ...e } : { ...e, from: e.to, to: e.from };
++  }).sort((a, b) => cmp(a.from, b.from) || cmp(a.to, b.to) || (a.rest ?? -1) - (b.rest ?? -1) || (a.stiffness ?? -1) - (b.stiffness ?? -1));
++  for (const e of sorted) { const a = index.get(e.from)!, b = index.get(e.to)!; nodes[a].neighbors.push(b); nodes[b].neighbors.push(a); }
++  const edges = sorted.map(e => {
++    const a = index.get(e.from)!, b = index.get(e.to)!;
++    // Per-particle sum(k)/mass <= 36, so the weighted linear Laplacian has lambda <= 72.
++    const k = Math.min(e.stiffness ?? 24, 36 * nodes[a].mass / nodes[a].neighbors.length, 36 * nodes[b].mass / nodes[b].neighbors.length);
++    return { a, b, k, rest: e.rest ?? Math.hypot(nodes[a].x - nodes[b].x, nodes[a].y - nodes[b].y) };
++  });
++  const internal: State = { tick: 0, seed: options.seed, nodes, edges, reduced: options.reducedMotion ?? false, events: [], ids: new Set(), index, trace: 2166136261 };
++  const world = Object.freeze({ get tick() { return internal.tick; } });
++  states.set(world, internal);
++  record(internal);
++  return world;
++}
++export function enqueueEvent(world: World, event: DynamicsEvent): void {
++  const s = state(world);
++  if (event && s.ids.has(event.id)) throw new RangeError('Duplicate event ID');
++  if (!event || !id(event.id) || !s.index.has(event.nodeId) || !Number.isSafeInteger(event.tick) || event.tick < s.tick || !['playful', 'focus', 'select'].includes(event.kind) || !checkBounds(event.strength, 0, 1) || s.ids.size >= 100_000 || s.events.length >= 10_000) throw new RangeError('Invalid event, stale tick, strength or workload');
++  s.ids.add(event.id);
++  s.events.push({ ...event });
++  s.events.sort((a, b) => a.tick - b.tick || cmp(a.id, b.id));
++}
++function eventInput(s: State): void {
++  while (s.events.length && s.events[0].tick === s.tick) {
++    const event = s.events.shift()!;
++    const n = s.nodes[s.index.get(event.nodeId)!];
++    n.field = Math.min(1, n.field + event.strength);
++    if (!s.reduced) {
++      const angle = mix(`${s.seed}:${event.id}:${event.nodeId}:${event.kind}`) / 2 ** 32 * Math.PI * 2;
++      const impulse = event.strength * (event.kind === 'playful' ? 30 : 12);
++      n.vx += Math.cos(angle) * impulse;
++      n.vy += Math.sin(angle) * impulse;
++      limitSpeed(n);
++    }
++  }
++}
++function limitSpeed(n: Particle): void { const speed = Math.hypot(n.vx, n.vy); if (speed > MAX_SPEED) { n.vx *= MAX_SPEED / speed; n.vy *= MAX_SPEED / speed; } }
++function record(s: State): void {
++  const values = s.nodes.map(n => [n.id, q(n.x), q(n.y), q(n.vx), q(n.vy), q(n.field)]);
++  s.trace = mix(JSON.stringify([s.tick, values]), s.trace);
++}
++/** Integrates bounded logical ticks; dt is deliberately not caller-controlled. */
++export function stepWorld(world: World, ticks = 1): World {
++  const s = state(world);
++  if (!Number.isSafeInteger(ticks) || ticks < 0 || ticks > MAX_TICKS_PER_STEP || ticks * (s.nodes.length + s.edges.length) > 20_000_000 || !Number.isSafeInteger(s.tick + ticks)) throw new RangeError('Invalid or excessive tick workload');
++  for (let tick = 0; tick < ticks; tick++) {
++    eventInput(s);
++    const forces = s.nodes.map(n => ({ x: -0.3 * n.mass * (n.x - n.ox), y: -0.3 * n.mass * (n.y - n.oy) }));
++    if (!s.reduced) {
++      for (const e of s.edges) {
++        const a = s.nodes[e.a], b = s.nodes[e.b];
++        const dx = b.x - a.x, dy = b.y - a.y, distance = Math.hypot(dx, dy);
++        // Coincident particles use a seeded edge direction instead of dividing by zero.
++        const angle = mix(`${s.seed}:${a.id}:${b.id}`) / 2 ** 32 * Math.PI * 2;
++        const ux = distance > 1e-12 ? dx / distance : Math.cos(angle);
++        const uy = distance > 1e-12 ? dy / distance : Math.sin(angle);
++        const force = e.k * (distance - e.rest);
++        forces[e.a].x += force * ux; forces[e.a].y += force * uy;
++        forces[e.b].x -= force * ux; forces[e.b].y -= force * uy;
++      }
++      s.nodes.forEach((n, i) => {
++        n.vx = (n.vx + forces[i].x / n.mass * DT) / (1 + 6 * DT);
++        n.vy = (n.vy + forces[i].y / n.mass * DT) / (1 + 6 * DT);
++        limitSpeed(n);
++        n.x += n.vx * DT; n.y += n.vy * DT;
++        const dx = n.x - n.ox, dy = n.y - n.oy, displacement = Math.hypot(dx, dy);
++        if (displacement > MAX_DISPLACEMENT) { n.x = n.ox + dx * MAX_DISPLACEMENT / displacement; n.y = n.oy + dy * MAX_DISPLACEMENT / displacement; n.vx = 0; n.vy = 0; }
++        if (![n.x, n.y, n.vx, n.vy].every(Number.isFinite)) throw new Error('Nonfinite numerical state');
++      });
++    }
++    const fields = s.nodes.map(n => {
++      const mean = n.neighbors.length ? n.neighbors.reduce((sum, i) => sum + s.nodes[i].field, 0) / n.neighbors.length : n.field;
++      return Math.max(0, Math.min(1, (1 - FIELD_DECAY - DIFFUSION_ALPHA) * n.field + DIFFUSION_ALPHA * mean));
++    });
++    s.nodes.forEach((n, i) => { n.field = fields[i]; });
++    s.tick++;
++    record(s);
++  }
++  return world;
++}
++export function snapshot(world: World): WorldSnapshot {
++  const s = state(world);
++  let energy = 0;
++  for (const n of s.nodes) energy += n.mass / 2 * (n.vx ** 2 + n.vy ** 2) + 0.15 * n.mass * ((n.x - n.ox) ** 2 + (n.y - n.oy) ** 2);
++  for (const e of s.edges) energy += e.k / 2 * (Math.hypot(s.nodes[e.a].x - s.nodes[e.b].x, s.nodes[e.a].y - s.nodes[e.b].y) - e.rest) ** 2;
++  return { tick: s.tick, nodes: s.nodes.map(n => ({ id: n.id, x: q(n.x), y: q(n.y), vx: q(n.vx), vy: q(n.vy), field: q(n.field) })), energy: q(energy), traceHash: s.trace.toString(16).padStart(8, '0') };
++}
++/** MIDI mapping only. Host must enforce user gesture and mute before audio playback. */
++export function noteForEvent(kind: EventKind): number {
++  if (!['playful', 'focus', 'select'].includes(kind)) throw new RangeError('Unknown event kind');
++  return { playful: 72, focus: 60, select: 67 }[kind];
++}
+diff --git a/packages/performers/package.json b/packages/performers/package.json
+new file mode 100644
+index 0000000..39a5553
+--- /dev/null
++++ b/packages/performers/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/performers","version":"1.0.0","type":"module","exports":{ ".":"./src/index.ts"},"dependencies":{"@netscape/core":"*"}}
+diff --git a/packages/performers/src/index.ts b/packages/performers/src/index.ts
+new file mode 100644
+index 0000000..bfcc32e
+--- /dev/null
++++ b/packages/performers/src/index.ts
+@@ -0,0 +1,351 @@
++import { canonical, hash, validateGraph as coreValidateGraph } from '@netscape/core';
++import type { SemanticGraph, Intent } from '@netscape/core';
++export const VERSION = '1.0.0';
++export const CONSTITUTION_VERSION = '1.0.0';
++export type Effect = 'pure' | 'local-state' | 'external-read' | 'external-mutation';
++export interface Schema<T, ID extends string = string> {
++    readonly id: ID;
++    readonly description: string;
++    validate(value: unknown): value is T;
++}
++export interface Condition<T> {
++    readonly description: string;
++    check(value: T): boolean;
++}
++export interface RuntimeContext {
++    readonly capabilities: Readonly<Record<string, (input: unknown) => unknown | Promise<unknown>>>;
++}
++export interface Performer<I, O, InputID extends string = string, OutputID extends string = string> {
++    readonly id: string;
++    readonly version: string;
++    readonly description: string;
++    readonly input: Schema<I, InputID>;
++    readonly output: Schema<O, OutputID>;
++    readonly preconditions: readonly Condition<I>[];
++    readonly postconditions: readonly Condition<O>[];
++    readonly effects: readonly Effect[];
++    readonly requires: readonly string[];
++    readonly provides: readonly string[];
++    readonly failureModes: readonly string[];
++    readonly determinism: 'deterministic' | 'capability-dependent';
++    readonly provenance: {
++        readonly source: string;
++        readonly implementation: string;
++    };
++    readonly constitutionClauses: readonly string[];
++    execute(input: I, context: RuntimeContext): O | Promise<O>;
++}
++// Runtime composition checks schema IDs. Generic input/output types remain available on every operation.
++export type AnyPerformer = Performer<any, any>;
++export type InputOf<P> = P extends Performer<infer I, any> ? I : never;
++export type OutputOf<P> = P extends Performer<any, infer O> ? O : never;
++export interface Pipeline<I = unknown, O = unknown> {
++    readonly version: string;
++    readonly steps: readonly AnyPerformer[];
++    readonly input: Schema<I>;
++    readonly output: Schema<O>;
++}
++export interface RunOptions {
++    readonly authority?: readonly Effect[];
++    readonly capabilities?: RuntimeContext['capabilities'];
++}
++export interface TraceStep {
++    readonly performer: string;
++    readonly version: string;
++    readonly inputSchema: string;
++    readonly outputSchema: string;
++    readonly effects: readonly Effect[];
++    readonly requires: readonly string[];
++    readonly status: 'executed';
++    readonly inputCanonical: string;
++    readonly outputCanonical: string;
++    readonly inputHash: string;
++    readonly outputHash: string;
++}
++export interface PipelineTrace {
++    readonly version: string;
++    readonly pack: string;
++    readonly steps: readonly TraceStep[];
++}
++export class PipelineExecutionError extends Error {
++    constructor(message: string, readonly trace: PipelineTrace, readonly failure: {
++        performer: string;
++        phase: 'input' | 'precondition' | 'execution' | 'output' | 'postcondition' | 'snapshot';
++        invoked: boolean;
++    }, options?: ErrorOptions) { super(message, options); this.name = 'PipelineExecutionError'; }
++}
++export interface Artifact {
++    version: string;
++    id: string;
++    title: string;
++    passage: string;
++    sourceUrl: string;
++    semanticId: string;
++    evidence: string[];
++    notice: string;
++    status: 'local-artifact';
++}
++export interface Selection {
++    graphId: string;
++    semanticId: string;
++    title: string;
++    text: string;
++    sourceUrl: string;
++    evidence: string[];
++    notice: string;
++}
++export interface PassageContext extends Selection {
++    status: 'selected-source-context';
++}
++export interface GraphSummary {
++    graphId: string;
++    title: string;
++    nodeCount: number;
++    edgeCount: number;
++    kinds: Record<string, number>;
++    provenance: SemanticGraph['provenance'];
++}
++export interface Passage {
++    id: string;
++    label: string;
++    text: string;
++}
++export interface Link {
++    id: string;
++    label: string;
++    url: string;
++}
++export interface ResourceDocument {
++    url: string;
++    html: string;
++    notice: string;
++}
++const record = (x: unknown): x is Record<string, unknown> => !!x && typeof x === 'object' && !Array.isArray(x);
++const strings = (x: unknown): x is string[] => Array.isArray(x) && x.every(v => typeof v === 'string');
++const text = (x: unknown): x is string => typeof x === 'string' && x.length <= 2000000;
++const fields = (x: unknown, names: readonly string[]) => record(x) && names.every(k => typeof x[k] === 'string');
++const schema = <T>() => <const Name extends string>(name: Name, description: string, validate: (x: unknown) => boolean): Schema<T, `nmop/${Name}@1`> => Object.freeze({ id: `nmop/${name}@1`, description, validate: validate as (x: unknown) => x is T });
++function safeURL(value: string): string {
++    const url = new URL(value);
++    const host = url.hostname.toLowerCase().replace(/\.$/, '');
++    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password || !host || host === 'localhost' || host.endsWith('.localhost') || host.endsWith('.local') || !host.includes('.') || host.includes(':') || /^[\d.]+$/.test(host))
++        throw new Error('URL must be a credential-free public http(s) hostname');
++    return url.href;
++}
++const url = (x: unknown) => { try {
++    return typeof x === 'string' && safeURL(x) === x;
++}
++catch {
++    return false;
++} };
++function graphShape(x: unknown): x is SemanticGraph {
++    if (!record(x) || !fields(x, ['version', 'id', 'title', 'sourceUrl']) || !Array.isArray(x.nodes) || !Array.isArray(x.edges) || !record(x.provenance))
++        return false;
++    if (!fields(x.provenance, ['kind', 'fetchedAt', 'contentHash', 'notice']) || !['fixture', 'public'].includes(String(x.provenance.kind)))
++        return false;
++    if (!x.nodes.every(n => record(n) && fields(n, ['id', 'kind', 'label']) && ['Resource', 'Section', 'Text', 'Link', 'Form', 'Action', 'Artifact', 'Participant', 'Evidence', 'Group'].includes(String(n.kind)) && (n.text === undefined || text(n.text)) && (n.url === undefined || typeof n.url === 'string') && (n.evidence === undefined || strings(n.evidence)) && (n.supported === undefined || typeof n.supported === 'boolean') && (n.meta === undefined || (record(n.meta) && Object.values(n.meta).every(v => typeof v === 'string'))) && (n.action === undefined || ['open-external', 'select-passage', 'attach-companion', 'save-artifact', 'navigate'].includes(String(n.action)))))
++        return false;
++    if (!x.edges.every(e => record(e) && fields(e, ['from', 'to', 'kind']) && ['contains', 'references', 'navigates', 'derives', 'observes', 'acts_on'].includes(String(e.kind))))
++        return false;
++    return coreValidateGraph(x as unknown as SemanticGraph).length === 0;
++}
++const selected = (x: unknown) => fields(x, ['graphId', 'semanticId', 'title', 'text', 'sourceUrl', 'notice']) && record(x) && strings(x.evidence);
++const artifactShape = (x: unknown) => fields(x, ['version', 'id', 'title', 'passage', 'sourceUrl', 'semanticId', 'notice']) && record(x) && x.version === '1' && x.status === 'local-artifact' && strings(x.evidence) && url(x.sourceUrl);
++export const SCHEMAS = Object.freeze({
++    text: schema<string>()('text', 'Bounded plain text', text), url: schema<string>()('safe-url', 'Normalized public-looking http(s) URL; not a DNS/SSRF authorization', url),
++    graph: schema<SemanticGraph>()('semantic-graph', 'Core semantic graph with complete shape and identity validation', graphShape),
++    summary: schema<GraphSummary>()('graph-summary', 'Counts and source provenance', x => fields(x, ['graphId', 'title']) && record(x) && Number.isInteger(x.nodeCount) && Number(x.nodeCount) >= 0 && Number.isInteger(x.edgeCount) && Number(x.edgeCount) >= 0 && record(x.kinds) && Object.values(x.kinds).every(v => Number.isInteger(v) && Number(v) >= 0) && record(x.provenance) && fields(x.provenance, ['kind', 'fetchedAt', 'contentHash', 'notice'])),
++    passages: schema<Passage[]>()('passages', 'Extracted identified text passages', x => Array.isArray(x) && x.every(p => fields(p, ['id', 'label', 'text']))),
++    links: schema<Link[]>()('links', 'Safe identified link targets', x => Array.isArray(x) && x.every(p => fields(p, ['id', 'label', 'url']) && record(p) && url(p.url))),
++    intents: schema<Intent[]>()('intent-candidates', 'Inferred candidates with supporting semantic node IDs', x => Array.isArray(x) && x.every(i => record(i) && ['research', 'commerce', 'repository', 'general'].includes(String(i.kind)) && typeof i.confidence === 'number' && i.confidence >= 0 && i.confidence <= 1 && strings(i.evidence) && i.status === 'inferred')),
++    selectionRequest: schema<{
++        graph: SemanticGraph;
++        nodeId: string;
++    }>()('selection-request', 'Semantic graph and selected passage ID', x => record(x) && graphShape(x.graph) && typeof x.nodeId === 'string'),
++    selection: schema<Selection>()('selection', 'Selected passage and source identity', selected),
++    context: schema<PassageContext>()('passage-context', 'Explicitly selected source context', x => selected(x) && record(x) && x.status === 'selected-source-context'),
++    artifact: schema<Artifact>()('artifact', 'Versioned local cited artifact', artifactShape),
++    externalTarget: schema<{
++        url: string;
++        target: '_blank';
++        rel: 'noopener noreferrer';
++    }>()('external-target', 'Safe external navigation attributes', x => record(x) && url(x.url) && x.target === '_blank' && x.rel === 'noopener noreferrer'),
++    document: schema<ResourceDocument>()('resource-document', 'Transport-supplied HTML and visible provenance; never executed', x => fields(x, ['url', 'html', 'notice']) && record(x) && url(x.url) && text(x.html) && String(x.notice).trim().length > 0),
++    stats: schema<{
++        characters: number;
++        words: number;
++        lines: number;
++    }>()('text-stats', 'Plain-text counts', x => record(x) && ['characters', 'words', 'lines'].every(k => Number.isInteger(x[k]) && Number(x[k]) >= 0))
++});
++export function definePerformer<I, O, const IS extends string, const OS extends string>(operation: Performer<I, O, IS, OS>): Performer<I, O, IS, OS> {
++    if (!operation.id || !operation.version || !operation.input.id || !operation.output.id || !operation.effects.length || operation.effects.some(e => !['pure', 'local-state', 'external-read', 'external-mutation'].includes(e)))
++        throw new Error('Invalid performer metadata');
++    return Object.freeze({ ...operation, effects: Object.freeze([...operation.effects]), requires: Object.freeze([...operation.requires]), provides: Object.freeze([...operation.provides]), preconditions: Object.freeze([...operation.preconditions]), postconditions: Object.freeze([...operation.postconditions]) });
++}
++function operation<I, O, const IS extends string, const OS extends string>(id: string, input: Schema<I, IS>, output: Schema<O, OS>, description: string, execute: Performer<I, O>['execute'], options: Partial<Pick<Performer<I, O>, 'effects' | 'requires' | 'determinism' | 'constitutionClauses'>> = {}): Performer<I, O, IS, OS> {
++    return definePerformer({ id, version: VERSION, description, input, output, execute,
++        preconditions: [{ description: input.description, check: v => input.validate(v) }], postconditions: [{ description: output.description, check: v => output.validate(v) }],
++        effects: ['pure'], requires: [], provides: [output.id], failureModes: ['input-schema', 'precondition', 'missing-authority', 'missing-capability', 'output-schema', 'postcondition', 'execution-failure', 'non-json-trace'], determinism: 'deterministic',
++        provenance: { source: '06_NMOP.md;09_CONSTITUTION.md', implementation: '@netscape/performers/src/index.ts' }, constitutionClauses: ['C-001', 'C-004', 'C-007', 'C-009', 'C-010'], ...options });
++}
++const escapeMarkdown = (s: string) => s.replace(/[\\`*{}\[\]()#+!_<>]/g, '\\$&').replace(/\r?\n/g, ' ');
++const markdownURL = (s: string) => s.replace(/[()<>\s]/g, c => encodeURIComponent(c));
++export const PERFORMERS = Object.freeze({
++    validateURL: operation('validate-url', SCHEMAS.text, SCHEMAS.url, 'Normalize a credential-free public-looking URL; transport must still enforce DNS/allowlist', safeURL, { constitutionClauses: ['C-008', 'C-011'] }),
++    externalTarget: operation('external-target', SCHEMAS.url, SCHEMAS.externalTarget, 'Create safe external navigation attributes', url => ({ url, target: '_blank', rel: 'noopener noreferrer' }), { constitutionClauses: ['C-002', 'C-008'] }),
++    fetchResource: operation('fetch-resource', SCHEMAS.url, SCHEMAS.document, 'Read only through a caller-supplied allowlisted transport', async (value, ctx) => await ctx.capabilities['resource.read'](value) as ResourceDocument, { effects: ['external-read'], requires: ['resource.read'], determinism: 'capability-dependent', constitutionClauses: ['C-003', 'C-007', 'C-008'] }),
++    validateGraph: operation('validate-graph', SCHEMAS.graph, SCHEMAS.graph, 'Validate semantic graph identities and shape', g => g),
++    graphSummary: operation('graph-summary', SCHEMAS.graph, SCHEMAS.summary, 'Count semantic node kinds while preserving source provenance', g => ({ graphId: g.id, title: g.title, nodeCount: g.nodes.length, edgeCount: g.edges.length, kinds: g.nodes.reduce<Record<string, number>>((a, n) => (a[n.kind] = (a[n.kind] ?? 0) + 1, a), {}), provenance: g.provenance })),
++    graphPassages: operation('graph-passages', SCHEMAS.graph, SCHEMAS.passages, 'Extract text passages without reparsing HTML', g => g.nodes.filter(n => n.kind === 'Text' && !!n.text?.trim()).map(n => ({ id: n.id, label: n.label, text: n.text! }))),
++    graphLinks: operation('graph-links', SCHEMAS.graph, SCHEMAS.links, 'Project only valid public-looking link targets', g => g.nodes.filter(n => n.kind === 'Link' && n.url).flatMap(n => { try {
++        return [{ id: n.id, label: n.label, url: safeURL(n.url!) }];
++    }
++    catch {
++        return [];
++    } })),
++    graphIntentCandidates: operation('graph-intent-candidates', SCHEMAS.graph, SCHEMAS.intents, 'Infer bounded evidence-bearing intent candidates from existing semantic text', g => {
++        const rules = [['research', /\b(research|science|mission|atmosphere|nasa|study)\b/i], ['commerce', /\b(menu|price|reservation|restaurant|cart|purchase|checkout)\b/i], ['repository', /\b(repository|readme|commit|pull request|github|issue)\b/i]] as const;
++        const results: Intent[] = rules.flatMap(([kind, re]) => { const evidence = g.nodes.filter(n => re.test(`${n.label} ${n.text ?? ''} ${n.url ?? ''}`)).map(n => n.id); return evidence.length ? [{ kind, confidence: Math.min(.9, .45 + evidence.length * .1), evidence, status: 'inferred' as const }] : []; });
++        return results.length ? results.sort((a, b) => b.confidence - a.confidence || a.kind.localeCompare(b.kind)) : [{ kind: 'general', confidence: .3, evidence: g.nodes.slice(0, 1).map(n => n.id), status: 'inferred' }];
++    }),
++    selectPassage: operation('select-passage', SCHEMAS.selectionRequest, SCHEMAS.selection, 'Resolve selected text by stable semantic identity', ({ graph, nodeId }) => { const n = graph.nodes.find(n => n.id === nodeId && n.kind === 'Text' && n.text?.trim()); if (!n)
++        throw new Error('Selected passage is absent or not textual'); return { graphId: graph.id, semanticId: n.id, title: graph.title, text: n.text!, sourceUrl: safeURL(graph.sourceUrl), evidence: [...new Set([n.id, ...n.evidence ?? []])], notice: graph.provenance.notice }; }),
++    selectionContext: operation('selection-context', SCHEMAS.selection, SCHEMAS.context, 'Build an explicit source context for a local companion', s => ({ ...s, status: 'selected-source-context' }), { constitutionClauses: ['C-001', 'C-007', 'C-012'] }),
++    contextArtifact: operation('context-artifact', SCHEMAS.context, SCHEMAS.artifact, 'Create a deterministic cited local artifact without claiming generated reasoning', s => ({ version: '1', id: `artifact-${hash(s)}`, title: s.title, passage: s.text, sourceUrl: s.sourceUrl, semanticId: s.semanticId, evidence: s.evidence, notice: s.notice, status: 'local-artifact' })),
++    validateArtifact: operation('validate-artifact', SCHEMAS.artifact, SCHEMAS.artifact, 'Validate versioned artifact for storage or restoration', a => a),
++    artifactMarkdown: operation('artifact-markdown', SCHEMAS.artifact, SCHEMAS.text, 'Render an escaped citation and selected passage as portable Markdown', a => `# ${escapeMarkdown(a.title)}\n\n> ${a.passage.split(/\r?\n/).map(escapeMarkdown).join('\n> ')}\n\nSource: [${escapeMarkdown(a.sourceUrl)}](${markdownURL(a.sourceUrl)})\n\nEvidence: ${a.evidence.map(escapeMarkdown).join(', ')}\n\nProvenance: ${escapeMarkdown(a.notice)}\n\nStatus: local artifact`),
++    artifactJSON: operation('artifact-json', SCHEMAS.artifact, SCHEMAS.text, 'Export a canonical versioned artifact', a => canonical(a)),
++    saveArtifact: operation('save-artifact', SCHEMAS.artifact, SCHEMAS.artifact, 'Persist through an explicit caller-supplied local storage capability', async (a, c) => await c.capabilities['artifact.write'](a) as Artifact, { effects: ['local-state'], requires: ['artifact.write'], determinism: 'capability-dependent' }),
++    loadArtifact: operation('load-artifact', SCHEMAS.text, SCHEMAS.artifact, 'Restore and validate through explicit local artifact storage', async (id, c) => { const result = await c.capabilities['artifact.read'](id) as Artifact; if (record(result) && typeof result.id === 'string' && result.id !== id)
++        throw new Error('Stored artifact identity differs from requested identity'); return result; }, { effects: ['local-state'], requires: ['artifact.read'], determinism: 'capability-dependent' }),
++    normalizeText: operation('normalize-text', SCHEMAS.text, SCHEMAS.text, 'Normalize whitespace in bounded plain text', s => s.replace(/\s+/g, ' ').trim()),
++    textStats: operation('text-stats', SCHEMAS.text, SCHEMAS.stats, 'Count Unicode code points, whitespace-delimited words and lines', s => ({ characters: [...s].length, words: s.trim() ? s.trim().split(/\s+/).length : 0, lines: s ? s.split(/\r?\n/).length : 0 })),
++    uniqueLinks: operation('unique-links', SCHEMAS.links, SCHEMAS.links, 'Deduplicate normalized target URLs while retaining first semantic identity', links => { const seen = new Set<string>(); return links.filter(l => seen.has(l.url) ? false : (seen.add(l.url), true)); }),
++    linksMarkdown: operation('links-markdown', SCHEMAS.links, SCHEMAS.text, 'Render safely escaped portable source links', links => links.map(l => `- [${escapeMarkdown(l.label)}](${markdownURL(l.url)})`).join('\n'))
++});
++type Compatible<T extends readonly AnyPerformer[]> = T extends readonly [
++    infer A extends AnyPerformer,
++    infer B extends AnyPerformer,
++    ...infer R extends AnyPerformer[]
++] ? A['output']['id'] extends B['input']['id'] ? Compatible<readonly [
++    B,
++    ...R
++]> : never : unknown;
++export function compose<const T extends readonly [
++    AnyPerformer,
++    ...AnyPerformer[]
++]>(...steps: T & Compatible<T>): Pipeline<InputOf<T[0]>, OutputOf<T extends readonly [
++    ...any[],
++    infer L
++] ? L : never>> {
++    if (!steps.length)
++        throw new Error('Pipeline requires at least one performer');
++    for (let i = 1; i < steps.length; i++)
++        if (steps[i - 1].output.id !== steps[i].input.id)
++            throw new Error(`Pipeline schema mismatch: ${steps[i - 1].output.id} -> ${steps[i].input.id}`);
++    return Object.freeze({ version: VERSION, steps: Object.freeze([...steps]), input: steps[0].input, output: steps.at(-1)!.output });
++}
++function snapshot(value: unknown): string {
++    const seen = new Set<object>();
++    const visit = (v: unknown): void => {
++        if (v === null || typeof v === 'string' || typeof v === 'boolean' || (typeof v === 'number' && Number.isFinite(v)))
++            return;
++        if (typeof v !== 'object' || !v || seen.has(v))
++            throw new Error('Trace values must be finite acyclic JSON');
++        if (!Array.isArray(v) && Object.getPrototypeOf(v) !== Object.prototype && Object.getPrototypeOf(v) !== null)
++            throw new Error('Trace values must be plain JSON objects');
++        seen.add(v);
++        for (const entry of Object.values(v))
++            visit(entry);
++        seen.delete(v);
++    };
++    visit(value);
++    return canonical(value);
++}
++export async function runPipeline<I, O>(pipeline: Pipeline<I, O>, input: I, options: RunOptions = {}): Promise<{
++    output: O;
++    trace: PipelineTrace;
++}> {
++    const authority = new Set<Effect>(['pure', ...options.authority ?? []]);
++    const capabilities = { ...options.capabilities };
++    // Complete authority/capability/schema alignment preflight before invoking even a pure first step.
++    for (let i = 0; i < pipeline.steps.length; i++) {
++        const step = pipeline.steps[i];
++        if (i && pipeline.steps[i - 1].output.id !== step.input.id)
++            throw new Error('Pipeline schema mismatch');
++        for (const effect of step.effects)
++            if (!authority.has(effect))
++                throw new Error(`Missing explicit authority: ${effect} (${step.id})`);
++        for (const required of step.requires)
++            if (typeof capabilities[required] !== 'function')
++                throw new Error(`Missing injected capability: ${required}`);
++    }
++    const trace: TraceStep[] = [];
++    let value: unknown = input;
++    for (const step of pipeline.steps) {
++        let phase: PipelineExecutionError['failure']['phase'] = 'input';
++        let invoked = false;
++        try {
++            if (!step.input.validate(value))
++                throw new Error(`Input schema rejected ${step.id}: ${step.input.id}`);
++            phase = 'precondition';
++            for (const c of step.preconditions)
++                if (!c.check(value))
++                    throw new Error(`Precondition rejected ${step.id}: ${c.description}`);
++            phase = 'snapshot';
++            const inputCanonical = snapshot(value);
++            phase = 'execution';
++            invoked = true;
++            const output = await step.execute(JSON.parse(inputCanonical), Object.freeze({ capabilities: Object.freeze({ ...Object.fromEntries(step.requires.map(k => [k, capabilities[k]])) }) }));
++            phase = 'output';
++            if (!step.output.validate(output))
++                throw new Error(`Output schema rejected ${step.id}: ${step.output.id}`);
++            phase = 'postcondition';
++            for (const c of step.postconditions)
++                if (!c.check(output))
++                    throw new Error(`Postcondition rejected ${step.id}: ${c.description}`);
++            phase = 'snapshot';
++            const outputCanonical = snapshot(output);
++            trace.push({ performer: step.id, version: step.version, inputSchema: step.input.id, outputSchema: step.output.id, effects: [...step.effects], requires: [...step.requires], status: 'executed', inputCanonical, outputCanonical, inputHash: hash(JSON.parse(inputCanonical)), outputHash: hash(JSON.parse(outputCanonical)) });
++            value = JSON.parse(outputCanonical);
++        }
++        catch (error) {
++            throw new PipelineExecutionError(error instanceof Error ? error.message : String(error), { version: VERSION, pack: `netscape-capabilities@${VERSION}`, steps: [...trace] }, { performer: step.id, phase, invoked }, { cause: error });
++        }
++    }
++    return { output: value as O, trace: { version: VERSION, pack: `netscape-capabilities@${VERSION}`, steps: trace } };
++}
++export function reconstructTrace(trace: PipelineTrace, registry: readonly AnyPerformer[] = Object.values(PERFORMERS)): {
++    valid: boolean;
++    errors: string[];
++    output?: unknown;
++} {
++    const errors: string[] = [];
++    let output: unknown;
++    if (trace.version !== VERSION || trace.pack !== `netscape-capabilities@${VERSION}` || !Array.isArray(trace.steps) || !trace.steps.length)
++        return { valid: false, errors: ['Unsupported or empty trace'] };
++    for (let i = 0; i < trace.steps.length; i++) {
++        const step = trace.steps[i];
++        try {
++            const input = JSON.parse(step.inputCanonical);
++            output = JSON.parse(step.outputCanonical);
++            if (snapshot(input) !== step.inputCanonical || snapshot(output) !== step.outputCanonical || hash(input) !== step.inputHash || hash(output) !== step.outputHash)
++                errors.push(`Step ${i}: canonical hash mismatch`);
++            if (step.status !== 'executed')
++                errors.push(`Step ${i}: missing execution status`);
++            if (i && (trace.steps[i - 1].outputCanonical !== step.inputCanonical || trace.steps[i - 1].outputSchema !== step.inputSchema))
++                errors.push(`Step ${i}: broken chain`);
++            const known = registry.find(p => p.id === step.performer);
++            if (!known)
++                errors.push(`Step ${i}: unknown performer`);
++            if (known && (known.version !== step.version || known.input.id !== step.inputSchema || known.output.id !== step.outputSchema || !known.input.validate(input) || !known.output.validate(output) || canonical(known.effects) !== canonical(step.effects) || canonical(known.requires) !== canonical(step.requires)))
++                errors.push(`Step ${i}: performer contract mismatch`);
++        }
++        catch {
++            errors.push(`Step ${i}: invalid JSON snapshot`);
++        }
++    }
++    return { valid: errors.length === 0, errors, output };
++}
++export const CAPABILITY_PACK = Object.freeze({ id: 'netscape-capabilities', version: VERSION, constitutionVersion: CONSTITUTION_VERSION, enforcementRevision: '1', performers: Object.freeze(Object.values(PERFORMERS).map(p => ({ id: p.id, version: p.version, input: p.input.id, output: p.output.id, effects: p.effects, requires: p.requires }))), provenance: 'Local, authored SDK implementations; external transports and storage are injected, never fabricated.' });
++export const PIPELINES = Object.freeze({ selectionArtifact: compose(PERFORMERS.selectPassage, PERFORMERS.selectionContext, PERFORMERS.contextArtifact), selectionMarkdown: compose(PERFORMERS.selectPassage, PERFORMERS.selectionContext, PERFORMERS.contextArtifact, PERFORMERS.artifactMarkdown), graphSummary: compose(PERFORMERS.validateGraph, PERFORMERS.graphSummary), graphLinks: compose(PERFORMERS.graphLinks, PERFORMERS.uniqueLinks, PERFORMERS.linksMarkdown) });
+diff --git a/packages/render-react/package.json b/packages/render-react/package.json
+new file mode 100644
+index 0000000..49915bd
+--- /dev/null
++++ b/packages/render-react/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/render-react","version":"0.1.0","type":"module","exports":"./src/index.tsx","dependencies":{"@netscape/core":"0.1.0","@netscape/chromatics":"0.1.0"},"peerDependencies":{"react":"^19.0.0"}}
+diff --git a/packages/render-react/src/index.tsx b/packages/render-react/src/index.tsx
+new file mode 100644
+index 0000000..44e59e3
+--- /dev/null
++++ b/packages/render-react/src/index.tsx
+@@ -0,0 +1,26 @@
++'use client';
++import React from 'react';
++import type {ActionType,SemanticGraph,SemanticNode,Surface} from '@netscape/core';
++export type Palette={background:string;surface:string;text:string;muted:string;accent:string;accentText:string;border:string};
++export type SurfaceRendererProps={graph:SemanticGraph;surface:Surface;palette:Palette;selectedId?:string;onAction:(action:ActionType,id:string)=>void;motion?:Record<string,{x:number;y:number}>};
++function safeURL(value?:string){try{const u=new URL(value||'');return /^https?:$/.test(u.protocol)&&!u.username&&!u.password?u.href:undefined;}catch{return undefined;}}
++const symbols:Record<string,string>={Resource:'◈',Section:'§',Text:'↳',Link:'↗',Form:'⊘',Action:'→',Evidence:'◎',Artifact:'◇',Participant:'✳',Group:'⊞'};
++export function SurfaceRenderer({graph,surface,palette,selectedId,onAction,motion={}}:SurfaceRendererProps){
++  const nodes=new Map(graph.nodes.map(n=>[n.id,n]));
++  function content(n:SemanticNode,index:number){
++    const action=n.supported!==false?n.action:undefined;
++    const attrs={'data-semantic-id':n.id,'data-action':action};
++    const title=<><span className="node-eyebrow"><span aria-hidden="true">{symbols[n.kind]}</span> {n.kind==='Text'?'SOURCE PASSAGE':n.kind.toUpperCase()} <span className="node-number">{String(index+1).padStart(2,'0')}</span></span><span className="node-title">{n.label}</span></>;
++    const text=n.text&&n.text!==n.label?<span className="node-body">{n.text}</span>:null;
++    if(n.kind==='Resource')return <div className="resource-node">{title}{text}<span className="resource-node-foot">PUBLIC KNOWLEDGE <span aria-hidden="true">/</span> INTERPRETED LOCALLY</span></div>;
++    if(n.kind==='Section'||n.kind==='Group')return <div className="section-node">{title}{text}</div>;
++    if(n.kind==='Form'||n.supported===false)return <div className="unsupported-node">{title}{text}<span className="node-support">Detected affordance · external action unavailable</span></div>;
++    if((action==='open-external'||action==='navigate')&&safeURL(n.url))return <a {...attrs} className="node-action link-node" href={safeURL(n.url)} target="_blank" rel="noopener noreferrer">{title}{text}<span className="node-support">Open original <span aria-hidden="true">↗</span></span></a>;
++    if(action&&action!=='open-external'&&action!=='navigate')return <button {...attrs} data-testid={action==='select-passage'?'passage':undefined} className="node-action" type="button" aria-pressed={action==='select-passage'?selectedId===n.id:undefined} onClick={()=>onAction(action,n.id)}>{title}{text}<span className="node-support">{action==='select-passage'?(selectedId===n.id?'✓ Context selected':'Select as context ↗'):action==='attach-companion'?'Local simulated companion ↗':'Create a cited local artifact ↗'}</span></button>;
++    return <div>{title}{text}{n.kind==='Evidence'?<span className="node-support">Source evidence · no live verification</span>:null}</div>;
++  }
++  return <div data-testid="generated-surface" className={`generated-surface family-${surface.family}`} data-surface-hash={surface.hash} style={{position:'relative',width:'100%',height:surface.height,background:palette.background,color:palette.text}}>
++    {surface.regions.map((r,index)=>{const n=nodes.get(r.semanticId);if(!n)return null;const m=motion[n.id];return <article key={r.id} data-testid="region" data-semantic-id={n.id} data-kind={n.kind} className={`surface-region kind-${n.kind.toLowerCase()} ${selectedId===n.id?'is-selected':''}`} style={{position:'absolute',left:r.x,top:r.y,width:r.width,height:r.height,background:n.kind==='Resource'?palette.accent:palette.surface,color:n.kind==='Resource'?palette.accentText:palette.text,borderColor:selectedId===n.id?palette.accent:palette.border,transform:m?`translate(${m.x}px,${m.y}px)`:undefined,'--node-muted':n.kind==='Resource'?palette.accentText:palette.muted,'--node-accent':palette.accent} as React.CSSProperties}>{content(n,index)}</article>;})}
++  </div>;
++}
++export {safeURL as sanitizeLink};
+diff --git a/packages/resource-interpreter/package.json b/packages/resource-interpreter/package.json
+new file mode 100644
+index 0000000..fed42f9
+--- /dev/null
++++ b/packages/resource-interpreter/package.json
+@@ -0,0 +1 @@
++{"name":"@netscape/resource-interpreter","version":"0.1.0","private":true,"type":"module","exports":{".":"./src/index.ts","./fetch":"./src/fetch.ts"},"dependencies":{"@netscape/core":"0.1.0","parse5":"^7.3.0"}}
+diff --git a/packages/resource-interpreter/src/fetch.ts b/packages/resource-interpreter/src/fetch.ts
+new file mode 100644
+index 0000000..1d1a160
+--- /dev/null
++++ b/packages/resource-interpreter/src/fetch.ts
+@@ -0,0 +1,110 @@
++/** Node-only HTTPS reader. Kept separate from the browser-safe interpreter. */
++import {lookup} from 'node:dns/promises';
++import {isIP} from 'node:net';
++import {request as httpsRequest} from 'node:https';
++
++export const ALLOWED_HOSTS=Object.freeze(['www.nasa.gov','nasa.gov','science.nasa.gov','github.com']);
++const MAX_BYTES=1_048_576, MAX_REDIRECTS=4;
++export type Address={address:string;family:4|6};
++export type PublicResponse={status:number;headers:Record<string,string|undefined>;body:AsyncIterable<Uint8Array>;cancel?:()=>void};
++/** Transport injection exists for deterministic hostile DNS/server tests. The application uses fetchPublic only. */
++export type FetchDependencies={resolve:(hostname:string)=>Promise<Address[]>;request:(url:URL,address:Address,signal:AbortSignal)=>Promise<PublicResponse>};
++
++export function validatePublicURL(input:string):URL{
++ if(typeof input!=='string'||input.length>4096||/[\s\\\x00-\x1f\x7f]/.test(input))throw new Error('Invalid public URL');
++ let url:URL;try{url=new URL(input);}catch{throw new Error('Invalid public URL');}
++ if(url.protocol!=='https:')throw new Error('Public resources require HTTPS');
++ // Inspect raw authority as URL normalization removes explicit :443, encoded hostnames and userinfo evidence.
++ const authority=input.match(/^https:\/\/([^/?#]+)/i)?.[1];
++ if(!authority||!ALLOWED_HOSTS.includes(authority.toLowerCase())||!ALLOWED_HOSTS.includes(url.hostname)||url.username||url.password||url.port)throw new Error('Public resource hostname must match the exact HTTPS allowlist, without credentials or ports');
++ url.hash='';return url;
++}
++
++/** Conservative public-address policy: special-purpose IPv4 and non-global IPv6 are denied. */
++export function isPublicAddress(address:string):boolean{
++ const family=isIP(address);
++ if(family===4){
++  const parts=address.split('.').map(Number);const value=parts.reduce((v,n)=>(v*256+n)>>>0,0);
++  const denied:[number,number][]=[
++   [0x00000000,8],[0x0a000000,8],[0x64400000,10],[0x7f000000,8],[0xa9fe0000,16],[0xac100000,12],
++   [0xc0000000,24],[0xc0000200,24],[0xc0586300,24],[0xc0a80000,16],[0xc6120000,15],[0xc6336400,24],[0xcb007100,24],[0xe0000000,4],[0xf0000000,4]
++  ];
++  return !denied.some(([prefix,bits])=>(value>>>(32-bits))===(prefix>>>(32-bits)));
++ }
++ if(family!==6||address.includes('%')||address.includes('.'))return false;
++ // isIP has checked syntax. Expand compression to compare the global-unicast prefix.
++ const lower=address.toLowerCase();const sides=lower.split('::');
++ const left=sides[0]?sides[0].split(':'):[],right=sides.length>1&&sides[1]?sides[1].split(':'):[];
++ const groups=sides.length===2?[...left,...Array(8-left.length-right.length).fill('0'),...right]:left;
++ if(groups.length!==8)return false;
++ const first=parseInt(groups[0],16),second=parseInt(groups[1],16);
++ if((first&0xe000)!==0x2000)return false; // Includes mapped, local, multicast and NAT64 denial.
++ if(first===0x2002)return false; // 6to4 can encode private IPv4 destinations.
++ if(first===0x2001&&(second<0x200||second===0xdb8))return false; // IETF protocol assignments / documentation.
++ if(first===0x3fff&&(second&0xf000)===0)return false; // IPv6 documentation range.
++ return true;
++}
++
++const defaults:FetchDependencies={
++ resolve:async hostname=>(await lookup(hostname,{all:true,verbatim:true})).map(a=>({address:a.address,family:a.family as 4|6})),
++ request:(url,address,signal)=>new Promise((resolve,reject)=>{
++  const request=httpsRequest(url,{
++   method:'GET',signal,agent:false,
++   headers:{accept:'text/html, application/xhtml+xml;q=0.9','accept-encoding':'identity','user-agent':'NetscapeInfinite/0.1 (read-only public-resource interpreter)'},
++   // TLS SNI/certificate verification still use the allowlisted URL hostname.
++   lookup:((_hostname:unknown,options:unknown,callback:any)=>{
++    if(typeof options==='object'&&options!==null&&'all' in options&&(options as {all?:boolean}).all)callback(null,[address]);
++    else callback(null,address.address,address.family);
++   }) as any
++  },response=>{
++   const headers:Record<string,string|undefined>={};for(const [key,value]of Object.entries(response.headers))headers[key]=Array.isArray(value)?value.join(', '):value;
++   resolve({status:response.statusCode??0,headers,body:response,cancel:()=>response.destroy()});
++  });
++  request.once('error',reject);request.end();
++ })
++};
++
++/** Each request has one deadline across DNS, redirects and reading; every DNS answer must be public. */
++export function createPublicFetcher(dependencies:FetchDependencies=defaults,limits:{timeoutMs?:number;maxBytes?:number}={}){
++ const timeoutMs=limits.timeoutMs??8000,maxBytes=Math.min(limits.maxBytes??MAX_BYTES,MAX_BYTES);
++ if(!Number.isFinite(timeoutMs)||timeoutMs<=0||timeoutMs>30_000||!Number.isSafeInteger(maxBytes)||maxBytes<=0)throw new Error('Invalid public fetch limits');
++ return async(input:string):Promise<{html:string;url:string}>=>{
++  let url=validatePublicURL(input);const controller=new AbortController();let current:PublicResponse|undefined;
++  let timer:ReturnType<typeof setTimeout>|undefined;
++  const timeout=new Promise<never>((_resolve,reject)=>{timer=setTimeout(()=>{controller.abort();current?.cancel?.();reject(new Error('Public resource fetch timeout'));},timeoutMs);});
++  const work=async()=>{
++   for(let hop=0;hop<=MAX_REDIRECTS;hop++){
++    const answers=await dependencies.resolve(url.hostname);
++    if(controller.signal.aborted)throw new Error('Public resource fetch timeout');
++    if(!answers.length||answers.length>64||answers.some(a=>!isPublicAddress(a.address)||isIP(a.address)!==a.family))throw new Error('DNS must resolve exclusively to public IP addresses');
++    current=await dependencies.request(url,answers[0],controller.signal);
++    if(controller.signal.aborted){current.cancel?.();throw new Error('Public resource fetch timeout');}
++    if([301,302,303,307,308].includes(current.status)){
++     current.cancel?.();const location=current.headers.location;
++     if(!location||hop===MAX_REDIRECTS)throw new Error('Public resource redirect limit or missing location');
++     // Absolute redirect text must be validated before URL normalization can hide encoded authority or ports.
++     if(/^[a-z][a-z\d+.-]*:/i.test(location))url=validatePublicURL(location);
++     else if(location.startsWith('//'))url=validatePublicURL(`https:${location}`);
++     else {if(/[\s\\\x00-\x1f\x7f]/.test(location))throw new Error('Invalid redirect URL');url=validatePublicURL(new URL(location,url).href);}
++     continue;
++    }
++    if(current.status<200||current.status>=300)throw new Error(`Public resource HTTP status ${current.status}`);
++    const mime=(current.headers['content-type']??'').split(';')[0].trim().toLowerCase();
++    if(!['text/html','application/xhtml+xml'].includes(mime))throw new Error('Unsupported public resource MIME type; HTML required');
++    if(current.headers['content-encoding']&&current.headers['content-encoding'].toLowerCase()!=='identity')throw new Error('Unsupported content encoding; identity required');
++    const length=current.headers['content-length'];
++    if(length&&(!/^\d+$/.test(length)||Number(length)>maxBytes))throw new Error('Public resource body exceeds size limit');
++    const chunks:Uint8Array[]=[];let total=0;
++    for await(const chunk of current.body){
++     if(controller.signal.aborted)throw new Error('Public resource fetch timeout');
++     total+=chunk.byteLength;if(total>maxBytes)throw new Error('Public resource body exceeds size limit');chunks.push(chunk);
++    }
++    const bytes=new Uint8Array(total);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
++    return {html:new TextDecoder('utf-8').decode(bytes),url:url.href};
++   }
++   throw new Error('Public resource redirect limit');
++  };
++  try{return await Promise.race([work(),timeout]);}finally{if(timer)clearTimeout(timer);controller.abort();current?.cancel?.();}
++ };
++}
++export const fetchPublic=createPublicFetcher();
+diff --git a/packages/resource-interpreter/src/index.ts b/packages/resource-interpreter/src/index.ts
+new file mode 100644
+index 0000000..588ae01
+--- /dev/null
++++ b/packages/resource-interpreter/src/index.ts
+@@ -0,0 +1,84 @@
++/** Inert, bounded HTML interpretation. This entry point has no Node imports. */
++import {parse, type DefaultTreeAdapterTypes} from 'parse5';
++import {hash, SCHEMA_VERSION, type SemanticNode, type SemanticEdge, type SemanticGraph, type Intent} from '@netscape/core';
++
++type HTMLNode = DefaultTreeAdapterTypes.Node;
++const MAX_HTML=1_048_576, MAX_NODES=180, MAX_TEXT=1800;
++const ignored=new Set(['script','style','template','noscript','iframe','object','svg','canvas']);
++const clean=(text:string,max=MAX_TEXT)=>text.replace(/\s+/g,' ').trim().slice(0,max);
++const tag=(node:HTMLNode)=>'tagName' in node?node.tagName:'';
++function attr(node:HTMLNode,name:string):string|undefined {return 'attrs' in node?node.attrs.find(a=>a.name===name)?.value:undefined;}
++function hidden(node:HTMLNode):boolean {return attr(node,'hidden')!==undefined||attr(node,'aria-hidden')==='true';}
++function textOf(node:HTMLNode,includeScript=false):string {
++ const stack=[node],parts:string[]=[];let size=0,visited=0;
++ while(stack.length&&size<MAX_TEXT*2&&visited++<3000){
++  const current=stack.pop()!;
++  if(hidden(current)||(!includeScript&&ignored.has(tag(current))))continue;
++  if('value' in current&&current.nodeName==='#text'){parts.push(current.value);size+=current.value.length;}
++  if('childNodes' in current)for(let i=current.childNodes.length-1;i>=0;i--)stack.push(current.childNodes[i]);
++ }
++ return clean(parts.join(' '));
++}
++function safeURL(value:string,base:string):string|undefined {
++ try{const url=new URL(value,base);if(!['http:','https:'].includes(url.protocol)||url.username||url.password)return;return url.href;}catch{return;}
++}
++
++export function interpretHTML(html:string,url:string,options:{kind?:'fixture'|'public';fetchedAt?:string}={}):{graph:SemanticGraph;intents:Intent[]}{
++ if(typeof html!=='string'||html.length>MAX_HTML)throw new Error('HTML exceeds interpretation size limit (1 MiB characters)');
++ const sourceUrl=safeURL(url,url);if(!sourceUrl)throw new Error('Source must be a safe HTTP(S) URL without credentials');
++ const fetchedAt=options.fetchedAt??new Date().toISOString();
++ if(!Number.isFinite(Date.parse(fetchedAt)))throw new Error('Invalid resource fetch timestamp');
++ const document=parse(html);const elements:HTMLNode[]=[];const stack:HTMLNode[]=[document];let visited=0;
++ while(stack.length&&visited++<20_000){
++  const node=stack.pop()!;if(hidden(node))continue;
++  if('tagName' in node)elements.push(node);
++  if(ignored.has(tag(node)))continue;
++  if('childNodes' in node)for(let i=node.childNodes.length-1;i>=0;i--)stack.push(node.childNodes[i]);
++ }
++ const title=clean(textOf(elements.find(n=>tag(n)==='title')??document),180)||new URL(sourceUrl).hostname;
++ const contentHash=hash(html),id=`resource-${hash({sourceUrl,contentHash})}`,evidenceId=`${id}-source`;
++ const kind=options.kind??'public';
++ const notice=kind==='fixture'?'Local authored demonstration. This is not a live source snapshot.':'Public HTML fetched read-only. Intent is inferred; source affordances do not grant executable capability.';
++ const metadata:Record<string,string>={};
++ for(const node of elements){
++  if(tag(node)==='meta'){
++   const name=attr(node,'name')??attr(node,'property');const content=attr(node,'content');
++   if(name&&content&&['description','og:description','og:title','author'].includes(name))metadata[name]=clean(content);
++  }
++  if(tag(node)==='script'&&attr(node,'type')?.toLowerCase()==='application/ld+json'){
++   try{
++    const raw=textOf(node,true);if(raw.length>1600)continue;
++    const data:unknown=JSON.parse(raw);const items=Array.isArray(data)?data:[data];
++    for(const item of items.slice(0,8))if(item&&typeof item==='object'){
++     const record=item as Record<string,unknown>;
++     if(typeof record['@type']==='string')metadata.jsonLdType=clean(record['@type'],120);
++     if(typeof record.name==='string')metadata.jsonLdName=clean(record.name,180);
++    }
++   }catch{/* Invalid or unsupported JSON-LD is not an executable instruction. */}
++  }
++ }
++ const nodes:SemanticNode[]=[{id,kind:'Resource',label:title,url:sourceUrl,evidence:[evidenceId],meta:metadata},{id:evidenceId,kind:'Evidence',label:kind==='fixture'?'Local authored source':'Public source evidence',text:notice,url:sourceUrl,meta:{contentHash,fetchedAt,kind}}];
++ const edges:SemanticEdge[]=[{from:id,to:evidenceId,kind:'contains'}];let parent=id;
++ function add(node:Omit<SemanticNode,'id'|'evidence'>,container=parent):SemanticNode|undefined {
++  if(nodes.length>=MAX_NODES-3)return;
++  const full:SemanticNode={...node,id:`${id}-n${nodes.length}`,evidence:[evidenceId]};nodes.push(full);edges.push({from:container,to:full.id,kind:'contains'});return full;
++ }
++ for(let index=0;index<elements.length&&nodes.length<MAX_NODES-3;index++){
++  const element=elements[index],name=tag(element),text=textOf(element);
++  const meta={sourceTag:name,sourceOrder:String(index)};
++  if(/^h[1-6]$/.test(name)&&text){const section=add({kind:'Section',label:clean(text,180),text,meta:{...meta,level:name[1]}},id);if(section)parent=section.id;}
++  else if(['p','li','blockquote','pre','figcaption'].includes(name)&&text)add({kind:'Text',label:clean(text,90),text,action:'select-passage',supported:true,meta:{...meta,origin:'local'}});
++  else if(name==='a'&&text){const href=attr(element,'href'),safe=href&&safeURL(href,sourceUrl);if(safe)add({kind:'Link',label:clean(text,180),url:safe,action:'navigate',supported:true,meta});}
++  else if(name==='form')add({kind:'Form',label:clean(attr(element,'aria-label')??'Detected source form',180),text:clean(text,400),supported:false,meta:{...meta,reason:'Detected affordance only. Submission is unsupported; no personal information is collected.'}});
++  else if(name==='button')add({kind:'Action',label:clean(text||attr(element,'aria-label')||'Source button',180),supported:false,meta:{...meta,reason:'Detected source button. Third-party execution is unsupported.'}});
++ }
++ // These are interpreter-owned local capabilities; source forms never grant them.
++ for(const [action,label] of [['select-passage','Select a passage'],['attach-companion','Come here · local simulated companion'],['save-artifact','Save cited artifact']] as const){
++  const actionId=`${id}-${action}`;nodes.push({id:actionId,kind:'Action',label,action,supported:true,evidence:[evidenceId],meta:{origin:'local',targetId:id}});edges.push({from:id,to:actionId,kind:'contains'});
++ }
++ const signals=nodes.filter(n=>n.kind!=='Action'&&n.kind!=='Evidence');
++ const definitions:[Intent['kind'],RegExp][]=[['repository',/github\.com|repository|README|SoftwareSourceCode|\bsrc\//i],['commerce',/Restaurant|reservation|\bmenu\b|\bdishes\b|checkout|\$\d/i],['research',/\bresearch\b|exoplanet|\bWebb\b|ScholarlyArticle|\bNASA\b|scientist/i]];
++ const candidates=definitions.map(([intent,pattern])=>({kind:intent,evidence:signals.filter(n=>pattern.test([n.label,n.text,n.url,JSON.stringify(n.meta)].join(' '))).map(n=>n.id)})).filter(item=>item.evidence.length>0).sort((a,b)=>b.evidence.length-a.evidence.length);
++ const winner=candidates[0];const intents:Intent[]=[winner?{kind:winner.kind,status:'inferred',confidence:Math.min(.95,.55+winner.evidence.length*.06),evidence:winner.evidence.slice(0,8)}:{kind:'general',status:'inferred',confidence:.35,evidence:[evidenceId]}];
++ return {graph:{version:SCHEMA_VERSION,id,title,sourceUrl,nodes,edges,provenance:{kind,fetchedAt,contentHash,notice}},intents};
++}

@@ -1,0 +1,91 @@
+{
+  "constitutionVersion": "1.0.0",
+  "enforcementRevision": "2026-10-18.1",
+  "codeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "clauses": [
+    {
+      "id": "C-001",
+      "rule": "Semantic identity independent of pixels",
+      "enforcement": "core typed graph/IR; stable semanticId and focus order",
+      "testAndEvidence": "tests/core.test.ts; all36 DOM action/region maps",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-002",
+      "rule": "Typed supported actions",
+      "enforcement": "core role/action matrix, safe targets, inert source forms",
+      "testAndEvidence": "tests/core.test.ts; tests/resource.test.ts; browser wrong-action negative control",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-003",
+      "rule": "No silent external mutation",
+      "enforcement": "GET-only safe reader; performer authority and injected capabilities",
+      "testAndEvidence": "tests/performers.test.ts; tests/resource-service.test.ts",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-004",
+      "rule": "Seed/version/input reproducibility",
+      "enforcement": "canonical inputs, grammar version, complete manifest integrity, event histories",
+      "testAndEvidence": "1000-seed replay; tests/conformance.test.ts; browser pixel/trace replay",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-005",
+      "rule": "Physics cannot trigger semantic actions",
+      "enforcement": "DOM/React-free dynamics API with no callbacks; host event projects visual/audio only",
+      "testAndEvidence": "tests/dynamics.test.ts; browser semantic dispatch checks; browser-runtime.json",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-006",
+      "rule": "Accessible navigation and contrast",
+      "enforcement": "quantized role contrast, native controls, readable flow rewrites, non-color selection cues",
+      "testAndEvidence": "36 axe/actual CSS checks; touch/keyboard/200% text/dark tests",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-007",
+      "rule": "Visible provenance and epistemic status",
+      "enforcement": "fixture/public notices, inferred intent evidence, cited artifacts",
+      "testAndEvidence": "resource tests; fixture and replay badge browser tests",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-008",
+      "rule": "No secrets/SSRF",
+      "enforcement": "exact HTTPS hosts, all-answer public DNS validation, pinned TLS lookup, bounds",
+      "testAndEvidence": "tests/security.test.ts; sdk-review.md; final-review.md",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-009",
+      "rule": "Framework-independent SDK",
+      "enforcement": "seven isolated packages; only renderer depends on React",
+      "testAndEvidence": "SDK build plus smoke:sdk with native TypeScript stripping disabled",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-010",
+      "rule": "Preserve failures/checkpoints",
+      "enforcement": "Git source checkpoints, timestamped raw browser runs and red logs, SHA-256 inventory",
+      "testAndEvidence": "evidence-index.json; Git history; delivered evidence archive",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-011",
+      "rule": "Explicit unsupported fallback",
+      "enforcement": "resource API errors plus safe external-open UI and retained current source",
+      "testAndEvidence": "tests/resource-service.test.ts; production unsafe URL/fallback tests",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    },
+    {
+      "id": "C-012",
+      "rule": "Simulated participant does not claim live ChatGPT",
+      "enforcement": "local extractive companion visibly marked simulated/no model API",
+      "testAndEvidence": "production companion/artifact journey; local-companion.png",
+      "status": "ENFORCED IN IMPLEMENTED SCOPE"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "codeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "branch": "main",
+  "unitTests": {
+    "passed": 72,
+    "failed": 0
+  },
+  "playwright": {
+    "startTime": "2026-10-18T11:36:08.452Z",
+    "duration": 172572.387,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "report": "artifacts/reports/visual-playwright-2026-10-18T11-36-08-439Z.json",
+    "runId": "2026-10-18T11-36-08-439Z"
+  },
+  "visual": {
+    "cases": 36,
+    "feasibleCases": 36,
+    "clippingCases": 0,
+    "wrongActionCases": 0,
+    "contrastFailureCases": 0,
+    "axeFailureCases": 0,
+    "differentPixels": 0,
+    "surfaceReplayFailures": 0,
+    "physicsReplayFailures": 0,
+    "totalRecapturedPixels": 162113532,
+    "minimumActualNormalTextContrast": 5.307726131495529,
+    "summarySHA256": "e6970fce218248ce871789182814a49e6af4dd6116faf51b0633adeabba0514e"
+  },
+  "experiments": {
+    "resultSHA256": "4b2f40b88d401672ab347100559c7a0144c90697c9da9e973745d50b49b1d070",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "status": "pass",
+        "failures": 0
+      },
+      {
+        "id": "H2",
+        "status": "pass",
+        "failures": 0
+      },
+      {
+        "id": "H3",
+        "status": "pass",
+        "failures": 0
+      },
+      {
+        "id": "H4",
+        "status": "pass",
+        "failures": 0
+      },
+      {
+        "id": "H5",
+        "status": "pass",
+        "failures": 0
+      },
+      {
+        "id": "H6",
+        "status": "pending",
+        "failures": 0
+      },
+      {
+        "id": "H7",
+        "status": "pass",
+        "failures": 0
+      }
+    ]
+  },
+  "fixtureHashes": {
+    "nasa": "8af440b4a4c9cd64109f1a2cb0627add0a890ad2696caeb4b1307d17b3314470",
+    "restaurant": "f05cb6bdf8484c74bb8bd46f628ac4ba65f0a1045573d6f17b4ac811cbc131a1",
+    "github": "092d33dfe1af1f30e6a1a9a9bbe80541ad52cbb378c2ee2880f2b1728a86084e"
+  },
+  "runtime": {
+    "codeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+    "measuredAt": "2026-10-18T11:36:54.195Z",
+    "browser": "154.0.8037.57",
+    "scenario": "1440x900, observatory, seed7, normal motion, sound muted; concurrent cold build and matrix load",
+    "simulationTicks": 240,
+    "elapsedMs": 1064,
+    "semanticActionsBefore": 0,
+    "semanticActionsAfter": 0,
+    "fieldBefore": {
+      "background": "#faf9ff",
+      "surface": "#efecf9",
+      "text": "#16151b",
+      "muted": "#514d5c",
+      "accent": "#5a349c",
+      "accentText": "#ffffff",
+      "border": "#76708a"
+    },
+    "fieldAfter": {
+      "background": "#fbf9ff",
+      "surface": "#f0ecf8",
+      "text": "#17151b",
+      "muted": "#524d5c",
+      "accent": "#613098",
+      "accentText": "#ffffff",
+      "border": "#786f89"
+    },
+    "traceHash": "02d2735c",
+    "energy": 0.592792,
+    "pageErrors": []
+  },
+  "coldReconstruction": "artifacts/reports/reconstruction-7248a7daf455709286b772d8b4933042519aaa08.txt",
+  "acceptance": [
+    {
+      "criterion": "Fresh checkout installs/builds",
+      "status": "PASS",
+      "evidence": "artifacts/reports/reconstruction-7248a7daf455709286b772d8b4933042519aaa08.txt"
+    },
+    {
+      "criterion": "Useful app, URL box, fixtures and typed surfaces",
+      "status": "PASS",
+      "evidence": "apps/web/app/Studio.tsx; production browser API/fixture tests"
+    },
+    {
+      "criterion": "Safe public URL interpretation and fallback",
+      "status": "IMPLEMENTED; LIVE SUCCESS UNVERIFIED",
+      "evidence": "Exact HTTPS allowlist, pinned public DNS, redirects/limits tests; actual NASA TLS refused here; fallback browser-tested"
+    },
+    {
+      "criterion": "Six generative families, seed replay, six displays",
+      "status": "PASS",
+      "evidence": "36/36 production captures; 1000-seed experiment"
+    },
+    {
+      "criterion": "Standalone SDK libraries and tests",
+      "status": "PASS",
+      "evidence": "Seven packages, ESM/declarations, compiled SDK smoke with TypeScript stripping disabled"
+    },
+    {
+      "criterion": "Fixed-step event, color/motion/optional sound, no semantic auto-actions",
+      "status": "PASS IN TESTED SCOPE",
+      "evidence": "Deterministic dynamics, gesture/mute controls, eventful artifact replay, normal-motion runtime probe; acoustic output not measured"
+    },
+    {
+      "criterion": "NASA and restaurant evidence-grounded distinct intents",
+      "status": "PASS",
+      "evidence": "Also repository fixture; all local authored demonstrations, never live snapshots"
+    },
+    {
+      "criterion": "Come here local simulated companion and shared context",
+      "status": "PASS",
+      "evidence": "Explicit extractive simulation; no remote model service"
+    },
+    {
+      "criterion": "Artifact save/close/reopen/reload/reconstruction",
+      "status": "PASS",
+      "evidence": "Includes52-save ID regression, oversized-draft preservation, budget refusal with45 accepted of46 retained"
+    },
+    {
+      "criterion": "Screenshots/diffs, keyboard/a11y/interactions/negative controls",
+      "status": "PASS",
+      "evidence": "48/48 Playwright;36 manifests;0 different pixels; touch/200% text/dark controls; all three deliberate failures detected"
+    },
+    {
+      "criterion": "Cold reconstruction from source/fixtures/seeds/manifests",
+      "status": "PASS",
+      "evidence": "artifacts/reports/reconstruction-7248a7daf455709286b772d8b4933042519aaa08.txt; independent SHA-256 manifest replay"
+    },
+    {
+      "criterion": "Vercel production build/env/deploy documentation",
+      "status": "PASS FOR READINESS; NOT DEPLOYED",
+      "evidence": "Next15.5.28 production build; DEPLOYMENT.md; .env.example; no live URL"
+    },
+    {
+      "criterion": "SSRF/credentials/CSP/external mutation boundaries",
+      "status": "PASS IN IMPLEMENTED SCOPE",
+      "evidence": "No SSRF bypass found in reviews; frames/objects disallowed; no external mutation providers; per-process rate limits only"
+    },
+    {
+      "criterion": "Research H6 comparative visual-improvement experiment",
+      "status": "NOT IMPLEMENTED",
+      "evidence": "36 exact self-recaptures prove reproducibility; no prospective before/after aesthetic or reference-similarity improvement study"
+    }
+  ],
+  "publicDeployment": "NOT PERFORMED",
+  "push": {
+    "recordedAt": "2026-10-18T11:47:24.079Z",
+    "branch": "main",
+    "productCodeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+    "provider": "GitHub",
+    "account": "akadaan310",
+    "requestedRepository": "akadaan310/netscape-infinite",
+    "requestedVisibility": "private",
+    "authorizedByUser": true,
+    "status": "BLOCKED_REPOSITORY_CREATION_PERMISSION",
+    "attempts": [
+      {
+        "operation": "GraphQL createRepository through gh repo create",
+        "exitCode": 1,
+        "message": "Resource not accessible by integration"
+      },
+      {
+        "operation": "REST POST /user/repos",
+        "exitCode": 1,
+        "httpStatus": 403,
+        "message": "Resource not accessible by integration"
+      }
+    ],
+    "repositoryCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "nextStep": "Create empty repository and grant connected integration access, then provide its URL. Product and evidence are ready on local main."
+  }
+}

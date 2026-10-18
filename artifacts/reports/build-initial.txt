@@ -1,0 +1,56 @@
+
+> netscape-infinite@0.1.0 build
+> npm run build:sdk && npm run build -w @netscape/web
+
+
+> netscape-infinite@0.1.0 build:sdk
+> tsx scripts/build-sdk.ts
+
+Built @netscape/core (ESM + declarations)
+Built @netscape/chromatics (ESM + declarations)
+Built @netscape/dynamics (ESM + declarations)
+Built @netscape/resource-interpreter (ESM + declarations)
+Built @netscape/performers (ESM + declarations)
+Built @netscape/conformance (ESM + declarations)
+Built @netscape/render-react (ESM + declarations)
+
+> @netscape/web@0.1.0 prebuild
+> tsx ../../scripts/sync-fixtures.ts
+
+Synchronized three authored fixtures with independent SHA-256 identities
+
+> @netscape/web@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.5.28
+   - Experiments (use with caution):
+     · cpus: 2
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 5.1s
+   Linting and checking validity of types ...
+Failed to compile.
+
+./app/Studio.tsx:21:86
+Type error: Expected 1 arguments, but got 0.
+
+[0m [90m 19 |[39m  [36mconst[39m [selectedId[33m,[39msetSelectedId][33m=[39museState[33m<[39m[33mstring[39m[33m>[39m()[33m,[39m[passageLabel[33m,[39msetPassageLabel][33m=[39museState([32m''[39m)[33m,[39m[attached[33m,[39msetAttached][33m=[39museState([36mfalse[39m)[33m,[39m[artifacts[33m,[39msetArtifacts][33m=[39museState[33m<[39m[33mSavedArtifact[39m[][33m>[39m([])[33m,[39m[closed[33m,[39msetClosed][33m=[39museState[33m<[39m[33mstring[39m[][33m>[39m([])[33m,[39m[hydrated[33m,[39msetHydrated][33m=[39museState([36mfalse[39m)[33m;[39m
+ [90m 20 |[39m  [36mconst[39m [sound[33m,[39msetSound][33m=[39museState([36mfalse[39m)[33m,[39m[semanticActionCount[33m,[39msetSemanticActionCount][33m=[39museState([35m0[39m)[33m,[39m[revision[33m,[39msetRevision][33m=[39museState([35m0[39m)[33m,[39m[zoom[33m,[39msetZoom][33m=[39museState([35m1[39m)[33m;[39m
+[31m[1m>[22m[39m[90m 21 |[39m  [36mconst[39m canvas[33m=[39museRef[33m<[39m[33mHTMLDivElement[39m[33m>[39m([36mnull[39m)[33m,[39mprobe[33m=[39museRef[33m<[39m[33mHTMLSpanElement[39m[33m>[39m([36mnull[39m)[33m,[39mworld[33m=[39museRef[33m<[39m[33mWorld[39m[33m>[39m()[33m,[39meventCount[33m=[39museRef([35m0[39m)[33m,[39manimation[33m=[39museRef[33m<[39m[33mnumber[39m[33m>[39m()[33m,[39maudio[33m=[39museRef[33m<[39m[33mAudioContext[39m[33m>[39m()[33m;[39m
+ [90m    |[39m                                                                                      [31m[1m^[22m[39m
+ [90m 22 |[39m  [36mconst[39m [display[33m,[39msetDisplay][33m=[39museState[33m<[39m[33mDisplay[39m[33m>[39m({width[33m:[39m[35m800[39m[33m,[39mheight[33m:[39m[35m700[39m[33m,[39mdpr[33m:[39m[35m1[39m[33m,[39minput[33m:[39m[[32m'keyboard'[39m[33m,[39m[32m'pointer'[39m][33m,[39mreducedMotion[33m:[39m[36mtrue[39m[33m,[39mcolorScheme[33m:[39m[32m'light'[39m})[33m;[39m
+ [90m 23 |[39m  [36mconst[39m selection[33m=[39mgraph[33m.[39mnodes[33m.[39mfind(n[33m=>[39mn[33m.[39mid[33m===[39mselectedId[33m&&[39mn[33m.[39mkind[33m===[39m[32m'Text'[39m)[33m;[39m
+ [90m 24 |[39m  [90m// A measured font scale reduces the logical canvas before scaling it back. The[39m[0m
+Next.js build worker exited with code: 1 and signal: null
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path /workspace/netscape-infinite/apps/web
+npm error workspace @netscape/web@0.1.0
+npm error location /workspace/netscape-infinite/apps/web
+npm error command failed
+npm error command sh -c next build

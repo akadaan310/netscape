@@ -1,0 +1,142 @@
+Checkpoint: 992333068e2f5145ab1d26485409826a1d3b59a7
+Clean export: /tmp/netscape-reconstruction.dgHpmO
+v24.19.0
+11.9.0
+
+added 100 packages in 9s
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ bounded artifact shelf keeps unique IDs and valid cold replay after52 saves of the same passage (82.044522ms)
+✔ OKLCH reference colors and chroma-bisection gamut mapping (8.045333ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.475107ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (34.218807ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.33494ms)
+✔ independent geometric oracle catches clipping, overlap and narrow targets (2.015829ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.372928ms)
+✔ all constitutional clauses have separate enforcement revision (0.167294ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.326862ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (24.140011ms)
+✔ replay binds complete graph and every manifest field and detaches mutable source values (5.136557ms)
+✔ workspace type guard rejects corrupt optional and nested JSON shapes without throwing (0.356107ms)
+✔ metadata must equal regeneration even after ordinary integrity digest is recomputed (4.62856ms)
+✔ real dynamics replay and inferred source evidence survive serialization and reject corruption (10.674266ms)
+✔ manifest replay preserves every safe integer seed accepted by core (3.472047ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (2.288596ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (1.989916ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (2.611918ms)
+✔ six wide compositions have distinct actual geometry and structural topology (12.416538ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (12.412485ms)
+✔ long text expands region height and malformed display/seed are rejected (7.809039ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (24.64182ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.38572ms)
+✔ runtime graph boundary requires safe identity and executable role/action compatibility (0.940362ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (5.98936ms)
+✔ spring energy damps and the graph field diffuses without new extrema (5.965466ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (272.977392ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.494235ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (1.047816ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.71115ms)
+✔ serialized world manifests replay processed and future events with exact fields and trace (2.878464ms)
+✔ replay rejects tampered trace, version, inputs and oversized persistence workloads (124.568201ms)
+✔ independent contrast oracle matches published boundary examples and rejects invalid colors (1.375599ms)
+✔ independent surface audit catches isolated clipping, overlap, missing actions and order corruptions (44.121677ms)
+✔ cold manifest replay uses independent cryptographic fixture, graph and output identities (12.060033ms)
+✔ structural equivalence ignores seed/hash/subpixel noise yet detects a changed composition (7.776802ms)
+✔ Pareto ranking preserves incomparable and duplicate metric vectors without a beauty scalar (0.682531ms)
+✔ registered amendment retains original SHA identity and exact mission viewport coverage (1.725994ms)
+✔ capability pack exposes twenty real metadata-rich operations (1.109828ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (6.216987ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (2.567055ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (1.680426ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.469604ms)
+✔ postconditions and output schemas reject dishonest performers (0.461716ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.50198ms)
+✔ external reading has no default network implementation and validates injected result (0.800441ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.55302ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.399082ms)
+✔ artifact storage cannot return a different artifact identity (0.890048ms)
+✔ capabilities require explicit own functions and isolate declared names with no prototype (0.888523ms)
+✔ adapter renders untrusted content as text and never activates unsafe URL (15.137162ms)
+✔ adapter exposes typed passage action and stable semantic identity (1.648225ms)
+✔ fixture API returns evidence and explicit authored source notice offline (9.684885ms)
+✔ request service rejects ambiguity and unsafe URL before invoking transport (0.634004ms)
+✔ public read succeeds through real interpreter and refused resource offers safe fallback (1.38295ms)
+✔ rate limiter bounds a process budget and resets at window boundary (0.287738ms)
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (15.247299ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.42812ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (150.668011ms)
+✔ each extracted passage exposes a local typed selection action (0.325536ms)
+✔ sources without passages do not advertise unreachable passage-based capabilities (1.061191ms)
+✔ overlong source URLs reject clearly and overlong links never enter the graph (1.649848ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (5.229851ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (7.226235ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (2.418725ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (2.286351ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (2.713562ms)
+✔ timeouts bound DNS and response work (39.851708ms)
+✔ public fetch rejects URLs beyond the semantic graph URL bound (0.624848ms)
+ℹ tests 69
+ℹ suites 0
+ℹ pass 69
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1642.94426
+
+> netscape-infinite@0.1.0 typecheck
+> tsc --noEmit && tsc --noEmit -p apps/web/tsconfig.json
+
+
+> netscape-infinite@0.1.0 build
+> npm run build:sdk && npm run build -w @netscape/web
+
+
+> netscape-infinite@0.1.0 build:sdk
+> tsx scripts/build-sdk.ts
+
+Built @netscape/core (ESM + declarations)
+Built @netscape/chromatics (ESM + declarations)
+Built @netscape/dynamics (ESM + declarations)
+Built @netscape/resource-interpreter (ESM + declarations)
+Built @netscape/performers (ESM + declarations)
+Built @netscape/conformance (ESM + declarations)
+Built @netscape/render-react (ESM + declarations)
+
+> @netscape/web@0.1.0 prebuild
+> tsx ../../scripts/sync-fixtures.ts
+
+Synchronized three authored fixtures with independent SHA-256 identities
+
+> @netscape/web@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.28
+   - Experiments (use with caution):
+     · cpus: 2
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 7.5s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                    22.3 kB         125 kB
+├ ○ /_not-found                            988 B         104 kB
+└ ƒ /api/interpret                         121 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/18-8a0e9dadb94224f5.js        46.6 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js  54.2 kB
+  └ other shared chunks (total)           1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+COLD_RECONSTRUCTION_PASS 992333068e2f5145ab1d26485409826a1d3b59a7

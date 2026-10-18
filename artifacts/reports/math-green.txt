@@ -1,0 +1,18 @@
+✔ OKLCH reference colors and chroma-bisection gamut mapping (5.420859ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.379001ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (21.207632ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.344697ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (6.044393ms)
+✔ spring energy damps and the graph field diffuses without new extrema (8.436143ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (217.290352ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.646249ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (0.848444ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.503503ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 476.109498

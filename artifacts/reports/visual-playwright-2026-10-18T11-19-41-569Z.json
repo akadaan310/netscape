@@ -1,0 +1,369 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/netscape-infinite/node_modules/.bin/playwright",
+      "test",
+      "tests/e2e/functional.spec.ts",
+      "--list"
+    ],
+    "configFile": "/workspace/netscape-infinite/playwright.config.ts",
+    "rootDir": "/workspace/netscape-infinite/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-19-41-569Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "negative-controls",
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-19-41-569Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-19-41-569Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "snapshotDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "deviceScaleFactor": 1,
+          "reducedMotion": "reduce",
+          "colorScheme": "light",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--font-render-hinting=none"
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "negative-controls"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-19-41-569Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "chromium",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "snapshotDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": {},
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "deviceScaleFactor": 1,
+          "reducedMotion": "reduce",
+          "colorScheme": "light",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--font-render-hinting=none"
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [
+          "negative-controls"
+        ],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "artifacts/browser-report/2026-10-18T11-19-41-569Z",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/reports/visual-playwright-2026-10-18T11-19-41-569Z.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm start",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "negative-controls.spec.ts",
+      "file": "negative-controls.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "negative controls independently detect clipping, contrast and wrong actions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "negative-controls",
+              "projectName": "negative-controls",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8bd69a97dc5ebf0e8b13-bf598eef67886f5b4c00",
+          "file": "negative-controls.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "functional.spec.ts",
+      "file": "functional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "local fixtures and protected interpreter API report evidence and reject unsafe URLs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-4c62e60d7ff79668dbe4",
+          "file": "functional.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "selection, local companion and cited artifact survive close, reopen and cold reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-236d61297a047bd305c3",
+          "file": "functional.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "seed and family controls replay; playful event never invokes semantic actions; sound requires gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-7ac602dd11918cc611d0",
+          "file": "functional.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "keyboard-only passage and context flow, mobile touch, and 200 percent text stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-0fbb77ce18f32094738f",
+          "file": "functional.spec.ts",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "manifest export is an actual downloadable reconstruction record",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-875cc365aa10bc2b117f",
+          "file": "functional.spec.ts",
+          "line": 136,
+          "column": 1
+        },
+        {
+          "title": "eventful artifact reconstruction restores the exact physics trace after cold reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-3c4819d1d210511197a7",
+          "file": "functional.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "corrupted and obsolete local workspaces recover visibly without restoring unsafe state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-4ceda820c655b2bc5186",
+          "file": "functional.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "dark reading canvas preserves source capabilities and passes actual contrast and accessibility",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-570314945fd133c5d6fc",
+          "file": "functional.spec.ts",
+          "line": 189,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T11:19:41.573Z",
+    "duration": 498.538,
+    "expected": 0,
+    "skipped": 9,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

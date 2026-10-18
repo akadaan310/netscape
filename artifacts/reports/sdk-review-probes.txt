@@ -1,0 +1,16 @@
+containment depth 47 {"errors":[],"hash":"6b2733e1b755805d"}
+containment depth 48 {"errors":[],"hash":"dbcd5529291755e5"}
+containment depth 49 {"errors":[],"hash":"664bd90e1d99699a"}
+containment depth 50 {"errors":[],"hash":"c880d820c559f75c"}
+containment depth 60 {"errors":[],"hash":"f49e5dc05e5d46ac"}
+containment depth 1000 THREW Error: Invalid semantic graph: Graph must have 1..1000 nodes
+replay semantic URL mutation {"replayed":true,"changedURL":"https://evil.example/phishing"}
+replay unsupported fields {"replayed":true}
+missing external action target {"errors":[],"required":true,"renderedAction":false}
+workspace invalid optional shapes true
+workspace rejects canonical invalid artifact? THREW Error: Canonical value exceeds depth 100
+forged pure trace {"valid":true,"errors":[],"output":"invented"}
+inherited-capability-type function
+missing capability accepted
+render blocked role actions [{"kind":"Resource","errors":[],"required":true,"renderedAction":false},{"kind":"Section","errors":[],"required":true,"renderedAction":false},{"kind":"Group","errors":[],"required":true,"renderedAction":false},{"kind":"Form","errors":[],"required":true,"renderedAction":false}]
+invalid graph version/source/provenance accepted []

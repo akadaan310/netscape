@@ -1,6 +1,6 @@
 # SDK contracts · v1
 
-The numbered mission files are normative. Local implementation and local commits are authorized. No public deployment, push, or third-party mutation is authorized. All packages are ESM TypeScript, independent of Next.js; only render-react depends on React. Source-first workspace exports; `build:sdk` also emits bundled ESM and declarations to each package's dist directory. Tests use Node's test runner through tsx. Never edit another worker's module.
+The numbered mission files are normative. Local implementation and commits are authorized. The user subsequently explicitly authorized creating a GitHub repository and pushing delivery to main. Public deployment is not requested; unrelated third-party mutations remain outside scope. All packages are ESM TypeScript, independent of Next.js; only render-react depends on React. Source-first workspace exports; `build:sdk` also emits bundled ESM and declarations to each package's dist directory. Tests use Node's test runner through tsx. Never edit another worker's module.
 
 ## Core (`@netscape/core`)
 

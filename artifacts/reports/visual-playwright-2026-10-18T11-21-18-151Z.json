@@ -1,0 +1,1145 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/netscape-infinite/node_modules/.bin/playwright",
+      "test",
+      "--list"
+    ],
+    "configFile": "/workspace/netscape-infinite/playwright.config.ts",
+    "rootDir": "/workspace/netscape-infinite/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-21-18-151Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "negative-controls",
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-21-18-151Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-21-18-151Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "snapshotDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "deviceScaleFactor": 1,
+          "reducedMotion": "reduce",
+          "colorScheme": "light",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--font-render-hinting=none"
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "negative-controls"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-21-18-151Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "chromium",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "snapshotDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": {},
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "deviceScaleFactor": 1,
+          "reducedMotion": "reduce",
+          "colorScheme": "light",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--font-render-hinting=none"
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [
+          "negative-controls"
+        ],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "artifacts/browser-report/2026-10-18T11-21-18-151Z",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/reports/visual-playwright-2026-10-18T11-21-18-151Z.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm start",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "negative-controls.spec.ts",
+      "file": "negative-controls.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "negative controls independently detect clipping, contrast and wrong actions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "negative-controls",
+              "projectName": "negative-controls",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8bd69a97dc5ebf0e8b13-bf598eef67886f5b4c00",
+          "file": "negative-controls.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "functional.spec.ts",
+      "file": "functional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "local fixtures and protected interpreter API report evidence and reject unsafe URLs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-4c62e60d7ff79668dbe4",
+          "file": "functional.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "selection, local companion and cited artifact survive close, reopen and cold reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-236d61297a047bd305c3",
+          "file": "functional.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "seed and family controls replay; playful event never invokes semantic actions; sound requires gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-7ac602dd11918cc611d0",
+          "file": "functional.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "keyboard-only passage and context flow, mobile touch, and 200 percent text stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-0fbb77ce18f32094738f",
+          "file": "functional.spec.ts",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "manifest export is an actual downloadable reconstruction record",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-875cc365aa10bc2b117f",
+          "file": "functional.spec.ts",
+          "line": 136,
+          "column": 1
+        },
+        {
+          "title": "eventful artifact reconstruction restores the exact physics trace after cold reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-3c4819d1d210511197a7",
+          "file": "functional.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "corrupted and obsolete local workspaces recover visibly without restoring unsafe state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-4ceda820c655b2bc5186",
+          "file": "functional.spec.ts",
+          "line": 173,
+          "column": 1
+        },
+        {
+          "title": "dark reading canvas preserves source capabilities and passes actual contrast and accessibility",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "011e9001526c2e3d879a-570314945fd133c5d6fc",
+          "file": "functional.spec.ts",
+          "line": 189,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "320x568",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-910fd2a8ba25b1f11c46",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-85f0b54d6c25ad243fbf",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-f1fddf1bc0e2812db540",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-8a14783446b3645a5ac9",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-dad837e0cc1aa197649a",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-c98f0ec2274223ccaa34",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "390x844",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-b42d88b1c1f717912cb7",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-a340b7deda32db9c240a",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-db2a292b69bd03eac9b1",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-9ceba7ff7d551810947b",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-66fefbb9abc9287f6bc8",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-7dcc239d22c7d86e793d",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "768x1024",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-8a4c0417f626102bb6b2",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-dcbae4ce60e050659e78",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-88c2660929fdc01e03b9",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-cefca2d0e985e1f568f9",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-4936df6ad10af6789472",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-448ad065549ede5e40f2",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "900x390",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-05421123296302cfa00d",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-9086c1c1c04d70a6e564",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-65e844ce5aeb163e50a9",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-0d167c0ca78611acff89",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-2495e0ea5218f18bef60",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-349844fc069c7bb22e5b",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "1440x900",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-1e107dd68628a3daf787",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-12fd9e6c9a9db02ab09b",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-6e0ff2e4845eaee22a2d",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-f20ea81892cdafdccb5d",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-d9d2e77300bee07f4957",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-a7ac6dcdf1942eb50a6e",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "1920x1080",
+          "file": "visual.spec.ts",
+          "line": 35,
+          "column": 8,
+          "specs": [
+            {
+              "title": "observatory retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-9af9d579ed4249f0edf6",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "orbital retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-c24845c6576ce317f4f7",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "elastic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-4ffa97d63897560b9b9b",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "folded retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-e7f48f0f91b2eae148f6",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "workbench retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-6269ad64ea92e54915ac",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "chromatic retains semantics, accessibility and exact replay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-774cedaa52fb4164c64f",
+              "file": "visual.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T11:21:18.155Z",
+    "duration": 301.02599999999995,
+    "expected": 0,
+    "skipped": 45,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

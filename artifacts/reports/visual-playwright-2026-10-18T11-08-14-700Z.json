@@ -1,0 +1,188 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/netscape-infinite/node_modules/.bin/playwright",
+      "test",
+      "--project=negative-controls"
+    ],
+    "configFile": "/workspace/netscape-infinite/playwright.config.ts",
+    "rootDir": "/workspace/netscape-infinite/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-08-14-700Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "negative-controls",
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-08-14-700Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [
+          "/negative-controls\\.spec\\.ts/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/netscape-infinite/artifacts/browser/2026-10-18T11-08-14-700Z",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "negative-controls",
+        "testDir": "/workspace/netscape-infinite/tests/e2e",
+        "snapshotDir": "/workspace/netscape-infinite/tests/e2e",
+        "testIgnore": [],
+        "testMatch": {},
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3000",
+          "locale": "en-US",
+          "timezoneId": "UTC",
+          "deviceScaleFactor": 1,
+          "reducedMotion": "reduce",
+          "colorScheme": "light",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--font-render-hinting=none"
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "negative-controls"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "artifacts/browser-report/2026-10-18T11-08-14-700Z",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/reports/visual-playwright-2026-10-18T11-08-14-700Z.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "negative-controls.spec.ts",
+      "file": "negative-controls.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "negative controls independently detect clipping, contrast and wrong actions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "negative-controls",
+              "projectName": "negative-controls",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T11:08:15.298Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "negative-control-evidence",
+                      "contentType": "application/json",
+                      "body": "ewogICJhdWRpdCI6IHsKICAgICJ2aWV3cG9ydCI6IHsKICAgICAgIndpZHRoIjogMzIwLAogICAgICAiaGVpZ2h0IjogNTY4LAogICAgICAiZHByIjogMQogICAgfSwKICAgICJyZWdpb25zIjogW10sCiAgICAiYWN0aW9ucyI6IFsKICAgICAgewogICAgICAgICJpZCI6ICJzYXZlIiwKICAgICAgICAiYWN0aW9uIjogIm9wZW4tZXh0ZXJuYWwiLAogICAgICAgICJ0YWciOiAiQlVUVE9OIiwKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA2OCwKICAgICAgICAid2lkdGgiOiAxMDAsCiAgICAgICAgImhlaWdodCI6IDQ0CiAgICAgIH0KICAgIF0sCiAgICAiY2xpcHBpbmciOiBbCiAgICAgICJkb2N1bWVudCBvdmVyZmxvdzogNDAwID4gMzIwIiwKICAgICAgIkRJVjogb3V0c2lkZSBob3Jpem9udGFsIHZpZXdwb3J0IgogICAgXSwKICAgICJjb250cmFzdCI6IFsKICAgICAgewogICAgICAgICJ0YWciOiAiUCIsCiAgICAgICAgInRleHQiOiAiSW50ZW50aW9uYWxseSB1bnJlYWRhYmxlIHRleHQiLAogICAgICAgICJmb3JlZ3JvdW5kIjogInJnYigyMzgsIDIzOCwgMjM4KSIsCiAgICAgICAgImJhY2tncm91bmQiOiBbCiAgICAgICAgICAyNTUsCiAgICAgICAgICAyNTUsCiAgICAgICAgICAyNTUKICAgICAgICBdLAogICAgICAgICJyYXRpbyI6IDEuMTYwMjMwNDcxMDI3MDczOSwKICAgICAgICAibWluIjogNC41CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAidGFnIjogIkJVVFRPTiIsCiAgICAgICAgInRleHQiOiAiV3JvbmcgYWN0aW9uIiwKICAgICAgICAiZm9yZWdyb3VuZCI6ICJyZ2IoMCwgMCwgMCkiLAogICAgICAgICJiYWNrZ3JvdW5kIjogWwogICAgICAgICAgMjM5LAogICAgICAgICAgMjM5LAogICAgICAgICAgMjM5CiAgICAgICAgXSwKICAgICAgICAicmF0aW8iOiAxOC4yNjMxNDQyNjkwODIwNDQsCiAgICAgICAgIm1pbiI6IDQuNQogICAgICB9CiAgICBdLAogICAgImNvbnRyYXN0RmFpbHVyZXMiOiBbCiAgICAgIHsKICAgICAgICAidGFnIjogIlAiLAogICAgICAgICJ0ZXh0IjogIkludGVudGlvbmFsbHkgdW5yZWFkYWJsZSB0ZXh0IiwKICAgICAgICAiZm9yZWdyb3VuZCI6ICJyZ2IoMjM4LCAyMzgsIDIzOCkiLAogICAgICAgICJiYWNrZ3JvdW5kIjogWwogICAgICAgICAgMjU1LAogICAgICAgICAgMjU1LAogICAgICAgICAgMjU1CiAgICAgICAgXSwKICAgICAgICAicmF0aW8iOiAxLjE2MDIzMDQ3MTAyNzA3MzksCiAgICAgICAgIm1pbiI6IDQuNQogICAgICB9CiAgICBdCiAgfSwKICAiZXJyb3JzIjogWwogICAgInNhdmU6IHdyb25nIGFjdGlvbiBvcGVuLWV4dGVybmFsLCBleHBlY3RlZCBzYXZlLWFydGlmYWN0IgogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8bd69a97dc5ebf0e8b13-bf598eef67886f5b4c00",
+          "file": "negative-controls.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T11:08:14.704Z",
+    "duration": 1409.884,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

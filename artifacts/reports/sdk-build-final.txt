@@ -1,0 +1,11 @@
+
+> netscape-infinite@0.1.0 build:sdk
+> tsx scripts/build-sdk.ts
+
+Built @netscape/core (ESM + declarations)
+Built @netscape/chromatics (ESM + declarations)
+Built @netscape/dynamics (ESM + declarations)
+Built @netscape/resource-interpreter (ESM + declarations)
+Built @netscape/performers (ESM + declarations)
+Built @netscape/conformance (ESM + declarations)
+Built @netscape/render-react (ESM + declarations)

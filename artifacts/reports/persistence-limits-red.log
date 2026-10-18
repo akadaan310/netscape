@@ -1,0 +1,139 @@
+
+Running 4 tests using 1 worker
+
+(node:21433) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [negative-controls] › tests/e2e/negative-controls.spec.ts:4:1 › negative controls independently detect clipping, contrast and wrong actions (564ms)
+(node:21565) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/e2e/persistence-limits.spec.ts:7:1 › an oversized source draft cannot erase a cited artifact on reload (14.6s)
+(node:21720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › tests/e2e/persistence-limits.spec.ts:21:1 › 46 eventful saves preserve the exact accepted shelf across cold reload (23.4s)
+(node:21928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › tests/e2e/persistence-limits.spec.ts:36:1 › replaying NASA after Restaurant restores the fixture selection (13.7s)
+
+
+  1) [chromium] › tests/e2e/persistence-limits.spec.ts:7:1 › an oversized source draft cannot erase a cited artifact on reload 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('artifact-card')
+    Expected: 1
+    Received: 0
+    Timeout:  12000ms
+
+    Call log:
+      - Expect "toHaveCount" getByTestId('artifact-card') with timeout 12000ms
+      - waiting for getByTestId('artifact-card')
+        28 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      15 |   await testInfo.attach('before-reload',{body:JSON.stringify(before,null,2),contentType:'application/json'});
+      16 |   await page.goto('/');await ready(page);
+    > 17 |   await expect(page.getByTestId('artifact-card')).toHaveCount(1);
+         |                                                   ^
+      18 |   expect((await stored(page)).resource).toBe(committed);
+      19 | });
+      20 |
+        at /workspace/netscape-infinite/tests/e2e/persistence-limits.spec.ts:17:51
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/browser/persistence-limits-red-20261018/persistence-limits-an-over-7d074--a-cited-artifact-on-reload-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/e2e/persistence-limits.spec.ts:21:1 › 46 eventful saves preserve the exact accepted shelf across cold reload 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByTestId('artifact-card')
+    Expected: 46
+    Received: 0
+    Timeout:  12000ms
+
+    Call log:
+      - Expect "toHaveCount" getByTestId('artifact-card') with timeout 12000ms
+      - waiting for getByTestId('artifact-card')
+        28 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      30 |   await testInfo.attach('before-reload',{body:JSON.stringify({count,stored:await stored(page)},null,2),contentType:'application/json'});
+      31 |   await page.goto('/');await ready(page);
+    > 32 |   await expect(page.getByTestId('artifact-card')).toHaveCount(count);
+         |                                                   ^
+      33 |   expect((await stored(page)).artifacts).toHaveLength(count);
+      34 | });
+      35 |
+        at /workspace/netscape-infinite/tests/e2e/persistence-limits.spec.ts:32:51
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/browser/persistence-limits-red-20261018/persistence-limits-46-even-3f4b2-ed-shelf-across-cold-reload-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests/e2e/persistence-limits.spec.ts:36:1 › replaying NASA after Restaurant restores the fixture selection 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('fixture-restaurant')
+    Expected: "false"
+    Received: "true"
+    Timeout:  12000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByTestId('fixture-restaurant') with timeout 12000ms
+      - waiting for getByTestId('fixture-restaurant')
+        28 × locator resolved to <button type="button" aria-pressed="true" data-testid="fixture-restaurant">…</button>
+           - unexpected value "true"
+
+
+      42 |   await page.getByRole('button',{name:'Replay source'}).click();
+      43 |   expect((await ready(page)).graph.title).toMatch(/Worlds beyond our Sun/);
+    > 44 |   await expect(page.getByTestId('fixture-restaurant')).toHaveAttribute('aria-pressed','false');
+         |                                                        ^
+      45 |   await expect(page.getByTestId('fixture-nasa')).toHaveAttribute('aria-pressed','true');
+      46 | });
+      47 |
+        at /workspace/netscape-infinite/tests/e2e/persistence-limits.spec.ts:44:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/browser/persistence-limits-red-20261018/persistence-limits-replayi-cd12e-tores-the-fixture-selection-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › tests/e2e/persistence-limits.spec.ts:7:1 › an oversized source draft cannot erase a cited artifact on reload 
+    [chromium] › tests/e2e/persistence-limits.spec.ts:21:1 › 46 eventful saves preserve the exact accepted shelf across cold reload 
+    [chromium] › tests/e2e/persistence-limits.spec.ts:36:1 › replaying NASA after Restaurant restores the fixture selection 
+  1 passed (57.5s)

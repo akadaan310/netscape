@@ -1,0 +1,58 @@
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ OKLCH reference colors and chroma-bisection gamut mapping (7.454067ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.527414ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (30.169433ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.408248ms)
+✔ independent geometric oracle catches clipping, overlap and narrow targets (1.583997ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.271414ms)
+✔ all constitutional clauses have separate enforcement revision (0.214845ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.217638ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (13.245695ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (3.08996ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (2.354628ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (3.563356ms)
+✔ six wide compositions have distinct actual geometry and structural topology (10.999137ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (26.896138ms)
+✔ long text expands region height and malformed display/seed are rejected (13.843988ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (26.990723ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.515752ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (8.988433ms)
+✔ spring energy damps and the graph field diffuses without new extrema (6.968395ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (330.443231ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.417676ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (0.704353ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.560454ms)
+✔ capability pack exposes twenty real metadata-rich operations (4.030948ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (11.045612ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (5.018589ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (3.232236ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.734892ms)
+✔ postconditions and output schemas reject dishonest performers (0.774689ms)
+✔ local save uses an explicitly injected capability and replay records actual output (2.154896ms)
+✔ external reading has no default network implementation and validates injected result (1.248453ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (1.072354ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.557039ms)
+✔ artifact storage cannot return a different artifact identity (1.104189ms)
+✔ adapter renders untrusted content as text and never activates unsafe URL (12.952421ms)
+✔ adapter exposes typed passage action and stable semantic identity (1.426209ms)
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (18.956249ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (3.20209ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (172.597827ms)
+✔ each extracted passage exposes a local typed selection action (0.364698ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (2.344114ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (7.175101ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (3.596274ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (2.89801ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (3.337465ms)
+✔ timeouts bound DNS and response work (41.173381ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 810.407061

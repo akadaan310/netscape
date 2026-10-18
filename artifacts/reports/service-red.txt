@@ -1,0 +1,69 @@
+✖ fixture API returns evidence and explicit authored source notice offline (2.005395ms)
+✔ request service rejects ambiguity and unsafe URL before invoking transport (0.272113ms)
+✖ public read succeeds through real interpreter and refused resource offers safe fallback (0.51485ms)
+✖ rate limiter bounds a process budget and resets at window boundary (0.329302ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 340.109063
+
+✖ failing tests:
+
+test at tests/resource-service.test.ts:4:1
+✖ fixture API returns evidence and explicit authored source notice offline (2.005395ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 200
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:6:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/resource-service.test.ts:16:1
+✖ public read succeeds through real interpreter and refused resource offers safe fallback (0.51485ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 200
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:18:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/resource-service.test.ts:23:1
+✖ rate limiter bounds a process budget and resets at window boundary (0.329302ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:24:105)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

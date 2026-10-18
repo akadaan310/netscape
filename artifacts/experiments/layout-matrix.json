@@ -1,0 +1,974 @@
+[
+  {
+    "family": "observatory",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "observatory",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 1802,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6742693303736589,
+      "legibility": 1,
+      "whitespace": 0.3257306696263411,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6742693303736589,
+      1,
+      1,
+      -0.02573066962634113,
+      0
+    ],
+    "paretoRank": 1
+  },
+  {
+    "family": "observatory",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 2644,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6276475037821483,
+      "legibility": 0.7125,
+      "whitespace": 0.3723524962178517,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6276475037821483,
+      0.7125,
+      1,
+      -0.07235249621785173,
+      0
+    ],
+    "paretoRank": 5
+  },
+  {
+    "family": "observatory",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "observatory",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 2336,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6372336377473363,
+      "legibility": 0.85,
+      "whitespace": 0.3627663622526637,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6372336377473363,
+      0.85,
+      1,
+      -0.06276636225266369,
+      0
+    ],
+    "paretoRank": 4
+  },
+  {
+    "family": "observatory",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 1560,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.7187259615384616,
+      "legibility": 1,
+      "whitespace": 0.2812740384615384,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.7187259615384616,
+      1,
+      1,
+      -0.018725961538461566,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "orbital",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "orbital",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 2782.5,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.38789657582110415,
+      "legibility": 1,
+      "whitespace": 0.6121034241788958,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.38789657582110415,
+      1,
+      1,
+      -0.31210342417889586,
+      0
+    ],
+    "paretoRank": 6
+  },
+  {
+    "family": "orbital",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 4915.65,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.3521177260382656,
+      "legibility": 0.8324999999999999,
+      "whitespace": 0.6478822739617345,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.3521177260382656,
+      0.8324999999999999,
+      1,
+      -0.3478822739617345,
+      0
+    ],
+    "paretoRank": 8
+  },
+  {
+    "family": "orbital",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "orbital",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 4367.65,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.3568577763022832,
+      "legibility": 0.985125,
+      "whitespace": 0.6431422236977168,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.3568577763022832,
+      0.985125,
+      1,
+      -0.3431422236977168,
+      0
+    ],
+    "paretoRank": 7
+  },
+  {
+    "family": "orbital",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 2782.5,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.3054776879305181,
+      "legibility": 1,
+      "whitespace": 0.6945223120694819,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.3054776879305181,
+      1,
+      1,
+      -0.3945223120694819,
+      0
+    ],
+    "paretoRank": 7
+  },
+  {
+    "family": "elastic",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "elastic",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 1928,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8522560295643153,
+      "legibility": 1,
+      "whitespace": 0.14774397043568466,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8522560295643153,
+      1,
+      1,
+      -0.15225602956431533,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "elastic",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 2370,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8450855309423351,
+      "legibility": 0.8380000000000001,
+      "whitespace": 0.15491446905766493,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8450855309423351,
+      0.8380000000000001,
+      1,
+      -0.14508553094233506,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "elastic",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "elastic",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 2250,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.831548760493827,
+      "legibility": 0.9955937499999999,
+      "whitespace": 0.16845123950617302,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.831548760493827,
+      0.9955937499999999,
+      1,
+      -0.13154876049382697,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "elastic",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 1838,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8442341426369243,
+      "legibility": 1,
+      "whitespace": 0.1557658573630757,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8442341426369243,
+      1,
+      1,
+      -0.1442341426369243,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 3110,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8116345123258306,
+      "legibility": 1,
+      "whitespace": 0.18836548767416939,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8116345123258306,
+      1,
+      1,
+      -0.1116345123258306,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 3550,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.7393970070422535,
+      "legibility": 1,
+      "whitespace": 0.26060299295774647,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.7393970070422535,
+      1,
+      1,
+      -0.03939700704225352,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 3432,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.7621678321678321,
+      "legibility": 1,
+      "whitespace": 0.23783216783216787,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.7621678321678321,
+      1,
+      1,
+      -0.062167832167832116,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "folded",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 3032,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.832445580474934,
+      "legibility": 1,
+      "whitespace": 0.167554419525066,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.832445580474934,
+      1,
+      1,
+      -0.132445580474934,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "workbench",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "workbench",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 2656,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.45746736947791167,
+      "legibility": 1,
+      "whitespace": 0.5425326305220883,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.45746736947791167,
+      1,
+      1,
+      -0.24253263052208834,
+      0
+    ],
+    "paretoRank": 4
+  },
+  {
+    "family": "workbench",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 2962,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6465648210668468,
+      "legibility": 1,
+      "whitespace": 0.35343517893315324,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6465648210668468,
+      1,
+      1,
+      -0.05343517893315325,
+      0
+    ],
+    "paretoRank": 2
+  },
+  {
+    "family": "workbench",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "workbench",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 2758,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6395600676818951,
+      "legibility": 1,
+      "whitespace": 0.3604399323181049,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6395600676818951,
+      1,
+      1,
+      -0.060439932318104905,
+      0
+    ],
+    "paretoRank": 3
+  },
+  {
+    "family": "workbench",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 2494,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.4495639534883721,
+      "legibility": 1,
+      "whitespace": 0.5504360465116279,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.4495639534883721,
+      1,
+      1,
+      -0.25043604651162793,
+      0
+    ],
+    "paretoRank": 5
+  },
+  {
+    "family": "chromatic",
+    "display": "portrait",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "contentHeight": 4424,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.8174572263179858,
+      "legibility": 1,
+      "whitespace": 0.18254277368201421,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.8174572263179858,
+      1,
+      1,
+      -0.11745722631798577,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "chromatic",
+    "display": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "contentHeight": 2330,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6850298044825942,
+      "legibility": 1,
+      "whitespace": 0.3149701955174058,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6850298044825942,
+      1,
+      1,
+      -0.014970195517405804,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "chromatic",
+    "display": "tablet",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "contentHeight": 3306,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.587766560798548,
+      "legibility": 0.73125,
+      "whitespace": 0.41223343920145195,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.587766560798548,
+      0.73125,
+      1,
+      -0.11223343920145196,
+      0
+    ],
+    "paretoRank": 5
+  },
+  {
+    "family": "chromatic",
+    "display": "narrow",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "contentHeight": 5000,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.799,
+      "legibility": 0.85,
+      "whitespace": 0.20099999999999996,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.799,
+      0.85,
+      1,
+      -0.09900000000000003,
+      0
+    ],
+    "paretoRank": 0
+  },
+  {
+    "family": "chromatic",
+    "display": "landscape",
+    "viewport": {
+      "width": 900,
+      "height": 390
+    },
+    "contentHeight": 2890,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.6165474817377932,
+      "legibility": 0.86875,
+      "whitespace": 0.38345251826220683,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.6165474817377932,
+      0.86875,
+      1,
+      -0.08345251826220684,
+      0
+    ],
+    "paretoRank": 4
+  },
+  {
+    "family": "chromatic",
+    "display": "wide",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "contentHeight": 2034,
+    "scrollRequired": true,
+    "actionCount": 10,
+    "feasible": true,
+    "metrics": {
+      "compactness": 0.729950221238938,
+      "legibility": 1,
+      "whitespace": 0.27004977876106195,
+      "grouping": 1,
+      "motionEnergy": 0
+    },
+    "vector": [
+      0.729950221238938,
+      1,
+      1,
+      -0.029950221238938035,
+      0
+    ],
+    "paretoRank": 0
+  }
+]

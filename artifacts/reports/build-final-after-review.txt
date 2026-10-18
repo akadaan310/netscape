@@ -1,0 +1,50 @@
+
+> netscape-infinite@0.1.0 build
+> npm run build:sdk && npm run build -w @netscape/web
+
+
+> netscape-infinite@0.1.0 build:sdk
+> tsx scripts/build-sdk.ts
+
+Built @netscape/core (ESM + declarations)
+Built @netscape/chromatics (ESM + declarations)
+Built @netscape/dynamics (ESM + declarations)
+Built @netscape/resource-interpreter (ESM + declarations)
+Built @netscape/performers (ESM + declarations)
+Built @netscape/conformance (ESM + declarations)
+Built @netscape/render-react (ESM + declarations)
+
+> @netscape/web@0.1.0 prebuild
+> tsx ../../scripts/sync-fixtures.ts
+
+Synchronized three authored fixtures with independent SHA-256 identities
+
+> @netscape/web@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.28
+   - Experiments (use with caution):
+     · cpus: 2
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.9s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                    22.9 kB         126 kB
+├ ○ /_not-found                            988 B         104 kB
+└ ƒ /api/interpret                         121 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/18-8a0e9dadb94224f5.js        46.6 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js  54.2 kB
+  └ other shared chunks (total)           1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

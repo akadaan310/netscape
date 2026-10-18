@@ -1,0 +1,8 @@
+2026-10-18 synthetic graph: 1 Resource + 25 Text nodes, each 20 repetitions of "Long reading evidence. ", no edges; 1440x900 display; seeds 0..999, exact pairwise rectangle overlap check.
+observatory: 4 structural classes / 1000 seeds; no overlaps
+orbital: 2 structural classes / 1000 seeds; no overlaps
+elastic: 2 structural classes / 1000 seeds; no overlaps
+folded: 1 structural class / 1000 seeds; no overlaps
+workbench: 3 structural classes / 1000 seeds; no overlaps
+chromatic: 2 structural classes / 1000 seeds; no overlaps
+This is a stress observation, not the final fixture-based 1000-seed acceptance experiment. Folded variants collapse under the intentionally coarse structural equivalence metric.

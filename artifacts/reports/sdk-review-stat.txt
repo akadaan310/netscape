@@ -1,0 +1,20 @@
+ packages/chromatics/package.json           |   1 +
+ packages/chromatics/src/index.ts           |  80 +++++++
+ packages/conformance/package.json          |   1 +
+ packages/conformance/src/index.ts          |  70 ++++++
+ packages/core/package.json                 |   7 +
+ packages/core/src/deterministic.ts         |  30 +++
+ packages/core/src/graph.ts                 |  63 ++++++
+ packages/core/src/index.ts                 |   4 +
+ packages/core/src/layout.ts                | 125 ++++++++++
+ packages/core/src/types.ts                 |  14 ++
+ packages/dynamics/package.json             |   1 +
+ packages/dynamics/src/index.ts             | 127 +++++++++++
+ packages/performers/package.json           |   1 +
+ packages/performers/src/index.ts           | 351 +++++++++++++++++++++++++++++
+ packages/render-react/package.json         |   1 +
+ packages/render-react/src/index.tsx        |  26 +++
+ packages/resource-interpreter/package.json |   1 +
+ packages/resource-interpreter/src/fetch.ts | 110 +++++++++
+ packages/resource-interpreter/src/index.ts |  84 +++++++
+ 19 files changed, 1097 insertions(+)

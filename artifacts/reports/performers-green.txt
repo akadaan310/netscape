@@ -1,0 +1,19 @@
+✔ capability pack exposes twenty real metadata-rich operations (1.16731ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (5.455268ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (2.353436ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (1.474459ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.430965ms)
+✔ postconditions and output schemas reject dishonest performers (0.614465ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.371857ms)
+✔ external reading has no default network implementation and validates injected result (0.888695ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.631143ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.443614ms)
+✔ artifact storage cannot return a different artifact identity (0.825074ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 237.290269

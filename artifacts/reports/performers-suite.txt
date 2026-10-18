@@ -1,0 +1,124 @@
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ OKLCH reference colors and chroma-bisection gamut mapping (8.931871ms)
+✔ contrast oracle detects deliberately inaccessible controls (1.407506ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (32.674976ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.413703ms)
+✔ independent geometric oracle catches clipping, overlap and narrow targets (2.607821ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.459886ms)
+✔ all constitutional clauses have separate enforcement revision (0.306859ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.338146ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (17.619372ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (3.502934ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (4.290065ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (3.955681ms)
+✔ six wide compositions have distinct actual geometry and structural topology (14.210205ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (18.198953ms)
+✔ long text expands region height and malformed display/seed are rejected (9.82113ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (21.948639ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.475762ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (7.575633ms)
+✔ spring energy damps and the graph field diffuses without new extrema (8.733611ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (255.371367ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.686219ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (2.202729ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.872913ms)
+✔ independent contrast oracle matches published boundary examples and rejects invalid colors (1.156514ms)
+✔ independent surface audit catches isolated clipping, overlap, missing actions and order corruptions (21.443468ms)
+✔ cold manifest replay uses independent cryptographic fixture, graph and output identities (10.209275ms)
+✔ structural equivalence ignores seed/hash/subpixel noise yet detects a changed composition (10.514723ms)
+✔ Pareto ranking preserves incomparable and duplicate metric vectors without a beauty scalar (0.790622ms)
+✔ capability pack exposes twenty real metadata-rich operations (2.042712ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (7.327404ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (3.950147ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (1.611517ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.597394ms)
+✔ postconditions and output schemas reject dishonest performers (0.443311ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.665904ms)
+✔ external reading has no default network implementation and validates injected result (0.734887ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.99527ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.499419ms)
+✔ artifact storage cannot return a different artifact identity (0.9969ms)
+✔ adapter renders untrusted content as text and never activates unsafe URL (9.373615ms)
+✔ adapter exposes typed passage action and stable semantic identity (2.045879ms)
+✖ fixture API returns evidence and explicit authored source notice offline (2.679305ms)
+✔ request service rejects ambiguity and unsafe URL before invoking transport (0.389883ms)
+✖ public read succeeds through real interpreter and refused resource offers safe fallback (0.459389ms)
+✖ rate limiter bounds a process budget and resets at window boundary (0.503928ms)
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (19.675319ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.462954ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (151.018072ms)
+✔ each extracted passage exposes a local typed selection action (0.467811ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.556997ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (4.943005ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (1.779157ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (2.936082ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (5.515609ms)
+✔ timeouts bound DNS and response work (40.996132ms)
+ℹ tests 55
+ℹ suites 0
+ℹ pass 52
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 947.412796
+
+✖ failing tests:
+
+test at tests/resource-service.test.ts:4:1
+✖ fixture API returns evidence and explicit authored source notice offline (2.679305ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 200
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:6:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/resource-service.test.ts:16:1
+✖ public read succeeds through real interpreter and refused resource offers safe fallback (0.459389ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 200
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:18:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/resource-service.test.ts:23:1
+✖ rate limiter bounds a process budget and resets at window boundary (0.503928ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource-service.test.ts:24:105)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

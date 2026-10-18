@@ -1,0 +1,36 @@
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (15.627261ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.635713ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (155.293831ms)
+✔ each extracted passage exposes a local typed selection action (0.518734ms)
+✖ sources without passages do not advertise unreachable passage-based capabilities (5.221392ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 435.475872
+
+✖ failing tests:
+
+test at tests/resource.test.ts:58:1
+✖ sources without passages do not advertise unreachable passage-based capabilities (5.221392ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!graph.nodes.some(n=>n.supported&&['select-passage','attach-companion','save-artifact'].includes(n.action??'')))
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:62:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

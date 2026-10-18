@@ -1,0 +1,31 @@
+{
+  "codeCommit": "7248a7daf455709286b772d8b4933042519aaa08",
+  "measuredAt": "2026-10-18T11:36:54.195Z",
+  "browser": "154.0.8037.57",
+  "scenario": "1440x900, observatory, seed7, normal motion, sound muted; concurrent cold build and matrix load",
+  "simulationTicks": 240,
+  "elapsedMs": 1064,
+  "semanticActionsBefore": 0,
+  "semanticActionsAfter": 0,
+  "fieldBefore": {
+    "background": "#faf9ff",
+    "surface": "#efecf9",
+    "text": "#16151b",
+    "muted": "#514d5c",
+    "accent": "#5a349c",
+    "accentText": "#ffffff",
+    "border": "#76708a"
+  },
+  "fieldAfter": {
+    "background": "#fbf9ff",
+    "surface": "#f0ecf8",
+    "text": "#17151b",
+    "muted": "#524d5c",
+    "accent": "#613098",
+    "accentText": "#ffffff",
+    "border": "#786f89"
+  },
+  "traceHash": "02d2735c",
+  "energy": 0.592792,
+  "pageErrors": []
+}

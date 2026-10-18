@@ -1,0 +1,15 @@
+{
+  "file": "artifacts/reports/visual-summary-2026-10-18T11-36-08-439Z.json",
+  "observedCases": 36,
+  "passedCases": 36,
+  "totals": {
+    "feasibleCases": 36,
+    "clippingCases": 0,
+    "wrongActionCases": 0,
+    "contrastFailureCases": 0,
+    "axeFailureCases": 0,
+    "differentPixels": 0,
+    "surfaceReplayFailures": 0,
+    "physicsReplayFailures": 0
+  }
+}

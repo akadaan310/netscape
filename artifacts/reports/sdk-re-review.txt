@@ -1,0 +1,24 @@
+url rejected
+tick rejected
+regions rejected
+regions rejected with updated digest
+interactions rejected
+interactions rejected with updated digest
+provenance rejected
+provenance rejected with updated digest
+invariants rejected
+invariants rejected with updated digest
+color rejected
+Resource rejected
+Section rejected
+Group rejected
+Form rejected
+navigate missing URL rejected
+open-external missing URL rejected
+manifest snapshots detached
+constructor own capability only
+toString own capability only
+__proto__ own capability only
+seed -1 surface valid but manifest rejected Error: Invalid replay schema
+seed 4294967296 surface valid but manifest rejected Error: Invalid replay schema
+focused re-review assertions passed

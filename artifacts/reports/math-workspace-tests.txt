@@ -1,0 +1,266 @@
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ OKLCH reference colors and chroma-bisection gamut mapping (7.017691ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.449094ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (30.410407ms)
+node:internal/modules/cjs/loader:1517
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '@netscape/core'
+Require stack:
+- /workspace/netscape-infinite/packages/conformance/src/index.ts
+- /workspace/netscape-infinite/tests/conformance.test.ts
+    at node:internal/modules/cjs/loader:1517:15
+    at nextResolveSimple (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///workspace/netscape-infinite/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at defaultResolve (node:internal/modules/cjs/loader:1152:20) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/workspace/netscape-infinite/packages/conformance/src/index.ts',
+    '/workspace/netscape-infinite/tests/conformance.test.ts'
+  ]
+}
+
+Node.js v24.19.0
+✖ tests/conformance.test.ts (243.691154ms)
+node:internal/modules/cjs/loader:1517
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '../packages/core/src/index.ts'
+Require stack:
+- /workspace/netscape-infinite/tests/core.test.ts
+    at node:internal/modules/cjs/loader:1517:15
+    at nextResolveSimple (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///workspace/netscape-infinite/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at defaultResolve (node:internal/modules/cjs/loader:1152:20) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspace/netscape-infinite/tests/core.test.ts' ]
+}
+
+Node.js v24.19.0
+✖ tests/core.test.ts (304.790631ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (6.247893ms)
+✔ spring energy damps and the graph field diffuses without new extrema (5.979773ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (379.636759ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.710925ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (1.246851ms)
+node:internal/modules/cjs/loader:1517
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '../packages/performers/src/index.ts'
+Require stack:
+- /workspace/netscape-infinite/tests/performers.test.ts
+    at node:internal/modules/cjs/loader:1517:15
+    at nextResolveSimple (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /workspace/netscape-infinite/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///workspace/netscape-infinite/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at defaultResolve (node:internal/modules/cjs/loader:1152:20) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/workspace/netscape-infinite/tests/performers.test.ts' ]
+}
+
+Node.js v24.19.0
+✖ tests/performers.test.ts (334.608721ms)
+✖ adapter renders untrusted content as text and never activates unsafe URL (17.220075ms)
+✖ adapter exposes typed passage action and stable semantic identity (1.386412ms)
+✖ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (0.965386ms)
+✖ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (0.176303ms)
+✖ interpretation is deterministic, bounded and rejects invalid source schemes (0.183369ms)
+✖ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.140293ms)
+✖ public IP validation rejects private, metadata, reserved and mapped IPv6 space (0.186584ms)
+✖ DNS private answers are rejected before transport, including mixed public/private answers (0.28719ms)
+✖ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (0.233764ms)
+✖ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (0.307438ms)
+✖ timeouts bound DNS and response work (0.171075ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 8
+ℹ fail 14
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 956.119969
+
+✖ failing tests:
+
+test at tests/conformance.test.ts:1:1
+✖ tests/conformance.test.ts (243.691154ms)
+  'test failed'
+
+test at tests/core.test.ts:1:1
+✖ tests/core.test.ts (304.790631ms)
+  'test failed'
+
+test at tests/performers.test.ts:1:1
+✖ tests/performers.test.ts (334.608721ms)
+  'test failed'
+
+test at tests/render.test.ts:9:1
+✖ adapter renders untrusted content as text and never activates unsafe URL (17.220075ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(html.includes('&lt;script&gt;'))
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/render.test.ts:11:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/render.test.ts:15:1
+✖ adapter exposes typed passage action and stable semantic identity (1.386412ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(html.includes('data-action="select-passage"'))
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/render.test.ts:17:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/resource.test.ts:9:1
+✖ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (0.965386ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:11:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/resource.test.ts:25:1
+✖ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (0.176303ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:27:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/resource.test.ts:39:1
+✖ interpretation is deterministic, bounded and rejects invalid source schemes (0.183369ms)
+  Error: Resource interpretation not implemented
+      at interpretHTML (/workspace/netscape-infinite/packages/resource-interpreter/src/index.ts:1:59)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/resource.test.ts:41:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:9:1
+✖ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.140293ms)
+  Error: URL validation not implemented
+      at validatePublicURL (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:2:65)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:11:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/security.test.ts:14:1
+✖ public IP validation rejects private, metadata, reserved and mapped IPv6 space (0.186584ms)
+  Error: IP validation not implemented
+      at isPublicAddress (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:3:63)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:15:291)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/security.test.ts:18:1
+✖ DNS private answers are rejected before transport, including mixed public/private answers (0.28719ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:21:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:26:1
+✖ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (0.233764ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:28:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/security.test.ts:38:1
+✖ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (0.307438ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at <anonymous> (/workspace/netscape-infinite/tests/security.test.ts:40:27)
+      at waitForActual (node:assert:632:21)
+      at strict.rejects (node:assert:769:31)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:40:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests/security.test.ts:46:1
+✖ timeouts bound DNS and response work (0.171075ms)
+  Error: Safe public fetch not implemented
+      at createPublicFetcher (/workspace/netscape-infinite/packages/resource-interpreter/src/fetch.ts:4:67)
+      at <anonymous> (/workspace/netscape-infinite/tests/security.test.ts:47:27)
+      at waitForActual (node:assert:632:21)
+      at strict.rejects (node:assert:769:31)
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/security.test.ts:47:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)

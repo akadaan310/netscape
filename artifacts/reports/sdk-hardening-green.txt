@@ -1,0 +1,39 @@
+✔ independent geometric oracle catches clipping, overlap and narrow targets (2.92561ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.374749ms)
+✔ all constitutional clauses have separate enforcement revision (0.330932ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.53273ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (27.338052ms)
+✔ replay binds complete graph and every manifest field and detaches mutable source values (6.017689ms)
+✔ workspace type guard rejects corrupt optional and nested JSON shapes without throwing (0.444374ms)
+✔ metadata must equal regeneration even after ordinary integrity digest is recomputed (4.491026ms)
+✔ real dynamics replay and inferred source evidence survive serialization and reject corruption (10.738423ms)
+✔ manifest replay preserves every safe integer seed accepted by core (4.363684ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (3.439993ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (5.717655ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (2.840133ms)
+✔ six wide compositions have distinct actual geometry and structural topology (10.536124ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (19.640558ms)
+✔ long text expands region height and malformed display/seed are rejected (10.965729ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (26.313465ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.434559ms)
+✔ runtime graph boundary requires safe identity and executable role/action compatibility (4.323554ms)
+✔ capability pack exposes twenty real metadata-rich operations (0.966888ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (11.164782ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (7.026322ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (4.343209ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.671987ms)
+✔ postconditions and output schemas reject dishonest performers (0.692151ms)
+✔ local save uses an explicitly injected capability and replay records actual output (5.704501ms)
+✔ external reading has no default network implementation and validates injected result (0.772188ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.428693ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.363746ms)
+✔ artifact storage cannot return a different artifact identity (1.609132ms)
+✔ capabilities require explicit own functions and isolate declared names with no prototype (0.624963ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 386.04826

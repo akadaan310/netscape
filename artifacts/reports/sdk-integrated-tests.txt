@@ -1,0 +1,67 @@
+
+> netscape-infinite@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ OKLCH reference colors and chroma-bisection gamut mapping (8.467327ms)
+✔ contrast oracle detects deliberately inaccessible controls (0.53919ms)
+✔ field is pure, responds to semantic inputs and guarantees AA in both modes (64.748602ms)
+✔ gamut mapping preserves OKLab lightness rather than clipping saturated channels (0.343281ms)
+✔ independent geometric oracle catches clipping, overlap and narrow targets (2.233573ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.485576ms)
+✔ all constitutional clauses have separate enforcement revision (0.162612ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.201251ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (38.687402ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (3.661924ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (1.589073ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (2.301812ms)
+✔ six wide compositions have distinct actual geometry and structural topology (7.474257ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (17.548691ms)
+✔ long text expands region height and malformed display/seed are rejected (15.972171ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (34.771876ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.432135ms)
+✔ fixed-step replay is identical for shuffled nodes, edges, and same-tick events (11.556089ms)
+✔ spring energy damps and the graph field diffuses without new extrema (12.339834ms)
+✔ high-degree, stiff, low-mass stress remains finite and displacement bounded (366.140943ms)
+✔ reduced motion freezes positions while retaining decaying event field and pure note mapping (0.679775ms)
+✔ rejects malformed runtime inputs and stale or duplicate events (0.89658ms)
+✔ seeded event directions differ, snapshots are detached, and empty worlds advance (0.76251ms)
+✔ independent contrast oracle matches published boundary examples and rejects invalid colors (1.651498ms)
+✔ independent surface audit catches isolated clipping, overlap, missing actions and order corruptions (38.621825ms)
+✔ cold manifest replay uses independent cryptographic fixture, graph and output identities (17.573605ms)
+✔ structural equivalence ignores seed/hash/subpixel noise yet detects a changed composition (12.874341ms)
+✔ Pareto ranking preserves incomparable and duplicate metric vectors without a beauty scalar (0.74182ms)
+✔ capability pack exposes twenty real metadata-rich operations (1.586047ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (8.132941ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (5.242867ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (2.312035ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.738713ms)
+✔ postconditions and output schemas reject dishonest performers (0.664014ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.920967ms)
+✔ external reading has no default network implementation and validates injected result (0.9915ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.524942ms)
+✔ reconstruction rejects unknown performers and altered metadata (1.411423ms)
+✔ artifact storage cannot return a different artifact identity (1.100966ms)
+✔ adapter renders untrusted content as text and never activates unsafe URL (17.395727ms)
+✔ adapter exposes typed passage action and stable semantic identity (1.550497ms)
+✔ fixture API returns evidence and explicit authored source notice offline (33.715755ms)
+✔ request service rejects ambiguity and unsafe URL before invoking transport (0.639572ms)
+✔ public read succeeds through real interpreter and refused resource offers safe fallback (1.329234ms)
+✔ rate limiter bounds a process budget and resets at window boundary (0.212766ms)
+✔ local authored NASA, menu and repository sources retain distinct evidence-backed hypotheses (45.739753ms)
+✔ inert parsing decodes text and never preserves markup, unsafe URLs or executable forms (2.221606ms)
+✔ interpretation is deterministic, bounded and rejects invalid source schemes (193.165678ms)
+✔ each extracted passage exposes a local typed selection action (0.414722ms)
+✔ exact HTTPS allowlist rejects credentials, ports, IPs, aliases and parser tricks (1.420621ms)
+✔ public IP validation rejects private, metadata, reserved and mapped IPv6 space (4.921662ms)
+✔ DNS private answers are rejected before transport, including mixed public/private answers (2.678392ms)
+✔ validated DNS address is pinned, redirects are validated, and no cookies are forwarded (1.750803ms)
+✔ HTML-only fetch rejects compression, huge bodies, non-success and redirect loops (2.275518ms)
+✔ timeouts bound DNS and response work (41.539028ms)
+ℹ tests 55
+ℹ suites 0
+ℹ pass 55
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1273.840015

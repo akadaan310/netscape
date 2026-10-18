@@ -1,0 +1,72 @@
+[
+  {
+    "id": "wcag-contrast",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "basis": "WCAG 2.2 Understanding SC 1.4.3: normal text 4.5:1; large text 3:1.",
+    "retrievedAt": "2026-10-18T11:11:35.589849+00:00",
+    "status": "retrieved",
+    "sha256": "a06d8a7dad2b3c9cadf1d93b1a5372d58adbab65be51e4c4680124d4e47c9999",
+    "bytes": 80477,
+    "error": null
+  },
+  {
+    "id": "wcag-luminance",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html#dfn-relative-luminance",
+    "basis": "WCAG sRGB relative luminance and contrast ratio; independent implementation in experiments/oracles.ts.",
+    "retrievedAt": "2026-10-18T11:11:35.744531+00:00",
+    "status": "retrieved",
+    "sha256": "a06d8a7dad2b3c9cadf1d93b1a5372d58adbab65be51e4c4680124d4e47c9999",
+    "bytes": 80477,
+    "error": null
+  },
+  {
+    "id": "css-color-4",
+    "url": "https://www.w3.org/TR/css-color-4/",
+    "basis": "CSS Color 4 specifies OKLab/OKLCH and sRGB conversion/gamut considerations; does not validate this implementation.",
+    "retrievedAt": "2026-10-18T11:11:35.945022+00:00",
+    "status": "retrieved",
+    "sha256": "2174f6360440f9820b30934368308a68bd514160f86621476b83eb2004c2c63f",
+    "bytes": 1048849,
+    "error": null
+  },
+  {
+    "id": "numerical-integration",
+    "url": "https://gafferongames.com/post/integration_basics/",
+    "basis": "Established semi-implicit Euler and damping/spring numerical integration; stable timestep remains parameter-dependent.",
+    "retrievedAt": "2026-10-18T11:11:36.189214+00:00",
+    "status": "retrieved",
+    "sha256": "c55268570f41911de3f47d99485299f90c6dda25c7f8a10b9c71268cb43d8f9f",
+    "bytes": 31960,
+    "error": null
+  },
+  {
+    "id": "diffusion-stability",
+    "url": "https://hplgit.github.io/fdm-book/doc/pub/book/sphinx/._book011.html",
+    "basis": "Finite-difference diffusion: explicit stepping requires stability bounds; graph implementation additionally needs degree-aware bounds.",
+    "retrievedAt": "2026-10-18T11:11:36.696099+00:00",
+    "status": "retrieved",
+    "sha256": "5814d6d44d280f838847ee896304d0a406c8aeed60852e9a7ed0c5b0fbd5f383",
+    "bytes": 661523,
+    "error": null
+  },
+  {
+    "id": "typescript-compatibility",
+    "url": "https://www.typescriptlang.org/docs/handbook/type-compatibility.html",
+    "basis": "Established structural type compatibility constrains producer/consumer composition; runtime validation remains required for dynamic input.",
+    "retrievedAt": "2026-10-18T11:11:37.436597+00:00",
+    "status": "retrieved",
+    "sha256": "5e58769e6235b09207de013ded15dddb1260f5ed23f34e43a64c9df68e8e7fee",
+    "bytes": 244408,
+    "error": null
+  },
+  {
+    "id": "json-schema",
+    "url": "https://json-schema.org/understanding-json-schema/reference/type",
+    "basis": "Runtime JSON type checking is independent of static TypeScript types; typed pipeline composition also needs effect authority.",
+    "retrievedAt": "2026-10-18T11:11:37.877266+00:00",
+    "status": "retrieved",
+    "sha256": "33bfdf0786d9ca2b627fd9d18589725caf9c3ba60d8811c43c3f2cf7cf80e963",
+    "bytes": 157096,
+    "error": null
+  }
+]

@@ -1,0 +1,9 @@
+✔ bounded artifact shelf keeps unique IDs and valid cold replay after52 saves of the same passage (54.239971ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 415.52281

@@ -1,0 +1,144 @@
+✔ independent geometric oracle catches clipping, overlap and narrow targets (2.55275ms)
+✔ semantic oracle catches wrong action and missing capabilities (0.346507ms)
+✔ all constitutional clauses have separate enforcement revision (0.25708ms)
+✔ corrupt persisted workspace is rejected with no unsafe values (0.306728ms)
+✔ manifest reconstructs actual generated geometry and rejects tampering (18.807585ms)
+✖ replay binds complete graph and every manifest field and detaches mutable source values (3.374658ms)
+✖ workspace type guard rejects corrupt optional and nested JSON shapes without throwing (0.84016ms)
+✔ canonical hashing and PRNG are reproducible without depending on object key order (3.221613ms)
+✔ graph validation rejects duplicate identity, missing edges, cycles and unsupported executable actions (2.3591ms)
+✔ surface replay preserves every semantic identity and required action in source focus order (3.595411ms)
+✔ six wide compositions have distinct actual geometry and structural topology (17.270332ms)
+✔ six families across six displays have readable, nonoverlapping scrollable regions (19.87587ms)
+✔ long text expands region height and malformed display/seed are rejected (8.519861ms)
+✔ seeded grammar varies structure and semantic edge perturbations can change grouping (16.292036ms)
+✔ reading regions reserve hierarchy, eyebrow, footer and multiline label space (0.439478ms)
+✖ runtime graph boundary requires safe identity and executable role/action compatibility (5.484214ms)
+✔ capability pack exposes twenty real metadata-rich operations (1.247838ms)
+✔ selection becomes a cited local artifact with reconstructable canonical trace (8.434284ms)
+✔ graph projections, evidence-based intents and link pipeline compute useful outputs (4.913425ms)
+✔ URL operations reject executable schemes, credentials, local hosts and malformed shapes (1.743837ms)
+✔ composition rejects schema mismatch and authority escalation before executing any step (0.561574ms)
+✔ postconditions and output schemas reject dishonest performers (0.487494ms)
+✔ local save uses an explicitly injected capability and replay records actual output (1.847697ms)
+✔ external reading has no default network implementation and validates injected result (0.840706ms)
+✔ failed capability output retains prior executed steps and records that capability was invoked (0.578797ms)
+✔ reconstruction rejects unknown performers and altered metadata (0.485998ms)
+✔ artifact storage cannot return a different artifact identity (0.95048ms)
+✖ capabilities require explicit own functions and isolate declared names with no prototype (3.822506ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 24
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 356.546089
+
+✖ failing tests:
+
+test at tests/conformance.test.ts:39:1
+✖ replay binds complete graph and every manifest field and detaches mutable source values (3.374658ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/conformance.test.ts:48:62)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/conformance.test.ts:53:1
+✖ workspace type guard rejects corrupt optional and nested JSON shapes without throwing (0.84016ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/conformance.test.ts:56:215)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.ts:105:1
+✖ runtime graph boundary requires safe identity and executable role/action compatibility (5.484214ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(validateGraph(g).length)
+  
+      at TestContext.<anonymous> (/workspace/netscape-infinite/tests/core.test.ts:112:39)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/performers.test.ts:127:1
+✖ capabilities require explicit own functions and isolate declared names with no prototype (3.822506ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /capability/i. Input:
+  
+  'PipelineExecutionError: Expected values to be strictly equal:\n' +
+    '+ actual - expected\n' +
+    '\n' +
+    '+ [Object: null prototype] {}\n' +
+    '- null\n'
+  
+      at async TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:131:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: PipelineExecutionError: Expected values to be strictly equal:
+    + actual - expected
+    
+    + [Object: null prototype] {}
+    - null
+    
+        at runPipeline (/workspace/netscape-infinite/packages/performers/src/index.ts:313:19)
+        at TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:131:26)
+        ... 5 lines matching cause stack trace ...
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+      [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+      + actual - expected
+      
+      + [Object: null prototype] {}
+      - null
+      
+          at Object.execute (/workspace/netscape-infinite/tests/performers.test.ts:130:155)
+          at runPipeline (/workspace/netscape-infinite/packages/performers/src/index.ts:299:39)
+          at TestContext.<anonymous> (/workspace/netscape-infinite/tests/performers.test.ts:131:26)
+          at Test.runInAsyncScope (node:async_hooks:227:14)
+          at Test.run (node:internal/test_runner/test:1382:25)
+          at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+          at Test.postRun (node:internal/test_runner/test:1522:19)
+          at Test.run (node:internal/test_runner/test:1447:12)
+          at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+    },
+    expected: /capability/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }

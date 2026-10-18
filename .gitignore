@@ -8,6 +8,7 @@ playwright-report/
 # Its manifests and checksums are versioned under artifacts/reports.
 artifacts/browser/
 artifacts/browser-report/
+artifacts/experiments/sources/*.html
 .superpowers/
 .env*
 !.env.example

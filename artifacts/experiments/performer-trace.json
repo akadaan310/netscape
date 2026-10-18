@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "pack": "netscape-capabilities@1.0.0",
+  "steps": [
+    {
+      "performer": "select-passage",
+      "version": "1.0.0",
+      "inputSchema": "nmop/selection-request@1",
+      "outputSchema": "nmop/selection@1",
+      "effects": [
+        "pure"
+      ],
+      "requires": [],
+      "status": "executed",
+      "inputCanonical": "{\"graph\":{\"edges\":[{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-source\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n2\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n3\"},{\"from\":\"resource-a4e65930136b0cd4-n3\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n4\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n5\"},{\"from\":\"resource-a4e65930136b0cd4-n5\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n6\"},{\"from\":\"resource-a4e65930136b0cd4-n5\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n7\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n8\"},{\"from\":\"resource-a4e65930136b0cd4-n8\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n9\"},{\"from\":\"resource-a4e65930136b0cd4-n8\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n10\"},{\"from\":\"resource-a4e65930136b0cd4-n8\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-n11\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-select-passage\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-attach-companion\"},{\"from\":\"resource-a4e65930136b0cd4\",\"kind\":\"contains\",\"to\":\"resource-a4e65930136b0cd4-save-artifact\"}],\"id\":\"resource-a4e65930136b0cd4\",\"nodes\":[{\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4\",\"kind\":\"Resource\",\"label\":\"Worlds beyond our Sun · research notebook\",\"meta\":{\"description\":\"A locally authored demonstration inspired by NASA's public exoplanet and Webb research topics.\",\"jsonLdName\":\"Worlds beyond our Sun\",\"jsonLdType\":\"ScholarlyArticle\"},\"url\":\"https://www.nasa.gov/science/\"},{\"id\":\"resource-a4e65930136b0cd4-source\",\"kind\":\"Evidence\",\"label\":\"Local authored source\",\"meta\":{\"contentHash\":\"b5053b7ecfcd269a\",\"fetchedAt\":\"2026-10-18T00:00:00.000Z\",\"kind\":\"fixture\"},\"text\":\"Local authored demonstration. This is not a live source snapshot.\",\"url\":\"https://www.nasa.gov/science/\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n2\",\"kind\":\"Text\",\"label\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA\",\"meta\":{\"origin\":\"local\",\"sourceOrder\":\"8\",\"sourceTag\":\"p\"},\"supported\":true,\"text\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\"},{\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n3\",\"kind\":\"Section\",\"label\":\"Worlds beyond our Sun\",\"meta\":{\"level\":\"1\",\"sourceOrder\":\"9\",\"sourceTag\":\"h1\"},\"text\":\"Worlds beyond our Sun\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n4\",\"kind\":\"Text\",\"label\":\"An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many\",\"meta\":{\"origin\":\"local\",\"sourceOrder\":\"10\",\"sourceTag\":\"p\"},\"supported\":true,\"text\":\"An exoplanet is a planet orbiting a star beyond our solar system. Researchers compare many kinds of evidence: a star's changing brightness, its slight wobble, and the light that passes through a planet's atmosphere.\"},{\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n5\",\"kind\":\"Section\",\"label\":\"Reading an atmosphere with Webb\",\"meta\":{\"level\":\"2\",\"sourceOrder\":\"11\",\"sourceTag\":\"h2\"},\"text\":\"Reading an atmosphere with Webb\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n6\",\"kind\":\"Text\",\"label\":\"When a planet crosses its star, a small fraction of starlight can filter through the plane\",\"meta\":{\"origin\":\"local\",\"sourceOrder\":\"12\",\"sourceTag\":\"p\"},\"supported\":true,\"text\":\"When a planet crosses its star, a small fraction of starlight can filter through the planet's atmosphere. Webb's infrared instruments help scientists study patterns in that light. A spectral feature is a clue to interpret alongside uncertainty, clouds, chemistry, and repeated observations.\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n7\",\"kind\":\"Text\",\"label\":\"Use this notebook to select a passage, invite a clearly labeled local simulated companion,\",\"meta\":{\"origin\":\"local\",\"sourceOrder\":\"13\",\"sourceTag\":\"p\"},\"supported\":true,\"text\":\"Use this notebook to select a passage, invite a clearly labeled local simulated companion, and save a cited artifact. No live researcher or external AI service is connected.\"},{\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n8\",\"kind\":\"Section\",\"label\":\"Keep the evidence close\",\"meta\":{\"level\":\"2\",\"sourceOrder\":\"14\",\"sourceTag\":\"h2\"},\"text\":\"Keep the evidence close\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n9\",\"kind\":\"Text\",\"label\":\"Ask what was measured, which model connects the measurement to a claim, and what another o\",\"meta\":{\"origin\":\"local\",\"sourceOrder\":\"15\",\"sourceTag\":\"p\"},\"supported\":true,\"text\":\"Ask what was measured, which model connects the measurement to a claim, and what another observation could rule out. This fixture reports no new discovery and supplies no invented dates, planet counts, or mission results.\"},{\"action\":\"navigate\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n10\",\"kind\":\"Link\",\"label\":\"Explore NASA's exoplanet science\",\"meta\":{\"sourceOrder\":\"17\",\"sourceTag\":\"a\"},\"supported\":true,\"url\":\"https://science.nasa.gov/exoplanets/\"},{\"action\":\"navigate\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-n11\",\"kind\":\"Link\",\"label\":\"Read about the Webb mission\",\"meta\":{\"sourceOrder\":\"18\",\"sourceTag\":\"a\"},\"supported\":true,\"url\":\"https://science.nasa.gov/mission/webb/\"},{\"action\":\"select-passage\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-select-passage\",\"kind\":\"Action\",\"label\":\"Select a passage\",\"meta\":{\"origin\":\"local\",\"targetId\":\"resource-a4e65930136b0cd4\"},\"supported\":true},{\"action\":\"attach-companion\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-attach-companion\",\"kind\":\"Action\",\"label\":\"Come here · local simulated companion\",\"meta\":{\"origin\":\"local\",\"targetId\":\"resource-a4e65930136b0cd4\"},\"supported\":true},{\"action\":\"save-artifact\",\"evidence\":[\"resource-a4e65930136b0cd4-source\"],\"id\":\"resource-a4e65930136b0cd4-save-artifact\",\"kind\":\"Action\",\"label\":\"Save cited artifact\",\"meta\":{\"origin\":\"local\",\"targetId\":\"resource-a4e65930136b0cd4\"},\"supported\":true}],\"provenance\":{\"contentHash\":\"b5053b7ecfcd269a\",\"fetchedAt\":\"2026-10-18T00:00:00.000Z\",\"kind\":\"fixture\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\"},\"sourceUrl\":\"https://www.nasa.gov/science/\",\"title\":\"Worlds beyond our Sun · research notebook\",\"version\":\"1.0.0\"},\"nodeId\":\"resource-a4e65930136b0cd4-n2\"}",
+      "outputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"graphId\":\"resource-a4e65930136b0cd4\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"text\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"title\":\"Worlds beyond our Sun · research notebook\"}",
+      "inputHash": "fbe9b9a98a47a685",
+      "outputHash": "6dd3904f0f84a94b"
+    },
+    {
+      "performer": "selection-context",
+      "version": "1.0.0",
+      "inputSchema": "nmop/selection@1",
+      "outputSchema": "nmop/passage-context@1",
+      "effects": [
+        "pure"
+      ],
+      "requires": [],
+      "status": "executed",
+      "inputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"graphId\":\"resource-a4e65930136b0cd4\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"text\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"title\":\"Worlds beyond our Sun · research notebook\"}",
+      "outputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"graphId\":\"resource-a4e65930136b0cd4\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"selected-source-context\",\"text\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"title\":\"Worlds beyond our Sun · research notebook\"}",
+      "inputHash": "6dd3904f0f84a94b",
+      "outputHash": "a888c3a4fa944e70"
+    },
+    {
+      "performer": "context-artifact",
+      "version": "1.0.0",
+      "inputSchema": "nmop/passage-context@1",
+      "outputSchema": "nmop/artifact@1",
+      "effects": [
+        "pure"
+      ],
+      "requires": [],
+      "status": "executed",
+      "inputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"graphId\":\"resource-a4e65930136b0cd4\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"selected-source-context\",\"text\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"title\":\"Worlds beyond our Sun · research notebook\"}",
+      "outputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"id\":\"artifact-a888c3a4fa944e70\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"passage\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"local-artifact\",\"title\":\"Worlds beyond our Sun · research notebook\",\"version\":\"1\"}",
+      "inputHash": "a888c3a4fa944e70",
+      "outputHash": "aaac7e4d18cb5b79"
+    },
+    {
+      "performer": "validate-artifact",
+      "version": "1.0.0",
+      "inputSchema": "nmop/artifact@1",
+      "outputSchema": "nmop/artifact@1",
+      "effects": [
+        "pure"
+      ],
+      "requires": [],
+      "status": "executed",
+      "inputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"id\":\"artifact-a888c3a4fa944e70\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"passage\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"local-artifact\",\"title\":\"Worlds beyond our Sun · research notebook\",\"version\":\"1\"}",
+      "outputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"id\":\"artifact-a888c3a4fa944e70\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"passage\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"local-artifact\",\"title\":\"Worlds beyond our Sun · research notebook\",\"version\":\"1\"}",
+      "inputHash": "aaac7e4d18cb5b79",
+      "outputHash": "aaac7e4d18cb5b79"
+    },
+    {
+      "performer": "artifact-markdown",
+      "version": "1.0.0",
+      "inputSchema": "nmop/artifact@1",
+      "outputSchema": "nmop/text@1",
+      "effects": [
+        "pure"
+      ],
+      "requires": [],
+      "status": "executed",
+      "inputCanonical": "{\"evidence\":[\"resource-a4e65930136b0cd4-n2\",\"resource-a4e65930136b0cd4-source\"],\"id\":\"artifact-a888c3a4fa944e70\",\"notice\":\"Local authored demonstration. This is not a live source snapshot.\",\"passage\":\"LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\",\"semanticId\":\"resource-a4e65930136b0cd4-n2\",\"sourceUrl\":\"https://www.nasa.gov/science/\",\"status\":\"local-artifact\",\"title\":\"Worlds beyond our Sun · research notebook\",\"version\":\"1\"}",
+      "outputCanonical": "\"# Worlds beyond our Sun · research notebook\\n\\n> LOCAL AUTHORED DEMO · This is an original teaching fixture, not a live NASA page or a NASA announcement. Follow the source links to read current public research.\\n\\nSource: [https://www.nasa.gov/science/](https://www.nasa.gov/science/)\\n\\nEvidence: resource-a4e65930136b0cd4-n2, resource-a4e65930136b0cd4-source\\n\\nProvenance: Local authored demonstration. This is not a live source snapshot.\\n\\nStatus: local artifact\"",
+      "inputHash": "aaac7e4d18cb5b79",
+      "outputHash": "dc3c4559662cddfd"
+    }
+  ]
+}

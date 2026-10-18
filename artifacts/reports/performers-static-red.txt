@@ -1,0 +1,4 @@
+experiments/run.ts(77,195): error TS2741: Property 'label' is missing in type '{ id: string; kind: "Text"; }' but required in type 'SemanticNode'.
+experiments/run.ts(77,528): error TS2345: Argument of type '{}' is not assignable to parameter of type 'PassageContext'.
+  Type '{}' is missing the following properties from type 'PassageContext': status, graphId, semanticId, title, and 4 more.
+tests/performers.test.ts(54,3): error TS2578: Unused '@ts-expect-error' directive.
