@@ -1,0 +1,6 @@
+# Design Reference Harness
+Create six design hypotheses: A Spatial Observatory, B Orbital Surface, C Elastic Surface, D Folded Document, E Computational Workbench, F Chromatic Field. They are distinct mathematical composition families, not six CSS themes. Each uses the same semantic NASA scenario and has portrait/desktop reference plus intermediate/unusual viewport checks.
+
+Reference image is NOT source of truth. For each image, write machine-readable manifest: semantic fixture hash, grammar/version, seed, viewport, display capabilities, physics tick, chromatic field, expected regions, interactions, hard invariants and provenance. First build negative controls that deliberately fail clipping, contrast, wrong-action semantics. Prove harness catches them before optimizing designs.
+
+Playwright: freeze time/animations at named simulation tick; pin fonts, locale, viewport, DPR; screenshot, bounding boxes, accessibility tree, keyboard interactions, semantic action map, chromatic contrast, physics trace. Compare pixel/SSIM optionally, but separately gate hard structural, semantic, accessibility and functional constraints. Record metric vector/Pareto rank; preserve failures and visual diff artifacts. Human review of aesthetic quality remains distinct from quantitative validation.

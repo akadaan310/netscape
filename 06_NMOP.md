@@ -1,0 +1,4 @@
+# Nano/Micro-Oriented Programming
+Compare established typed functional composition, combinators, microkernels, components, effects systems. Nano performer = one typed operation with input/output schemas, pre/postconditions, effects, requires/provides, failure modes, determinism class, tests, provenance and constitution clauses. Micro composition = graph of compatible performers; capability pack = versioned tested bundle. Composition allowed only if schemas, authority and effects align.
+
+Effects: pure; local state; external read; external mutation (never silently escalate). Start with ~20 excellent performers, not 10,000 empty modules. Example pipeline: validateURL -> fetchPublic -> parseHTML -> extractSemantics -> classifyIntent -> generateSurface -> saveArtifact. Test type mismatches, effect escalation, reuse, trace reconstruction. Login/verification/refund may share validation/presentation performers, but must not be fake functioning services.

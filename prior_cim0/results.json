@@ -1,0 +1,12 @@
+{
+  "generated": 1000,
+  "unique_structural_hashes": 1000,
+  "layout_counts": {
+    "document": 349,
+    "graph": 325,
+    "spatial": 326
+  },
+  "replay_deterministic": true,
+  "type_guard_rejects_invalid": true,
+  "note": "Unique hashes measure structural serialization, not perceptual novelty or usability."
+}

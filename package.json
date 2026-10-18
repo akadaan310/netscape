@@ -1,0 +1,17 @@
+{
+  "name": "netscape-infinite", "version": "0.1.0", "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev -w @netscape/web",
+    "build:sdk": "tsx scripts/build-sdk.ts",
+    "build": "npm run build:sdk && npm run build -w @netscape/web",
+    "start": "npm run start -w @netscape/web",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "experiments": "tsx experiments/run.ts",
+    "test:e2e": "playwright test",
+    "verify": "npm test && npm run typecheck && npm run experiments && npm run build && npm run test:e2e"
+  },
+  "devDependencies": {"@playwright/test":"^1.56.1","@types/node":"^22.18.0","@types/react":"^19.1.0","@types/react-dom":"^19.1.0","tsx":"^4.20.0","typescript":"^5.9.0","tsup":"^8.5.0","@axe-core/playwright":"^4.10.2","pngjs":"^7.0.0","@types/pngjs":"^6.0.5"},
+  "engines": {"node": ">=22"}
+}

@@ -1,0 +1,2 @@
+# Display-Agnostic Realization
+Display D=(CSS width,height,DPR,aspect,input modalities,gamut,render capabilities,preferences). Same semantic graph and required actions across dimensions; discrete topology rewrites allowed. Do not squeeze desktop UI onto phones. Test 320x568,390x844,768x1024,900x390,1440x900,1920x1080. Test touch, keyboard, pointer, text zoom, reduced motion. Semantic identity must not depend on pixel coordinates. Extremely small displays may require focus/scroll modes or declared limitations.

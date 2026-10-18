@@ -1,0 +1,4 @@
+# Resource / Intent Interpretation
+Parse public HTML, title, headings, links, forms, buttons, metadata, safe JSON-LD; emit evidence-backed typed graph. Intent classification is hypothesis, not verified site capability. Distinguish detected affordance, inferred intent, supported executable action. NASA and restaurant fixtures demonstrate common primitives but distinct semantics.
+
+Security: server-side fetch only with strict SSRF defenses: http/https only, reject localhost/private/link-local/metadata/IPv6 local, validate DNS and redirects and pin resolution against rebinding, restrict ports, timeouts, max bytes, MIME and decompression limits, no cookies/credentials forwarded, rate limiting. If robust fetch impossible, start with explicit allowlist and fixtures. No cross-origin bypass, arbitrary script execution or checkout inference. Safe outbound link for unsupported sites.
